@@ -3,6 +3,10 @@ on:
   pull_request:
   push:
     branches: [ main, master ]
+  # `metadata-config.yml` dispatches this workflow on the refresh branch:
+  # a pull request opened with GITHUB_TOKEN never triggers a run by itself,
+  # and `workflow_dispatch` is the documented exception.
+  workflow_dispatch:
 
 permissions:
   contents: read
