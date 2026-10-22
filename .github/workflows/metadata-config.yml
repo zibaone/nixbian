@@ -4,10 +4,15 @@ name: Metadata & config
 # nvfetcher hashes. Keeping it in one workflow means one branch and one
 # pull request, instead of several crons competing over the same files.
 #
+# Weekly, not daily: a refresh prefetches every branch that moved upstream,
+# and a kernel snapshot takes minutes (35 sources moved in one day when this
+# was first measured). The configuration gate does not need this workflow —
+# `nix.yml` runs it on every pull request and every push.
+#
 # Scheduled workflows are registered from the default branch only.
 on:
   schedule:
-    - cron: '0 7 * * *'
+    - cron: '0 7 * * 1'
   workflow_dispatch:
 
 permissions:

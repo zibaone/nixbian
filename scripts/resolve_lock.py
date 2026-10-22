@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 """Resolve nvfetcher.sources.toml (branches) → nvfetcher.lock.toml (commits)
-   and prefetch SHA256 for sources whose rev changed."""
+and prefetch SHA256 for sources whose rev changed."""
 
-import json, subprocess, sys, time, tomllib
+import os, subprocess, sys, time, tomllib
 from pathlib import Path
+
+from prefetch import DEFAULT_JOBS, prefetch_many
 
 sources_path = Path("metadata/nvfetcher.sources.toml")
 lock_path = Path("metadata/nvfetcher.lock.toml")
@@ -25,8 +27,11 @@ old_hashes = {}
 if generated_path.exists():
     try:
         import re
+
         text = generated_path.read_text()
-        for m in re.finditer(r'(\S+)\s*=\s*\{[^}]*?rev\s*=\s*"([^"]+)"[^}]*?sha256\s*=\s*"([^"]+)"', text):
+        for m in re.finditer(
+            r'(\S+)\s*=\s*\{[^}]*?rev\s*=\s*"([^"]+)"[^}]*?sha256\s*=\s*"([^"]+)"', text
+        ):
             old_hashes[m.group(1)] = {"rev": m.group(2), "sha256": m.group(3)}
     except Exception:
         pass
@@ -49,7 +54,8 @@ for name, entry in sorted(cfg.items()):
             try:
                 result = subprocess.run(
                     ["git", "ls-remote", url, rev],
-                    capture_output=True, text=True,
+                    capture_output=True,
+                    text=True,
                     timeout=60,
                 )
                 c = result.stdout.split()[0] if result.stdout else ""
@@ -100,30 +106,15 @@ print(f"✅ {changed} branch(es) resolved → {lock_path}")
 
 # Prefetch hashes for changed sources
 if changed_entries:
-    print(f"\n📦 Prefetching {len(changed_entries)} changed source(s)...")
+    # Sources are independent: prefetch them in parallel, otherwise a kernel
+    # snapshot per changed branch does not fit in a CI job. `jobs` is tunable
+    # for a slow network.
     new_hashes = dict(old_hashes)
-    for src in changed_entries:
-        name = src["name"]
-        url = src["url"]
-        rev = src["rev"]
-        print(f"  🔄 {name}")
-        try:
-            result = subprocess.run(
-                ["nix-prefetch-git", "--url", url, "--rev", rev],
-                capture_output=True, text=True,
-                timeout=300,
-            )
-            if result.returncode == 0:
-                data = json.loads(result.stdout)
-                sha256 = data.get("sha256", "")
-                if sha256:
-                    store_path = data.get("storepath", "")
-                    print(f"    sha256: {sha256}  ({store_path})")
-                    new_hashes[name] = {"rev": rev, "sha256": sha256}
-            else:
-                print(f"    ❌ {result.stderr[:200]}", file=sys.stderr)
-        except Exception as e:
-            print(f"    ❌ {e}", file=sys.stderr)
+    prefetched = prefetch_many(
+        changed_entries,
+        jobs=os.environ.get("NIXBIAN_PREFETCH_JOBS", DEFAULT_JOBS),
+    )
+    new_hashes.update(prefetched)
 
     # Regenerate generated.nix
     gen_lines = [
@@ -141,19 +132,19 @@ if changed_entries:
         if not sha256:
             continue
         pname = name.replace("_", "-")
-        gen_lines.append(f'  {name} = {{')
+        gen_lines.append(f"  {name} = {{")
         gen_lines.append(f'    pname = "{pname}";')
         gen_lines.append(f'    version = "{rev}";')
-        gen_lines.append(f'    src = fetchgit {{')
+        gen_lines.append(f"    src = fetchgit {{")
         gen_lines.append(f'      url = "{url}";')
         gen_lines.append(f'      rev = "{rev}";')
-        gen_lines.append(f'      fetchSubmodules = false;')
-        gen_lines.append(f'      deepClone = false;')
-        gen_lines.append(f'      leaveDotGit = false;')
-        gen_lines.append(f'      sparseCheckout = [ ];')
+        gen_lines.append(f"      fetchSubmodules = false;")
+        gen_lines.append(f"      deepClone = false;")
+        gen_lines.append(f"      leaveDotGit = false;")
+        gen_lines.append(f"      sparseCheckout = [ ];")
         gen_lines.append(f'      sha256 = "{sha256}";')
-        gen_lines.append(f'    }};')
-        gen_lines.append(f'  }};')
+        gen_lines.append(f"    }};")
+        gen_lines.append(f"  }};")
     gen_lines.append("}")
     generated_path.parent.mkdir(parents=True, exist_ok=True)
     generated_path.write_text("\n".join(gen_lines) + "\n")

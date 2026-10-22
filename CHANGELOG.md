@@ -27,6 +27,11 @@ the project adheres to [Semantic Versioning](https://semver.org/).
 
 - `docs/ci.md` documents the single scheduled workflow and the real
   requirement behind `AUTO_PR_TOKEN`.
+- `scripts/resolve_lock.py` prefetches changed sources in parallel
+  (`scripts/prefetch.py`, 8 at a time, `NIXBIAN_PREFETCH_JOBS` to tune).
+  35 sources had moved in a single day, and one kernel snapshot takes
+  minutes: serialised, the refresh did not fit in a job. The scheduled
+  refresh is now weekly for the same reason.
 
 ### Removed
 

@@ -5,7 +5,7 @@
 | File | Trigger | Role |
 | --- | --- | --- |
 | `.github/workflows/nix.yml` | PR, push to `main`/`master` | `nix flake check` (metadata checks + 6 board evaluations + CLI), `just check-format`, `just check-drift`, `pytest`, the kernel config gate over every family/branch pair, `just check` |
-| `.github/workflows/metadata-config.yml` | cron `0 7 * * *`, manual | Single owner of the generated state: `update-versions` (new Armbian tags), `refresh-metadata` (regeneration, with kernel version refresh), `scripts/resolve_lock.py` (hashes), `scripts/check_all_configs.py` (gate), PR `auto/metadata-config` |
+| `.github/workflows/metadata-config.yml` | cron `0 7 * * 1` (Monday), manual | Single owner of the generated state: `update-versions` (new Armbian tags), `refresh-metadata` (regeneration, with kernel version refresh), `scripts/resolve_lock.py` (hashes), `scripts/check_all_configs.py` (gate), PR `auto/metadata-config` |
 
 Scheduled jobs **never** push to `master`: they push an `auto/*` branch and open
 a PR. Merging remains a human decision.
@@ -13,6 +13,15 @@ a PR. Merging remains a human decision.
 There is one scheduled workflow on purpose. `versions.json`, `metadata/` and
 the nvfetcher hashes are produced by the same generator run, so splitting them
 across several crons means several branches competing over the same files.
+
+It runs **weekly**. Every branch that moved upstream needs its own
+`nix-prefetch-git` snapshot, and a kernel repository takes minutes: the first
+measurement found 35 changed sources in a single day, which is close to an
+hour of wall clock when serialised. `scripts/prefetch.py` now runs them eight
+at a time (`NIXBIAN_PREFETCH_JOBS` to tune), and the weekly cadence keeps the
+volume low. The configuration gate is not on that schedule — `nix.yml` runs it
+on every pull request and every push, which is where a metadata regression can
+actually appear.
 
 ## The kernel config gate
 
