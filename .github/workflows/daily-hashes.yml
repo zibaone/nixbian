@@ -1,4 +1,6 @@
 name: Daily hash update
+
+# Scheduled workflows are registered from the default branch only.
 on:
   schedule:
     - cron: '0 6 * * *'
