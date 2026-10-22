@@ -101,6 +101,12 @@ check-drift:
 check-config board:
     python3 scripts/check_config.py {{board}}
 
+# Same gate for every family/branch pair at once (one flake evaluation, ~3 s).
+# One representative board per pair covers the 737 boards, since the kernel
+# package is shared per family+branch — ex: just check-config-all
+check-config-all:
+    python3 scripts/check_all_configs.py
+
 # L5 pruning gate — compares the full modules tree with the board's filtered tree
 # (kept/removed list + weight). The kernel must already be built.
 check-modules board:
