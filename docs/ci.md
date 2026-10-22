@@ -48,17 +48,28 @@ symbol-by-symbol diff.
 
 ## Secrets
 
-- `AUTO_PR_TOKEN`: **needed for the automated pull request to be mergeable.**
-  A fine-grained personal access token scoped to this repository, with
-  `Contents: write` and `Pull requests: write`. Without it the workflow falls
-  back to `GITHUB_TOKEN`, which creates the PR but does not trigger `Nix CI`:
-  GitHub never starts a workflow run from an event caused by `GITHUB_TOKEN`,
-  so the required `check` status stays missing and the PR cannot be merged
-  without an admin bypass.
+- `AUTO_PR_TOKEN` (**optional, preferred**): a fine-grained personal access
+  token scoped to this repository, with `Contents: write` and
+  `Pull requests: write`. When present, the pull request is opened as a user
+  and triggers `Nix CI` on its own.
 - `CACHIX_AUTH_TOKEN`: Cachix binary cache (`havenos`). Ignored on PRs.
 - `ATTIC_TOKEN` / `ATTIC_ENDPOINT`: Attic cache, if configured.
 
 Without the cache secrets the workflows still work but rebuild more.
+
+### Why the bot needs a hand to get its PR checked
+
+GitHub never starts a workflow run from an event caused by `GITHUB_TOKEN`.
+A pull request opened by the bot therefore never receives the required
+`check` status. `workflow_dispatch` is the documented exception to that rule,
+so `metadata-config.yml` dispatches `Nix CI` on the `auto/metadata-config`
+branch after opening the PR: the dispatched run's check attaches to the
+branch head, which is the PR head.
+
+This path also requires the repository setting *Allow GitHub Actions to create
+and approve pull requests* (`can_approve_pull_request_reviews`), otherwise
+`gh pr create` fails with a 403. Both mechanisms become unnecessary once
+`AUTO_PR_TOKEN` is set.
 
 ## Flake checks
 

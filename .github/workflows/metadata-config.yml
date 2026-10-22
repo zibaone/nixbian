@@ -13,6 +13,9 @@ on:
 permissions:
   contents: write
   pull-requests: write
+  # Needed to dispatch `Nix CI` on the branch when AUTO_PR_TOKEN is absent
+  # (see the last step).
+  actions: write
 
 concurrency:
   group: metadata-config
@@ -118,3 +121,13 @@ jobs:
             gh pr create --base master --head auto/metadata-config \
               --title "$TITLE" --body "$BODY"
           fi
+
+      # GitHub never starts a workflow run from an event caused by
+      # GITHUB_TOKEN, so a PR opened by the bot would never receive the
+      # required `check` status. `workflow_dispatch` is the documented
+      # exception: dispatching `Nix CI` on the branch attaches its check run
+      # to the branch head, which is the PR head. With AUTO_PR_TOKEN the PR
+      # triggers CI by itself and this step is skipped.
+      - name: Start CI on the pull request
+        if: steps.commit.outputs.changed == 'true' && env.AUTO_PR_TOKEN == ''
+        run: gh workflow run nix.yml --ref auto/metadata-config
