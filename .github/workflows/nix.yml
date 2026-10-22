@@ -40,6 +40,11 @@ jobs:
       with:
         name: havenos
         authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
+        # Push is explicit, at the end of the job. The default would upload
+        # everything this job built: the 62 MiB `metadata` copy (nobody builds
+        # it) and the 1.1 GiB devShell closure (re-uploaded on every
+        # dependency bump, evicting the kernels that actually matter).
+        push: false
 
     - name: "Flake Check"
       run: nix flake check --show-trace
@@ -61,3 +66,10 @@ jobs:
 
     - name: "Verify Metadata Generation"
       run: nix build .#metadata
+
+    - name: "Push the CLI to the cache"
+      if: ${{ github.event_name != 'pull_request' && env.CACHIX_AUTH_TOKEN != '' }}
+      run: |
+        path="$(nix build --no-link --print-out-paths .#default)"
+        echo "CLI closure: $(nix path-info -Sh "$path" | awk '{print $2}')"
+        cachix push havenos "$path"

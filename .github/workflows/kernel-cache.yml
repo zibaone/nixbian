@@ -1,0 +1,99 @@
+name: Kernel cache
+
+# Builds one reference kernel per major ARM family and pushes its closure to
+# the Cachix cache. This is the only cache content a user benefits from:
+# `Nix CI` evaluates configurations, it never compiles a kernel, so before
+# this workflow the cache held a metadata copy and a devShell only.
+#
+# Cross, not native. `nix/parts/packages.nix` already picks
+# `pkgsCross.aarch64-multiplatform` (or armv7l / riscv64 / loongarch64) when
+# the board arch differs from the host, so an x86_64 runner builds the ARM
+# kernels. A native ARM runner would be slower, not faster.
+#
+# One board per major family, matching the boards the flake checks evaluate:
+# sunxi64 (H616), sunxi 32-bit, bcm2711 (Raspberry Pi 4), meson64 (Amlogic),
+# rockchip64 (RK3588).
+on:
+  schedule:
+    # Sunday 03:00 UTC: Sunday morning, after the Monday metadata refresh has
+    # had a week to land, and far from the working day.
+    - cron: '0 3 * * 0'
+  workflow_dispatch:
+    inputs:
+      boards:
+        description: "Space-separated board keys (empty = the five reference boards)"
+        required: false
+        default: ""
+
+permissions:
+  contents: read
+
+concurrency:
+  group: kernel-cache
+  cancel-in-progress: false
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      boards: ${{ steps.matrix.outputs.boards }}
+    steps:
+      - name: Build the matrix
+        id: matrix
+        run: |
+          boards="${{ github.event.inputs.boards }}"
+          if [ -z "$boards" ]; then
+            boards="orangepizero3-edge orangepizero-current rpi4b-current aml-a311d-cc-current orangepi5-current"
+          fi
+          # One JSON array, consumed by `strategy.matrix` below.
+          json="$(printf '%s\n' $boards | jq -R . | jq -sc .)"
+          echo "boards=$json" >> "$GITHUB_OUTPUT"
+          echo "Building: $json"
+
+  build:
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    strategy:
+      fail-fast: false
+      matrix:
+        board: ${{ fromJson(needs.plan.outputs.boards) }}
+    env:
+      CACHIX_AUTH_TOKEN: ${{ secrets.CACHIX_AUTH_TOKEN }}
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: cachix/install-nix-action@v31
+        with:
+          extra_nix_config: |
+            access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
+            experimental-features = nix-command flakes
+
+      - uses: DeterminateSystems/magic-nix-cache-action@v15
+
+      - uses: cachix/cachix-action@v17
+        if: ${{ env.CACHIX_AUTH_TOKEN != '' }}
+        with:
+          name: havenos
+          authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
+          # Explicit push below: `push: true` would also upload the compiler
+          # and source tarballs used to build the kernel, which no user needs.
+          push: false
+
+      - name: "Build ${{ matrix.board }}"
+        id: build
+        run: |
+          path="$(nix build --no-link --print-out-paths ".#kernel-${{ matrix.board }}")"
+          echo "path=$path" >> "$GITHUB_OUTPUT"
+          echo "Built: $path"
+          nix path-info -Sh "$path"
+
+      - name: "Push the closure of ${{ matrix.board }}"
+        if: ${{ env.CACHIX_AUTH_TOKEN != '' }}
+        run: |
+          cachix push havenos "${{ steps.build.outputs.path }}"
+
+      - name: "Report the missing cache token"
+        if: ${{ env.CACHIX_AUTH_TOKEN == '' }}
+        run: |
+          echo "::warning title=No CACHIX_AUTH_TOKEN::${{ matrix.board }} was built but not pushed. Add the CACHIX_AUTH_TOKEN secret to this repository to fill the cache."
