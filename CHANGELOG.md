@@ -7,6 +7,35 @@ the project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+### Added
+
+- `scripts/check_all_configs.py` and `just check-config-all`: a configuration
+  gate covering every family/branch pair at once. One `nix eval` extracts the
+  tier and the applied config of all 1616 `kernel-*` attributes in about 3 s,
+  and each pair's config is compared byte-for-byte with its reference. Wired
+  into `Nix CI` as a required step.
+- `.github/workflows/metadata-config.yml`: a single scheduled workflow owning
+  the generated state (`versions.json`, `metadata/`, nvfetcher hashes). It
+  detects new Armbian tags by diffing `versions.json` after
+  `just update-versions`, regenerates metadata only when the pin moved, runs
+  the configuration gate, and opens one PR.
+- 15 unit tests for the gate (`tests/test_check_all_configs.py`), covering the
+  `platforms.nix` parser, each divergence case, the exit codes, and a drift
+  guard against the real metadata tree.
+
+### Changed
+
+- `docs/ci.md` documents the single scheduled workflow and the real
+  requirement behind `AUTO_PR_TOKEN`.
+
+### Removed
+
+- `.github/workflows/daily-hashes.yml` and
+  `.github/workflows/weekly-armbian-upgrade.yml`, both subsumed by
+  `metadata-config.yml`. The weekly job also compared the `armbian/os` release
+  tag with the `armbian/build` keys of `versions.json` — two different
+  repositories and tag schemes — so it treated every run as a new release.
+
 ## [0.3.0] - 2026-10-22
 
 First public release, prepared from a cleaned tree (new git history, without

@@ -1,0 +1,120 @@
+name: Metadata & config
+
+# Single owner of the generated state: versions.json, metadata/ and the
+# nvfetcher hashes. Keeping it in one workflow means one branch and one
+# pull request, instead of several crons competing over the same files.
+#
+# Scheduled workflows are registered from the default branch only.
+on:
+  schedule:
+    - cron: '0 7 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: metadata-config
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      # A token that belongs to a user, not to the Actions app, is required
+      # for the pull request to trigger `Nix CI`: events caused by
+      # GITHUB_TOKEN never start another workflow run, so the required
+      # `check` status would never appear on the PR.
+      GH_TOKEN: ${{ secrets.AUTO_PR_TOKEN || secrets.GITHUB_TOKEN }}
+      AUTO_PR_TOKEN: ${{ secrets.AUTO_PR_TOKEN }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          token: ${{ secrets.AUTO_PR_TOKEN || secrets.GITHUB_TOKEN }}
+
+      - uses: cachix/install-nix-action@v31
+        with:
+          extra_nix_config: |
+            access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
+            experimental-features = nix-command flakes
+
+      - uses: DeterminateSystems/magic-nix-cache-action@v15
+
+      - name: Warn when AUTO_PR_TOKEN is missing
+        if: env.AUTO_PR_TOKEN == ''
+        run: |
+          echo "::warning title=No AUTO_PR_TOKEN::The pull request is created with GITHUB_TOKEN, so 'Nix CI' will not run on it and the required 'check' status will stay missing. Add a fine-grained PAT (Contents: write, Pull requests: write) as the AUTO_PR_TOKEN secret."
+
+      # 1. Pick up new Armbian tags. `update-versions` only adds tags that
+      #    are missing from versions.json, so a no-op run leaves the file
+      #    untouched — that change is the signal, no need to compare tag
+      #    schemes across two different upstream repositories.
+      - name: Detect new Armbian versions
+        id: versions
+        run: |
+          cp versions.json /tmp/versions.before.json
+          nix develop --command just update-versions
+          if cmp -s /tmp/versions.before.json versions.json; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "versions.json is up to date."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            diff <(jq -r 'keys[]' /tmp/versions.before.json) \
+                 <(jq -r 'keys[]' versions.json) || true
+          fi
+
+      # 2. Regenerate metadata/ from the newest pin. This must go through
+      #    the generator, never through a hand edit.
+      - name: Regenerate metadata
+        if: steps.versions.outputs.changed == 'true'
+        env:
+          # Re-read the upstream Makefiles: the kernel-versions cache must
+          # not mask a version bump.
+          REFRESH_KERNEL_VERSIONS: "1"
+        run: nix develop --command just refresh-metadata
+
+      # 3. Resolve the nvfetcher branches to pinned commits (after the
+      #    regeneration, which can rewrite nvfetcher.sources.toml).
+      - name: Resolve hashes
+        run: nix develop --command python3 scripts/resolve_lock.py
+
+      # 4. Configuration gate: one flake evaluation for all 737 boards.
+      #    Runs on every scheduled tick, even when nothing moved upstream,
+      #    so a broken family is caught without waiting for a release.
+      - name: Kernel config gate (all families)
+        run: nix develop --command python3 scripts/check_all_configs.py
+
+      # 5. Unit tests: the workflow itself is Python plus generated data.
+      - name: Unit tests
+        run: nix develop --command pytest -q
+
+      - name: Commit to auto/metadata-config
+        id: commit
+        run: |
+          git config user.name "nixbian-bot"
+          git config user.email "bot@nixbian.dev"
+          git checkout -b auto/metadata-config
+          git add -A
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "Nothing to commit."
+            exit 0
+          fi
+          git commit -m "chore: metadata and hash refresh"
+          # checkout already persisted the token, so no credential in the URL.
+          git push origin auto/metadata-config --force
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Open or update pull request
+        if: steps.commit.outputs.changed == 'true'
+        run: |
+          TITLE="chore: metadata and hash refresh"
+          BODY="Automated refresh of the generated state: versions.json (new Armbian tags when any), metadata/ regenerated from the newest pin, and the nvfetcher hashes. The kernel config gate ran over every family/branch pair before this branch was pushed."
+          if gh pr list --head auto/metadata-config --json number --jq '.[0].number' | grep -q .; then
+            gh pr edit auto/metadata-config --title "$TITLE" --body "$BODY"
+          else
+            gh pr create --base master --head auto/metadata-config \
+              --title "$TITLE" --body "$BODY"
+          fi

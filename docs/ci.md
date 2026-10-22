@@ -4,27 +4,61 @@
 
 | File | Trigger | Role |
 | --- | --- | --- |
-| `.github/workflows/nix.yml` | PR, push to `main`/`master` | `nix flake check` (metadata checks + 6 board evaluations + CLI), `just check-format`, `just check-drift`, `pytest` |
-| `.github/workflows/daily-hashes.yml` | cron `0 6 * * *`, manual | `scripts/resolve_lock.py`, commit to `auto/weekly-hashes`, open/update a PR |
-| `.github/workflows/weekly-armbian-upgrade.yml` | cron `0 6 * * 4` (Thursday), manual | `update-versions` + `refresh-metadata` (with kernel version refresh), `resolve_lock.py`, PR `auto/armbian-upgrade` |
+| `.github/workflows/nix.yml` | PR, push to `main`/`master` | `nix flake check` (metadata checks + 6 board evaluations + CLI), `just check-format`, `just check-drift`, `pytest`, the kernel config gate over every family/branch pair, `just check` |
+| `.github/workflows/metadata-config.yml` | cron `0 7 * * *`, manual | Single owner of the generated state: `update-versions` (new Armbian tags), `refresh-metadata` (regeneration, with kernel version refresh), `scripts/resolve_lock.py` (hashes), `scripts/check_all_configs.py` (gate), PR `auto/metadata-config` |
 
 Scheduled jobs **never** push to `master`: they push an `auto/*` branch and open
 a PR. Merging remains a human decision.
 
+There is one scheduled workflow on purpose. `versions.json`, `metadata/` and
+the nvfetcher hashes are produced by the same generator run, so splitting them
+across several crons means several branches competing over the same files.
+
+## The kernel config gate
+
+`scripts/check_all_configs.py` answers one question for the whole catalogue:
+*is the family's Armbian `.config` really the one the kernel package applies?*
+
+The wiring is not per board. A `family-branch` pair maps to a single kernel
+package, so one evaluation decides for all the boards of that pair: 737 boards
+collapse to 57 pairs and 53 reference configs. Two consequences:
+
+- **cost**: a single `nix eval` extracts `configMode` and `configfile` for all
+  1616 `kernel-*` attributes in about 3 s, instead of one `nix build` and two
+  `nix eval` per board;
+- **granularity**: a divergence is reported once per pair, with the number of
+  affected boards.
+
+The gate compares the applied config with the reference byte-for-byte, and
+distinguishes three tiers: `armbian` (checked), `defconfig` (family fragment,
+not checked here) and `nixpkgs` (no Armbian config by design). A pair with no
+kernel package at all is reported as a warning, not a failure: upstream
+Armbian sometimes ships a branch without a config file (the `generic` family
+has no `linux--edge.config`), so those boards are not buildable, but this
+repository cannot fix that from its side.
+
+`just check-config <board>` remains the tool for a single board with a
+symbol-by-symbol diff.
+
 ## Permissions
 
 - `nix.yml`: `contents: read` only.
-- Cron workflows: `contents: write` (push the `auto/*` branch) and
+- `metadata-config.yml`: `contents: write` (push the `auto/*` branch) and
   `pull-requests: write` (create/update the PR).
-- `GITHUB_TOKEN` is provided by GitHub Actions; no extra PAT is required to open
-  a PR in the same repository.
 
-## Optional secrets
+## Secrets
 
+- `AUTO_PR_TOKEN`: **needed for the automated pull request to be mergeable.**
+  A fine-grained personal access token scoped to this repository, with
+  `Contents: write` and `Pull requests: write`. Without it the workflow falls
+  back to `GITHUB_TOKEN`, which creates the PR but does not trigger `Nix CI`:
+  GitHub never starts a workflow run from an event caused by `GITHUB_TOKEN`,
+  so the required `check` status stays missing and the PR cannot be merged
+  without an admin bypass.
 - `CACHIX_AUTH_TOKEN`: Cachix binary cache (`havenos`). Ignored on PRs.
 - `ATTIC_TOKEN` / `ATTIC_ENDPOINT`: Attic cache, if configured.
 
-Without these secrets the workflows still work but rebuild more.
+Without the cache secrets the workflows still work but rebuild more.
 
 ## Flake checks
 
@@ -44,5 +78,5 @@ Without these secrets the workflows still work but rebuild more.
 - `checks.nixos-no-uboot`: board without U-Boot config (`uBoot.package = null`).
 
 These checks evaluate the module wiring and force the kernel patch list without
-building the kernel. Kernel builds, `check-config` and `check-hw-caps` remain
-separate CI steps.
+building the kernel. Kernel builds and `check-hw-caps` remain separate steps:
+`check-hw-caps` needs a compiled kernel, which is not part of the free CI plan.
