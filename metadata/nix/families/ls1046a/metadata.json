@@ -1,0 +1,9 @@
+{
+    "family": "ls1046a",
+    "platforms": {
+        "ls1046a-current": {
+            "arch": "arm64",
+            "branch": "current"
+        }
+    }
+}

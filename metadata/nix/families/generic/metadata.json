@@ -1,0 +1,17 @@
+{
+    "family": "generic",
+    "platforms": {
+        "generic-vendor": {
+            "arch": "arm64",
+            "branch": "vendor"
+        },
+        "generic-current": {
+            "arch": "armhf",
+            "branch": "current"
+        },
+        "generic-edge": {
+            "arch": "arm64",
+            "branch": "edge"
+        }
+    }
+}

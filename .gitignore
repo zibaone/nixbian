@@ -1,0 +1,40 @@
+# Nix build outputs
+result
+result-*
+.direnv/
+
+# Nixbian generator temporary outputs
+metadata-out/
+test-gen-out/
+armbian-src/
+scratch/
+
+# Python environment & build artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.eggs/
+build/
+dist/
+*.egg-info/
+
+# nvfetcher build sources (lock files must be tracked)
+metadata/sources/*
+!metadata/sources/generated.nix
+!metadata/sources/generated.json
+
+# IDE and Editor configurations
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Local cache files
+prefetch_cache.json
+
+# Session notes (not published)
+HANDOFF.md
+notes/
+

@@ -1,0 +1,23 @@
+{
+    "src-linux-t2-patches-master": {
+        "cargoLocks": null,
+        "date": "2026-05-09",
+        "extract": null,
+        "name": "src-linux-t2-patches-master",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "t2linux",
+            "repo": "linux-t2-patches",
+            "rev": "10244ac33020e0f849c1e401584a6011ded1282b",
+            "sha256": "sha256-q7x+zSpUxdC3JM2jEsL5GN8CNJWRnMnu3Ns64puLkGE=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "10244ac33020e0f849c1e401584a6011ded1282b"
+    }
+}

@@ -1,0 +1,29 @@
+{
+  "arm64" = import ./arm64;
+  "bcm2711" = import ./bcm2711;
+  "filogic" = import ./filogic;
+  "generic" = import ./generic;
+  "genio" = import ./genio;
+  "k3" = import ./k3;
+  "k3-beagle" = import ./k3-beagle;
+  "loong64" = import ./loong64;
+  "ls1046a" = import ./ls1046a;
+  "meson" = import ./meson;
+  "meson-s4t7" = import ./meson-s4t7;
+  "meson64" = import ./meson64;
+  "nuvoton-ma35d1" = import ./nuvoton-ma35d1;
+  "phytium-embedded" = import ./phytium-embedded;
+  "qcs6490" = import ./qcs6490;
+  "qrb2210" = import ./qrb2210;
+  "riscv64" = import ./riscv64;
+  "rk35xx" = import ./rk35xx;
+  "rockchip64" = import ./rockchip64;
+  "sm8250" = import ./sm8250;
+  "sm8550" = import ./sm8550;
+  "spacemit" = import ./spacemit;
+  "starfive2" = import ./starfive2;
+  "sun55iw3-syterkit" = import ./sun55iw3-syterkit;
+  "sunxi" = import ./sunxi;
+  "sunxi64" = import ./sunxi64;
+  "x86" = import ./x86;
+}

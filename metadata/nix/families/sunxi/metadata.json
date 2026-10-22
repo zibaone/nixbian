@@ -1,0 +1,17 @@
+{
+    "family": "sunxi",
+    "platforms": {
+        "sunxi-current": {
+            "arch": "armhf",
+            "branch": "current"
+        },
+        "sunxi-edge": {
+            "arch": "armhf",
+            "branch": "edge"
+        },
+        "sunxi-legacy": {
+            "arch": "armhf",
+            "branch": "legacy"
+        }
+    }
+}

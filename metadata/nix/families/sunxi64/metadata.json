@@ -1,0 +1,17 @@
+{
+    "family": "sunxi64",
+    "platforms": {
+        "sunxi64-current": {
+            "arch": "arm64",
+            "branch": "current"
+        },
+        "sunxi64-edge": {
+            "arch": "arm64",
+            "branch": "edge"
+        },
+        "sunxi64-legacy": {
+            "arch": "arm64",
+            "branch": "legacy"
+        }
+    }
+}

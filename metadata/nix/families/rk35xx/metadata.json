@@ -1,0 +1,9 @@
+{
+    "family": "rk35xx",
+    "platforms": {
+        "rk35xx-vendor": {
+            "arch": "arm64",
+            "branch": "vendor"
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "family": "meson64",
+    "platforms": {
+        "meson64-current": {
+            "arch": "arm64",
+            "branch": "current"
+        },
+        "meson64-edge": {
+            "arch": "arm64",
+            "branch": "edge"
+        }
+    }
+}

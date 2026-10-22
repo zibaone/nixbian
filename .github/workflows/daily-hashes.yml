@@ -1,0 +1,59 @@
+name: Daily hash update
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: daily-hashes
+  cancel-in-progress: false
+
+jobs:
+  update-hashes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: cachix/install-nix-action@v31
+        with:
+          extra_nix_config: |
+            access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
+            experimental-features = nix-command flakes
+
+      - uses: DeterminateSystems/magic-nix-cache-action@v15
+
+      - name: Resolve and prefetch
+        run: |
+          nix develop --command python3 scripts/resolve_lock.py
+
+      - name: Commit to auto/weekly-hashes
+        id: commit
+        run: |
+          git config user.name "nixbian-bot"
+          git config user.email "bot@nixbian.dev"
+          git checkout -b auto/weekly-hashes
+          git add -A
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git commit -m "chore: daily hash update"
+          git push origin auto/weekly-hashes --force
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Open or update pull request
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TITLE="chore: daily hash update"
+          BODY="Automatic nvfetcher hash update (resolve_lock.py)."
+          if gh pr list --head auto/weekly-hashes --json number --jq '.[0].number' | grep -q .; then
+            gh pr edit auto/weekly-hashes --title "$TITLE" --body "$BODY"
+          else
+            gh pr create --base master --head auto/weekly-hashes --title "$TITLE" --body "$BODY"
+          fi

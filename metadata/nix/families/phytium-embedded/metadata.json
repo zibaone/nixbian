@@ -1,0 +1,13 @@
+{
+    "family": "phytium-embedded",
+    "platforms": {
+        "phytium-embedded-current": {
+            "arch": "arm64",
+            "branch": "current"
+        },
+        "phytium-embedded-legacy": {
+            "arch": "arm64",
+            "branch": "legacy"
+        }
+    }
+}

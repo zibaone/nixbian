@@ -1,0 +1,51 @@
+[project]
+name = "nixbian"
+version = "0.3.0"
+description = "Extract and manage Armbian metadata for Nix"
+readme = "README.md"
+license = "GPL-3.0-only"
+license-files = ["LICENSE"]
+authors = [{ name = "Nixbian contributors" }]
+maintainers = [{ name = "zibaone" }]
+requires-python = ">=3.10"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: System :: Operating System Kernels :: Linux",
+]
+
+dependencies = [
+    "pyyaml",
+    "requests",
+]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.scripts]
+nixbian-extract = "armbian_extractor.cli:main"
+nixbian-update = "armbian_extractor.updater:main"
+nixbian-gen-nvfetcher = "armbian_extractor.nvgen:main"
+
+[project.urls]
+Homepage = "https://github.com/zibaone/nixbian"
+Repository = "https://github.com/zibaone/nixbian"
+Issues = "https://github.com/zibaone/nixbian/issues"
+Changelog = "https://github.com/zibaone/nixbian/blob/master/CHANGELOG.md"
+
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+armbian_extractor = ["templates/*.nix", "*.json"]

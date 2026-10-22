@@ -1,0 +1,9 @@
+{
+    "family": "filogic",
+    "platforms": {
+        "filogic-current": {
+            "arch": "arm64",
+            "branch": "current"
+        }
+    }
+}

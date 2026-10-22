@@ -1,0 +1,4424 @@
+{
+    "9tripod-x3568-v4-current": {
+        "family": "rockchip64",
+        "board": "9tripod-x3568-v4",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "9tripod-x3568-v4-edge": {
+        "family": "rockchip64",
+        "board": "9tripod-x3568-v4",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "aml-a311d-cc-current": {
+        "family": "meson64",
+        "board": "aml-a311d-cc",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "aml-a311d-cc-edge": {
+        "family": "meson64",
+        "board": "aml-a311d-cc",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "aml-c400-plus-current": {
+        "family": "meson64",
+        "board": "aml-c400-plus",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "aml-c400-plus-edge": {
+        "family": "meson64",
+        "board": "aml-c400-plus",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "aml-s805-mxq-current": {
+        "family": "meson",
+        "board": "aml-s805-mxq",
+        "branch": "current",
+        "arch": "armhf"
+    },
+    "aml-s905d3-cc-current": {
+        "family": "meson64",
+        "board": "aml-s905d3-cc",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "aml-s905d3-cc-edge": {
+        "family": "meson64",
+        "board": "aml-s905d3-cc",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "aml-s9xx-box-current": {
+        "family": "meson64",
+        "board": "aml-s9xx-box",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "aml-s9xx-box-edge": {
+        "family": "meson64",
+        "board": "aml-s9xx-box",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "aml-t95z-plus-edge": {
+        "family": "meson64",
+        "board": "aml-t95z-plus",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "arduino-uno-q-edge": {
+        "family": "qrb2210",
+        "board": "arduino-uno-q",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "armsom-aim7-io-vendor": {
+        "family": "rk35xx",
+        "board": "armsom-aim7-io",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "armsom-cm5-io-vendor": {
+        "family": "generic",
+        "board": "armsom-cm5-io",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "armsom-cm5-rpi-cm4-io-vendor": {
+        "family": "generic",
+        "board": "armsom-cm5-rpi-cm4-io",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "armsom-forge1-vendor": {
+        "family": "generic",
+        "board": "armsom-forge1",
+        "branch": "vendor",
+        "arch": "armhf"
+    },
+    "armsom-sige1-vendor": {
+        "family": "generic",
+        "board": "armsom-sige1",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "armsom-sige3-vendor": {
+        "family": "generic",
+        "board": "armsom-sige3",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "armsom-sige5-vendor": {
+        "family": "generic",
+        "board": "armsom-sige5",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "armsom-sige5-edge": {
+        "family": "rockchip64",
+        "board": "armsom-sige5",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "armsom-sige7-current": {
+        "family": "rockchip64",
+        "board": "armsom-sige7",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "armsom-sige7-edge": {
+        "family": "rockchip64",
+        "board": "armsom-sige7",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "armsom-sige7-vendor": {
+        "family": "rk35xx",
+        "board": "armsom-sige7",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "armsom-w3-vendor": {
+        "family": "rk35xx",
+        "board": "armsom-w3",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "avaota-a1-legacy": {
+        "family": "sun55iw3-syterkit",
+        "board": "avaota-a1",
+        "branch": "legacy",
+        "arch": "arm64"
+    },
+    "ayn-odin2-current": {
+        "family": "sm8550",
+        "board": "ayn-odin2",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "ayn-odin2-edge": {
+        "family": "sm8550",
+        "board": "ayn-odin2",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "ayn-odin2portal-current": {
+        "family": "sm8550",
+        "board": "ayn-odin2portal",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "bananapi-current": {
+        "family": "sunxi",
+        "board": "bananapi",
+        "branch": "current",
+        "arch": "armhf"
+    },
+    "bananapi-edge": {
+        "family": "sunxi",
+        "board": "bananapi",
+        "branch": "edge",
+        "arch": "armhf"
+    },
+    "bananapi-legacy": {
+        "family": "sunxi",
+        "board": "bananapi",
+        "branch": "legacy",
+        "arch": "armhf"
+    },
+    "bananapicm4io-current": {
+        "family": "meson64",
+        "board": "bananapicm4io",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "bananapicm4io-edge": {
+        "family": "meson64",
+        "board": "bananapicm4io",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "bananapif3-legacy": {
+        "family": "spacemit",
+        "board": "bananapif3",
+        "branch": "legacy",
+        "arch": "riscv64"
+    },
+    "bananapif3-current": {
+        "family": "spacemit",
+        "board": "bananapif3",
+        "branch": "current",
+        "arch": "riscv64"
+    },
+    "bananapif3-edge": {
+        "family": "spacemit",
+        "board": "bananapif3",
+        "branch": "edge",
+        "arch": "riscv64"
+    },
+    "bananapim1plus-current": {
+        "family": "sunxi",
+        "board": "bananapim1plus",
+        "branch": "current",
+        "arch": "armhf"
+    },
+    "bananapim1plus-edge": {
+        "family": "sunxi",
+        "board": "bananapim1plus",
+        "branch": "edge",
+        "arch": "armhf"
+    },
+    "bananapim1plus-legacy": {
+        "family": "sunxi",
+        "board": "bananapim1plus",
+        "branch": "legacy",
+        "arch": "armhf"
+    },
+    "bananapim2plus-current": {
+        "family": "sunxi",
+        "board": "bananapim2plus",
+        "branch": "current",
+        "arch": "armhf"
+    },
+    "bananapim2plus-edge": {
+        "family": "sunxi",
+        "board": "bananapim2plus",
+        "branch": "edge",
+        "arch": "armhf"
+    },
+    "bananapim2plus-legacy": {
+        "family": "sunxi",
+        "board": "bananapim2plus",
+        "branch": "legacy",
+        "arch": "armhf"
+    },
+    "bananapim2pro-current": {
+        "family": "meson64",
+        "board": "bananapim2pro",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "bananapim2pro-edge": {
+        "family": "meson64",
+        "board": "bananapim2pro",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "bananapim2s-current": {
+        "family": "meson64",
+        "board": "bananapim2s",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "bananapim2s-edge": {
+        "family": "meson64",
+        "board": "bananapim2s",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "bananapim2ultra-current": {
+        "family": "sunxi",
+        "board": "bananapim2ultra",
+        "branch": "current",
+        "arch": "armhf"
+    },
+    "bananapim2ultra-edge": {
+        "family": "sunxi",
+        "board": "bananapim2ultra",
+        "branch": "edge",
+        "arch": "armhf"
+    },
+    "bananapim2ultra-legacy": {
+        "family": "sunxi",
+        "board": "bananapim2ultra",
+        "branch": "legacy",
+        "arch": "armhf"
+    },
+    "bananapim2zero-current": {
+        "family": "sunxi",
+        "board": "bananapim2zero",
+        "branch": "current",
+        "arch": "armhf"
+    },
+    "bananapim2zero-edge": {
+        "family": "sunxi",
+        "board": "bananapim2zero",
+        "branch": "edge",
+        "arch": "armhf"
+    },
+    "bananapim2zero-legacy": {
+        "family": "sunxi",
+        "board": "bananapim2zero",
+        "branch": "legacy",
+        "arch": "armhf"
+    },
+    "bananapim3-current": {
+        "family": "sunxi",
+        "board": "bananapim3",
+        "branch": "current",
+        "arch": "armhf"
+    },
+    "bananapim3-edge": {
+        "family": "sunxi",
+        "board": "bananapim3",
+        "branch": "edge",
+        "arch": "armhf"
+    },
+    "bananapim3-legacy": {
+        "family": "sunxi",
+        "board": "bananapim3",
+        "branch": "legacy",
+        "arch": "armhf"
+    },
+    "bananapim4berry-current": {
+        "family": "sunxi64",
+        "board": "bananapim4berry",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "bananapim4berry-edge": {
+        "family": "sunxi64",
+        "board": "bananapim4berry",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "bananapim4zero-current": {
+        "family": "sunxi64",
+        "board": "bananapim4zero",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "bananapim4zero-edge": {
+        "family": "sunxi64",
+        "board": "bananapim4zero",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "bananapim5-current": {
+        "family": "meson64",
+        "board": "bananapim5",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "bananapim5-edge": {
+        "family": "meson64",
+        "board": "bananapim5",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "bananapim5pro-edge": {
+        "family": "rockchip64",
+        "board": "bananapim5pro",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "bananapim5pro-vendor": {
+        "family": "generic",
+        "board": "bananapim5pro",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "bananapim64-current": {
+        "family": "sunxi64",
+        "board": "bananapim64",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "bananapim64-edge": {
+        "family": "sunxi64",
+        "board": "bananapim64",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "bananapim64-legacy": {
+        "family": "sunxi64",
+        "board": "bananapim64",
+        "branch": "legacy",
+        "arch": "arm64"
+    },
+    "bananapim7-current": {
+        "family": "rockchip64",
+        "board": "bananapim7",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "bananapim7-edge": {
+        "family": "rockchip64",
+        "board": "bananapim7",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "bananapim7-vendor": {
+        "family": "rk35xx",
+        "board": "bananapim7",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "bananapipro-current": {
+        "family": "sunxi",
+        "board": "bananapipro",
+        "branch": "current",
+        "arch": "armhf"
+    },
+    "bananapipro-edge": {
+        "family": "sunxi",
+        "board": "bananapipro",
+        "branch": "edge",
+        "arch": "armhf"
+    },
+    "bananapipro-legacy": {
+        "family": "sunxi",
+        "board": "bananapipro",
+        "branch": "legacy",
+        "arch": "armhf"
+    },
+    "bananapir2-current": {
+        "family": "generic",
+        "board": "bananapir2",
+        "branch": "current",
+        "arch": "armhf"
+    },
+    "bananapir2pro-current": {
+        "family": "rockchip64",
+        "board": "bananapir2pro",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "bananapir2pro-edge": {
+        "family": "rockchip64",
+        "board": "bananapir2pro",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "beaglebone-ai64-vendor": {
+        "family": "k3",
+        "board": "beaglebone-ai64",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "beaglebone-ai64-vendor-rt": {
+        "family": "k3",
+        "board": "beaglebone-ai64",
+        "branch": "vendor-rt",
+        "arch": "arm64"
+    },
+    "beaglebone-ai64-edge": {
+        "family": "k3",
+        "board": "beaglebone-ai64",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "beagleplay-vendor": {
+        "family": "k3",
+        "board": "beagleplay",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "beagleplay-vendor-rt": {
+        "family": "k3",
+        "board": "beagleplay",
+        "branch": "vendor-rt",
+        "arch": "arm64"
+    },
+    "beagleplay-edge": {
+        "family": "k3",
+        "board": "beagleplay",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "beagley-ai-vendor": {
+        "family": "k3-beagle",
+        "board": "beagley-ai",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "beagley-ai-vendor-rt": {
+        "family": "k3-beagle",
+        "board": "beagley-ai",
+        "branch": "vendor-rt",
+        "arch": "arm64"
+    },
+    "beagley-ai-edge": {
+        "family": "k3-beagle",
+        "board": "beagley-ai",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "beelinkx2-current": {
+        "family": "sunxi",
+        "board": "beelinkx2",
+        "branch": "current",
+        "arch": "armhf"
+    },
+    "beelinkx2-edge": {
+        "family": "sunxi",
+        "board": "beelinkx2",
+        "branch": "edge",
+        "arch": "armhf"
+    },
+    "beelinkx2-legacy": {
+        "family": "sunxi",
+        "board": "beelinkx2",
+        "branch": "legacy",
+        "arch": "armhf"
+    },
+    "bestv-r3300-l-current": {
+        "family": "meson64",
+        "board": "bestv-r3300-l",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "bestv-r3300-l-edge": {
+        "family": "meson64",
+        "board": "bestv-r3300-l",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "bigtreetech-cb1-current": {
+        "family": "sunxi64",
+        "board": "bigtreetech-cb1",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "bigtreetech-cb1-edge": {
+        "family": "sunxi64",
+        "board": "bigtreetech-cb1",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "bigtreetech-cb2-current": {
+        "family": "rockchip64",
+        "board": "bigtreetech-cb2",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "bigtreetech-cb2-edge": {
+        "family": "rockchip64",
+        "board": "bigtreetech-cb2",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "cainiao-cniot-core-current": {
+        "family": "meson64",
+        "board": "cainiao-cniot-core",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "cainiao-cniot-core-edge": {
+        "family": "meson64",
+        "board": "cainiao-cniot-core",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "cherryba-m1-current": {
+        "family": "sunxi64",
+        "board": "cherryba-m1",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "cherryba-m1-edge": {
+        "family": "sunxi64",
+        "board": "cherryba-m1",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "clockworkpi-a06-current": {
+        "family": "rockchip64",
+        "board": "clockworkpi-a06",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "clockworkpi-a06-edge": {
+        "family": "rockchip64",
+        "board": "clockworkpi-a06",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "cm3588-nas-current": {
+        "family": "rockchip64",
+        "board": "cm3588-nas",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "cm3588-nas-edge": {
+        "family": "rockchip64",
+        "board": "cm3588-nas",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "cm3588-nas-vendor": {
+        "family": "rk35xx",
+        "board": "cm3588-nas",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "coolpi-cm5-edge": {
+        "family": "rockchip64",
+        "board": "coolpi-cm5",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "coolpi-genbook-edge": {
+        "family": "rockchip64",
+        "board": "coolpi-genbook",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "coolpi-genbook-vendor": {
+        "family": "rk35xx",
+        "board": "coolpi-genbook",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "cubieboard2-current": {
+        "family": "sunxi",
+        "board": "cubieboard2",
+        "branch": "current",
+        "arch": "armhf"
+    },
+    "cubieboard2-edge": {
+        "family": "sunxi",
+        "board": "cubieboard2",
+        "branch": "edge",
+        "arch": "armhf"
+    },
+    "cubieboard2-legacy": {
+        "family": "sunxi",
+        "board": "cubieboard2",
+        "branch": "legacy",
+        "arch": "armhf"
+    },
+    "cubietruck-current": {
+        "family": "sunxi",
+        "board": "cubietruck",
+        "branch": "current",
+        "arch": "armhf"
+    },
+    "cubietruck-edge": {
+        "family": "sunxi",
+        "board": "cubietruck",
+        "branch": "edge",
+        "arch": "armhf"
+    },
+    "cubietruck-legacy": {
+        "family": "sunxi",
+        "board": "cubietruck",
+        "branch": "legacy",
+        "arch": "armhf"
+    },
+    "cyber-aib-rk3588-vendor": {
+        "family": "rk35xx",
+        "board": "cyber-aib-rk3588",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "cyber-aib-rk3588-edge": {
+        "family": "rockchip64",
+        "board": "cyber-aib-rk3588",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "dg-svr-865-tiny-current": {
+        "family": "sm8250",
+        "board": "dg-svr-865-tiny",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "dg-svr-865-tiny-edge": {
+        "family": "sm8250",
+        "board": "dg-svr-865-tiny",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "dshanpi-a1-vendor": {
+        "family": "generic",
+        "board": "dshanpi-a1",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "dshanpi-r1-vendor": {
+        "family": "generic",
+        "board": "dshanpi-r1",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "dusun-dsom-010r-current": {
+        "family": "rockchip64",
+        "board": "dusun-dsom-010r",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "dusun-dsom-010r-edge": {
+        "family": "rockchip64",
+        "board": "dusun-dsom-010r",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "easepi-a2-current": {
+        "family": "rockchip64",
+        "board": "easepi-a2",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "easepi-a2-edge": {
+        "family": "rockchip64",
+        "board": "easepi-a2",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "easepi-a2-vendor": {
+        "family": "generic",
+        "board": "easepi-a2",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "easepi-r2-current": {
+        "family": "rockchip64",
+        "board": "easepi-r2",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "easepi-r2-edge": {
+        "family": "rockchip64",
+        "board": "easepi-r2",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "easepi-r2-vendor": {
+        "family": "rk35xx",
+        "board": "easepi-r2",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "ebyte-ecb41-pge-vendor": {
+        "family": "generic",
+        "board": "ebyte-ecb41-pge",
+        "branch": "vendor",
+        "arch": "armhf"
+    },
+    "fine3399-current": {
+        "family": "rockchip64",
+        "board": "fine3399",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "fine3399-edge": {
+        "family": "rockchip64",
+        "board": "fine3399",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "firefly-itx-3588j-vendor": {
+        "family": "rk35xx",
+        "board": "firefly-itx-3588j",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "firefly-rk3399-current": {
+        "family": "rockchip64",
+        "board": "firefly-rk3399",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "firefly-rk3399-edge": {
+        "family": "rockchip64",
+        "board": "firefly-rk3399",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "forlinx-ok3506-s12-vendor": {
+        "family": "generic",
+        "board": "forlinx-ok3506-s12",
+        "branch": "vendor",
+        "arch": "armhf"
+    },
+    "fxblox-rk1-vendor": {
+        "family": "rk35xx",
+        "board": "fxblox-rk1",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "h96-tvbox-3566-current": {
+        "family": "rockchip64",
+        "board": "h96-tvbox-3566",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "h96-tvbox-3566-edge": {
+        "family": "rockchip64",
+        "board": "h96-tvbox-3566",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "helios64-current": {
+        "family": "rockchip64",
+        "board": "helios64",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "helios64-edge": {
+        "family": "rockchip64",
+        "board": "helios64",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "hikey960-current": {
+        "family": "arm64",
+        "board": "hikey960",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "hikey960-edge": {
+        "family": "arm64",
+        "board": "hikey960",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "hinlink-h28k-vendor": {
+        "family": "generic",
+        "board": "hinlink-h28k",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "hinlink-h66k-current": {
+        "family": "rockchip64",
+        "board": "hinlink-h66k",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "hinlink-h66k-edge": {
+        "family": "rockchip64",
+        "board": "hinlink-h66k",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "hinlink-h68k-current": {
+        "family": "rockchip64",
+        "board": "hinlink-h68k",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "hinlink-h68k-edge": {
+        "family": "rockchip64",
+        "board": "hinlink-h68k",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "hinlink-h88k-vendor": {
+        "family": "rk35xx",
+        "board": "hinlink-h88k",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "hinlink-h88k-edge": {
+        "family": "rockchip64",
+        "board": "hinlink-h88k",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "hinlink-hnas-current": {
+        "family": "rockchip64",
+        "board": "hinlink-hnas",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "hinlink-hnas-edge": {
+        "family": "rockchip64",
+        "board": "hinlink-hnas",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "hinlink-ht2-vendor": {
+        "family": "generic",
+        "board": "hinlink-ht2",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "imb3588-vendor": {
+        "family": "rk35xx",
+        "board": "imb3588",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "indiedroid-nova-current": {
+        "family": "rockchip64",
+        "board": "indiedroid-nova",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "indiedroid-nova-edge": {
+        "family": "rockchip64",
+        "board": "indiedroid-nova",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "indiedroid-nova-vendor": {
+        "family": "rk35xx",
+        "board": "indiedroid-nova",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "inovato-quadra-current": {
+        "family": "sunxi64",
+        "board": "inovato-quadra",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "inovato-quadra-edge": {
+        "family": "sunxi64",
+        "board": "inovato-quadra",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "jethubj200-current": {
+        "family": "meson64",
+        "board": "jethubj200",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "jethubj200-edge": {
+        "family": "meson64",
+        "board": "jethubj200",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "jp-tvbox-3566-current": {
+        "family": "rockchip64",
+        "board": "jp-tvbox-3566",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "jp-tvbox-3566-edge": {
+        "family": "rockchip64",
+        "board": "jp-tvbox-3566",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "khadas-edge-current": {
+        "family": "rockchip64",
+        "board": "khadas-edge",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "khadas-edge-edge": {
+        "family": "rockchip64",
+        "board": "khadas-edge",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "khadas-edge2-current": {
+        "family": "rockchip64",
+        "board": "khadas-edge2",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "khadas-edge2-edge": {
+        "family": "rockchip64",
+        "board": "khadas-edge2",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "khadas-edge2-vendor": {
+        "family": "rk35xx",
+        "board": "khadas-edge2",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "khadas-vim1-current": {
+        "family": "meson64",
+        "board": "khadas-vim1",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "khadas-vim1-edge": {
+        "family": "meson64",
+        "board": "khadas-vim1",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "khadas-vim1s-legacy": {
+        "family": "meson-s4t7",
+        "board": "khadas-vim1s",
+        "branch": "legacy",
+        "arch": "arm64"
+    },
+    "khadas-vim2-current": {
+        "family": "meson64",
+        "board": "khadas-vim2",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "khadas-vim2-edge": {
+        "family": "meson64",
+        "board": "khadas-vim2",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "khadas-vim3-current": {
+        "family": "meson64",
+        "board": "khadas-vim3",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "khadas-vim3-edge": {
+        "family": "meson64",
+        "board": "khadas-vim3",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "khadas-vim3l-current": {
+        "family": "meson64",
+        "board": "khadas-vim3l",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "khadas-vim3l-edge": {
+        "family": "meson64",
+        "board": "khadas-vim3l",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "khadas-vim4-legacy": {
+        "family": "meson-s4t7",
+        "board": "khadas-vim4",
+        "branch": "legacy",
+        "arch": "arm64"
+    },
+    "kickpik2b-current": {
+        "family": "sunxi64",
+        "board": "kickpik2b",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "kickpik2b-edge": {
+        "family": "sunxi64",
+        "board": "kickpik2b",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "lafrite-current": {
+        "family": "meson64",
+        "board": "lafrite",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "lafrite-edge": {
+        "family": "meson64",
+        "board": "lafrite",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "lckfb-taishanpi-vendor": {
+        "family": "generic",
+        "board": "lckfb-taishanpi",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "lckfb-taishanpi-current": {
+        "family": "rockchip64",
+        "board": "lckfb-taishanpi",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "lckfb-taishanpi-edge": {
+        "family": "rockchip64",
+        "board": "lckfb-taishanpi",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "leez-p710-current": {
+        "family": "rockchip64",
+        "board": "leez-p710",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "leez-p710-edge": {
+        "family": "rockchip64",
+        "board": "leez-p710",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "lepotato-current": {
+        "family": "meson64",
+        "board": "lepotato",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "lepotato-edge": {
+        "family": "meson64",
+        "board": "lepotato",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "lime-current": {
+        "family": "sunxi",
+        "board": "lime",
+        "branch": "current",
+        "arch": "armhf"
+    },
+    "lime-edge": {
+        "family": "sunxi",
+        "board": "lime",
+        "branch": "edge",
+        "arch": "armhf"
+    },
+    "lime-legacy": {
+        "family": "sunxi",
+        "board": "lime",
+        "branch": "legacy",
+        "arch": "armhf"
+    },
+    "lime-a64-current": {
+        "family": "sunxi64",
+        "board": "lime-a64",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "lime-a64-edge": {
+        "family": "sunxi64",
+        "board": "lime-a64",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "lime-a64-legacy": {
+        "family": "sunxi64",
+        "board": "lime-a64",
+        "branch": "legacy",
+        "arch": "arm64"
+    },
+    "lime2-current": {
+        "family": "sunxi",
+        "board": "lime2",
+        "branch": "current",
+        "arch": "armhf"
+    },
+    "lime2-edge": {
+        "family": "sunxi",
+        "board": "lime2",
+        "branch": "edge",
+        "arch": "armhf"
+    },
+    "lime2-legacy": {
+        "family": "sunxi",
+        "board": "lime2",
+        "branch": "legacy",
+        "arch": "armhf"
+    },
+    "longanpi-3h-current": {
+        "family": "sunxi64",
+        "board": "longanpi-3h",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "longanpi-3h-edge": {
+        "family": "sunxi64",
+        "board": "longanpi-3h",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "longanpi-4b-legacy": {
+        "family": "sun55iw3-syterkit",
+        "board": "longanpi-4b",
+        "branch": "legacy",
+        "arch": "arm64"
+    },
+    "lubancat2-edge": {
+        "family": "rockchip64",
+        "board": "lubancat2",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "luckfox-core3566-vendor": {
+        "family": "generic",
+        "board": "luckfox-core3566",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "luckfox-lyra-plus-vendor": {
+        "family": "generic",
+        "board": "luckfox-lyra-plus",
+        "branch": "vendor",
+        "arch": "armhf"
+    },
+    "luckfox-lyra-ultra-w-vendor": {
+        "family": "generic",
+        "board": "luckfox-lyra-ultra-w",
+        "branch": "vendor",
+        "arch": "armhf"
+    },
+    "luckfox-lyra-zero-w-vendor": {
+        "family": "generic",
+        "board": "luckfox-lyra-zero-w",
+        "branch": "vendor",
+        "arch": "armhf"
+    },
+    "luckfox-pico-max-vendor": {
+        "family": "generic",
+        "board": "luckfox-pico-max",
+        "branch": "vendor",
+        "arch": "armhf"
+    },
+    "luckfox-pico-mini-vendor": {
+        "family": "generic",
+        "board": "luckfox-pico-mini",
+        "branch": "vendor",
+        "arch": "armhf"
+    },
+    "mangopi-m28k-vendor": {
+        "family": "generic",
+        "board": "mangopi-m28k",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "mba8mpxl-current": {
+        "family": "generic",
+        "board": "mba8mpxl",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "mba8mpxl-edge": {
+        "family": "generic",
+        "board": "mba8mpxl",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "mba8mpxl-ras314-current": {
+        "family": "generic",
+        "board": "mba8mpxl-ras314",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "mba8mpxl-ras314-edge": {
+        "family": "generic",
+        "board": "mba8mpxl-ras314",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "mba93xxla-mini-current": {
+        "family": "generic",
+        "board": "mba93xxla-mini",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "mba93xxla-mini-edge": {
+        "family": "generic",
+        "board": "mba93xxla-mini",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "mekotronics-r58-4x4-edge": {
+        "family": "rockchip64",
+        "board": "mekotronics-r58-4x4",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "mekotronics-r58-4x4-vendor": {
+        "family": "rk35xx",
+        "board": "mekotronics-r58-4x4",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "mekotronics-r58-minipc-vendor": {
+        "family": "rk35xx",
+        "board": "mekotronics-r58-minipc",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "mekotronics-r58hd-vendor": {
+        "family": "rk35xx",
+        "board": "mekotronics-r58hd",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "mekotronics-r58s2-vendor": {
+        "family": "rk35xx",
+        "board": "mekotronics-r58s2",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "mekotronics-r58x-vendor": {
+        "family": "rk35xx",
+        "board": "mekotronics-r58x",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "mekotronics-r58x-4g-edge": {
+        "family": "rockchip64",
+        "board": "mekotronics-r58x-4g",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "mekotronics-r58x-4g-vendor": {
+        "family": "rk35xx",
+        "board": "mekotronics-r58x-4g",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "mekotronics-r58x-pro-edge": {
+        "family": "rockchip64",
+        "board": "mekotronics-r58x-pro",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "mekotronics-r58x-pro-vendor": {
+        "family": "rk35xx",
+        "board": "mekotronics-r58x-pro",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "mixtile-blade3-vendor": {
+        "family": "rk35xx",
+        "board": "mixtile-blade3",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "mixtile-core3588e-edge": {
+        "family": "rockchip64",
+        "board": "mixtile-core3588e",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "mixtile-core3588e-vendor": {
+        "family": "rk35xx",
+        "board": "mixtile-core3588e",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "mixtile-edge2-current": {
+        "family": "rockchip64",
+        "board": "mixtile-edge2",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "mixtile-edge2-edge": {
+        "family": "rockchip64",
+        "board": "mixtile-edge2",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "mixtile-edge2-vendor": {
+        "family": "generic",
+        "board": "mixtile-edge2",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "musebook-legacy": {
+        "family": "spacemit",
+        "board": "musebook",
+        "branch": "legacy",
+        "arch": "riscv64"
+    },
+    "musepipro-legacy": {
+        "family": "spacemit",
+        "board": "musepipro",
+        "branch": "legacy",
+        "arch": "riscv64"
+    },
+    "musepipro-current": {
+        "family": "spacemit",
+        "board": "musepipro",
+        "branch": "current",
+        "arch": "riscv64"
+    },
+    "musepipro-edge": {
+        "family": "spacemit",
+        "board": "musepipro",
+        "branch": "edge",
+        "arch": "riscv64"
+    },
+    "nanopct4-current": {
+        "family": "rockchip64",
+        "board": "nanopct4",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "nanopct4-edge": {
+        "family": "rockchip64",
+        "board": "nanopct4",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "nanopct6-current": {
+        "family": "rockchip64",
+        "board": "nanopct6",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "nanopct6-edge": {
+        "family": "rockchip64",
+        "board": "nanopct6",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "nanopct6-vendor": {
+        "family": "rk35xx",
+        "board": "nanopct6",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "nanopct6-lts-current": {
+        "family": "rockchip64",
+        "board": "nanopct6-lts",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "nanopct6-lts-edge": {
+        "family": "rockchip64",
+        "board": "nanopct6-lts",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "nanopct6-lts-vendor": {
+        "family": "rk35xx",
+        "board": "nanopct6-lts",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "nanopi-m5-current": {
+        "family": "rockchip64",
+        "board": "nanopi-m5",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "nanopi-m5-edge": {
+        "family": "rockchip64",
+        "board": "nanopi-m5",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "nanopi-m5-vendor": {
+        "family": "generic",
+        "board": "nanopi-m5",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "nanopi-m6-current": {
+        "family": "rockchip64",
+        "board": "nanopi-m6",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "nanopi-m6-edge": {
+        "family": "rockchip64",
+        "board": "nanopi-m6",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "nanopi-m6-vendor": {
+        "family": "rk35xx",
+        "board": "nanopi-m6",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "nanopi-r3s-lts-current": {
+        "family": "rockchip64",
+        "board": "nanopi-r3s-lts",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "nanopi-r3s-lts-edge": {
+        "family": "rockchip64",
+        "board": "nanopi-r3s-lts",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "nanopi-r5c-current": {
+        "family": "rockchip64",
+        "board": "nanopi-r5c",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "nanopi-r5c-edge": {
+        "family": "rockchip64",
+        "board": "nanopi-r5c",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "nanopi-r5s-current": {
+        "family": "rockchip64",
+        "board": "nanopi-r5s",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "nanopi-r5s-edge": {
+        "family": "rockchip64",
+        "board": "nanopi-r5s",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "nanopi-r6c-current": {
+        "family": "rockchip64",
+        "board": "nanopi-r6c",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "nanopi-r6c-edge": {
+        "family": "rockchip64",
+        "board": "nanopi-r6c",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "nanopi-r6c-vendor": {
+        "family": "rk35xx",
+        "board": "nanopi-r6c",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "nanopi-r6s-current": {
+        "family": "rockchip64",
+        "board": "nanopi-r6s",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "nanopi-r6s-edge": {
+        "family": "rockchip64",
+        "board": "nanopi-r6s",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "nanopi-r6s-vendor": {
+        "family": "rk35xx",
+        "board": "nanopi-r6s",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "nanopi-r76s-vendor": {
+        "family": "generic",
+        "board": "nanopi-r76s",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "nanopi-r76s-edge": {
+        "family": "rockchip64",
+        "board": "nanopi-r76s",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "nanopia64-current": {
+        "family": "sunxi64",
+        "board": "nanopia64",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "nanopia64-edge": {
+        "family": "sunxi64",
+        "board": "nanopia64",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "nanopia64-legacy": {
+        "family": "sunxi64",
+        "board": "nanopia64",
+        "branch": "legacy",
+        "arch": "arm64"
+    },
+    "nanopik1plus-current": {
+        "family": "sunxi64",
+        "board": "nanopik1plus",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "nanopik1plus-edge": {
+        "family": "sunxi64",
+        "board": "nanopik1plus",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "nanopik1plus-legacy": {
+        "family": "sunxi64",
+        "board": "nanopik1plus",
+        "branch": "legacy",
+        "arch": "arm64"
+    },
+    "nanopik2-s905-current": {
+        "family": "meson64",
+        "board": "nanopik2-s905",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "nanopik2-s905-edge": {
+        "family": "meson64",
+        "board": "nanopik2-s905",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "nanopim4-current": {
+        "family": "rockchip64",
+        "board": "nanopim4",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "nanopim4-edge": {
+        "family": "rockchip64",
+        "board": "nanopim4",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "nanopim4v2-current": {
+        "family": "rockchip64",
+        "board": "nanopim4v2",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "nanopim4v2-edge": {
+        "family": "rockchip64",
+        "board": "nanopim4v2",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "nanopineo4-current": {
+        "family": "rockchip64",
+        "board": "nanopineo4",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "nanopineo4-edge": {
+        "family": "rockchip64",
+        "board": "nanopineo4",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "norco-emb-3531-current": {
+        "family": "rockchip64",
+        "board": "norco-emb-3531",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "norco-emb-3531-edge": {
+        "family": "rockchip64",
+        "board": "norco-emb-3531",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "numaker-iot-ma35d16f90-vendor": {
+        "family": "nuvoton-ma35d1",
+        "board": "numaker-iot-ma35d16f90",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "odroidc1-current": {
+        "family": "meson",
+        "board": "odroidc1",
+        "branch": "current",
+        "arch": "armhf"
+    },
+    "odroidc2-current": {
+        "family": "meson64",
+        "board": "odroidc2",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "odroidc2-edge": {
+        "family": "meson64",
+        "board": "odroidc2",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "odroidc4-current": {
+        "family": "meson64",
+        "board": "odroidc4",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "odroidc4-edge": {
+        "family": "meson64",
+        "board": "odroidc4",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "odroidhc4-current": {
+        "family": "meson64",
+        "board": "odroidhc4",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "odroidhc4-edge": {
+        "family": "meson64",
+        "board": "odroidhc4",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "odroidm1-current": {
+        "family": "rockchip64",
+        "board": "odroidm1",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "odroidm1-edge": {
+        "family": "rockchip64",
+        "board": "odroidm1",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "odroidm1s-current": {
+        "family": "rockchip64",
+        "board": "odroidm1s",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "odroidm1s-edge": {
+        "family": "rockchip64",
+        "board": "odroidm1s",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "odroidm2-current": {
+        "family": "rockchip64",
+        "board": "odroidm2",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "odroidm2-edge": {
+        "family": "rockchip64",
+        "board": "odroidm2",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "odroidn2-current": {
+        "family": "meson64",
+        "board": "odroidn2",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "odroidn2-edge": {
+        "family": "meson64",
+        "board": "odroidn2",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "odroidn2l-current": {
+        "family": "meson64",
+        "board": "odroidn2l",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "odroidn2l-edge": {
+        "family": "meson64",
+        "board": "odroidn2l",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "odroidxu4-current": {
+        "family": "generic",
+        "board": "odroidxu4",
+        "branch": "current",
+        "arch": "armhf"
+    },
+    "odroidxu4-edge": {
+        "family": "generic",
+        "board": "odroidxu4",
+        "branch": "edge",
+        "arch": "armhf"
+    },
+    "olimex-a20-olinuxino-micro-current": {
+        "family": "sunxi",
+        "board": "olimex-a20-olinuxino-micro",
+        "branch": "current",
+        "arch": "armhf"
+    },
+    "olimex-a20-olinuxino-micro-edge": {
+        "family": "sunxi",
+        "board": "olimex-a20-olinuxino-micro",
+        "branch": "edge",
+        "arch": "armhf"
+    },
+    "olimex-a20-olinuxino-micro-legacy": {
+        "family": "sunxi",
+        "board": "olimex-a20-olinuxino-micro",
+        "branch": "legacy",
+        "arch": "armhf"
+    },
+    "olimex-teres-a64-current": {
+        "family": "sunxi64",
+        "board": "olimex-teres-a64",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "olimex-teres-a64-edge": {
+        "family": "sunxi64",
+        "board": "olimex-teres-a64",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "olimex-teres-a64-legacy": {
+        "family": "sunxi64",
+        "board": "olimex-teres-a64",
+        "branch": "legacy",
+        "arch": "arm64"
+    },
+    "onecloud-current": {
+        "family": "meson",
+        "board": "onecloud",
+        "branch": "current",
+        "arch": "armhf"
+    },
+    "oneplus-kebab-current": {
+        "family": "sm8250",
+        "board": "oneplus-kebab",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "orangepi-4a-edge": {
+        "family": "sunxi64",
+        "board": "orangepi-4a",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "orangepi-rk3399-current": {
+        "family": "rockchip64",
+        "board": "orangepi-rk3399",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "orangepi-rk3399-edge": {
+        "family": "rockchip64",
+        "board": "orangepi-rk3399",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "orangepi2-current": {
+        "family": "sunxi",
+        "board": "orangepi2",
+        "branch": "current",
+        "arch": "armhf"
+    },
+    "orangepi2-edge": {
+        "family": "sunxi",
+        "board": "orangepi2",
+        "branch": "edge",
+        "arch": "armhf"
+    },
+    "orangepi2-legacy": {
+        "family": "sunxi",
+        "board": "orangepi2",
+        "branch": "legacy",
+        "arch": "armhf"
+    },
+    "orangepi3-current": {
+        "family": "sunxi64",
+        "board": "orangepi3",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "orangepi3-edge": {
+        "family": "sunxi64",
+        "board": "orangepi3",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "orangepi3-legacy": {
+        "family": "sunxi64",
+        "board": "orangepi3",
+        "branch": "legacy",
+        "arch": "arm64"
+    },
+    "orangepi3-lts-legacy": {
+        "family": "sunxi64",
+        "board": "orangepi3-lts",
+        "branch": "legacy",
+        "arch": "arm64"
+    },
+    "orangepi3-lts-current": {
+        "family": "sunxi64",
+        "board": "orangepi3-lts",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "orangepi3-lts-edge": {
+        "family": "sunxi64",
+        "board": "orangepi3-lts",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "orangepi3b-vendor": {
+        "family": "generic",
+        "board": "orangepi3b",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "orangepi3b-current": {
+        "family": "rockchip64",
+        "board": "orangepi3b",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "orangepi3b-edge": {
+        "family": "rockchip64",
+        "board": "orangepi3b",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "orangepi4-current": {
+        "family": "rockchip64",
+        "board": "orangepi4",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "orangepi4-edge": {
+        "family": "rockchip64",
+        "board": "orangepi4",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "orangepi4-lts-current": {
+        "family": "rockchip64",
+        "board": "orangepi4-lts",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "orangepi4-lts-edge": {
+        "family": "rockchip64",
+        "board": "orangepi4-lts",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "orangepi5-current": {
+        "family": "rockchip64",
+        "board": "orangepi5",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "orangepi5-edge": {
+        "family": "rockchip64",
+        "board": "orangepi5",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "orangepi5-vendor": {
+        "family": "rk35xx",
+        "board": "orangepi5",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "orangepi5-max-vendor": {
+        "family": "rk35xx",
+        "board": "orangepi5-max",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "orangepi5-max-current": {
+        "family": "rockchip64",
+        "board": "orangepi5-max",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "orangepi5-max-edge": {
+        "family": "rockchip64",
+        "board": "orangepi5-max",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "orangepi5-plus-current": {
+        "family": "rockchip64",
+        "board": "orangepi5-plus",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "orangepi5-plus-edge": {
+        "family": "rockchip64",
+        "board": "orangepi5-plus",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "orangepi5-plus-vendor": {
+        "family": "rk35xx",
+        "board": "orangepi5-plus",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "orangepi5-ultra-vendor": {
+        "family": "rk35xx",
+        "board": "orangepi5-ultra",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "orangepi5-ultra-current": {
+        "family": "rockchip64",
+        "board": "orangepi5-ultra",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "orangepi5-ultra-edge": {
+        "family": "rockchip64",
+        "board": "orangepi5-ultra",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "orangepi5b-edge": {
+        "family": "rockchip64",
+        "board": "orangepi5b",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "orangepi5b-vendor": {
+        "family": "rk35xx",
+        "board": "orangepi5b",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "orangepi5pro-current": {
+        "family": "rockchip64",
+        "board": "orangepi5pro",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "orangepi5pro-edge": {
+        "family": "rockchip64",
+        "board": "orangepi5pro",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "orangepi5pro-vendor": {
+        "family": "rk35xx",
+        "board": "orangepi5pro",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "orangepilite-current": {
+        "family": "sunxi",
+        "board": "orangepilite",
+        "branch": "current",
+        "arch": "armhf"
+    },
+    "orangepilite-edge": {
+        "family": "sunxi",
+        "board": "orangepilite",
+        "branch": "edge",
+        "arch": "armhf"
+    },
+    "orangepilite-legacy": {
+        "family": "sunxi",
+        "board": "orangepilite",
+        "branch": "legacy",
+        "arch": "armhf"
+    },
+    "orangepilite2-current": {
+        "family": "sunxi64",
+        "board": "orangepilite2",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "orangepilite2-edge": {
+        "family": "sunxi64",
+        "board": "orangepilite2",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "orangepilite2-legacy": {
+        "family": "sunxi64",
+        "board": "orangepilite2",
+        "branch": "legacy",
+        "arch": "arm64"
+    },
+    "orangepione-current": {
+        "family": "sunxi",
+        "board": "orangepione",
+        "branch": "current",
+        "arch": "armhf"
+    },
+    "orangepione-edge": {
+        "family": "sunxi",
+        "board": "orangepione",
+        "branch": "edge",
+        "arch": "armhf"
+    },
+    "orangepione-legacy": {
+        "family": "sunxi",
+        "board": "orangepione",
+        "branch": "legacy",
+        "arch": "armhf"
+    },
+    "orangepioneplus-current": {
+        "family": "sunxi64",
+        "board": "orangepioneplus",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "orangepioneplus-edge": {
+        "family": "sunxi64",
+        "board": "orangepioneplus",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "orangepioneplus-legacy": {
+        "family": "sunxi64",
+        "board": "orangepioneplus",
+        "branch": "legacy",
+        "arch": "arm64"
+    },
+    "orangepipc-current": {
+        "family": "sunxi",
+        "board": "orangepipc",
+        "branch": "current",
+        "arch": "armhf"
+    },
+    "orangepipc-edge": {
+        "family": "sunxi",
+        "board": "orangepipc",
+        "branch": "edge",
+        "arch": "armhf"
+    },
+    "orangepipc-legacy": {
+        "family": "sunxi",
+        "board": "orangepipc",
+        "branch": "legacy",
+        "arch": "armhf"
+    },
+    "orangepipc2-current": {
+        "family": "sunxi64",
+        "board": "orangepipc2",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "orangepipc2-edge": {
+        "family": "sunxi64",
+        "board": "orangepipc2",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "orangepipc2-legacy": {
+        "family": "sunxi64",
+        "board": "orangepipc2",
+        "branch": "legacy",
+        "arch": "arm64"
+    },
+    "orangepipcplus-current": {
+        "family": "sunxi",
+        "board": "orangepipcplus",
+        "branch": "current",
+        "arch": "armhf"
+    },
+    "orangepipcplus-edge": {
+        "family": "sunxi",
+        "board": "orangepipcplus",
+        "branch": "edge",
+        "arch": "armhf"
+    },
+    "orangepipcplus-legacy": {
+        "family": "sunxi",
+        "board": "orangepipcplus",
+        "branch": "legacy",
+        "arch": "armhf"
+    },
+    "orangepiplus-current": {
+        "family": "sunxi",
+        "board": "orangepiplus",
+        "branch": "current",
+        "arch": "armhf"
+    },
+    "orangepiplus-edge": {
+        "family": "sunxi",
+        "board": "orangepiplus",
+        "branch": "edge",
+        "arch": "armhf"
+    },
+    "orangepiplus-legacy": {
+        "family": "sunxi",
+        "board": "orangepiplus",
+        "branch": "legacy",
+        "arch": "armhf"
+    },
+    "orangepiplus2e-current": {
+        "family": "sunxi",
+        "board": "orangepiplus2e",
+        "branch": "current",
+        "arch": "armhf"
+    },
+    "orangepiplus2e-edge": {
+        "family": "sunxi",
+        "board": "orangepiplus2e",
+        "branch": "edge",
+        "arch": "armhf"
+    },
+    "orangepiplus2e-legacy": {
+        "family": "sunxi",
+        "board": "orangepiplus2e",
+        "branch": "legacy",
+        "arch": "armhf"
+    },
+    "orangepiprime-current": {
+        "family": "sunxi64",
+        "board": "orangepiprime",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "orangepiprime-edge": {
+        "family": "sunxi64",
+        "board": "orangepiprime",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "orangepiprime-legacy": {
+        "family": "sunxi64",
+        "board": "orangepiprime",
+        "branch": "legacy",
+        "arch": "arm64"
+    },
+    "orangepir2s-legacy": {
+        "family": "spacemit",
+        "board": "orangepir2s",
+        "branch": "legacy",
+        "arch": "riscv64"
+    },
+    "orangepir2s-current": {
+        "family": "spacemit",
+        "board": "orangepir2s",
+        "branch": "current",
+        "arch": "riscv64"
+    },
+    "orangepirv2-legacy": {
+        "family": "spacemit",
+        "board": "orangepirv2",
+        "branch": "legacy",
+        "arch": "riscv64"
+    },
+    "orangepirv2-current": {
+        "family": "spacemit",
+        "board": "orangepirv2",
+        "branch": "current",
+        "arch": "riscv64"
+    },
+    "orangepiwin-current": {
+        "family": "sunxi64",
+        "board": "orangepiwin",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "orangepiwin-edge": {
+        "family": "sunxi64",
+        "board": "orangepiwin",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "orangepiwin-legacy": {
+        "family": "sunxi64",
+        "board": "orangepiwin",
+        "branch": "legacy",
+        "arch": "arm64"
+    },
+    "orangepizero-current": {
+        "family": "sunxi",
+        "board": "orangepizero",
+        "branch": "current",
+        "arch": "armhf"
+    },
+    "orangepizero-edge": {
+        "family": "sunxi",
+        "board": "orangepizero",
+        "branch": "edge",
+        "arch": "armhf"
+    },
+    "orangepizero-legacy": {
+        "family": "sunxi",
+        "board": "orangepizero",
+        "branch": "legacy",
+        "arch": "armhf"
+    },
+    "orangepizero2-current": {
+        "family": "sunxi64",
+        "board": "orangepizero2",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "orangepizero2-edge": {
+        "family": "sunxi64",
+        "board": "orangepizero2",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "orangepizero2w-current": {
+        "family": "sunxi64",
+        "board": "orangepizero2w",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "orangepizero2w-edge": {
+        "family": "sunxi64",
+        "board": "orangepizero2w",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "orangepizero3-current": {
+        "family": "sunxi64",
+        "board": "orangepizero3",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "orangepizero3-edge": {
+        "family": "sunxi64",
+        "board": "orangepizero3",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "orangepizeroplus2-h3-current": {
+        "family": "sunxi",
+        "board": "orangepizeroplus2-h3",
+        "branch": "current",
+        "arch": "armhf"
+    },
+    "orangepizeroplus2-h3-edge": {
+        "family": "sunxi",
+        "board": "orangepizeroplus2-h3",
+        "branch": "edge",
+        "arch": "armhf"
+    },
+    "orangepizeroplus2-h3-legacy": {
+        "family": "sunxi",
+        "board": "orangepizeroplus2-h3",
+        "branch": "legacy",
+        "arch": "armhf"
+    },
+    "pcduino3-current": {
+        "family": "sunxi",
+        "board": "pcduino3",
+        "branch": "current",
+        "arch": "armhf"
+    },
+    "pcduino3-edge": {
+        "family": "sunxi",
+        "board": "pcduino3",
+        "branch": "edge",
+        "arch": "armhf"
+    },
+    "pcduino3-legacy": {
+        "family": "sunxi",
+        "board": "pcduino3",
+        "branch": "legacy",
+        "arch": "armhf"
+    },
+    "photonicat2-current": {
+        "family": "rockchip64",
+        "board": "photonicat2",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "phytiumpi-current": {
+        "family": "phytium-embedded",
+        "board": "phytiumpi",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "phytiumpi-legacy": {
+        "family": "phytium-embedded",
+        "board": "phytiumpi",
+        "branch": "legacy",
+        "arch": "arm64"
+    },
+    "pine64-current": {
+        "family": "sunxi64",
+        "board": "pine64",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "pine64-edge": {
+        "family": "sunxi64",
+        "board": "pine64",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "pine64-legacy": {
+        "family": "sunxi64",
+        "board": "pine64",
+        "branch": "legacy",
+        "arch": "arm64"
+    },
+    "pine64so-current": {
+        "family": "sunxi64",
+        "board": "pine64so",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "pine64so-edge": {
+        "family": "sunxi64",
+        "board": "pine64so",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "pine64so-legacy": {
+        "family": "sunxi64",
+        "board": "pine64so",
+        "branch": "legacy",
+        "arch": "arm64"
+    },
+    "pinebook-a64-current": {
+        "family": "sunxi64",
+        "board": "pinebook-a64",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "pinebook-a64-edge": {
+        "family": "sunxi64",
+        "board": "pinebook-a64",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "pinebook-a64-legacy": {
+        "family": "sunxi64",
+        "board": "pinebook-a64",
+        "branch": "legacy",
+        "arch": "arm64"
+    },
+    "pinebook-pro-current": {
+        "family": "rockchip64",
+        "board": "pinebook-pro",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "pinebook-pro-edge": {
+        "family": "rockchip64",
+        "board": "pinebook-pro",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "pineh64-current": {
+        "family": "sunxi64",
+        "board": "pineh64",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "pineh64-edge": {
+        "family": "sunxi64",
+        "board": "pineh64",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "pineh64-legacy": {
+        "family": "sunxi64",
+        "board": "pineh64",
+        "branch": "legacy",
+        "arch": "arm64"
+    },
+    "pineh64-b-current": {
+        "family": "sunxi64",
+        "board": "pineh64-b",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "pineh64-b-edge": {
+        "family": "sunxi64",
+        "board": "pineh64-b",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "pineh64-b-legacy": {
+        "family": "sunxi64",
+        "board": "pineh64-b",
+        "branch": "legacy",
+        "arch": "arm64"
+    },
+    "pocketbeagle2-vendor": {
+        "family": "k3-beagle",
+        "board": "pocketbeagle2",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "pocketbeagle2-vendor-rt": {
+        "family": "k3-beagle",
+        "board": "pocketbeagle2",
+        "branch": "vendor-rt",
+        "arch": "arm64"
+    },
+    "pocketchip-sd-current": {
+        "family": "sunxi",
+        "board": "pocketchip-sd",
+        "branch": "current",
+        "arch": "armhf"
+    },
+    "qemu-uboot-arm64-current": {
+        "family": "arm64",
+        "board": "qemu-uboot-arm64",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "qemu-uboot-arm64-edge": {
+        "family": "arm64",
+        "board": "qemu-uboot-arm64",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "qemu-uboot-x86-current": {
+        "family": "x86",
+        "board": "qemu-uboot-x86",
+        "branch": "current",
+        "arch": "amd64"
+    },
+    "qemu-uboot-x86-edge": {
+        "family": "x86",
+        "board": "qemu-uboot-x86",
+        "branch": "edge",
+        "arch": "amd64"
+    },
+    "qemu-uefi-x86-current": {
+        "family": "x86",
+        "board": "qemu-uefi-x86",
+        "branch": "current",
+        "arch": "amd64"
+    },
+    "qemu-uefi-x86-edge": {
+        "family": "x86",
+        "board": "qemu-uefi-x86",
+        "branch": "edge",
+        "arch": "amd64"
+    },
+    "qemu-uefi-x86-legacy": {
+        "family": "x86",
+        "board": "qemu-uefi-x86",
+        "branch": "legacy",
+        "arch": "amd64"
+    },
+    "quartz64a-current": {
+        "family": "rockchip64",
+        "board": "quartz64a",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "quartz64a-edge": {
+        "family": "rockchip64",
+        "board": "quartz64a",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "quartz64b-current": {
+        "family": "rockchip64",
+        "board": "quartz64b",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "quartz64b-edge": {
+        "family": "rockchip64",
+        "board": "quartz64b",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "radxa-cm4-io-vendor": {
+        "family": "generic",
+        "board": "radxa-cm4-io",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "radxa-cm5-io-vendor": {
+        "family": "rk35xx",
+        "board": "radxa-cm5-io",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "radxa-cubie-a5e-current": {
+        "family": "sunxi64",
+        "board": "radxa-cubie-a5e",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "radxa-cubie-a5e-edge": {
+        "family": "sunxi64",
+        "board": "radxa-cubie-a5e",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "radxa-dragon-q6a-current": {
+        "family": "qcs6490",
+        "board": "radxa-dragon-q6a",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "radxa-e20c-vendor": {
+        "family": "generic",
+        "board": "radxa-e20c",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "radxa-e24c-edge": {
+        "family": "rockchip64",
+        "board": "radxa-e24c",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "radxa-e24c-vendor": {
+        "family": "rk35xx",
+        "board": "radxa-e24c",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "radxa-e25-current": {
+        "family": "rockchip64",
+        "board": "radxa-e25",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "radxa-e25-edge": {
+        "family": "rockchip64",
+        "board": "radxa-e25",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "radxa-e25-vendor": {
+        "family": "generic",
+        "board": "radxa-e25",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "radxa-e54c-vendor": {
+        "family": "rk35xx",
+        "board": "radxa-e54c",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "radxa-nio-12l-edge": {
+        "family": "genio",
+        "board": "radxa-nio-12l",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "radxa-rock-4d-vendor": {
+        "family": "generic",
+        "board": "radxa-rock-4d",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "radxa-rock-4d-edge": {
+        "family": "rockchip64",
+        "board": "radxa-rock-4d",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "radxa-zero-current": {
+        "family": "meson64",
+        "board": "radxa-zero",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "radxa-zero-edge": {
+        "family": "meson64",
+        "board": "radxa-zero",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "radxa-zero2-current": {
+        "family": "meson64",
+        "board": "radxa-zero2",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "radxa-zero2-edge": {
+        "family": "meson64",
+        "board": "radxa-zero2",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "radxa-zero3-vendor": {
+        "family": "generic",
+        "board": "radxa-zero3",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "radxa-zero3-current": {
+        "family": "rockchip64",
+        "board": "radxa-zero3",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "radxa-zero3-edge": {
+        "family": "rockchip64",
+        "board": "radxa-zero3",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "recore-current": {
+        "family": "sunxi64",
+        "board": "recore",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "recore-edge": {
+        "family": "sunxi64",
+        "board": "recore",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "recore-legacy": {
+        "family": "sunxi64",
+        "board": "recore",
+        "branch": "legacy",
+        "arch": "arm64"
+    },
+    "renegade-current": {
+        "family": "rockchip64",
+        "board": "renegade",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "renegade-edge": {
+        "family": "rockchip64",
+        "board": "renegade",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "retro-lite-cm5-vendor": {
+        "family": "rk35xx",
+        "board": "retro-lite-cm5",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "retroidpocket-rp5-current": {
+        "family": "sm8250",
+        "board": "retroidpocket-rp5",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "retroidpocket-rp5-edge": {
+        "family": "sm8250",
+        "board": "retroidpocket-rp5",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "retroidpocket-rpmini-current": {
+        "family": "sm8250",
+        "board": "retroidpocket-rpmini",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "retroidpocket-rpmini-edge": {
+        "family": "sm8250",
+        "board": "retroidpocket-rpmini",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "rk322x-box-current": {
+        "family": "generic",
+        "board": "rk322x-box",
+        "branch": "current",
+        "arch": "armhf"
+    },
+    "rk322x-box-edge": {
+        "family": "generic",
+        "board": "rk322x-box",
+        "branch": "edge",
+        "arch": "armhf"
+    },
+    "rk3318-box-current": {
+        "family": "rockchip64",
+        "board": "rk3318-box",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "rk3318-box-edge": {
+        "family": "rockchip64",
+        "board": "rk3318-box",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "rk3328-heltec-current": {
+        "family": "rockchip64",
+        "board": "rk3328-heltec",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "rk3328-heltec-edge": {
+        "family": "rockchip64",
+        "board": "rk3328-heltec",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "rk3566-box-demo-current": {
+        "family": "rockchip64",
+        "board": "rk3566-box-demo",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "rk3566-box-demo-edge": {
+        "family": "rockchip64",
+        "board": "rk3566-box-demo",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "roc-rk3399-pc-current": {
+        "family": "rockchip64",
+        "board": "roc-rk3399-pc",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "roc-rk3399-pc-edge": {
+        "family": "rockchip64",
+        "board": "roc-rk3399-pc",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "rock-2a-vendor": {
+        "family": "generic",
+        "board": "rock-2a",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "rock-2f-vendor": {
+        "family": "generic",
+        "board": "rock-2f",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "rock-3a-current": {
+        "family": "rockchip64",
+        "board": "rock-3a",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "rock-3a-edge": {
+        "family": "rockchip64",
+        "board": "rock-3a",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "rock-3a-vendor": {
+        "family": "generic",
+        "board": "rock-3a",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "rock-3c-current": {
+        "family": "rockchip64",
+        "board": "rock-3c",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "rock-3c-edge": {
+        "family": "rockchip64",
+        "board": "rock-3c",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "rock-4se-current": {
+        "family": "rockchip64",
+        "board": "rock-4se",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "rock-4se-edge": {
+        "family": "rockchip64",
+        "board": "rock-4se",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "rock-5-cm-rpi-cm4-io-vendor": {
+        "family": "rk35xx",
+        "board": "rock-5-cm-rpi-cm4-io",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "rock-5-cmio-vendor": {
+        "family": "rk35xx",
+        "board": "rock-5-cmio",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "rock-5-itx-current": {
+        "family": "rockchip64",
+        "board": "rock-5-itx",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "rock-5-itx-edge": {
+        "family": "rockchip64",
+        "board": "rock-5-itx",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "rock-5-itx-vendor": {
+        "family": "rk35xx",
+        "board": "rock-5-itx",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "rock-5a-current": {
+        "family": "rockchip64",
+        "board": "rock-5a",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "rock-5a-edge": {
+        "family": "rockchip64",
+        "board": "rock-5a",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "rock-5a-vendor": {
+        "family": "rk35xx",
+        "board": "rock-5a",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "rock-5b-current": {
+        "family": "rockchip64",
+        "board": "rock-5b",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "rock-5b-edge": {
+        "family": "rockchip64",
+        "board": "rock-5b",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "rock-5b-vendor": {
+        "family": "rk35xx",
+        "board": "rock-5b",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "rock-5b-plus-vendor": {
+        "family": "rk35xx",
+        "board": "rock-5b-plus",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "rock-5b-plus-current": {
+        "family": "rockchip64",
+        "board": "rock-5b-plus",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "rock-5b-plus-edge": {
+        "family": "rockchip64",
+        "board": "rock-5b-plus",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "rock-5c-vendor": {
+        "family": "rk35xx",
+        "board": "rock-5c",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "rock-5c-current": {
+        "family": "rockchip64",
+        "board": "rock-5c",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "rock-5c-edge": {
+        "family": "rockchip64",
+        "board": "rock-5c",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "rock-5t-vendor": {
+        "family": "rk35xx",
+        "board": "rock-5t",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "rock-5t-current": {
+        "family": "rockchip64",
+        "board": "rock-5t",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "rock64-current": {
+        "family": "rockchip64",
+        "board": "rock64",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "rock64-edge": {
+        "family": "rockchip64",
+        "board": "rock64",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "rockpi-4a-current": {
+        "family": "rockchip64",
+        "board": "rockpi-4a",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "rockpi-4a-edge": {
+        "family": "rockchip64",
+        "board": "rockpi-4a",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "rockpi-4b-current": {
+        "family": "rockchip64",
+        "board": "rockpi-4b",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "rockpi-4b-edge": {
+        "family": "rockchip64",
+        "board": "rockpi-4b",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "rockpi-4bplus-current": {
+        "family": "rockchip64",
+        "board": "rockpi-4bplus",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "rockpi-4bplus-edge": {
+        "family": "rockchip64",
+        "board": "rockpi-4bplus",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "rockpi-4c-current": {
+        "family": "rockchip64",
+        "board": "rockpi-4c",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "rockpi-4c-edge": {
+        "family": "rockchip64",
+        "board": "rockpi-4c",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "rockpi-4cplus-current": {
+        "family": "rockchip64",
+        "board": "rockpi-4cplus",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "rockpi-4cplus-edge": {
+        "family": "rockchip64",
+        "board": "rockpi-4cplus",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "rockpi-n10-current": {
+        "family": "rockchip64",
+        "board": "rockpi-n10",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "rockpi-n10-edge": {
+        "family": "rockchip64",
+        "board": "rockpi-n10",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "rockpro64-current": {
+        "family": "rockchip64",
+        "board": "rockpro64",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "rockpro64-edge": {
+        "family": "rockchip64",
+        "board": "rockpro64",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "rpi4b-current": {
+        "family": "bcm2711",
+        "board": "rpi4b",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "rpi4b-edge": {
+        "family": "bcm2711",
+        "board": "rpi4b",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "rpi4b-legacy": {
+        "family": "bcm2711",
+        "board": "rpi4b",
+        "branch": "legacy",
+        "arch": "arm64"
+    },
+    "sk-am62-lp-vendor": {
+        "family": "k3",
+        "board": "sk-am62-lp",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "sk-am62-lp-vendor-rt": {
+        "family": "k3",
+        "board": "sk-am62-lp",
+        "branch": "vendor-rt",
+        "arch": "arm64"
+    },
+    "sk-am62-lp-vendor-edge": {
+        "family": "k3",
+        "board": "sk-am62-lp",
+        "branch": "vendor-edge",
+        "arch": "arm64"
+    },
+    "sk-am62-lp-edge": {
+        "family": "k3",
+        "board": "sk-am62-lp",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "sk-am62-sip-vendor": {
+        "family": "k3",
+        "board": "sk-am62-sip",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "sk-am62-sip-vendor-rt": {
+        "family": "k3",
+        "board": "sk-am62-sip",
+        "branch": "vendor-rt",
+        "arch": "arm64"
+    },
+    "sk-am62-sip-vendor-edge": {
+        "family": "k3",
+        "board": "sk-am62-sip",
+        "branch": "vendor-edge",
+        "arch": "arm64"
+    },
+    "sk-am62-sip-edge": {
+        "family": "k3",
+        "board": "sk-am62-sip",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "sk-am62b-vendor": {
+        "family": "k3",
+        "board": "sk-am62b",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "sk-am62b-vendor-rt": {
+        "family": "k3",
+        "board": "sk-am62b",
+        "branch": "vendor-rt",
+        "arch": "arm64"
+    },
+    "sk-am62b-vendor-edge": {
+        "family": "k3",
+        "board": "sk-am62b",
+        "branch": "vendor-edge",
+        "arch": "arm64"
+    },
+    "sk-am62b-edge": {
+        "family": "k3",
+        "board": "sk-am62b",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "sk-am62p-vendor": {
+        "family": "k3",
+        "board": "sk-am62p",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "sk-am62p-vendor-rt": {
+        "family": "k3",
+        "board": "sk-am62p",
+        "branch": "vendor-rt",
+        "arch": "arm64"
+    },
+    "sk-am62p-vendor-edge": {
+        "family": "k3",
+        "board": "sk-am62p",
+        "branch": "vendor-edge",
+        "arch": "arm64"
+    },
+    "sk-am62p-edge": {
+        "family": "k3",
+        "board": "sk-am62p",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "sk-am68-vendor": {
+        "family": "k3",
+        "board": "sk-am68",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "sk-am68-vendor-rt": {
+        "family": "k3",
+        "board": "sk-am68",
+        "branch": "vendor-rt",
+        "arch": "arm64"
+    },
+    "sk-am68-vendor-edge": {
+        "family": "k3",
+        "board": "sk-am68",
+        "branch": "vendor-edge",
+        "arch": "arm64"
+    },
+    "sk-am68-edge": {
+        "family": "k3",
+        "board": "sk-am68",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "sk-am69-vendor": {
+        "family": "k3",
+        "board": "sk-am69",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "sk-am69-vendor-rt": {
+        "family": "k3",
+        "board": "sk-am69",
+        "branch": "vendor-rt",
+        "arch": "arm64"
+    },
+    "sk-am69-vendor-edge": {
+        "family": "k3",
+        "board": "sk-am69",
+        "branch": "vendor-edge",
+        "arch": "arm64"
+    },
+    "sk-am69-edge": {
+        "family": "k3",
+        "board": "sk-am69",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "sk-tda4vm-vendor": {
+        "family": "k3",
+        "board": "sk-tda4vm",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "sk-tda4vm-vendor-rt": {
+        "family": "k3",
+        "board": "sk-tda4vm",
+        "branch": "vendor-rt",
+        "arch": "arm64"
+    },
+    "sk-tda4vm-vendor-edge": {
+        "family": "k3",
+        "board": "sk-tda4vm",
+        "branch": "vendor-edge",
+        "arch": "arm64"
+    },
+    "sk-tda4vm-edge": {
+        "family": "k3",
+        "board": "sk-tda4vm",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "smart-am40-current": {
+        "family": "rockchip64",
+        "board": "smart-am40",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "smart-am40-edge": {
+        "family": "rockchip64",
+        "board": "smart-am40",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "station-m1-current": {
+        "family": "rockchip64",
+        "board": "station-m1",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "station-m1-edge": {
+        "family": "rockchip64",
+        "board": "station-m1",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "station-m2-current": {
+        "family": "rockchip64",
+        "board": "station-m2",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "station-m2-edge": {
+        "family": "rockchip64",
+        "board": "station-m2",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "station-m2-vendor": {
+        "family": "generic",
+        "board": "station-m2",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "station-m3-vendor": {
+        "family": "rk35xx",
+        "board": "station-m3",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "station-m3-current": {
+        "family": "rockchip64",
+        "board": "station-m3",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "station-p1-current": {
+        "family": "rockchip64",
+        "board": "station-p1",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "station-p1-edge": {
+        "family": "rockchip64",
+        "board": "station-p1",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "station-p2-current": {
+        "family": "rockchip64",
+        "board": "station-p2",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "station-p2-edge": {
+        "family": "rockchip64",
+        "board": "station-p2",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "sunvell-r69-current": {
+        "family": "sunxi",
+        "board": "sunvell-r69",
+        "branch": "current",
+        "arch": "armhf"
+    },
+    "sunvell-r69-edge": {
+        "family": "sunxi",
+        "board": "sunvell-r69",
+        "branch": "edge",
+        "arch": "armhf"
+    },
+    "sunvell-r69-legacy": {
+        "family": "sunxi",
+        "board": "sunvell-r69",
+        "branch": "legacy",
+        "arch": "armhf"
+    },
+    "sweet-potato-current": {
+        "family": "meson64",
+        "board": "sweet-potato",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "sweet-potato-edge": {
+        "family": "meson64",
+        "board": "sweet-potato",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "tanix-tx6-current": {
+        "family": "sunxi64",
+        "board": "tanix-tx6",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "tanix-tx6-edge": {
+        "family": "sunxi64",
+        "board": "tanix-tx6",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "tanix-tx6-legacy": {
+        "family": "sunxi64",
+        "board": "tanix-tx6",
+        "branch": "legacy",
+        "arch": "arm64"
+    },
+    "thinkpad-x13s-sc8280xp": {
+        "family": "arm64",
+        "board": "thinkpad-x13s",
+        "branch": "sc8280xp",
+        "arch": "arm64"
+    },
+    "tinker-edge-r-current": {
+        "family": "rockchip64",
+        "board": "tinker-edge-r",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "tinker-edge-r-edge": {
+        "family": "rockchip64",
+        "board": "tinker-edge-r",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "tinkerboard-current": {
+        "family": "generic",
+        "board": "tinkerboard",
+        "branch": "current",
+        "arch": "armhf"
+    },
+    "tinkerboard-edge": {
+        "family": "generic",
+        "board": "tinkerboard",
+        "branch": "edge",
+        "arch": "armhf"
+    },
+    "tinkerboard-2-current": {
+        "family": "rockchip64",
+        "board": "tinkerboard-2",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "tinkerboard-2-edge": {
+        "family": "rockchip64",
+        "board": "tinkerboard-2",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "tmds62levm-vendor": {
+        "family": "k3",
+        "board": "tmds62levm",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "tmds62levm-vendor-rt": {
+        "family": "k3",
+        "board": "tmds62levm",
+        "branch": "vendor-rt",
+        "arch": "arm64"
+    },
+    "tmds62levm-vendor-edge": {
+        "family": "k3",
+        "board": "tmds62levm",
+        "branch": "vendor-edge",
+        "arch": "arm64"
+    },
+    "tq-smarc2-tqma8mpxs-current": {
+        "family": "generic",
+        "board": "tq-smarc2-tqma8mpxs",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "tq-smarc2-tqma8mpxs-edge": {
+        "family": "generic",
+        "board": "tq-smarc2-tqma8mpxs",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "tritium-h3-current": {
+        "family": "sunxi",
+        "board": "tritium-h3",
+        "branch": "current",
+        "arch": "armhf"
+    },
+    "tritium-h3-edge": {
+        "family": "sunxi",
+        "board": "tritium-h3",
+        "branch": "edge",
+        "arch": "armhf"
+    },
+    "tritium-h3-legacy": {
+        "family": "sunxi",
+        "board": "tritium-h3",
+        "branch": "legacy",
+        "arch": "armhf"
+    },
+    "tritium-h5-current": {
+        "family": "sunxi64",
+        "board": "tritium-h5",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "tritium-h5-edge": {
+        "family": "sunxi64",
+        "board": "tritium-h5",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "tritium-h5-legacy": {
+        "family": "sunxi64",
+        "board": "tritium-h5",
+        "branch": "legacy",
+        "arch": "arm64"
+    },
+    "turing-rk1-current": {
+        "family": "rockchip64",
+        "board": "turing-rk1",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "turing-rk1-edge": {
+        "family": "rockchip64",
+        "board": "turing-rk1",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "turing-rk1-vendor": {
+        "family": "rk35xx",
+        "board": "turing-rk1",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "udoo-current": {
+        "family": "generic",
+        "board": "udoo",
+        "branch": "current",
+        "arch": "armhf"
+    },
+    "udoo-edge": {
+        "family": "generic",
+        "board": "udoo",
+        "branch": "edge",
+        "arch": "armhf"
+    },
+    "uefi-arm64-current": {
+        "family": "arm64",
+        "board": "uefi-arm64",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "uefi-arm64-edge": {
+        "family": "arm64",
+        "board": "uefi-arm64",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "uefi-arm64-legacy": {
+        "family": "arm64",
+        "board": "uefi-arm64",
+        "branch": "legacy",
+        "arch": "arm64"
+    },
+    "uefi-arm64-cloud": {
+        "family": "arm64",
+        "board": "uefi-arm64",
+        "branch": "cloud",
+        "arch": "arm64"
+    },
+    "uefi-loong64-current": {
+        "family": "loong64",
+        "board": "uefi-loong64",
+        "branch": "current",
+        "arch": "loong64"
+    },
+    "uefi-loong64-edge": {
+        "family": "loong64",
+        "board": "uefi-loong64",
+        "branch": "edge",
+        "arch": "loong64"
+    },
+    "uefi-riscv64-current": {
+        "family": "riscv64",
+        "board": "uefi-riscv64",
+        "branch": "current",
+        "arch": "riscv64"
+    },
+    "uefi-riscv64-edge": {
+        "family": "riscv64",
+        "board": "uefi-riscv64",
+        "branch": "edge",
+        "arch": "riscv64"
+    },
+    "uefi-riscv64-legacy": {
+        "family": "riscv64",
+        "board": "uefi-riscv64",
+        "branch": "legacy",
+        "arch": "riscv64"
+    },
+    "uefi-x86-current": {
+        "family": "x86",
+        "board": "uefi-x86",
+        "branch": "current",
+        "arch": "amd64"
+    },
+    "uefi-x86-edge": {
+        "family": "x86",
+        "board": "uefi-x86",
+        "branch": "edge",
+        "arch": "amd64"
+    },
+    "uefi-x86-legacy": {
+        "family": "x86",
+        "board": "uefi-x86",
+        "branch": "legacy",
+        "arch": "amd64"
+    },
+    "uefi-x86-cloud": {
+        "family": "x86",
+        "board": "uefi-x86",
+        "branch": "cloud",
+        "arch": "amd64"
+    },
+    "visionfive2-vendor": {
+        "family": "starfive2",
+        "board": "visionfive2",
+        "branch": "vendor",
+        "arch": "riscv64"
+    },
+    "x96-mate-current": {
+        "family": "sunxi64",
+        "board": "x96-mate",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "x96-mate-edge": {
+        "family": "sunxi64",
+        "board": "x96-mate",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "x96q-current": {
+        "family": "sunxi64",
+        "board": "x96q",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "xiaobao-nas-current": {
+        "family": "rockchip64",
+        "board": "xiaobao-nas",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "xiaobao-nas-edge": {
+        "family": "rockchip64",
+        "board": "xiaobao-nas",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "xiaomi-elish-current": {
+        "family": "sm8250",
+        "board": "xiaomi-elish",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "xiaomi-elish-edge": {
+        "family": "sm8250",
+        "board": "xiaomi-elish",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "xpressreal-t3-vendor": {
+        "family": "generic",
+        "board": "xpressreal-t3",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "xt-q8l-v10-current": {
+        "family": "generic",
+        "board": "xt-q8l-v10",
+        "branch": "current",
+        "arch": "armhf"
+    },
+    "xt-q8l-v10-edge": {
+        "family": "generic",
+        "board": "xt-q8l-v10",
+        "branch": "edge",
+        "arch": "armhf"
+    },
+    "youyeetoo-r1-v3-vendor": {
+        "family": "rk35xx",
+        "board": "youyeetoo-r1-v3",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "youyeetoo-r1-v3-current": {
+        "family": "rockchip64",
+        "board": "youyeetoo-r1-v3",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "youyeetoo-r1-v3-edge": {
+        "family": "rockchip64",
+        "board": "youyeetoo-r1-v3",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "youyeetoo-yy3588-vendor": {
+        "family": "rk35xx",
+        "board": "youyeetoo-yy3588",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "youyeetoo-yy3588-current": {
+        "family": "rockchip64",
+        "board": "youyeetoo-yy3588",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "youyeetoo-yy3588-edge": {
+        "family": "rockchip64",
+        "board": "youyeetoo-yy3588",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "yy3568-current": {
+        "family": "rockchip64",
+        "board": "yy3568",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "yy3568-edge": {
+        "family": "rockchip64",
+        "board": "yy3568",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "yy3568-vendor": {
+        "family": "generic",
+        "board": "yy3568",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "z28pro-current": {
+        "family": "rockchip64",
+        "board": "z28pro",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "bananapir4-current": {
+        "family": "filogic",
+        "board": "bananapir4",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "clearfogbase-current": {
+        "family": "generic",
+        "board": "clearfogbase",
+        "branch": "current",
+        "arch": "armhf"
+    },
+    "clearfogbase-edge": {
+        "family": "generic",
+        "board": "clearfogbase",
+        "branch": "edge",
+        "arch": "armhf"
+    },
+    "clearfogpro-current": {
+        "family": "generic",
+        "board": "clearfogpro",
+        "branch": "current",
+        "arch": "armhf"
+    },
+    "clearfogpro-edge": {
+        "family": "generic",
+        "board": "clearfogpro",
+        "branch": "edge",
+        "arch": "armhf"
+    },
+    "cubieboard-current": {
+        "family": "sunxi",
+        "board": "cubieboard",
+        "branch": "current",
+        "arch": "armhf"
+    },
+    "cubieboard-edge": {
+        "family": "sunxi",
+        "board": "cubieboard",
+        "branch": "edge",
+        "arch": "armhf"
+    },
+    "cubieboard-legacy": {
+        "family": "sunxi",
+        "board": "cubieboard",
+        "branch": "legacy",
+        "arch": "armhf"
+    },
+    "espressobin-current": {
+        "family": "generic",
+        "board": "espressobin",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "espressobin-edge": {
+        "family": "generic",
+        "board": "espressobin",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "gateway-dk-current": {
+        "family": "ls1046a",
+        "board": "gateway-dk",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "gateway-gz80x-current": {
+        "family": "meson64",
+        "board": "gateway-gz80x",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "gateway-gz80x-edge": {
+        "family": "meson64",
+        "board": "gateway-gz80x",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "helios4-current": {
+        "family": "generic",
+        "board": "helios4",
+        "branch": "current",
+        "arch": "armhf"
+    },
+    "helios4-edge": {
+        "family": "generic",
+        "board": "helios4",
+        "branch": "edge",
+        "arch": "armhf"
+    },
+    "jethubj100-current": {
+        "family": "meson64",
+        "board": "jethubj100",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "jethubj100-edge": {
+        "family": "meson64",
+        "board": "jethubj100",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "jethubj80-current": {
+        "family": "meson64",
+        "board": "jethubj80",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "jethubj80-edge": {
+        "family": "meson64",
+        "board": "jethubj80",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "lime-a33-current": {
+        "family": "sunxi",
+        "board": "lime-a33",
+        "branch": "current",
+        "arch": "armhf"
+    },
+    "lime-a33-edge": {
+        "family": "sunxi",
+        "board": "lime-a33",
+        "branch": "edge",
+        "arch": "armhf"
+    },
+    "lime-a33-legacy": {
+        "family": "sunxi",
+        "board": "lime-a33",
+        "branch": "legacy",
+        "arch": "armhf"
+    },
+    "melea1000-current": {
+        "family": "sunxi",
+        "board": "melea1000",
+        "branch": "current",
+        "arch": "armhf"
+    },
+    "melea1000-edge": {
+        "family": "sunxi",
+        "board": "melea1000",
+        "branch": "edge",
+        "arch": "armhf"
+    },
+    "melea1000-legacy": {
+        "family": "sunxi",
+        "board": "melea1000",
+        "branch": "legacy",
+        "arch": "armhf"
+    },
+    "mk808c-current": {
+        "family": "sunxi",
+        "board": "mk808c",
+        "branch": "current",
+        "arch": "armhf"
+    },
+    "mk808c-edge": {
+        "family": "sunxi",
+        "board": "mk808c",
+        "branch": "edge",
+        "arch": "armhf"
+    },
+    "mk808c-legacy": {
+        "family": "sunxi",
+        "board": "mk808c",
+        "branch": "legacy",
+        "arch": "armhf"
+    },
+    "mksklipad50-current": {
+        "family": "rockchip64",
+        "board": "mksklipad50",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "mksklipad50-edge": {
+        "family": "rockchip64",
+        "board": "mksklipad50",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "mkspi-current": {
+        "family": "rockchip64",
+        "board": "mkspi",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "mkspi-edge": {
+        "family": "rockchip64",
+        "board": "mkspi",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "nanopi-r1-current": {
+        "family": "sunxi",
+        "board": "nanopi-r1",
+        "branch": "current",
+        "arch": "armhf"
+    },
+    "nanopi-r1-edge": {
+        "family": "sunxi",
+        "board": "nanopi-r1",
+        "branch": "edge",
+        "arch": "armhf"
+    },
+    "nanopi-r1-legacy": {
+        "family": "sunxi",
+        "board": "nanopi-r1",
+        "branch": "legacy",
+        "arch": "armhf"
+    },
+    "nanopi-r1s-h5-current": {
+        "family": "sunxi64",
+        "board": "nanopi-r1s-h5",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "nanopi-r1s-h5-edge": {
+        "family": "sunxi64",
+        "board": "nanopi-r1s-h5",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "nanopi-r1s-h5-legacy": {
+        "family": "sunxi64",
+        "board": "nanopi-r1s-h5",
+        "branch": "legacy",
+        "arch": "arm64"
+    },
+    "nanopi-r2c-current": {
+        "family": "rockchip64",
+        "board": "nanopi-r2c",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "nanopi-r2c-edge": {
+        "family": "rockchip64",
+        "board": "nanopi-r2c",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "nanopi-r2s-current": {
+        "family": "rockchip64",
+        "board": "nanopi-r2s",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "nanopi-r2s-edge": {
+        "family": "rockchip64",
+        "board": "nanopi-r2s",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "nanopi-r2s-plus-current": {
+        "family": "rockchip64",
+        "board": "nanopi-r2s-plus",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "nanopi-r2s-plus-edge": {
+        "family": "rockchip64",
+        "board": "nanopi-r2s-plus",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "nanopi-r3s-current": {
+        "family": "rockchip64",
+        "board": "nanopi-r3s",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "nanopi-r3s-edge": {
+        "family": "rockchip64",
+        "board": "nanopi-r3s",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "nanopi-r4s-current": {
+        "family": "rockchip64",
+        "board": "nanopi-r4s",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "nanopi-r4s-edge": {
+        "family": "rockchip64",
+        "board": "nanopi-r4s",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "nanopi-r4se-current": {
+        "family": "rockchip64",
+        "board": "nanopi-r4se",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "nanopi-r4se-edge": {
+        "family": "rockchip64",
+        "board": "nanopi-r4se",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "nanopi-zero2-vendor": {
+        "family": "generic",
+        "board": "nanopi-zero2",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "nanopi-zero2-current": {
+        "family": "rockchip64",
+        "board": "nanopi-zero2",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "nanopi-zero2-edge": {
+        "family": "rockchip64",
+        "board": "nanopi-zero2",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "nanopiair-current": {
+        "family": "sunxi",
+        "board": "nanopiair",
+        "branch": "current",
+        "arch": "armhf"
+    },
+    "nanopiair-edge": {
+        "family": "sunxi",
+        "board": "nanopiair",
+        "branch": "edge",
+        "arch": "armhf"
+    },
+    "nanopiair-legacy": {
+        "family": "sunxi",
+        "board": "nanopiair",
+        "branch": "legacy",
+        "arch": "armhf"
+    },
+    "nanopiduo-current": {
+        "family": "sunxi",
+        "board": "nanopiduo",
+        "branch": "current",
+        "arch": "armhf"
+    },
+    "nanopiduo-edge": {
+        "family": "sunxi",
+        "board": "nanopiduo",
+        "branch": "edge",
+        "arch": "armhf"
+    },
+    "nanopiduo-legacy": {
+        "family": "sunxi",
+        "board": "nanopiduo",
+        "branch": "legacy",
+        "arch": "armhf"
+    },
+    "nanopiduo2-current": {
+        "family": "sunxi",
+        "board": "nanopiduo2",
+        "branch": "current",
+        "arch": "armhf"
+    },
+    "nanopiduo2-edge": {
+        "family": "sunxi",
+        "board": "nanopiduo2",
+        "branch": "edge",
+        "arch": "armhf"
+    },
+    "nanopiduo2-legacy": {
+        "family": "sunxi",
+        "board": "nanopiduo2",
+        "branch": "legacy",
+        "arch": "armhf"
+    },
+    "nanopineo-current": {
+        "family": "sunxi",
+        "board": "nanopineo",
+        "branch": "current",
+        "arch": "armhf"
+    },
+    "nanopineo-edge": {
+        "family": "sunxi",
+        "board": "nanopineo",
+        "branch": "edge",
+        "arch": "armhf"
+    },
+    "nanopineo-legacy": {
+        "family": "sunxi",
+        "board": "nanopineo",
+        "branch": "legacy",
+        "arch": "armhf"
+    },
+    "nanopineo2-current": {
+        "family": "sunxi64",
+        "board": "nanopineo2",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "nanopineo2-edge": {
+        "family": "sunxi64",
+        "board": "nanopineo2",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "nanopineo2-legacy": {
+        "family": "sunxi64",
+        "board": "nanopineo2",
+        "branch": "legacy",
+        "arch": "arm64"
+    },
+    "nanopineo2black-current": {
+        "family": "sunxi64",
+        "board": "nanopineo2black",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "nanopineo2black-edge": {
+        "family": "sunxi64",
+        "board": "nanopineo2black",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "nanopineo2black-legacy": {
+        "family": "sunxi64",
+        "board": "nanopineo2black",
+        "branch": "legacy",
+        "arch": "arm64"
+    },
+    "nanopineo3-current": {
+        "family": "rockchip64",
+        "board": "nanopineo3",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "nanopineo3-edge": {
+        "family": "rockchip64",
+        "board": "nanopineo3",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "nanopineocore2-current": {
+        "family": "sunxi64",
+        "board": "nanopineocore2",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "nanopineocore2-edge": {
+        "family": "sunxi64",
+        "board": "nanopineocore2",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "nanopineocore2-legacy": {
+        "family": "sunxi64",
+        "board": "nanopineocore2",
+        "branch": "legacy",
+        "arch": "arm64"
+    },
+    "nanopineoplus2-current": {
+        "family": "sunxi64",
+        "board": "nanopineoplus2",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "nanopineoplus2-edge": {
+        "family": "sunxi64",
+        "board": "nanopineoplus2",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "nanopineoplus2-legacy": {
+        "family": "sunxi64",
+        "board": "nanopineoplus2",
+        "branch": "legacy",
+        "arch": "arm64"
+    },
+    "olinux-som-a13-current": {
+        "family": "sunxi",
+        "board": "olinux-som-a13",
+        "branch": "current",
+        "arch": "armhf"
+    },
+    "olinux-som-a13-edge": {
+        "family": "sunxi",
+        "board": "olinux-som-a13",
+        "branch": "edge",
+        "arch": "armhf"
+    },
+    "olinux-som-a13-legacy": {
+        "family": "sunxi",
+        "board": "olinux-som-a13",
+        "branch": "legacy",
+        "arch": "armhf"
+    },
+    "orangepi-r1-current": {
+        "family": "sunxi",
+        "board": "orangepi-r1",
+        "branch": "current",
+        "arch": "armhf"
+    },
+    "orangepi-r1-edge": {
+        "family": "sunxi",
+        "board": "orangepi-r1",
+        "branch": "edge",
+        "arch": "armhf"
+    },
+    "orangepi-r1-legacy": {
+        "family": "sunxi",
+        "board": "orangepi-r1",
+        "branch": "legacy",
+        "arch": "armhf"
+    },
+    "orangepi-r1plus-current": {
+        "family": "rockchip64",
+        "board": "orangepi-r1plus",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "orangepi-r1plus-edge": {
+        "family": "rockchip64",
+        "board": "orangepi-r1plus",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "orangepi-r1plus-lts-current": {
+        "family": "rockchip64",
+        "board": "orangepi-r1plus-lts",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "orangepi-r1plus-lts-edge": {
+        "family": "rockchip64",
+        "board": "orangepi-r1plus-lts",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "orangepizeroplus-current": {
+        "family": "sunxi64",
+        "board": "orangepizeroplus",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "orangepizeroplus-edge": {
+        "family": "sunxi64",
+        "board": "orangepizeroplus",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "orangepizeroplus-legacy": {
+        "family": "sunxi64",
+        "board": "orangepizeroplus",
+        "branch": "legacy",
+        "arch": "arm64"
+    },
+    "orangepizeroplus2-h5-current": {
+        "family": "sunxi64",
+        "board": "orangepizeroplus2-h5",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "orangepizeroplus2-h5-edge": {
+        "family": "sunxi64",
+        "board": "orangepizeroplus2-h5",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "orangepizeroplus2-h5-legacy": {
+        "family": "sunxi64",
+        "board": "orangepizeroplus2-h5",
+        "branch": "legacy",
+        "arch": "arm64"
+    },
+    "pinecube-current": {
+        "family": "sunxi",
+        "board": "pinecube",
+        "branch": "current",
+        "arch": "armhf"
+    },
+    "pinecube-edge": {
+        "family": "sunxi",
+        "board": "pinecube",
+        "branch": "edge",
+        "arch": "armhf"
+    },
+    "pinecube-legacy": {
+        "family": "sunxi",
+        "board": "pinecube",
+        "branch": "legacy",
+        "arch": "armhf"
+    },
+    "qidi-x6-current": {
+        "family": "rockchip64",
+        "board": "qidi-x6",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "qidi-x6-edge": {
+        "family": "rockchip64",
+        "board": "qidi-x6",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "radxa-e52c-vendor": {
+        "family": "rk35xx",
+        "board": "radxa-e52c",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "radxa-e52c-current": {
+        "family": "rockchip64",
+        "board": "radxa-e52c",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "radxa-e52c-edge": {
+        "family": "rockchip64",
+        "board": "radxa-e52c",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "rock-s0-current": {
+        "family": "rockchip64",
+        "board": "rock-s0",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "rock-s0-edge": {
+        "family": "rockchip64",
+        "board": "rock-s0",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "rockpi-e-current": {
+        "family": "rockchip64",
+        "board": "rockpi-e",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "rockpi-e-edge": {
+        "family": "rockchip64",
+        "board": "rockpi-e",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "rockpi-s-current": {
+        "family": "rockchip64",
+        "board": "rockpi-s",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "rockpi-s-edge": {
+        "family": "rockchip64",
+        "board": "rockpi-s",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "sakurapi-rk3308b-current": {
+        "family": "rockchip64",
+        "board": "sakurapi-rk3308b",
+        "branch": "current",
+        "arch": "arm64"
+    },
+    "sk-am64b-vendor": {
+        "family": "k3",
+        "board": "sk-am64b",
+        "branch": "vendor",
+        "arch": "arm64"
+    },
+    "sk-am64b-vendor-rt": {
+        "family": "k3",
+        "board": "sk-am64b",
+        "branch": "vendor-rt",
+        "arch": "arm64"
+    },
+    "sk-am64b-vendor-edge": {
+        "family": "k3",
+        "board": "sk-am64b",
+        "branch": "vendor-edge",
+        "arch": "arm64"
+    },
+    "sk-am64b-edge": {
+        "family": "k3",
+        "board": "sk-am64b",
+        "branch": "edge",
+        "arch": "arm64"
+    },
+    "zeropi-current": {
+        "family": "sunxi",
+        "board": "zeropi",
+        "branch": "current",
+        "arch": "armhf"
+    },
+    "zeropi-edge": {
+        "family": "sunxi",
+        "board": "zeropi",
+        "branch": "edge",
+        "arch": "armhf"
+    }
+}

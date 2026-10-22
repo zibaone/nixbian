@@ -1,0 +1,32 @@
+Nixbian
+Copyright (C) 2026 Nixbian contributors
+
+This product is licensed under the GNU General Public License, version 3 only
+(GPL-3.0-only). See LICENSE for the full text.
+
+This product includes metadata, configuration files and patches derived from
+the Armbian build framework (https://github.com/armbian/build), which is
+distributed under the GNU General Public License, version 3.
+
+The vendored patches in metadata/nix/patches/ originate from Armbian and its
+upstream projects. They are redistributed unmodified in content (only filenames
+may be sanitized so that Nix accepts them as store path names). They remain
+under their original licenses, including but not limited to:
+
+- Linux kernel patches: GPL-2.0-only
+- U-Boot patches: GPL-2.0-or-later
+- ARM Trusted Firmware patches: BSD-3-Clause
+- LibreELEC-derived media patches: GPL-2.0
+
+Individual patch files may carry different notices; consult their headers.
+
+Nixbian builds, but does not relicense, the Linux kernel, U-Boot, ARM Trusted
+Firmware and firmware blobs obtained from their respective upstream projects.
+Those components remain under their own licenses.
+
+This software is provided "as is", without warranty of any kind, express or
+implied, including but not limited to the warranties of merchantability,
+fitness for a particular purpose and noninfringement. In no event shall the
+authors or copyright holders be liable for any claim, damages or other
+liability arising from, out of or in connection with the software or the use
+or other dealings in the software.

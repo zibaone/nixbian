@@ -1,0 +1,17 @@
+{
+    "family": "riscv64",
+    "platforms": {
+        "riscv64-current": {
+            "arch": "riscv64",
+            "branch": "current"
+        },
+        "riscv64-edge": {
+            "arch": "riscv64",
+            "branch": "edge"
+        },
+        "riscv64-legacy": {
+            "arch": "riscv64",
+            "branch": "legacy"
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "family": "arm64",
+    "platforms": {
+        "arm64-current": {
+            "arch": "arm64",
+            "branch": "current"
+        },
+        "arm64-edge": {
+            "arch": "arm64",
+            "branch": "edge"
+        },
+        "arm64-sc8280xp": {
+            "arch": "arm64",
+            "branch": "sc8280xp"
+        },
+        "arm64-legacy": {
+            "arch": "arm64",
+            "branch": "legacy"
+        },
+        "arm64-cloud": {
+            "arch": "arm64",
+            "branch": "cloud"
+        }
+    }
+}

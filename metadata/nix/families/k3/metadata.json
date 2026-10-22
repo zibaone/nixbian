@@ -1,0 +1,21 @@
+{
+    "family": "k3",
+    "platforms": {
+        "k3-vendor": {
+            "arch": "arm64",
+            "branch": "vendor"
+        },
+        "k3-vendor-rt": {
+            "arch": "arm64",
+            "branch": "vendor-rt"
+        },
+        "k3-edge": {
+            "arch": "arm64",
+            "branch": "edge"
+        },
+        "k3-vendor-edge": {
+            "arch": "arm64",
+            "branch": "vendor-edge"
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "family": "rockchip64",
+    "platforms": {
+        "rockchip64-current": {
+            "arch": "arm64",
+            "branch": "current"
+        },
+        "rockchip64-edge": {
+            "arch": "arm64",
+            "branch": "edge"
+        }
+    }
+}

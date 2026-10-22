@@ -1,0 +1,2 @@
+include src/armbian_extractor/*.json
+recursive-include src/armbian_extractor/templates *.nix

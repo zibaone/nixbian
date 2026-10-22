@@ -1,0 +1,13 @@
+{
+    "family": "sm8250",
+    "platforms": {
+        "sm8250-current": {
+            "arch": "arm64",
+            "branch": "current"
+        },
+        "sm8250-edge": {
+            "arch": "arm64",
+            "branch": "edge"
+        }
+    }
+}

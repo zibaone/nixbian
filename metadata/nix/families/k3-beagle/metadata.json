@@ -1,0 +1,17 @@
+{
+    "family": "k3-beagle",
+    "platforms": {
+        "k3-beagle-vendor": {
+            "arch": "arm64",
+            "branch": "vendor"
+        },
+        "k3-beagle-vendor-rt": {
+            "arch": "arm64",
+            "branch": "vendor-rt"
+        },
+        "k3-beagle-edge": {
+            "arch": "arm64",
+            "branch": "edge"
+        }
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "family": "genio",
+    "platforms": {
+        "genio-edge": {
+            "arch": "arm64",
+            "branch": "edge"
+        }
+    }
+}

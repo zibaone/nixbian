@@ -1,0 +1,9 @@
+{
+    "family": "meson-s4t7",
+    "platforms": {
+        "meson-s4t7-legacy": {
+            "arch": "arm64",
+            "branch": "legacy"
+        }
+    }
+}

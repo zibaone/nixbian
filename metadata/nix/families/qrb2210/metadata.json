@@ -1,0 +1,9 @@
+{
+    "family": "qrb2210",
+    "platforms": {
+        "qrb2210-edge": {
+            "arch": "arm64",
+            "branch": "edge"
+        }
+    }
+}

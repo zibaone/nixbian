@@ -1,0 +1,9 @@
+{
+    "family": "qcs6490",
+    "platforms": {
+        "qcs6490-current": {
+            "arch": "arm64",
+            "branch": "current"
+        }
+    }
+}

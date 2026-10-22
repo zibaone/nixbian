@@ -1,0 +1,679 @@
+[kernel-arm64-branch-lenovo-x13s-linux-7-0-y]
+src.manual = "refs/heads/lenovo-x13s-linux-7.0.y"
+fetch.git = "https://github.com/steev/linux.git"
+rev = "refs/heads/lenovo-x13s-linux-7.0.y"
+
+[kernel-arm64-branch-linux-7-0-y]
+src.manual = "refs/heads/linux-7.0.y"
+fetch.git = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git"
+rev = "refs/heads/linux-7.0.y"
+
+[kernel-bcm2711-branch-rpi-7-0-y]
+src.manual = "refs/heads/rpi-7.0.y"
+fetch.git = "https://github.com/raspberrypi/linux"
+rev = "refs/heads/rpi-7.0.y"
+
+[kernel-filogic-branch-6-12-main]
+src.manual = "refs/heads/6.12-main"
+fetch.git = "https://github.com/frank-w/BPI-Router-Linux.git"
+rev = "refs/heads/6.12-main"
+
+[kernel-generic-branch-linux-6-12-y]
+src.manual = "refs/heads/linux-6.12.y"
+fetch.git = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git"
+rev = "refs/heads/linux-6.12.y"
+
+[kernel-generic-branch-linux-6-15-y]
+src.manual = "refs/heads/linux-6.15.y"
+fetch.git = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git"
+rev = "refs/heads/linux-6.15.y"
+
+[kernel-generic-branch-linux-6-18-y]
+src.manual = "refs/heads/linux-6.18.y"
+fetch.git = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git"
+rev = "refs/heads/linux-6.18.y"
+
+[kernel-generic-branch-linux-6-6-y]
+src.manual = "refs/heads/linux-6.6.y"
+fetch.git = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git"
+rev = "refs/heads/linux-6.6.y"
+
+[kernel-generic-branch-linux-7-0-y]
+src.manual = "refs/heads/linux-7.0.y"
+fetch.git = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git"
+rev = "refs/heads/linux-7.0.y"
+
+[kernel-generic-branch-odroid-6-6-y]
+src.manual = "refs/heads/odroid-6.6.y"
+fetch.git = "https://github.com/hardkernel/linux"
+rev = "refs/heads/odroid-6.6.y"
+
+[kernel-generic-branch-rk-6-1-rkr5-1]
+src.manual = "refs/heads/rk-6.1-rkr5.1"
+fetch.git = "https://github.com/armbian/linux-rockchip.git"
+rev = "refs/heads/rk-6.1-rkr5.1"
+
+[kernel-generic-branch-v6-6-54-xpressreal-t3]
+src.manual = "refs/heads/v6.6.54-xpressreal-t3"
+fetch.git = "https://github.com/XpressReal/linux.git"
+rev = "refs/heads/v6.6.54-xpressreal-t3"
+
+[kernel-genio-commit-1b251287c9f26c428033af1106319af5e32f376b]
+src.manual = "1b251287c9f26c428033af1106319af5e32f376b"
+fetch.git = "https://gitlab.collabora.com/mediatek/aiot/linux.git"
+rev = "1b251287c9f26c428033af1106319af5e32f376b"
+
+[kernel-k3-beagle-branch-v6-12-49-ti-arm64-r56]
+src.manual = "refs/heads/v6.12.49-ti-arm64-r56"
+fetch.git = "https://github.com/beagleboard/linux"
+rev = "refs/heads/v6.12.49-ti-arm64-r56"
+
+[kernel-k3-branch-ti-linux-6-18-y]
+src.manual = "refs/heads/ti-linux-6.18.y"
+fetch.git = "https://github.com/TexasInstruments/ti-linux-kernel"
+rev = "refs/heads/ti-linux-6.18.y"
+
+[kernel-loong64-branch-linux-7-0-y]
+src.manual = "refs/heads/linux-7.0.y"
+fetch.git = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git"
+rev = "refs/heads/linux-7.0.y"
+
+[kernel-ls1046a-tag-lf-6-12-49-2-2-0]
+src.manual = "lf-6.12.49-2.2.0"
+fetch.git = "https://github.com/nxp-qoriq/linux.git"
+rev = "lf-6.12.49-2.2.0"
+
+[kernel-meson-s4t7-branch-khadas-vims-5-15-y]
+src.manual = "refs/heads/khadas-vims-5.15.y"
+fetch.git = "https://github.com/khadas/linux.git"
+rev = "refs/heads/khadas-vims-5.15.y"
+
+[kernel-meson-tag-v6-12-28]
+src.manual = "v6.12.28"
+fetch.git = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git"
+rev = "v6.12.28"
+
+[kernel-meson64-branch-linux-6-18-y]
+src.manual = "refs/heads/linux-6.18.y"
+fetch.git = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git"
+rev = "refs/heads/linux-6.18.y"
+
+[kernel-meson64-branch-linux-7-0-y]
+src.manual = "refs/heads/linux-7.0.y"
+fetch.git = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git"
+rev = "refs/heads/linux-7.0.y"
+
+[kernel-nuvoton-ma35d1-branch-master]
+src.manual = "refs/heads/master"
+fetch.git = "https://github.com/OpenNuvoton/MA35D1_linux-5.10.y.git"
+rev = "refs/heads/master"
+
+[kernel-phytium-embedded-branch-linux-6-6]
+src.manual = "refs/heads/linux-6.6"
+fetch.git = "https://github.com/chainsx/phytium-linux-kernel"
+rev = "refs/heads/linux-6.6"
+
+[kernel-qcs6490-branch-linux-6-18-2]
+src.manual = "refs/heads/linux-6.18.2"
+fetch.git = "https://github.com/radxa/kernel.git"
+rev = "refs/heads/linux-6.18.2"
+
+[kernel-qrb2210-tag-v7-0]
+src.manual = "v7.0"
+fetch.git = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git"
+rev = "v7.0"
+
+[kernel-riscv64-branch-linux-7-0-y]
+src.manual = "refs/heads/linux-7.0.y"
+fetch.git = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git"
+rev = "refs/heads/linux-7.0.y"
+
+[kernel-rk35xx-branch-rk-6-1-rkr5-1]
+src.manual = "refs/heads/rk-6.1-rkr5.1"
+fetch.git = "https://github.com/armbian/linux-rockchip.git"
+rev = "refs/heads/rk-6.1-rkr5.1"
+
+[kernel-rockchip64-branch-linux-6-18-y]
+src.manual = "refs/heads/linux-6.18.y"
+fetch.git = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git"
+rev = "refs/heads/linux-6.18.y"
+
+[kernel-rockchip64-branch-linux-7-0-y]
+src.manual = "refs/heads/linux-7.0.y"
+fetch.git = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git"
+rev = "refs/heads/linux-7.0.y"
+
+[kernel-sm8250-branch-linux-6-18-y]
+src.manual = "refs/heads/linux-6.18.y"
+fetch.git = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git"
+rev = "refs/heads/linux-6.18.y"
+
+[kernel-sm8250-branch-linux-6-19-y]
+src.manual = "refs/heads/linux-6.19.y"
+fetch.git = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git"
+rev = "refs/heads/linux-6.19.y"
+
+[kernel-sm8550-branch-linux-6-18-y]
+src.manual = "refs/heads/linux-6.18.y"
+fetch.git = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git"
+rev = "refs/heads/linux-6.18.y"
+
+[kernel-sm8550-branch-linux-7-0-y]
+src.manual = "refs/heads/linux-7.0.y"
+fetch.git = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git"
+rev = "refs/heads/linux-7.0.y"
+
+[kernel-spacemit-branch-linux-6-18-y]
+src.manual = "refs/heads/linux-6.18.y"
+fetch.git = "https://github.com/jmontleon/linux-bianbu.git"
+rev = "refs/heads/linux-6.18.y"
+
+[kernel-starfive2-branch-jh7110-visionfive2-6-6-y-devel]
+src.manual = "refs/heads/JH7110_VisionFive2_6.6.y_devel"
+fetch.git = "https://github.com/starfive-tech/linux"
+rev = "refs/heads/JH7110_VisionFive2_6.6.y_devel"
+
+[kernel-sun55iw3-syterkit-branch-linux-5-15]
+src.manual = "refs/heads/linux-5.15"
+fetch.git = "https://github.com/AvaotaSBC/linux.git"
+rev = "refs/heads/linux-5.15"
+
+[kernel-sunxi-branch-linux-6-12-y]
+src.manual = "refs/heads/linux-6.12.y"
+fetch.git = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git"
+rev = "refs/heads/linux-6.12.y"
+
+[kernel-sunxi-branch-linux-6-18-y]
+src.manual = "refs/heads/linux-6.18.y"
+fetch.git = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git"
+rev = "refs/heads/linux-6.18.y"
+
+[kernel-sunxi-branch-linux-7-0-y]
+src.manual = "refs/heads/linux-7.0.y"
+fetch.git = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git"
+rev = "refs/heads/linux-7.0.y"
+
+[kernel-sunxi64-branch-linux-6-12-y]
+src.manual = "refs/heads/linux-6.12.y"
+fetch.git = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git"
+rev = "refs/heads/linux-6.12.y"
+
+[kernel-sunxi64-branch-linux-6-18-y]
+src.manual = "refs/heads/linux-6.18.y"
+fetch.git = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git"
+rev = "refs/heads/linux-6.18.y"
+
+[kernel-sunxi64-branch-linux-7-0-y]
+src.manual = "refs/heads/linux-7.0.y"
+fetch.git = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git"
+rev = "refs/heads/linux-7.0.y"
+
+[kernel-x86-branch-linux-7-0-y]
+src.manual = "refs/heads/linux-7.0.y"
+fetch.git = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git"
+rev = "refs/heads/linux-7.0.y"
+
+[src-arm-trusted-firmware-branch-a523-v4]
+src.manual = "refs/heads/a523-v4"
+fetch.git = "https://github.com/jernejsk/arm-trusted-firmware"
+rev = "refs/heads/a523-v4"
+
+[src-arm-trusted-firmware-branch-mtksoc-20250212]
+src.manual = "refs/heads/mtksoc-20250212"
+fetch.git = "https://github.com/mtk-openwrt/arm-trusted-firmware.git"
+rev = "refs/heads/mtksoc-20250212"
+
+[src-arm-trusted-firmware-branch-ti-tfa-2-14-y]
+src.manual = "refs/heads/ti-tfa-2.14.y"
+fetch.git = "https://github.com/TexasInstruments/arm-trusted-firmware"
+rev = "refs/heads/ti-tfa-2.14.y"
+
+[src-arm-trusted-firmware-tag-11-00-09]
+src.manual = "11.00.09"
+fetch.git = "https://github.com/TexasInstruments/arm-trusted-firmware"
+rev = "11.00.09"
+
+[src-arm-trusted-firmware-tag-lts-v2-12-9]
+src.manual = "lts-v2.12.9"
+fetch.git = "https://github.com/ARM-software/arm-trusted-firmware"
+rev = "lts-v2.12.9"
+
+[src-arm-trusted-firmware-tag-v2-13-0]
+src.manual = "v2.13.0"
+fetch.git = "https://github.com/ARM-software/arm-trusted-firmware"
+rev = "v2.13.0"
+
+[src-armbian-build]
+src.manual = "refs/heads/master"
+fetch.git = "https://github.com/armbian/build"
+rev = "refs/heads/master"
+
+[src-bpi-router-linux-branch-6-12-main]
+src.manual = "refs/heads/6.12-main"
+fetch.git = "https://github.com/frank-w/BPI-Router-Linux.git"
+rev = "refs/heads/6.12-main"
+
+[src-common-drivers-master]
+src.manual = "refs/heads/khadas-vims-5.15.y"
+fetch.git = "https://github.com/khadas/common_drivers"
+rev = "refs/heads/khadas-vims-5.15.y"
+
+[src-firmware-master]
+src.manual = "refs/heads/master"
+fetch.git = "https://github.com/armbian/firmware"
+rev = "refs/heads/master"
+
+[src-kernel-branch-linux-6-18-2]
+src.manual = "refs/heads/linux-6.18.2"
+fetch.git = "https://github.com/radxa/kernel.git"
+rev = "refs/heads/linux-6.18.2"
+
+[src-linux-bianbu-branch-linux-6-18-y]
+src.manual = "refs/heads/linux-6.18.y"
+fetch.git = "https://github.com/jmontleon/linux-bianbu.git"
+rev = "refs/heads/linux-6.18.y"
+
+[src-linux-branch-jh7110-visionfive2-6-6-y-devel]
+src.manual = "refs/heads/JH7110_VisionFive2_6.6.y_devel"
+fetch.git = "https://github.com/starfive-tech/linux"
+rev = "refs/heads/JH7110_VisionFive2_6.6.y_devel"
+
+[src-linux-branch-khadas-vims-5-15-y]
+src.manual = "refs/heads/khadas-vims-5.15.y"
+fetch.git = "https://github.com/khadas/linux.git"
+rev = "refs/heads/khadas-vims-5.15.y"
+
+[src-linux-branch-lenovo-x13s-linux-7-0-y]
+src.manual = "refs/heads/lenovo-x13s-linux-7.0.y"
+fetch.git = "https://github.com/steev/linux.git"
+rev = "refs/heads/lenovo-x13s-linux-7.0.y"
+
+[src-linux-branch-linux-5-15]
+src.manual = "refs/heads/linux-5.15"
+fetch.git = "https://github.com/AvaotaSBC/linux.git"
+rev = "refs/heads/linux-5.15"
+
+[src-linux-branch-linux-6-12-y]
+src.manual = "refs/heads/linux-6.12.y"
+fetch.git = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git"
+rev = "refs/heads/linux-6.12.y"
+
+[src-linux-branch-linux-6-15-y]
+src.manual = "refs/heads/linux-6.15.y"
+fetch.git = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git"
+rev = "refs/heads/linux-6.15.y"
+
+[src-linux-branch-linux-6-18-y]
+src.manual = "refs/heads/linux-6.18.y"
+fetch.git = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git"
+rev = "refs/heads/linux-6.18.y"
+
+[src-linux-branch-linux-6-19-y]
+src.manual = "refs/heads/linux-6.19.y"
+fetch.git = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git"
+rev = "refs/heads/linux-6.19.y"
+
+[src-linux-branch-linux-6-6-y]
+src.manual = "refs/heads/linux-6.6.y"
+fetch.git = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git"
+rev = "refs/heads/linux-6.6.y"
+
+[src-linux-branch-linux-7-0-y]
+src.manual = "refs/heads/linux-7.0.y"
+fetch.git = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git"
+rev = "refs/heads/linux-7.0.y"
+
+[src-linux-branch-odroid-6-6-y]
+src.manual = "refs/heads/odroid-6.6.y"
+fetch.git = "https://github.com/hardkernel/linux"
+rev = "refs/heads/odroid-6.6.y"
+
+[src-linux-branch-rpi-7-0-y]
+src.manual = "refs/heads/rpi-7.0.y"
+fetch.git = "https://github.com/raspberrypi/linux"
+rev = "refs/heads/rpi-7.0.y"
+
+[src-linux-branch-v6-12-49-ti-arm64-r56]
+src.manual = "refs/heads/v6.12.49-ti-arm64-r56"
+fetch.git = "https://github.com/beagleboard/linux"
+rev = "refs/heads/v6.12.49-ti-arm64-r56"
+
+[src-linux-branch-v6-6-54-xpressreal-t3]
+src.manual = "refs/heads/v6.6.54-xpressreal-t3"
+fetch.git = "https://github.com/XpressReal/linux.git"
+rev = "refs/heads/v6.6.54-xpressreal-t3"
+
+[src-linux-commit-1b251287c9f26c428033af1106319af5e32f376b]
+src.manual = "1b251287c9f26c428033af1106319af5e32f376b"
+fetch.git = "https://gitlab.collabora.com/mediatek/aiot/linux.git"
+rev = "1b251287c9f26c428033af1106319af5e32f376b"
+
+[src-linux-firmware-master]
+src.manual = "refs/heads/main"
+fetch.git = "https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git"
+rev = "refs/heads/main"
+
+[src-linux-rockchip-branch-rk-6-1-rkr5-1]
+src.manual = "refs/heads/rk-6.1-rkr5.1"
+fetch.git = "https://github.com/armbian/linux-rockchip.git"
+rev = "refs/heads/rk-6.1-rkr5.1"
+
+[src-linux-t2-patches-7-0]
+src.manual = "refs/heads/7.0"
+fetch.git = "https://github.com/t2linux/linux-t2-patches"
+rev = "refs/heads/7.0"
+
+[src-linux-tag-lf-6-12-49-2-2-0]
+src.manual = "lf-6.12.49-2.2.0"
+fetch.git = "https://github.com/nxp-qoriq/linux.git"
+rev = "lf-6.12.49-2.2.0"
+
+[src-linux-tag-v6-12-28]
+src.manual = "v6.12.28"
+fetch.git = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git"
+rev = "v6.12.28"
+
+[src-linux-tag-v7-0]
+src.manual = "v7.0"
+fetch.git = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git"
+rev = "v7.0"
+
+[src-ma35d1-arm-trusted-firmware-v2-3-branch-master]
+src.manual = "refs/heads/master"
+fetch.git = "https://github.com/OpenNuvoton/MA35D1_arm-trusted-firmware-v2.3.git"
+rev = "refs/heads/master"
+
+[src-ma35d1-linux-5-10-y-branch-master]
+src.manual = "refs/heads/master"
+fetch.git = "https://github.com/OpenNuvoton/MA35D1_linux-5.10.y.git"
+rev = "refs/heads/master"
+
+[src-ma35d1-u-boot-v2020-07-branch-master]
+src.manual = "refs/heads/master"
+fetch.git = "https://github.com/OpenNuvoton/MA35D1_u-boot-v2020.07.git"
+rev = "refs/heads/master"
+
+[src-phytium-linux-kernel-branch-linux-6-6]
+src.manual = "refs/heads/linux-6.6"
+fetch.git = "https://github.com/chainsx/phytium-linux-kernel"
+rev = "refs/heads/linux-6.6"
+
+[src-qoriq-fm-ucode-master]
+src.manual = "refs/heads/integration"
+fetch.git = "https://github.com/NXP/qoriq-fm-ucode.git"
+rev = "refs/heads/integration"
+
+[src-spacemit-opensbi-tag-k1-bl-v2-2-9-release]
+src.manual = "k1-bl-v2.2.9-release"
+fetch.git = "https://github.com/pyavitz/spacemit-opensbi.git"
+rev = "k1-bl-v2.2.9-release"
+
+[src-spacemit-u-boot-tag-k1-bl-v2-2-9-release]
+src.manual = "k1-bl-v2.2.9-release"
+fetch.git = "https://github.com/pyavitz/spacemit-u-boot.git"
+rev = "k1-bl-v2.2.9-release"
+
+[src-ti-linux-kernel-branch-ti-linux-6-18-y]
+src.manual = "refs/heads/ti-linux-6.18.y"
+fetch.git = "https://github.com/TexasInstruments/ti-linux-kernel"
+rev = "refs/heads/ti-linux-6.18.y"
+
+[src-ti-u-boot-branch-ti-u-boot-2026-01]
+src.manual = "refs/heads/ti-u-boot-2026.01"
+fetch.git = "https://github.com/TexasInstruments/ti-u-boot"
+rev = "refs/heads/ti-u-boot-2026.01"
+
+[src-trusted-firmware-a-commit-decacb88cfe882cb09ddd613ecaf1323d3fe6c22]
+src.manual = "decacb88cfe882cb09ddd613ecaf1323d3fe6c22"
+fetch.git = "https://gitlab.com/mediatek/aiot/bsp/trusted-firmware-a.git"
+rev = "decacb88cfe882cb09ddd613ecaf1323d3fe6c22"
+
+[src-trusted-firmware-a-tag-lts-v2-12-8]
+src.manual = "lts-v2.12.8"
+fetch.git = "https://git.trustedfirmware.org/TF-A/trusted-firmware-a.git"
+rev = "lts-v2.12.8"
+
+[src-u-boot-branch-khadas-vims-v2019-01]
+src.manual = "refs/heads/khadas-vims-v2019.01"
+fetch.git = "https://github.com/CoreELEC/u-boot.git"
+rev = "refs/heads/khadas-vims-v2019.01"
+
+[src-u-boot-branch-next-dev-buildroot]
+src.manual = "refs/heads/next-dev-buildroot"
+fetch.git = "https://github.com/radxa/u-boot.git"
+rev = "refs/heads/next-dev-buildroot"
+
+[src-u-boot-branch-next-dev-v2024-10]
+src.manual = "refs/heads/next-dev-v2024.10"
+fetch.git = "https://github.com/radxa/u-boot.git"
+rev = "refs/heads/next-dev-v2024.10"
+
+[src-u-boot-branch-odroidc-v2011-03]
+src.manual = "refs/heads/odroidc-v2011.03"
+fetch.git = "https://github.com/hardkernel/u-boot.git"
+rev = "refs/heads/odroidc-v2011.03"
+
+[src-u-boot-branch-odroidxu4-v2017-05]
+src.manual = "refs/heads/odroidxu4-v2017.05"
+fetch.git = "https://github.com/hardkernel/u-boot.git"
+rev = "refs/heads/odroidxu4-v2017.05"
+
+[src-u-boot-branch-v2018-01-solidrun-a38x]
+src.manual = "refs/heads/v2018.01-solidrun-a38x"
+fetch.git = "https://github.com/SolidRun/u-boot"
+rev = "refs/heads/v2018.01-solidrun-a38x"
+
+[src-u-boot-branch-v2024-01-xpressreal]
+src.manual = "refs/heads/v2024.01-xpressreal"
+fetch.git = "https://github.com/XpressReal/u-boot.git"
+rev = "refs/heads/v2024.01-xpressreal"
+
+[src-u-boot-branch-v2025-07-am6232-pocketbeagle2]
+src.manual = "refs/heads/v2025.07-am6232-pocketbeagle2"
+fetch.git = "https://github.com/beagleboard/u-boot"
+rev = "refs/heads/v2025.07-am6232-pocketbeagle2"
+
+[src-u-boot-commit-0b8e25bd9e16e8043b600e8f49b926b95572dc47]
+src.manual = "0b8e25bd9e16e8043b600e8f49b926b95572dc47"
+fetch.git = "https://github.com/u-boot/u-boot.git"
+rev = "0b8e25bd9e16e8043b600e8f49b926b95572dc47"
+
+[src-u-boot-commit-40c563b0d2ba7e150085e195f23f4ed4adc81646]
+src.manual = "40c563b0d2ba7e150085e195f23f4ed4adc81646"
+fetch.git = "https://gitlab.com/mediatek/aiot/bsp/u-boot.git"
+rev = "40c563b0d2ba7e150085e195f23f4ed4adc81646"
+
+[src-u-boot-tag-v2022-01]
+src.manual = "v2022.01"
+fetch.git = "https://github.com/u-boot/u-boot"
+rev = "v2022.01"
+
+[src-u-boot-tag-v2022-07]
+src.manual = "v2022.07"
+fetch.git = "https://github.com/u-boot/u-boot"
+rev = "v2022.07"
+
+[src-u-boot-tag-v2023-07-02]
+src.manual = "v2023.07.02"
+fetch.git = "https://github.com/u-boot/u-boot"
+rev = "v2023.07.02"
+
+[src-u-boot-tag-v2023-10]
+src.manual = "v2023.10"
+fetch.git = "https://github.com/u-boot/u-boot"
+rev = "v2023.10"
+
+[src-u-boot-tag-v2024-01]
+src.manual = "v2024.01"
+fetch.git = "https://github.com/u-boot/u-boot"
+rev = "v2024.01"
+
+[src-u-boot-tag-v2024-04]
+src.manual = "v2024.04"
+fetch.git = "https://github.com/u-boot/u-boot"
+rev = "v2024.04"
+
+[src-u-boot-tag-v2024-07]
+src.manual = "v2024.07"
+fetch.git = "https://github.com/u-boot/u-boot"
+rev = "v2024.07"
+
+[src-u-boot-tag-v2024-10]
+src.manual = "v2024.10"
+fetch.git = "https://github.com/u-boot/u-boot.git"
+rev = "v2024.10"
+
+[src-u-boot-tag-v2025-01]
+src.manual = "v2025.01"
+fetch.git = "https://github.com/u-boot/u-boot"
+rev = "v2025.01"
+
+[src-u-boot-tag-v2025-04]
+src.manual = "v2025.04"
+fetch.git = "https://github.com/u-boot/u-boot"
+rev = "v2025.04"
+
+[src-u-boot-tag-v2025-10]
+src.manual = "v2025.10"
+fetch.git = "https://github.com/u-boot/u-boot.git"
+rev = "v2025.10"
+
+[src-u-boot-tag-v2026-01]
+src.manual = "v2026.01"
+fetch.git = "https://github.com/u-boot/u-boot"
+rev = "v2026.01"
+
+[src-u-boot-tag-v2026-04]
+src.manual = "v2026.04"
+fetch.git = "https://github.com/u-boot/u-boot.git"
+rev = "v2026.04"
+
+[uboot-branch-khadas-vims-v2019-01]
+src.manual = "refs/heads/khadas-vims-v2019.01"
+fetch.git = "https://github.com/CoreELEC/u-boot.git"
+rev = "refs/heads/khadas-vims-v2019.01"
+
+[uboot-branch-master]
+src.manual = "refs/heads/master"
+fetch.git = "https://github.com/OpenNuvoton/MA35D1_u-boot-v2020.07.git"
+rev = "refs/heads/master"
+
+[uboot-branch-next-dev-buildroot]
+src.manual = "refs/heads/next-dev-buildroot"
+fetch.git = "https://github.com/radxa/u-boot.git"
+rev = "refs/heads/next-dev-buildroot"
+
+[uboot-branch-next-dev-v2024-10]
+src.manual = "refs/heads/next-dev-v2024.10"
+fetch.git = "https://github.com/radxa/u-boot.git"
+rev = "refs/heads/next-dev-v2024.10"
+
+[uboot-branch-odroidc-v2011-03]
+src.manual = "refs/heads/odroidc-v2011.03"
+fetch.git = "https://github.com/hardkernel/u-boot.git"
+rev = "refs/heads/odroidc-v2011.03"
+
+[uboot-branch-odroidxu4-v2017-05]
+src.manual = "refs/heads/odroidxu4-v2017.05"
+fetch.git = "https://github.com/hardkernel/u-boot.git"
+rev = "refs/heads/odroidxu4-v2017.05"
+
+[uboot-branch-ti-u-boot-2026-01]
+src.manual = "refs/heads/ti-u-boot-2026.01"
+fetch.git = "https://github.com/TexasInstruments/ti-u-boot"
+rev = "refs/heads/ti-u-boot-2026.01"
+
+[uboot-branch-v2018-01-solidrun-a38x]
+src.manual = "refs/heads/v2018.01-solidrun-a38x"
+fetch.git = "https://github.com/SolidRun/u-boot"
+rev = "refs/heads/v2018.01-solidrun-a38x"
+
+[uboot-branch-v2024-01-xpressreal]
+src.manual = "refs/heads/v2024.01-xpressreal"
+fetch.git = "https://github.com/XpressReal/u-boot.git"
+rev = "refs/heads/v2024.01-xpressreal"
+
+[uboot-branch-v2025-07-am6232-pocketbeagle2]
+src.manual = "refs/heads/v2025.07-am6232-pocketbeagle2"
+fetch.git = "https://github.com/beagleboard/u-boot"
+rev = "refs/heads/v2025.07-am6232-pocketbeagle2"
+
+[uboot-commit-0b8e25bd9e16e8043b600e8f49b926b95572dc47]
+src.manual = "0b8e25bd9e16e8043b600e8f49b926b95572dc47"
+fetch.git = "https://github.com/u-boot/u-boot.git"
+rev = "0b8e25bd9e16e8043b600e8f49b926b95572dc47"
+
+[uboot-commit-40c563b0d2ba7e150085e195f23f4ed4adc81646]
+src.manual = "40c563b0d2ba7e150085e195f23f4ed4adc81646"
+fetch.git = "https://gitlab.com/mediatek/aiot/bsp/u-boot.git"
+rev = "40c563b0d2ba7e150085e195f23f4ed4adc81646"
+
+[uboot-tag-k1-bl-v2-2-9-release]
+src.manual = "k1-bl-v2.2.9-release"
+fetch.git = "https://github.com/pyavitz/spacemit-u-boot.git"
+rev = "k1-bl-v2.2.9-release"
+
+[uboot-tag-v2022-01]
+src.manual = "v2022.01"
+fetch.git = "https://github.com/u-boot/u-boot"
+rev = "v2022.01"
+
+[uboot-tag-v2022-07]
+src.manual = "v2022.07"
+fetch.git = "https://github.com/u-boot/u-boot"
+rev = "v2022.07"
+
+[uboot-tag-v2023-07-02]
+src.manual = "v2023.07.02"
+fetch.git = "https://github.com/u-boot/u-boot"
+rev = "v2023.07.02"
+
+[uboot-tag-v2023-10]
+src.manual = "v2023.10"
+fetch.git = "https://github.com/u-boot/u-boot"
+rev = "v2023.10"
+
+[uboot-tag-v2024-01]
+src.manual = "v2024.01"
+fetch.git = "https://github.com/u-boot/u-boot"
+rev = "v2024.01"
+
+[uboot-tag-v2024-04]
+src.manual = "v2024.04"
+fetch.git = "https://github.com/u-boot/u-boot"
+rev = "v2024.04"
+
+[uboot-tag-v2024-07]
+src.manual = "v2024.07"
+fetch.git = "https://github.com/u-boot/u-boot"
+rev = "v2024.07"
+
+[uboot-tag-v2024-10]
+src.manual = "v2024.10"
+fetch.git = "https://github.com/u-boot/u-boot.git"
+rev = "v2024.10"
+
+[uboot-tag-v2025-01]
+src.manual = "v2025.01"
+fetch.git = "https://github.com/u-boot/u-boot"
+rev = "v2025.01"
+
+[uboot-tag-v2025-04]
+src.manual = "v2025.04"
+fetch.git = "https://github.com/u-boot/u-boot"
+rev = "v2025.04"
+
+[uboot-tag-v2025-10]
+src.manual = "v2025.10"
+fetch.git = "https://github.com/u-boot/u-boot.git"
+rev = "v2025.10"
+
+[uboot-tag-v2026-01]
+src.manual = "v2026.01"
+fetch.git = "https://github.com/u-boot/u-boot"
+rev = "v2026.01"
+
+[uboot-tag-v2026-04]
+src.manual = "v2026.04"
+fetch.git = "https://github.com/u-boot/u-boot.git"
+rev = "v2026.04"

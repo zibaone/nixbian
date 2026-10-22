@@ -1,0 +1,9 @@
+{
+    "family": "meson",
+    "platforms": {
+        "meson-current": {
+            "arch": "armhf",
+            "branch": "current"
+        }
+    }
+}

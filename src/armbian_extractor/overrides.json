@@ -1,0 +1,46 @@
+{
+    "orangepizero3": {
+        "all": {
+            "uboot": {
+                "config": "orangepi_zero3_defconfig",
+                "patch_dir": "v2025-sunxi",
+                "atf_source": "https://github.com/ARM-software/arm-trusted-firmware"
+            },
+            "firmware_include": [
+                "sunxi",
+                "sunxi64",
+                "bt"
+            ],
+            "dtb": "allwinner/sun50i-h618-orangepi-zero3.dtb",
+            "kernel_params": "console=ttyS0,115200"
+        }
+    },
+    "aml-s905d3-cc": {
+        "all": {
+            "uboot": {
+                "config": "libre_computer_aml_s905d3_cc_defconfig"
+            },
+            "dtb": "amlogic/meson-sm1-libretech-cc.dtb"
+        }
+    },
+    "aml-a311d-cc": {
+        "all": {
+            "uboot": {
+                "config": "libre_computer_aml_a311d_cc_defconfig"
+            },
+            "dtb": "amlogic/meson-g12b-libretech-cc.dtb"
+        }
+    },
+    "mba93xxla-mini": {
+        "edge": {
+            "kernel": {
+                "branch": "branch:linux-7.0.y"
+            },
+            "extra_sources": {
+                "KERNELSOURCE": {
+                    "rev": "branch:linux-7.0.y"
+                }
+            }
+        }
+    }
+}

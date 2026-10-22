@@ -1,0 +1,56 @@
+name: "Nix CI"
+on:
+  pull_request:
+  push:
+    branches: [ main, master ]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: nix-ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      CACHIX_AUTH_TOKEN: ${{ secrets.CACHIX_AUTH_TOKEN }}
+      ATTIC_TOKEN: ${{ secrets.ATTIC_TOKEN }}
+      ATTIC_ENDPOINT: ${{ secrets.ATTIC_ENDPOINT }}
+    steps:
+    - uses: actions/checkout@v7
+    
+    - uses: cachix/install-nix-action@v31
+      with:
+        extra_nix_config: |
+          access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
+          experimental-features = nix-command flakes
+    
+    - uses: DeterminateSystems/magic-nix-cache-action@v15
+
+    - name: "Setup Cachix Cache"
+      uses: cachix/cachix-action@v17
+      if: ${{ github.event_name != 'pull_request' && env.CACHIX_AUTH_TOKEN != '' }}
+      with:
+        name: havenos
+        authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
+
+    - name: "Flake Check"
+      run: nix flake check --show-trace
+
+    - name: "Check Code Formatting"
+      run: nix develop --command just check-format
+
+    - name: "Check Template Drift (Generated Metadata)"
+      run: nix develop --command just check-drift
+
+    - name: "Run Unit Tests (Pytest)"
+      run: nix develop --command pytest
+
+    - name: "Board Evaluation Validation (Just Check)"
+      run: nix develop --command just check
+
+    - name: "Verify Metadata Generation"
+      run: nix build .#metadata

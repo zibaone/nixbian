@@ -1,0 +1,13 @@
+{
+    "family": "loong64",
+    "platforms": {
+        "loong64-current": {
+            "arch": "loong64",
+            "branch": "current"
+        },
+        "loong64-edge": {
+            "arch": "loong64",
+            "branch": "edge"
+        }
+    }
+}

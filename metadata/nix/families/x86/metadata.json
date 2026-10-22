@@ -1,0 +1,21 @@
+{
+    "family": "x86",
+    "platforms": {
+        "x86-current": {
+            "arch": "amd64",
+            "branch": "current"
+        },
+        "x86-edge": {
+            "arch": "amd64",
+            "branch": "edge"
+        },
+        "x86-legacy": {
+            "arch": "amd64",
+            "branch": "legacy"
+        },
+        "x86-cloud": {
+            "arch": "amd64",
+            "branch": "cloud"
+        }
+    }
+}

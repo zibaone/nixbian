@@ -1,0 +1,9 @@
+{
+    "family": "nuvoton-ma35d1",
+    "platforms": {
+        "nuvoton-ma35d1-vendor": {
+            "arch": "arm64",
+            "branch": "vendor"
+        }
+    }
+}

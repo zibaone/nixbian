@@ -1,0 +1,17 @@
+{
+    "family": "bcm2711",
+    "platforms": {
+        "bcm2711-current": {
+            "arch": "arm64",
+            "branch": "current"
+        },
+        "bcm2711-edge": {
+            "arch": "arm64",
+            "branch": "edge"
+        },
+        "bcm2711-legacy": {
+            "arch": "arm64",
+            "branch": "legacy"
+        }
+    }
+}

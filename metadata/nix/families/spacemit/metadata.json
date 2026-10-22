@@ -1,0 +1,17 @@
+{
+    "family": "spacemit",
+    "platforms": {
+        "spacemit-legacy": {
+            "arch": "riscv64",
+            "branch": "legacy"
+        },
+        "spacemit-current": {
+            "arch": "riscv64",
+            "branch": "current"
+        },
+        "spacemit-edge": {
+            "arch": "riscv64",
+            "branch": "edge"
+        }
+    }
+}

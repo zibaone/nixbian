@@ -1,0 +1,30 @@
+{
+  "v25.11.1": {
+    "rev": "v25.11.1",
+    "hash": "sha256-pHb8N58jlNELD/S9X/Ct5WCojx/03knYsuROAEf2W+g="
+  },
+  "v25.8.2": {
+    "rev": "v25.8.2",
+    "hash": "sha256-QSsulYq/Rrvej/DQ8sg4BWwOHbRjMW2xhSTD4Wy6d3Y="
+  },
+  "v25.8.1": {
+    "rev": "v25.8.1",
+    "hash": "sha256-B/8bwspCLfnb6RT4CrI26tNE+JqwlYQxgHElrnrTK0A="
+  },
+  "v25.5.1": {
+    "rev": "v25.5.1",
+    "hash": "sha256-krnaTroXkzREpMKazA++GAeMhdHgdJ/etp6+T5zbO+c="
+  },
+  "v25.2.1": {
+    "rev": "v25.2.1",
+    "hash": "sha256-ITHcEAEvBOkrlARK74hQ/QBR36c2ls37z0kprBIqEtI="
+  },
+  "v26.2.1": {
+    "rev": "v26.2.1",
+    "hash": "sha256-2xNeMlm+XE26tzX8SQh9OINv+wJQeVwdcd8Nf8qdYxc="
+  },
+  "v26.5.1": {
+    "rev": "v26.5.1",
+    "hash": "sha256-WJygnpgK/J18oDJjJYuCursd02blTrIBWxX91LsTgx4="
+  }
+}

@@ -1,0 +1,9 @@
+{
+    "family": "starfive2",
+    "platforms": {
+        "starfive2-vendor": {
+            "arch": "riscv64",
+            "branch": "vendor"
+        }
+    }
+}
