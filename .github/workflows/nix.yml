@@ -48,7 +48,7 @@ jobs:
         # everything this job built: the 62 MiB `metadata` copy (nobody builds
         # it) and the 1.1 GiB devShell closure (re-uploaded on every
         # dependency bump, evicting the kernels that actually matter).
-        push: false
+        skipPush: true
 
     - name: "Flake Check"
       run: nix flake check --show-trace
@@ -73,7 +73,13 @@ jobs:
 
     - name: "Push the CLI to the cache"
       if: ${{ github.event_name != 'pull_request' && env.CACHIX_AUTH_TOKEN != '' }}
+      env:
+        CACHIX_SIGNING_KEY: ${{ secrets.CACHIX_SIGNING_KEY }}
       run: |
+        if [ -z "${CACHIX_SIGNING_KEY}" ]; then
+          echo "::warning title=No CACHIX_SIGNING_KEY::Built, not pushed: this cache refuses an unsigned narinfo. Add the CACHIX_SIGNING_KEY secret."
+          exit 0
+        fi
         path="$(nix build --no-link --print-out-paths .#default)"
         echo "CLI closure: $(nix path-info -Sh "$path" | awk '{print $2}')"
         cachix push havenos "$path"

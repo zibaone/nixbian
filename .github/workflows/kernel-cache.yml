@@ -60,8 +60,24 @@ jobs:
         board: ${{ fromJson(needs.plan.outputs.boards) }}
     env:
       CACHIX_AUTH_TOKEN: ${{ secrets.CACHIX_AUTH_TOKEN }}
+      CACHIX_SIGNING_KEY: ${{ secrets.CACHIX_SIGNING_KEY }}
     steps:
       - uses: actions/checkout@v7
+
+      # Measured: the H616 cross build dies at the final link with "No space
+      # left on device" after ~95 min. `/` has ~14 GiB free; `/mnt` is a
+      # separate ~74 GiB volume. Bind it onto /nix before Nix creates its store.
+      - name: "Disk: mount /mnt on /nix when separate"
+        run: |
+          df -h / /mnt || true
+          if [ -d /mnt ] && [ "$(df --output=target /mnt | tail -1)" = "/mnt" ]; then
+            sudo mkdir -p /mnt/nix /nix
+            sudo mount --bind /mnt/nix /nix
+            echo "/nix is now on /mnt"
+          else
+            echo "/mnt absent or on root: keeping the default store"
+          fi
+          df -h / /nix || true
 
       - uses: cachix/install-nix-action@v31
         with:
@@ -79,7 +95,7 @@ jobs:
           signingKey: '${{ secrets.CACHIX_SIGNING_KEY }}'
           # Explicit push below: `push: true` would also upload the compiler
           # and source tarballs used to build the kernel, which no user needs.
-          push: false
+          skipPush: true
 
       - name: "Build ${{ matrix.board }}"
         id: build
@@ -93,6 +109,10 @@ jobs:
         if: ${{ env.CACHIX_AUTH_TOKEN != '' }}
         run: |
           path="${{ steps.build.outputs.path }}"
+          if [ -z "${CACHIX_SIGNING_KEY}" ]; then
+            echo "::warning title=No CACHIX_SIGNING_KEY::Built, not pushed: this cache refuses an unsigned narinfo. Add the CACHIX_SIGNING_KEY secret."
+            exit 0
+          fi
           cachix push havenos "$path"
           hash="${path#/nix/store/}"; hash="${hash%%-*}"
           code="$(curl -s -o /dev/null -w '%{http_code}' "https://havenos.cachix.org/$hash.narinfo")"
