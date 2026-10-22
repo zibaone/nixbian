@@ -1,8 +1,14 @@
 name: Metadata & config
 
 # Single owner of the generated state: versions.json, metadata/ and the
-# nvfetcher hashes. Keeping it in one workflow means one branch and one
-# pull request, instead of several crons competing over the same files.
+# nvfetcher hashes.
+#
+# It never opens a pull request. A run refreshes the branch
+# `auto/metadata-config` and stops there: reviewing the refresh, running CI
+# on it and merging it are human decisions, taken when someone asks for it.
+# Opening a PR from the bot also cannot work on its own — GitHub treats a
+# branch whose commits come from `github-actions[bot]` as a first-time
+# contributor and parks the `pull_request` run in `action_required`.
 #
 # Weekly, not daily: a refresh prefetches every branch that moved upstream,
 # and a kernel snapshot takes minutes (35 sources moved in one day when this
@@ -17,7 +23,6 @@ on:
 
 permissions:
   contents: write
-  pull-requests: write
 
 concurrency:
   group: metadata-config
@@ -27,17 +32,8 @@ jobs:
   refresh:
     runs-on: ubuntu-latest
     timeout-minutes: 90
-    env:
-      # A token that belongs to a user, not to the Actions app, is required
-      # for the pull request to trigger `Nix CI`: events caused by
-      # GITHUB_TOKEN never start another workflow run, so the required
-      # `check` status would never appear on the PR.
-      GH_TOKEN: ${{ secrets.AUTO_PR_TOKEN || secrets.GITHUB_TOKEN }}
-      AUTO_PR_TOKEN: ${{ secrets.AUTO_PR_TOKEN }}
     steps:
       - uses: actions/checkout@v7
-        with:
-          token: ${{ secrets.AUTO_PR_TOKEN || secrets.GITHUB_TOKEN }}
 
       - uses: cachix/install-nix-action@v31
         with:
@@ -46,11 +42,6 @@ jobs:
             experimental-features = nix-command flakes
 
       - uses: DeterminateSystems/magic-nix-cache-action@v15
-
-      - name: Warn when AUTO_PR_TOKEN is missing
-        if: env.AUTO_PR_TOKEN == ''
-        run: |
-          echo "::warning title=No AUTO_PR_TOKEN::The refresh branch is pushed and the pull request is opened with GITHUB_TOKEN. GitHub treats a PR whose commits come from github-actions[bot] as a first-time contributor: its 'Nix CI' run lands in 'action_required' and waits for approval, and a workflow_dispatch cannot satisfy the required 'check' status (verified). Add a fine-grained PAT (Contents: write, Pull requests: write) as AUTO_PR_TOKEN to get a mergeable PR automatically."
 
       # 1. Pick up new Armbian tags. `update-versions` only adds tags that
       #    are missing from versions.json, so a no-op run leaves the file
@@ -86,8 +77,8 @@ jobs:
         run: nix develop --command python3 scripts/resolve_lock.py
 
       # 4. Configuration gate: one flake evaluation for all 737 boards.
-      #    Runs on every scheduled tick, even when nothing moved upstream,
-      #    so a broken family is caught without waiting for a release.
+      #    Runs on every tick, even when nothing moved upstream, so a broken
+      #    family is caught without waiting for a release.
       - name: Kernel config gate (all families)
         run: nix develop --command python3 scripts/check_all_configs.py
 
@@ -108,18 +99,31 @@ jobs:
             exit 0
           fi
           git commit -m "chore: metadata and hash refresh"
-          # checkout already persisted the token, so no credential in the URL.
           git push origin auto/metadata-config --force
           echo "changed=true" >> "$GITHUB_OUTPUT"
 
-      - name: Open or update pull request
-        if: steps.commit.outputs.changed == 'true'
+      # No pull request on purpose. Spell out how to review the branch
+      # instead, so the run is useful on its own.
+      - name: Report the refresh branch
+        if: always()
         run: |
-          TITLE="chore: metadata and hash refresh"
-          BODY="Automated refresh of the generated state: versions.json (new Armbian tags when any), metadata/ regenerated from the newest pin, and the nvfetcher hashes. The kernel config gate ran over every family/branch pair before this branch was pushed."
-          if gh pr list --head auto/metadata-config --json number --jq '.[0].number' | grep -q .; then
-            gh pr edit auto/metadata-config --title "$TITLE" --body "$BODY"
-          else
-            gh pr create --base master --head auto/metadata-config \
-              --title "$TITLE" --body "$BODY"
-          fi
+          {
+            echo "## Metadata & config refresh"
+            echo
+            if [ "${{ steps.commit.outputs.changed }}" = "true" ]; then
+              echo "The branch \`auto/metadata-config\` was updated. No pull request was opened."
+              echo
+              echo "Review it:"
+              echo '```'
+              echo "git fetch origin auto/metadata-config"
+              echo "git diff master...origin/auto/metadata-config"
+              echo '```'
+              echo "Check it, then merge it when you are ready:"
+              echo '```'
+              echo "gh workflow run nix.yml --ref auto/metadata-config"
+              echo "gh pr create --base master --head auto/metadata-config"
+              echo '```'
+            else
+              echo "No refresh branch was produced: either nothing moved upstream, or a step above failed."
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"

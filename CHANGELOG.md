@@ -18,15 +18,17 @@ the project adheres to [Semantic Versioning](https://semver.org/).
   the generated state (`versions.json`, `metadata/`, nvfetcher hashes). It
   detects new Armbian tags by diffing `versions.json` after
   `just update-versions`, regenerates metadata only when the pin moved, runs
-  the configuration gate, and opens one PR.
+  the configuration gate, and pushes the `auto/metadata-config` branch. It
+  never opens a pull request: reviewing and merging the refresh stays a human
+  decision.
 - 15 unit tests for the gate (`tests/test_check_all_configs.py`), covering the
   `platforms.nix` parser, each divergence case, the exit codes, and a drift
   guard against the real metadata tree.
 
 ### Changed
 
-- `docs/ci.md` documents the single scheduled workflow and the real
-  requirement behind `AUTO_PR_TOKEN`.
+- `docs/ci.md` documents the single scheduled workflow and the no-automatic-PR
+  policy.
 - `scripts/resolve_lock.py` prefetches changed sources in parallel
   (`scripts/prefetch.py`, 8 at a time, `NIXBIAN_PREFETCH_JOBS` to tune).
   35 sources had moved in a single day, and one kernel snapshot takes

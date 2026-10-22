@@ -5,10 +5,11 @@
 | File | Trigger | Role |
 | --- | --- | --- |
 | `.github/workflows/nix.yml` | PR, push to `main`/`master` | `nix flake check` (metadata checks + 6 board evaluations + CLI), `just check-format`, `just check-drift`, `pytest`, the kernel config gate over every family/branch pair, `just check` |
-| `.github/workflows/metadata-config.yml` | cron `0 7 * * 1` (Monday), manual | Single owner of the generated state: `update-versions` (new Armbian tags), `refresh-metadata` (regeneration, with kernel version refresh), `scripts/resolve_lock.py` (hashes), `scripts/check_all_configs.py` (gate), PR `auto/metadata-config` |
+| `.github/workflows/metadata-config.yml` | cron `0 7 * * 1` (Monday), manual | Single owner of the generated state: `update-versions` (new Armbian tags), `refresh-metadata` (regeneration, with kernel version refresh), `scripts/resolve_lock.py` (hashes), `scripts/check_all_configs.py` (gate) — then branch `auto/metadata-config`, **no pull request** |
 
-Scheduled jobs **never** push to `master`: they push an `auto/*` branch and open
-a PR. Merging remains a human decision.
+Scheduled jobs **never** push to `master` and **never open a pull request**:
+they push the `auto/*` branch and stop there. Reviewing that branch, running
+CI on it and merging it are human decisions, taken when someone asks for it.
 
 There is one scheduled workflow on purpose. `versions.json`, `metadata/` and
 the nvfetcher hashes are produced by the same generator run, so splitting them
@@ -52,36 +53,34 @@ symbol-by-symbol diff.
 ## Permissions
 
 - `nix.yml`: `contents: read` only.
-- `metadata-config.yml`: `contents: write` (push the `auto/*` branch) and
-  `pull-requests: write` (create/update the PR).
+- `metadata-config.yml`: `contents: write`, to push the `auto/*` branch. It does
+  not need `pull-requests: write` any more, since it no longer opens a PR.
 
 ## Secrets
 
-- `AUTO_PR_TOKEN` (**optional, preferred**): a fine-grained personal access
-  token scoped to this repository, with `Contents: write` and
-  `Pull requests: write`. When present, the pull request is opened as a user
-  and triggers `Nix CI` on its own.
 - `CACHIX_AUTH_TOKEN`: Cachix binary cache (`havenos`). Ignored on PRs.
 - `ATTIC_TOKEN` / `ATTIC_ENDPOINT`: Attic cache, if configured.
 
-Without the cache secrets the workflows still work but rebuild more.
+Without these secrets the workflows still work but rebuild more.
 
-### Why the bot cannot get its own PR checked
+### No automatic pull request
 
-A pull request whose commits come from `github-actions[bot]` is treated as a
-first-time contributor: its `Nix CI` run lands in `action_required` and waits
-for a manual approval, so the required `check` status never appears by itself.
+A refresh run pushes `auto/metadata-config` and stops. Nothing is opened on
+your behalf, and the run summary prints the three commands that close the loop:
 
-A `workflow_dispatch` of `Nix CI` on the refresh branch was tried and
-**measured as insufficient**: the dispatched run passes, but GitHub does not
-attach its check to the pull request, so `gh pr checks` still reports nothing
-and the branch stays `BLOCKED`.
+```sh
+git fetch origin auto/metadata-config
+git diff master...origin/auto/metadata-config
+gh workflow run nix.yml --ref auto/metadata-config
+gh pr create --base master --head auto/metadata-config
+```
 
-The only path that yields a mergeable PR is `AUTO_PR_TOKEN`: the PR is then
-authored by a real account, its `workflow_dispatch` / `pull_request` run needs
-no approval. Without the secret the workflow still does the useful part — it
-refreshes and validates the branch, then opens the PR for a human to approve
-the pending run or merge with the admin bypass.
+This is also the only shape that works unattended. A branch whose commits come
+from `github-actions[bot]` is treated as a first-time contributor: its
+`pull_request` run is parked in `action_required`, so the required `check`
+never appears by itself. Dispatching `Nix CI` on the branch was measured too —
+the dispatched run passes, but GitHub does not attach its check to the pull
+request, so `gh pr checks` stays empty and the branch remains `BLOCKED`.
 
 ## Flake checks
 
