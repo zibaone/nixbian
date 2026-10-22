@@ -40,6 +40,10 @@ jobs:
       with:
         name: havenos
         authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
+        # This cache refuses an unsigned narinfo (400 "This cache requires
+        # client-side signing"), and `cachix-action` reports "Pushed" even when
+        # the server rejected the path — hence the explicit narinfo check below.
+        signingKey: '${{ secrets.CACHIX_SIGNING_KEY }}'
         # Push is explicit, at the end of the job. The default would upload
         # everything this job built: the 62 MiB `metadata` copy (nobody builds
         # it) and the 1.1 GiB devShell closure (re-uploaded on every
@@ -73,3 +77,10 @@ jobs:
         path="$(nix build --no-link --print-out-paths .#default)"
         echo "CLI closure: $(nix path-info -Sh "$path" | awk '{print $2}')"
         cachix push havenos "$path"
+        hash="${path#/nix/store/}"; hash="${hash%%-*}"
+        code="$(curl -s -o /dev/null -w '%{http_code}' "https://havenos.cachix.org/$hash.narinfo")"
+        echo "narinfo $hash -> HTTP $code"
+        if [ "$code" != "200" ]; then
+          echo "::error title=Push refusé::narinfo HTTP $code — le cache exige une signature côté client (CACHIX_SIGNING_KEY manquant ?)."
+          exit 1
+        fi

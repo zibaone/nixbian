@@ -76,6 +76,7 @@ jobs:
         with:
           name: havenos
           authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
+          signingKey: '${{ secrets.CACHIX_SIGNING_KEY }}'
           # Explicit push below: `push: true` would also upload the compiler
           # and source tarballs used to build the kernel, which no user needs.
           push: false
@@ -91,7 +92,15 @@ jobs:
       - name: "Push the closure of ${{ matrix.board }}"
         if: ${{ env.CACHIX_AUTH_TOKEN != '' }}
         run: |
-          cachix push havenos "${{ steps.build.outputs.path }}"
+          path="${{ steps.build.outputs.path }}"
+          cachix push havenos "$path"
+          hash="${path#/nix/store/}"; hash="${hash%%-*}"
+          code="$(curl -s -o /dev/null -w '%{http_code}' "https://havenos.cachix.org/$hash.narinfo")"
+          echo "narinfo $hash -> HTTP $code"
+          if [ "$code" != "200" ]; then
+            echo "::error title=Push refusé::narinfo HTTP $code — le cache exige une signature côté client (CACHIX_SIGNING_KEY manquant ?)."
+            exit 1
+          fi
 
       - name: "Report the missing cache token"
         if: ${{ env.CACHIX_AUTH_TOKEN == '' }}

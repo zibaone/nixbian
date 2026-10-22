@@ -59,9 +59,26 @@ symbol-by-symbol diff.
 ## Secrets
 
 - `CACHIX_AUTH_TOKEN`: Cachix binary cache (`havenos`). Ignored on PRs.
+- `CACHIX_SIGNING_KEY`: **required** by this cache. It refuses an unsigned
+  narinfo (`400 This cache requires client-side signing`) and `cachix-action`
+  still reports "Pushed" — the path is simply not there afterwards. Every push
+  is therefore followed by an explicit narinfo check that fails the job on
+  anything but HTTP 200.
 - `ATTIC_TOKEN` / `ATTIC_ENDPOINT`: Attic cache, if configured.
 
 Without these secrets the workflows still work but rebuild more.
+
+### What the cache is for
+
+`Nix CI` builds no kernel: the six NixOS checks are `runCommand` wrappers that
+write one line each (`nix/parts/checks.nix`). Caching its output would only
+store a 62 MiB `metadata` copy and a 1.1 GiB devShell closure, so it pushes the
+CLI package and nothing else.
+
+`Kernel cache` fills the cache with what a user actually waits for: one
+reference kernel per major ARM family, cross-built from x86_64
+(`nix/parts/packages.nix` already selects `pkgsCross.*` when the board arch
+differs from the host), then pushed with a narinfo check.
 
 ### No automatic pull request
 

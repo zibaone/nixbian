@@ -14,6 +14,9 @@ the project adheres to [Semantic Versioning](https://semver.org/).
   tier and the applied config of all 1616 `kernel-*` attributes in about 3 s,
   and each pair's config is compared byte-for-byte with its reference. Wired
   into `Nix CI` as a required step.
+- `.github/workflows/kernel-cache.yml`: one reference kernel per major ARM
+  family, cross-built from x86_64, pushed to the Cachix cache with an explicit
+  narinfo check.
 - `.github/workflows/metadata-config.yml`: a single scheduled workflow owning
   the generated state (`versions.json`, `metadata/`, nvfetcher hashes). It
   detects new Armbian tags by diffing `versions.json` after
