@@ -66,19 +66,22 @@ symbol-by-symbol diff.
 
 Without the cache secrets the workflows still work but rebuild more.
 
-### Why the bot needs a hand to get its PR checked
+### Why the bot cannot get its own PR checked
 
-GitHub never starts a workflow run from an event caused by `GITHUB_TOKEN`.
-A pull request opened by the bot therefore never receives the required
-`check` status. `workflow_dispatch` is the documented exception to that rule,
-so `metadata-config.yml` dispatches `Nix CI` on the `auto/metadata-config`
-branch after opening the PR: the dispatched run's check attaches to the
-branch head, which is the PR head.
+A pull request whose commits come from `github-actions[bot]` is treated as a
+first-time contributor: its `Nix CI` run lands in `action_required` and waits
+for a manual approval, so the required `check` status never appears by itself.
 
-This path also requires the repository setting *Allow GitHub Actions to create
-and approve pull requests* (`can_approve_pull_request_reviews`), otherwise
-`gh pr create` fails with a 403. Both mechanisms become unnecessary once
-`AUTO_PR_TOKEN` is set.
+A `workflow_dispatch` of `Nix CI` on the refresh branch was tried and
+**measured as insufficient**: the dispatched run passes, but GitHub does not
+attach its check to the pull request, so `gh pr checks` still reports nothing
+and the branch stays `BLOCKED`.
+
+The only path that yields a mergeable PR is `AUTO_PR_TOKEN`: the PR is then
+authored by a real account, its `workflow_dispatch` / `pull_request` run needs
+no approval. Without the secret the workflow still does the useful part — it
+refreshes and validates the branch, then opens the PR for a human to approve
+the pending run or merge with the admin bypass.
 
 ## Flake checks
 
