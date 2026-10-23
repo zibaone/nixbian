@@ -12,7 +12,7 @@
       config = "linux-meson64-current";
       config_path = "config/kernel/linux-meson64-current.config";
       config_path_nix = "configs/linux-meson64-current.config";
-      exact_version = "6.18.58";
+      exact_version = "6.18.38";
       hash = "sha256-S48YwJ0smqgblFkpCXNOIY3gRpsmEb8KubAlRjFxBV0=";
       major_minor = "6.18";
       nvfetcher_key = "kernel-meson64-branch-linux-6-18-y";
