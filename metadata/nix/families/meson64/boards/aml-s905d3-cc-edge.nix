@@ -1,7 +1,7 @@
 { platforms, lib }:
 lib.recursiveUpdate platforms."meson64-edge" {
   board = "aml-s905d3-cc";
-  dtb = "amlogic/meson-sm1-libretech-cc.dtb";
+  dtb = "amlogic/meson-sm1-s905d3-libretech-cc.dtb";
   family = "meson64";
   firmware = {
   };

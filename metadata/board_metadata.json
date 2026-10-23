@@ -152,7 +152,7 @@
                 "rev": "tag:v2022.07"
             }
         },
-        "dtb": "amlogic/meson-g12b-libretech-cc.dtb",
+        "dtb": "amlogic/meson-g12b-a311d-libretech-cc.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -203,7 +203,7 @@
                 "rev": "tag:v2022.07"
             }
         },
-        "dtb": "amlogic/meson-g12b-libretech-cc.dtb",
+        "dtb": "amlogic/meson-g12b-a311d-libretech-cc.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -407,7 +407,7 @@
                 "rev": "tag:v2022.07"
             }
         },
-        "dtb": "amlogic/meson-sm1-libretech-cc.dtb",
+        "dtb": "amlogic/meson-sm1-s905d3-libretech-cc.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -458,7 +458,7 @@
                 "rev": "tag:v2022.07"
             }
         },
-        "dtb": "amlogic/meson-sm1-libretech-cc.dtb",
+        "dtb": "amlogic/meson-sm1-s905d3-libretech-cc.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
