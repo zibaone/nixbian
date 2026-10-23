@@ -490,7 +490,13 @@ class NixbianExtractor:
                 ),
             },
             "extra_sources": extra_sources,
-            "dtb": self.parser.get("DEFAULT_DEVICE_TREE"),
+            # `DEFAULT_DEVICE_TREE` is the *U-Boot* device tree name, which need
+            # not match the kernel's DTS (e.g. meson-g12b-libretech-cc vs
+            # meson-g12b-a311d-libretech-cc); building the kernel with it fails
+            # with "No rule to make target ...dtb". `BOOT_FDT_FILE` is what
+            # Armbian actually boots, i.e. the kernel name.
+            "dtb": self.parser.get("BOOT_FDT_FILE")
+            or self.parser.get("DEFAULT_DEVICE_TREE"),
             "kernel_params": self.parser.get("KERNEL_PARAMS"),
             "firmware": {
                 "source": self.parser.get("FIRMWARE_URL")
