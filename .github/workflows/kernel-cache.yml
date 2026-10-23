@@ -65,19 +65,27 @@ jobs:
       - uses: actions/checkout@v7
 
       # Measured: the H616 cross build dies at the final link with "No space
-      # left on device" after ~95 min. `/` has ~14 GiB free; `/mnt` is a
-      # separate ~74 GiB volume. Bind it onto /nix before Nix creates its store.
-      - name: "Disk: mount /mnt on /nix when separate"
+      # left on device" after ~95 min. On ubuntu-latest `/mnt` does not exist
+      # and everything sits on a 72 GiB `/` with 14 GiB free, so the bind-mount
+      # trick that works on the ARM runners does nothing here: drop the
+      # toolchains the image ships but a kernel build never touches (~30 GiB),
+      # and keep the bind as a bonus for hosts that do have a separate /mnt.
+      - name: "Disk: free space, mount /mnt on /nix when separate"
         run: |
-          df -h / /mnt || true
+          df -h /
+          sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc \
+                      /usr/local/share/boost /opt/hostedtoolcache /usr/local/lib/node_modules
+          sudo apt-get clean
+          docker image prune -af >/dev/null 2>&1 || true
           if [ -d /mnt ] && [ "$(df --output=target /mnt | tail -1)" = "/mnt" ]; then
             sudo mkdir -p /mnt/nix /nix
             sudo mount --bind /mnt/nix /nix
             echo "/nix is now on /mnt"
           else
-            echo "/mnt absent or on root: keeping the default store"
+            echo "/mnt absent: keeping the store on /"
           fi
-          df -h / /nix || true
+          echo "free after cleanup:"
+          df -h /
 
       - uses: cachix/install-nix-action@v31
         with:
