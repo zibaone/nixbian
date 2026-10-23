@@ -24,6 +24,10 @@ on:
         description: "Space-separated board keys (empty = the five reference boards)"
         required: false
         default: ""
+      runner:
+        description: "Runner label. ubuntu-latest = cross build; ubuntu-24.04-arm = native build (different store path!)"
+        required: false
+        default: ""
 
 permissions:
   contents: read
@@ -57,7 +61,10 @@ jobs:
     # 2000-minute quota — so a timing taken there measures neither the hardware
     # nor the queue users get. The cache is public either way.
     if: ${{ !github.event.repository.private }}
-    runs-on: ubuntu-latest
+    # `ubuntu-24.04-arm` builds `packages.aarch64-linux.kernel-*`, a different
+    # derivation from the cross build — the two paths never substitute for each
+    # other. Same for armv7l boards, which stay cross on any runner.
+    runs-on: ${{ github.event.inputs.runner || 'ubuntu-latest' }}
     timeout-minutes: 300
     strategy:
       fail-fast: false
