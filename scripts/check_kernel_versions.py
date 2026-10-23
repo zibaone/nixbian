@@ -155,7 +155,9 @@ def main() -> int:
     lock = tomllib.loads(lock_path.read_text()) if lock_path.exists() else {}
 
     entries: list[dict] = []
-    for platforms in sorted((args.metadata_dir / "nix" / "families").glob("*/platforms.nix")):
+    for platforms in sorted(
+        (args.metadata_dir / "nix" / "families").glob("*/platforms.nix")
+    ):
         entries.extend(parse_kernel_entries(platforms.read_text()))
 
     texts: dict[str, str | None] = {}
@@ -184,14 +186,20 @@ def main() -> int:
     if bad:
         print("\nmodDirVersion mismatch — these builds would fail:")
         for row in sorted(bad, key=lambda r: r["key"]):
-            print(f"  {row['key']:24} declared {row['declared']:10} source at {row['rev'][:8]} is {row['actual']}")
+            print(
+                f"  {row['key']:24} declared {row['declared']:10} source at {row['rev'][:8]} is {row['actual']}"
+            )
         print(
             "\nexact_version is derived from the branch head, the build uses the locked rev."
             "\nRegenerate the versions against the lock, not the branch."
         )
         return 1
 
-    unverified = [row for row in results if row["status"] in {"fetch-failed", "no-lock-entry", "unsupported-source"}]
+    unverified = [
+        row
+        for row in results
+        if row["status"] in {"fetch-failed", "no-lock-entry", "unsupported-source"}
+    ]
     if unverified:
         print(f"\n{len(unverified)} entries could not be verified:")
         for row in unverified[:10]:
