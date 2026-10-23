@@ -62,13 +62,9 @@ jobs:
     - name: "Run Unit Tests (Pytest)"
       run: nix develop --command pytest
 
-    # Known red: 14 of the 57 family/branch pairs drift, because `exact_version`
-    # is derived from the branch head while the build uses the rev pinned in
-    # `nvfetcher.lock.toml`. Those kernels cannot build at all. Non-blocking
-    # until the generator reads the lock and the metadata is regenerated — then
-    # drop `continue-on-error` and make it required.
+    # A wrong `modDirVersion` kills a kernel build after ~50 minutes; this
+    # catches it in seconds for all 57 family/branch pairs.
     - name: "Kernel Version Gate (modDirVersion vs pinned rev)"
-      continue-on-error: true
       run: python3 scripts/check_kernel_versions.py
 
     - name: "Kernel Config Gate (every family/branch pair)"

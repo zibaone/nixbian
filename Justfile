@@ -114,6 +114,12 @@ check-config-all:
 check-kernel-versions:
     python3 scripts/check_kernel_versions.py
 
+# Rewrite `exact_version` from the rev `nvfetcher.lock.toml` pins. Runs after
+# `resolve_lock.py` in the pipeline; without it the kernel build dies on
+# `modDirVersion ... is wrong` after ~50 min.
+sync-kernel-versions:
+    python3 scripts/sync_kernel_versions.py
+
 # L5 pruning gate — compares the full modules tree with the board's filtered tree
 # (kept/removed list + weight). The kernel must already be built.
 check-modules board:

@@ -87,12 +87,18 @@ def parse_kernel_entries(platforms_nix: str) -> list[dict]:
         source = _field(kernel, "source")
         if not source:
             continue
+        kernel_start = start + marker.end()
         entries.append(
             {
                 "key": key,
                 "source": source,
                 "nvfetcher_key": _field(kernel, "nvfetcher_key"),
                 "exact_version": _field(kernel, "exact_version"),
+                # Offsets let the sync rewrite `exact_version` in place.
+                "block_start": start,
+                "block_end": end,
+                "kernel_start": kernel_start,
+                "kernel_end": kernel_start + len(kernel),
             }
         )
     return entries
@@ -105,6 +111,7 @@ def audit(entries: list[dict], lock: dict, fetch) -> list[dict]:
         rev = (lock.get(entry["nvfetcher_key"] or "") or {}).get("rev")
         row = {
             "key": entry["key"],
+            "source": entry["source"],
             "declared": entry["exact_version"],
             "rev": rev,
             "actual": None,

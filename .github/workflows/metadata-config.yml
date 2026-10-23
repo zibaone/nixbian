@@ -76,6 +76,12 @@ jobs:
       - name: Resolve hashes
         run: nix develop --command python3 scripts/resolve_lock.py
 
+      # 3b. `exact_version` (=> modDirVersion) must match the rev the lock just
+      #     pinned, not the branch head the generator reads. This is the step
+      #     that closes the loop; without it 14 of the 57 pairs cannot build.
+      - name: Sync kernel versions to the locked revs
+        run: nix develop --command python3 scripts/sync_kernel_versions.py
+
       # 4. Configuration gate: one flake evaluation for all 737 boards.
       #    Runs on every tick, even when nothing moved upstream, so a broken
       #    family is caught without waiting for a release.

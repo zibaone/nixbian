@@ -76,12 +76,16 @@ the `Makefile` at the rev `nvfetcher.lock.toml` pins. A mismatch makes the
 kernel build fail after ~50 minutes with `modDirVersion ... is wrong`; the gate
 catches it in a few seconds, for all 57 family/branch pairs.
 
-It currently reports **14 mismatches**, all pre-existing: the generator derives
-the version from the branch head (`src/armbian_extractor/core.py:617`) while the
-build uses the locked rev, and the `kernel-versions.json` cache is keyed by
-branch (`core.py:669`), so it never invalidates when the lock moves. The step
-stays `continue-on-error` until the generator reads the lock and `metadata/` is
-regenerated; then it becomes required.
+It found **14 mismatches** on its first run, all pre-existing: the generator
+derives the version from the branch head (`src/armbian_extractor/core.py:617`)
+while the build uses the locked rev, and the `kernel-versions.json` cache is
+keyed by branch (`core.py:669`), so it never invalidated when the lock moved.
+
+`scripts/sync_kernel_versions.py` is the missing step of the pipeline: it runs
+after `resolve_lock.py`, reads the `Makefile` at each pinned rev, rewrites the
+single `exact_version` line, and records the value under a `source|rev` cache
+key. A wrong version killed a kernel build after 50 minutes; the gate now
+catches it in seconds, and it is required.
 
 ### What the cache is for
 
