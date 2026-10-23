@@ -107,6 +107,13 @@ check-config board:
 check-config-all:
     python3 scripts/check_all_configs.py
 
+# `modDirVersion` gate: compare the `exact_version` declared in the metadata with
+# the Makefile at the rev `nvfetcher.lock.toml` pins. The generator reads the
+# branch head instead, so the two drift and the build only fails after ~50 min
+# of compilation. One small HTTP request per family/branch, a few seconds.
+check-kernel-versions:
+    python3 scripts/check_kernel_versions.py
+
 # L5 pruning gate — compares the full modules tree with the board's filtered tree
 # (kept/removed list + weight). The kernel must already be built.
 check-modules board:

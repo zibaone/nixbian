@@ -68,6 +68,21 @@ symbol-by-symbol diff.
 
 Without these secrets the workflows still work but rebuild more.
 
+### The version gate
+
+`scripts/check_kernel_versions.py` compares the `exact_version` declared in
+`metadata/nix/families/*/platforms.nix` — which becomes `modDirVersion` — with
+the `Makefile` at the rev `nvfetcher.lock.toml` pins. A mismatch makes the
+kernel build fail after ~50 minutes with `modDirVersion ... is wrong`; the gate
+catches it in a few seconds, for all 57 family/branch pairs.
+
+It currently reports **14 mismatches**, all pre-existing: the generator derives
+the version from the branch head (`src/armbian_extractor/core.py:617`) while the
+build uses the locked rev, and the `kernel-versions.json` cache is keyed by
+branch (`core.py:669`), so it never invalidates when the lock moves. The step
+stays `continue-on-error` until the generator reads the lock and `metadata/` is
+regenerated; then it becomes required.
+
 ### What the cache is for
 
 `Nix CI` builds no kernel: the six NixOS checks are `runCommand` wrappers that
