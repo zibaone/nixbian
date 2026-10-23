@@ -76,9 +76,13 @@ store a 62 MiB `metadata` copy and a 1.1 GiB devShell closure, so it pushes the
 CLI package and nothing else.
 
 `Kernel cache` fills the cache with what a user actually waits for: one
-reference kernel per major ARM family, cross-built from x86_64
-(`nix/parts/packages.nix` already selects `pkgsCross.*` when the board arch
-differs from the host), then pushed with a narinfo check.
+reference kernel per ARM family, built **twice** — `ubuntu-latest` produces
+`packages.x86_64-linux.kernel-*` (pkgsCross), `ubuntu-24.04-arm` produces
+`packages.aarch64-linux.kernel-*` (native). Those are different derivations
+with different store paths: an x86 machine assembling an image asks for the
+first, an ARM host for the second, and neither is served by the other's cache
+entry. Measured on the same kernel: 52 min 40 s cross, 39 min 31 s native.
+Each push is followed by a narinfo check.
 
 ### No automatic pull request
 

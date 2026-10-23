@@ -1,18 +1,30 @@
 name: Kernel cache
 
-# Builds one reference kernel per major ARM family and pushes its closure to
-# the Cachix cache. This is the only cache content a user benefits from:
-# `Nix CI` evaluates configurations, it never compiles a kernel, so before
-# this workflow the cache held a metadata copy and a devShell only.
+# Fills the Cachix cache with the kernels a user actually waits for. `Nix CI`
+# evaluates configurations; it never compiles a kernel.
 #
-# Cross, not native. `nix/parts/packages.nix` already picks
-# `pkgsCross.aarch64-multiplatform` (or armv7l / riscv64 / loongarch64) when
-# the board arch differs from the host, so an x86_64 runner builds the ARM
-# kernels. A native ARM runner would be slower, not faster.
+# Two runners, on purpose — the store paths are NOT interchangeable:
 #
-# One board per major family, matching the boards the flake checks evaluate:
-# sunxi64 (H616), sunxi 32-bit, bcm2711 (Raspberry Pi 4), meson64 (Amlogic),
-# rockchip64 (RK3588).
+#   ubuntu-latest     → packages.x86_64-linux.kernel-*  (pkgsCross) → what an
+#                       x86 machine building an SD image asks for.
+#                       Measured: 52 min 40 s.
+#   ubuntu-24.04-arm  → packages.aarch64-linux.kernel-* (native) → what an ARM
+#                       host asks for. Measured: 39 min 31 s.
+#
+# Same kernel, two derivations, two paths; a cache filled by one never serves
+# the other. Both fit the quota (~41 MiB per kernel), so both are built.
+#
+# One board per ARM family. Within a family+branch every board resolves to the
+# *same* kernel derivation (measured: `nmiyg43p…` for aml-a311d-cc, aml-s9xx-box,
+# aml-s905d3-cc and nanopik2-s905; `ldd5cj9v…` for five rockchip64 boards), so
+# the reference board only labels the family. Prefer the generic variant when
+# the family has one: `aml-s9xx-box` is Armbian's generic Amlogic S905 box, and
+# it names the family more honestly than any single board.
+#
+# Known gap: `orangepizero-current` is armv7l. No GitHub runner is 32-bit, so
+# even on ubuntu-24.04-arm it builds `packages.aarch64-linux.*` (an aarch64
+# cross to armv7l). A device asking for `packages.armv7l-linux.*` cannot be
+# served from CI, whatever the runner.
 on:
   schedule:
     # Sunday 03:00 UTC: Sunday morning, after the Monday metadata refresh has
@@ -22,10 +34,6 @@ on:
     inputs:
       boards:
         description: "Space-separated board keys (empty = the five reference boards)"
-        required: false
-        default: ""
-      runner:
-        description: "Runner label. ubuntu-latest = cross build; ubuntu-24.04-arm = native build (different store path!)"
         required: false
         default: ""
 
@@ -47,7 +55,7 @@ jobs:
         run: |
           boards="${{ github.event.inputs.boards }}"
           if [ -z "$boards" ]; then
-            boards="orangepizero3-edge orangepizero-current rpi4b-current aml-a311d-cc-current orangepi5-current"
+            boards="orangepizero3-edge orangepizero-current rpi4b-current aml-s9xx-box-current orangepi5-current"
           fi
           # One JSON array, consumed by `strategy.matrix` below.
           json="$(printf '%s\n' $boards | jq -R . | jq -sc .)"
@@ -61,34 +69,35 @@ jobs:
     # 2000-minute quota — so a timing taken there measures neither the hardware
     # nor the queue users get. The cache is public either way.
     if: ${{ !github.event.repository.private }}
-    # `ubuntu-24.04-arm` builds `packages.aarch64-linux.kernel-*`, a different
-    # derivation from the cross build — the two paths never substitute for each
-    # other. Same for armv7l boards, which stay cross on any runner.
-    runs-on: ${{ github.event.inputs.runner || 'ubuntu-latest' }}
+    runs-on: ${{ matrix.runner }}
     timeout-minutes: 300
     strategy:
       fail-fast: false
       matrix:
         board: ${{ fromJson(needs.plan.outputs.boards) }}
+        # Both, because they produce different derivations: `ubuntu-latest`
+        # yields `packages.x86_64-linux.kernel-*` (pkgsCross), `ubuntu-24.04-arm`
+        # yields `packages.aarch64-linux.kernel-*` (native). A cache filled by
+        # one never serves the other, so both are published.
+        runner: [ubuntu-latest, ubuntu-24.04-arm]
     env:
       CACHIX_AUTH_TOKEN: ${{ secrets.CACHIX_AUTH_TOKEN }}
       CACHIX_SIGNING_KEY: ${{ secrets.CACHIX_SIGNING_KEY }}
     steps:
       - uses: actions/checkout@v7
 
-      # Measured: the H616 cross build dies at the final link with "No space
-      # left on device" after ~95 min. On ubuntu-latest `/mnt` does not exist
-      # and everything sits on a 72 GiB `/` with 14 GiB free, so the bind-mount
-      # trick that works on the ARM runners does nothing here: drop the
-      # toolchains the image ships but a kernel build never touches (~30 GiB),
-      # and keep the bind as a bonus for hosts that do have a separate /mnt.
+      # Measured: a public ubuntu-latest has 145 GiB on `/` with 86 GiB free, so
+      # the cleanup below is insurance rather than a fix — the private runner
+      # (72 GiB, 14 GiB free) is the one that died at the final link. `/mnt`
+      # does not exist on x86 runners but does on the ARM ones, hence the
+      # conditional bind. Either way, drop the toolchains a kernel never uses.
       - name: "Disk: free space, mount /mnt on /nix when separate"
         run: |
           echo "machine: $(nproc) vCPU, $(free -g | awk '/^Mem:/{print $2}') GiB RAM"
           {
             echo "### Kernel cache run"
-            echo "| board | machine | duration |"
-            echo "|---|---|---|"
+            echo "| board | runner | machine | duration |"
+            echo "|---|---|---|---|"
           } >> "$GITHUB_STEP_SUMMARY"
           df -h /
           sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc \
@@ -123,7 +132,7 @@ jobs:
           # and source tarballs used to build the kernel, which no user needs.
           skipPush: true
 
-      - name: "Build ${{ matrix.board }}"
+      - name: "Build ${{ matrix.board }} on ${{ matrix.runner }}"
         id: build
         run: |
           start=$(date +%s)
@@ -131,7 +140,7 @@ jobs:
           dur=$(( $(date +%s) - start ))
           echo "path=$path" >> "$GITHUB_OUTPUT"
           echo "Built: $path in ${dur}s"
-          echo "| ${{ matrix.board }} | $(nproc) vCPU | ${dur}s |" >> "$GITHUB_STEP_SUMMARY"
+          echo "| ${{ matrix.board }} | ${{ matrix.runner }} | $(nproc) vCPU | ${dur}s |" >> "$GITHUB_STEP_SUMMARY"
           nix path-info -Sh "$path"
 
       - name: "Push the closure of ${{ matrix.board }}"
