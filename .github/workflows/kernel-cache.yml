@@ -52,6 +52,11 @@ jobs:
 
   build:
     needs: plan
+    # Public mirror only. On a private repo under the Free plan the runner is
+    # 2-core, jobs queue for hours, and each board spends ~100 min of the
+    # 2000-minute quota — so a timing taken there measures neither the hardware
+    # nor the queue users get. The cache is public either way.
+    if: ${{ !github.event.repository.private }}
     runs-on: ubuntu-latest
     timeout-minutes: 300
     strategy:
@@ -72,6 +77,12 @@ jobs:
       # and keep the bind as a bonus for hosts that do have a separate /mnt.
       - name: "Disk: free space, mount /mnt on /nix when separate"
         run: |
+          echo "machine: $(nproc) vCPU, $(free -g | awk '/^Mem:/{print $2}') GiB RAM"
+          {
+            echo "### Kernel cache run"
+            echo "| board | machine | duration |"
+            echo "|---|---|---|"
+          } >> "$GITHUB_STEP_SUMMARY"
           df -h /
           sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc \
                       /usr/local/share/boost /opt/hostedtoolcache /usr/local/lib/node_modules
@@ -108,9 +119,12 @@ jobs:
       - name: "Build ${{ matrix.board }}"
         id: build
         run: |
+          start=$(date +%s)
           path="$(nix build --no-link --print-out-paths ".#kernel-${{ matrix.board }}")"
+          dur=$(( $(date +%s) - start ))
           echo "path=$path" >> "$GITHUB_OUTPUT"
-          echo "Built: $path"
+          echo "Built: $path in ${dur}s"
+          echo "| ${{ matrix.board }} | $(nproc) vCPU | ${dur}s |" >> "$GITHUB_STEP_SUMMARY"
           nix path-info -Sh "$path"
 
       - name: "Push the closure of ${{ matrix.board }}"
