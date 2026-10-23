@@ -136,12 +136,18 @@ jobs:
         id: build
         run: |
           start=$(date +%s)
-          path="$(nix build --no-link --print-out-paths ".#kernel-${{ matrix.board }}")"
+          # Two outputs, two store paths: `out` (Image, DTBs, System.map) and
+          # `modules` (133 MiB, the bulk of the build). Pushing only `out`
+          # leaves consumers to rebuild the kernel locally — measured 404 on
+          # every `-modules` narinfo.
+          nix build --no-link ".#kernel-${{ matrix.board }}" ".#kernel-${{ matrix.board }}.modules"
+          path="$(nix eval --raw ".#kernel-${{ matrix.board }}")"
+          modules="$(nix eval --raw ".#kernel-${{ matrix.board }}.modules")"
           dur=$(( $(date +%s) - start ))
-          echo "path=$path" >> "$GITHUB_OUTPUT"
-          echo "Built: $path in ${dur}s"
+          printf 'path=%s\nmodules=%s\n' "$path" "$modules" >> "$GITHUB_OUTPUT"
+          echo "Built: $path + $modules in ${dur}s"
           echo "| ${{ matrix.board }} | ${{ matrix.runner }} | $(nproc) vCPU | ${dur}s |" >> "$GITHUB_STEP_SUMMARY"
-          nix path-info -Sh "$path"
+          nix path-info -Sh "$path" "$modules"
 
       - name: "Push the closure of ${{ matrix.board }}"
         if: ${{ env.CACHIX_AUTH_TOKEN != '' }}
@@ -151,14 +157,16 @@ jobs:
             echo "::warning title=No CACHIX_SIGNING_KEY::Built, not pushed: this cache refuses an unsigned narinfo. Add the CACHIX_SIGNING_KEY secret."
             exit 0
           fi
-          cachix push havenos "$path"
-          hash="${path#/nix/store/}"; hash="${hash%%-*}"
-          code="$(curl -s -o /dev/null -w '%{http_code}' "https://havenos.cachix.org/$hash.narinfo")"
-          echo "narinfo $hash -> HTTP $code"
-          if [ "$code" != "200" ]; then
-            echo "::error title=Push refusé::narinfo HTTP $code — le cache exige une signature côté client (CACHIX_SIGNING_KEY manquant ?)."
-            exit 1
-          fi
+          for p in "${{ steps.build.outputs.path }}" "${{ steps.build.outputs.modules }}"; do
+            cachix push havenos "$p"
+            hash="${p#/nix/store/}"; hash="${hash%%-*}"
+            code="$(curl -s -o /dev/null -w '%{http_code}' "https://havenos.cachix.org/$hash.narinfo")"
+            echo "narinfo $hash -> HTTP $code"
+            if [ "$code" != "200" ]; then
+              echo "::error title=Push refusé::narinfo HTTP $code — le cache exige une signature côté client (CACHIX_SIGNING_KEY manquant ?)."
+              exit 1
+            fi
+          done
 
       - name: "Report the missing cache token"
         if: ${{ env.CACHIX_AUTH_TOKEN == '' }}
