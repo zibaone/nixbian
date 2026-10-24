@@ -136,16 +136,20 @@ jobs:
         id: build
         run: |
           start=$(date +%s)
-          # Two outputs, two store paths: `out` (Image, DTBs, System.map) and
-          # `modules` (133 MiB, the bulk of the build). Pushing only `out`
-          # leaves consumers to rebuild the kernel locally — measured 404 on
-          # every `-modules` narinfo.
-          nix build --no-link ".#kernel-${{ matrix.board }}" ".#kernel-${{ matrix.board }}.modules"
+          # Three outputs, three store paths: `out` (Image, DTBs, System.map),
+          # `modules` (133 MiB, the bulk of the build) and `dev` (the build
+          # tree: headers, scripts, Module.symvers). Pushing only `out` leaves
+          # consumers to rebuild the kernel locally — measured 404 on every
+          # `-modules` narinfo, and again today on `-dev`: any out-of-tree
+          # module (uwe5622) depends on `kernel.dev` and would otherwise force
+          # a full 43-minute kernel rebuild just to get the headers.
+          nix build --no-link ".#kernel-${{ matrix.board }}" ".#kernel-${{ matrix.board }}.modules" ".#kernel-${{ matrix.board }}.dev"
           path="$(nix eval --raw ".#kernel-${{ matrix.board }}")"
           modules="$(nix eval --raw ".#kernel-${{ matrix.board }}.modules")"
+          dev="$(nix eval --raw ".#kernel-${{ matrix.board }}.dev")"
           dur=$(( $(date +%s) - start ))
-          printf 'path=%s\nmodules=%s\n' "$path" "$modules" >> "$GITHUB_OUTPUT"
-          echo "Built: $path + $modules in ${dur}s"
+          printf 'path=%s\nmodules=%s\ndev=%s\n' "$path" "$modules" "$dev" >> "$GITHUB_OUTPUT"
+          echo "Built: $path + $modules + $dev in ${dur}s"
           echo "| ${{ matrix.board }} | ${{ matrix.runner }} | $(nproc) vCPU | ${dur}s |" >> "$GITHUB_STEP_SUMMARY"
           nix path-info -Sh "$path" "$modules"
 
@@ -157,7 +161,7 @@ jobs:
             echo "::warning title=No CACHIX_SIGNING_KEY::Built, not pushed: this cache refuses an unsigned narinfo. Add the CACHIX_SIGNING_KEY secret."
             exit 0
           fi
-          for p in "${{ steps.build.outputs.path }}" "${{ steps.build.outputs.modules }}"; do
+          for p in "${{ steps.build.outputs.path }}" "${{ steps.build.outputs.modules }}" "${{ steps.build.outputs.dev }}"; do
             cachix push havenos "$p"
             hash="${p#/nix/store/}"; hash="${hash%%-*}"
             code="$(curl -s -o /dev/null -w '%{http_code}' "https://havenos.cachix.org/$hash.narinfo")"
