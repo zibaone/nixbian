@@ -978,6 +978,7 @@
         # HDMI H616. Même dtsi que sunxi64 — les deux listes restent alignées
         # pour éviter un écart silencieux entre les familles.
         "patches/kernel/sunxi-7.0-hdmi-audio/0001-arm64-dts-sun50i-h616-hdmi-add-sound-dai-cells.patch"
+        "patches/kernel/sunxi-7.0-hdmi-audio/0002-ASoC-sunxi-ahub-verify-the-module-clock.patch"
         "patches/kernel/archive/sunxi-7.0/patches.armbian/arch-arm-patch-flush-icache-earlier.patch"
         "patches/kernel/archive/sunxi-7.0/patches.armbian/arm64-dts-add-axp313a-pmic.patch"
         "patches/kernel/archive/sunxi-7.0/patches.armbian/arm64-dts-sun50i-a64.dtsi-adjust-thermal-trip-points.patch"
