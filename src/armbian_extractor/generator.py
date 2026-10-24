@@ -12,6 +12,12 @@ log = logging.getLogger("nixbian-generator")
 # (avoids building amdgpu, xe, ceph, etc. on an SBC)
 # Multi-line values in .config syntax: "CONFIG_X=y\nCONFIG_Y=y".
 # Consumed by buildKernel through the familyConfig argument (configMode = "defconfig").
+# Nixbian-owned patch directories, declared per platform (see
+# NixGenerator._collect_platform_patches). A file a platform does not own must
+# survive `just refresh-metadata`: it is vendored in metadata/nix/patches/ and
+# listed here, never in Armbian's copied tree.
+PLATFORM_PATCHES_FILE = Path(__file__).parent / "platform_patches.json"
+
 FAMILY_CONFIG_FRAGMENTS = {
     "sunxi": "CONFIG_ARCH_SUNXI=y\nCONFIG_MMC_SUNXI=y\nCONFIG_NET_VENDOR_ALLWINNER=y",
     "sunxi64": "CONFIG_ARCH_SUNXI=y\nCONFIG_MMC_SUNXI=y\nCONFIG_PHY_SUN50I_USB3=y\nCONFIG_USB_DWC3=y\nCONFIG_SUN8I_DE2_CCU=y",
@@ -165,8 +171,8 @@ class NixGenerator:
 
             # Asset Collection
             self._collect_kernel_config(board_info)
-            self._collect_patches(board_info, "kernel")
-            self._collect_patches(board_info, "uboot")
+            self._collect_patches(board_info, "kernel", plat_key)
+            self._collect_patches(board_info, "uboot", plat_key)
 
             # Build platform data
             if plat_key not in family_data[family]["platforms"]:
@@ -711,15 +717,74 @@ in rec {{
         self._patch_dir_cache[key] = out_paths
         return out_paths
 
-    def _collect_patches(self, board_info, component):
+    def _collect_platform_patches(self, platform_key, component):
+        """List nixbian-owned patch directories declared for a platform.
+
+        `patch_dir` copies Armbian's own patch set into `metadata/`. Patches that
+        nixbian adds *on top* cannot go through that path: the directories are
+        wiped and re-copied on every refresh, and Armbian's `series.conf` does
+        not list files it does not own. They are therefore vendored directly in
+        `metadata/nix/patches/<component>/<dir>/` and declared here:
+
+            {"sunxi64-edge": ["kernel/sunxi-7.0-hdmi-audio"]}
+
+        Declared directories are appended **after** the `patch_dir` list, so a
+        patch can touch a node that an Armbian patch introduces. Order inside a
+        directory is `series.conf` when present, alphabetical otherwise — same
+        convention as `_collect_patch_dir`.
+        """
+        if not PLATFORM_PATCHES_FILE.is_file():
+            return []
+        try:
+            declared = json.loads(PLATFORM_PATCHES_FILE.read_text())
+        except (OSError, ValueError) as exc:
+            log.warning(f"{PLATFORM_PATCHES_FILE.name}: unreadable ({exc}) — ignored")
+            return []
+        if not isinstance(declared, dict):
+            log.warning(f"{PLATFORM_PATCHES_FILE.name}: expected an object — ignored")
+            return []
+
+        out_paths: list[str] = []
+        for rel in declared.get(platform_key, []) or []:
+            if not rel.startswith(f"{component}/"):
+                log.warning(
+                    f"{PLATFORM_PATCHES_FILE.name}: {platform_key} -> {rel!r} "
+                    f"is not under {component}/ — ignored"
+                )
+                continue
+            dir_path = self.patches_out / rel
+            if not dir_path.is_dir():
+                log.warning(f"{rel}: declared for {platform_key} but missing on disk")
+                continue
+            series = self._read_series(dir_path)
+            if series is None:
+                names = sorted(p.name for p in dir_path.glob("*.patch"))
+            else:
+                names = series[0]
+            for name in names:
+                if not (dir_path / name).is_file():
+                    log.warning(f"{rel}: {name} listed but missing on disk")
+                    continue
+                out_paths.append(f"patches/{rel}/{name}")
+            log.info(f"{rel}: {len(names)} nixbian patch(es) for {platform_key}")
+        return out_paths
+
+    def _collect_patches(self, board_info, component, platform_key=None):
         """Collects patch files and generates an ordered list."""
         patch_dir_key = "patch_dir"
         patch_dir = board_info[component].get(patch_dir_key) if patch_dir_key else None
-        if not patch_dir:
-            return
         all_patches: list[str] = []
-        for patch_rel in patch_dir.split():
-            all_patches.extend(self._collect_patch_dir(component, patch_rel))
+        if patch_dir:
+            for patch_rel in patch_dir.split():
+                all_patches.extend(self._collect_patch_dir(component, patch_rel))
+        # nixbian-owned additions, after Armbian's set (see the method docstring)
+        if platform_key is not None:
+            all_patches.extend(self._collect_platform_patches(platform_key, component))
+        # A declared patch_dir always yields the key, even when the directory is
+        # absent from the source tree (empty list): downstream distinguishes
+        # "no patch set" from "patch set that collected nothing".
+        if not patch_dir and not all_patches:
+            return
 
         # Deduplicate while preserving order (two patch_dirs may overlap).
         board_info[component]["patches"] = list(dict.fromkeys(all_patches))

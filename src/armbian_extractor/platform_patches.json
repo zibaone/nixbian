@@ -1,0 +1,9 @@
+{
+    "_doc": "Patch directories owned by nixbian, appended after the Armbian patch_dir list of a platform. The files live in metadata/nix/patches/<component>/<dir>/ (with a series.conf) and are NOT copies of Armbian's tree, so they survive `just refresh-metadata` and `just check-drift`.",
+    "sunxi64-edge": [
+        "kernel/sunxi-7.0-hdmi-audio"
+    ],
+    "sunxi-edge": [
+        "kernel/sunxi-7.0-hdmi-audio"
+    ]
+}

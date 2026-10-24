@@ -144,3 +144,53 @@ def test_collect_patches_missing_dir_yields_empty_list(tmp_path):
     info = {"kernel": {"patch_dir": "archive/nope"}, "uboot": {"patch_dir": None}}
     gen._collect_patches(info, "kernel")
     assert info["kernel"]["patches"] == []
+
+
+def test_collect_platform_patches_appends_vendored_dirs(tmp_path, monkeypatch):
+    """Nixbian-owned patch dirs are listed after Armbian's set, in series order.
+
+    `patch_dir` re-copies Armbian's tree on every refresh, so a patch nixbian
+    owns cannot live there: it is vendored in metadata/nix/patches/ and declared
+    in platform_patches.json, per platform.
+    """
+    import json
+
+    from armbian_extractor import generator as generator_module
+
+    src = tmp_path / "armbian"
+    root = src / "patch" / "kernel" / "archive" / "fam-7.0"
+    _fake_patch_tree(root, {"patches.armbian/0100-a.patch": "a"})
+
+    out = tmp_path / "out"
+    vendored = out / "nix" / "patches" / "kernel" / "sunxi-7.0-hdmi-audio"
+    vendored.mkdir(parents=True)
+    (vendored / "0001-first.patch").write_text("1")
+    (vendored / "0002-second.patch").write_text("2")
+    # Reverse alphabetical on purpose: series.conf decides, not the names.
+    (vendored / "series.conf").write_text("0002-second.patch\n0001-first.patch\n")
+
+    declaration = tmp_path / "platform_patches.json"
+    declaration.write_text(json.dumps({"fam-7.0": ["kernel/sunxi-7.0-hdmi-audio"]}))
+    monkeypatch.setattr(generator_module, "PLATFORM_PATCHES_FILE", declaration)
+
+    gen = NixGenerator(src, out)
+    info = {"kernel": {"patch_dir": "archive/fam-7.0"}, "uboot": {"patch_dir": None}}
+    gen._collect_patches(info, "kernel", "fam-7.0")
+
+    assert info["kernel"]["patches"] == [
+        "patches/kernel/archive/fam-7.0/patches.armbian/0100-a.patch",
+        "patches/kernel/sunxi-7.0-hdmi-audio/0002-second.patch",
+        "patches/kernel/sunxi-7.0-hdmi-audio/0001-first.patch",
+    ]
+    # A platform without a declaration is untouched, and no phantom key appears.
+    gen._collect_patches(info, "uboot", "fam-7.0")
+    assert "patches" not in info["uboot"]
+
+
+def test_collect_platform_patches_ignores_missing_declaration(tmp_path, monkeypatch):
+    """No platform_patches.json: behaviour unchanged (upstream checkout)."""
+    from armbian_extractor import generator as generator_module
+
+    monkeypatch.setattr(generator_module, "PLATFORM_PATCHES_FILE", tmp_path / "absent.json")
+    gen = NixGenerator(tmp_path / "armbian", tmp_path / "out")
+    assert gen._collect_platform_patches("fam-7.0", "kernel") == []

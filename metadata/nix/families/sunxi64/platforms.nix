@@ -913,6 +913,12 @@
         "patches/kernel/archive/sunxi-7.0/patches.armbian/0503-drv-mmc-sunxi-fix-h6-emmc.patch"
         "patches/kernel/archive/sunxi-7.0/patches.armbian/0701-arm64-dts-sun50i-h616-orangepi-zero-enable-sound.patch"
         "patches/kernel/archive/sunxi-7.0/patches.armbian/0702-arm64-dts-sun50i-h616-add-digital-audio-node.patch"
+        # Patch nixbian (déclaré dans src/armbian_extractor/platform_patches.json,
+        # vendoré dans metadata/nix/patches/kernel/sunxi-7.0-hdmi-audio) :
+        # `#sound-dai-cells` sur le nœud HDMI H616, sans quoi
+        # `soundcard-mach,codec` ne résout pas `&hdmi` et la carte retombe sur
+        # snd-soc-dummy → audio HDMI muet.
+        "patches/kernel/sunxi-7.0-hdmi-audio/0001-arm64-dts-sun50i-h616-hdmi-add-sound-dai-cells.patch"
         "patches/kernel/archive/sunxi-7.0/patches.armbian/arch-arm-patch-flush-icache-earlier.patch"
         "patches/kernel/archive/sunxi-7.0/patches.armbian/arm64-dts-add-axp313a-pmic.patch"
         "patches/kernel/archive/sunxi-7.0/patches.armbian/arm64-dts-sun50i-a64.dtsi-adjust-thermal-trip-points.patch"
