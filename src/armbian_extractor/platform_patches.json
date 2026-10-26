@@ -5,5 +5,8 @@
     ],
     "sunxi-edge": [
         "kernel/sunxi-7.0-hdmi-audio"
+    ],
+    "meson64-edge": [
+        "kernel/meson64-vdec-7.0"
     ]
 }
