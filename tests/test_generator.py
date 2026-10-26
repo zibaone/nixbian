@@ -191,6 +191,8 @@ def test_collect_platform_patches_ignores_missing_declaration(tmp_path, monkeypa
     """No platform_patches.json: behaviour unchanged (upstream checkout)."""
     from armbian_extractor import generator as generator_module
 
-    monkeypatch.setattr(generator_module, "PLATFORM_PATCHES_FILE", tmp_path / "absent.json")
+    monkeypatch.setattr(
+        generator_module, "PLATFORM_PATCHES_FILE", tmp_path / "absent.json"
+    )
     gen = NixGenerator(tmp_path / "armbian", tmp_path / "out")
     assert gen._collect_platform_patches("fam-7.0", "kernel") == []
