@@ -12,7 +12,7 @@
       config = "linux-sunxi-current";
       config_path = "config/kernel/linux-sunxi-current.config";
       config_path_nix = "configs/linux-sunxi-current.config";
-      exact_version = "6.18.38";
+      exact_version = "6.18.58";
       hash = "sha256-S48YwJ0smqgblFkpCXNOIY3gRpsmEb8KubAlRjFxBV0=";
       major_minor = "6.18";
       nvfetcher_key = "kernel-sunxi-branch-linux-6-18-y";
@@ -1231,7 +1231,7 @@
       config = "linux-sunxi-legacy";
       config_path = "config/kernel/linux-sunxi-legacy.config";
       config_path_nix = "configs/linux-sunxi-legacy.config";
-      exact_version = "6.12.95";
+      exact_version = "6.12.114";
       hash = "sha256-qregEcjyLP7Dn1XDJNCEGwOsEtJT7mdCsegxKt4G4HE=";
       major_minor = "6.12";
       nvfetcher_key = "kernel-sunxi-branch-linux-6-12-y";

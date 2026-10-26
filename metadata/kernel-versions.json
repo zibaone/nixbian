@@ -1,6 +1,9 @@
 {
+  "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git|0aebf2870d53a8d97e02a99e2103ea0b38950c1b": "6.6.160",
+  "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git|2926d88bb7fc4608fd942453d929c39e4e5ec006": "6.18.58",
   "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git|296aabce459470a4c1b68ffd0c0c0920e563aaad": "6.12.95",
   "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git|458c6079fc1d41d564c37679c8ace02cd83ee817": "7.0.14",
+  "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git|85d82e0d7c2dfd3e75d34f35b7ebbf41f45c9c4e": "6.12.114",
   "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git|b9dbb4576bc8c69e87b4ca4caa2fb1c0db47d722": "6.19.14",
   "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git|branch:linux-${KERNEL_MAJOR_MINOR}.y": null,
   "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git|branch:linux-6.12.y": "6.12.114",
@@ -19,9 +22,12 @@
   "https://github.com/AvaotaSBC/linux.git|branch:linux-5.15": "5.15.154",
   "https://github.com/OpenNuvoton/MA35D1_linux-5.10.y.git|branch:master": "5.10.140",
   "https://github.com/OpenNuvoton/MA35D1_linux-5.10.y.git|c69ae453dac8f15f3eaf568e13b5a263660328c8": "5.10.140",
+  "https://github.com/OpenNuvoton/MA35D1_linux-5.10.y.git|fd283f6236c07c22e94d654859ea16568c9ef9bf": "5.10.140",
   "https://github.com/TexasInstruments/ti-linux-kernel|8933766be737ed2cabb9466fce497b8bc8c1ce21": "6.18.38",
+  "https://github.com/TexasInstruments/ti-linux-kernel|97becb13b81c314c1d17fcf2226aac9a32086f3d": "6.18.57",
   "https://github.com/TexasInstruments/ti-linux-kernel|branch:ti-linux-6.18.y": "6.18.51",
   "https://github.com/XpressReal/linux.git|branch:v6.6.54-xpressreal-t3": "6.6.54",
+  "https://github.com/armbian/linux-rockchip.git|372ce582b94a3360a29727c3c49c88bb7509da22": "6.1.115",
   "https://github.com/armbian/linux-rockchip.git|5280f9b4336199c4025c8eed894d2b4e2268dcc6": "6.1.115",
   "https://github.com/armbian/linux-rockchip.git|branch:rk-6.1-rkr5.1": "6.1.115",
   "https://github.com/beagleboard/linux|8fb21420a704ea36aaf66df8288ed8ee9da2762d": "6.12.49",
@@ -29,6 +35,7 @@
   "https://github.com/chainsx/phytium-linux-kernel|46471440b5ea96f5caa7ad70ce457735070f9f8e": "6.6.12",
   "https://github.com/chainsx/phytium-linux-kernel|branch:linux-6.6": "6.6.12",
   "https://github.com/frank-w/BPI-Router-Linux.git|93510bb684e98530c93fd3e7656b4c8007e1d3e8": "6.12.82",
+  "https://github.com/frank-w/BPI-Router-Linux.git|b864732ee285e7868fb0857d69a8ff349e37003e": "6.12.108",
   "https://github.com/frank-w/BPI-Router-Linux.git|branch:6.12-main": "6.12.108",
   "https://github.com/hardkernel/linux|branch:odroid-6.6.y": "6.6.121",
   "https://github.com/jmontleon/linux-bianbu.git|3e8e7fd730721aee3926a365cef6635221705b61": "6.18.37",
@@ -44,5 +51,6 @@
   "https://github.com/starfive-tech/linux|branch:JH7110_VisionFive2_6.6.y_devel": "6.6.20",
   "https://github.com/starfive-tech/linux|c09d91536baa616af1538a5bd2dbdf95c6e107d8": "6.6.20",
   "https://github.com/steev/linux.git|branch:lenovo-x13s-linux-7.0.y": "7.0.14",
+  "https://github.com/steev/linux.git|d73346660f8f61ffb6e716c68ad97687eb63a8c7": "7.0.14",
   "https://gitlab.collabora.com/mediatek/aiot/linux.git|commit:1b251287c9f26c428033af1106319af5e32f376b": null
 }

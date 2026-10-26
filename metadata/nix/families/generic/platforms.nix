@@ -11,7 +11,7 @@
       branch = "branch:linux-6.6.y";
       config = "linux--current";
       config_path = "config/kernel/linux--current.config";
-      exact_version = "6.6.144";
+      exact_version = "6.6.160";
       hash = "sha256-Bvhz+bnqwNE4wv6l0Cx9OXRa5E6nqP49TsjIqn3wlPY=";
       major_minor = "6.6";
       nvfetcher_key = "kernel-generic-branch-linux-6-6-y";
