@@ -12,7 +12,7 @@
       config = "linux-k3-edge";
       config_path = "config/kernel/linux-k3-edge.config";
       config_path_nix = "configs/linux-k3-edge.config";
-      exact_version = "6.18.38";
+      exact_version = "6.18.57";
       hash = "sha256-rru3xmmEBiijhgls0baWjFfrwEwydpKdfObQxlJxT6I=";
       major_minor = "6.18";
       nvfetcher_key = "kernel-k3-branch-ti-linux-6-18-y";
@@ -51,7 +51,7 @@
       config = "linux-k3-vendor";
       config_path = "config/kernel/linux-k3-vendor.config";
       config_path_nix = "configs/linux-k3-vendor.config";
-      exact_version = "6.18.38";
+      exact_version = "6.18.57";
       hash = "sha256-rru3xmmEBiijhgls0baWjFfrwEwydpKdfObQxlJxT6I=";
       major_minor = "6.18";
       nvfetcher_key = "kernel-k3-branch-ti-linux-6-18-y";
@@ -90,7 +90,7 @@
       config = "linux-k3-vendor-edge";
       config_path = "config/kernel/linux-k3-vendor-edge.config";
       config_path_nix = "configs/linux-k3-vendor-edge.config";
-      exact_version = "6.18.38";
+      exact_version = "6.18.57";
       hash = "sha256-rru3xmmEBiijhgls0baWjFfrwEwydpKdfObQxlJxT6I=";
       major_minor = "6.18";
       nvfetcher_key = "kernel-k3-branch-ti-linux-6-18-y";
@@ -129,7 +129,7 @@
       config = "linux-k3-vendor-rt";
       config_path = "config/kernel/linux-k3-vendor-rt.config";
       config_path_nix = "configs/linux-k3-vendor-rt.config";
-      exact_version = "6.18.38";
+      exact_version = "6.18.57";
       hash = "sha256-rru3xmmEBiijhgls0baWjFfrwEwydpKdfObQxlJxT6I=";
       major_minor = "6.18";
       nvfetcher_key = "kernel-k3-branch-ti-linux-6-18-y";

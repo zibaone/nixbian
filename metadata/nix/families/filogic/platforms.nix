@@ -12,7 +12,7 @@
       config = "linux-filogic-current";
       config_path = "config/kernel/linux-filogic-current.config";
       config_path_nix = "configs/linux-filogic-current.config";
-      exact_version = "6.12.82";
+      exact_version = "6.12.108";
       hash = "sha256-5ohqBf56qw1zPn+tTQRPKRJtMdjutrDR1Df6h3KWvXs=";
       major_minor = "6.12";
       nvfetcher_key = "kernel-filogic-branch-6-12-main";
