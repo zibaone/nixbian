@@ -330,6 +330,7 @@ Removal criteria, to re-check at each release (7.4, then media merge):
 | D3 | VP9/P010 via LibreELEC | attempt WP3 after WP2; documented abandonment if porting > 2 sessions | user |
 | D4 | AFBC (requires the DRM-side decompressor, LibreELEC `0244-0250`) | do not enable until rendering is validated in plain NV12 | WP5 |
 | D5 | Vendored patches (`metadata/nix/patches`, 48 MB / 3508 files) vs paths to `inputs.armbian-source` | keep vendoring: patches are individual content-addressed store objects, whereas a path into the Armbian source would pull the whole tree (~hundreds of MB) into every kernel's closure | user |
+| D6 | `CONFIG_SUN50I_H6_PRCM_PPU`: module or built-in | `=y`. As a module, it races with `panfrost`: udev loads both by OF alias in parallel, panfrost probes first, the genpd provider is missing, the deferred-probe timeout forces the probe and it fails in `-110` — no `renderD128`, so no EGL for Kodi and `ffmpeg -hwaccel drm` refuses `/dev/video0`. `softdep` does **not** fix it (udev does not go through `modprobe` for OF aliases; measured). The consumer image works around it by loading the module from the initrd, which moves the guarantee into the image (initrd + pruning allowlist) instead of the kernel. Cost of `=y`: one kernel rebuild shared by every sunxi64 board. Procedure and pitfalls: `nix-v4l2-request/docs/domaine-alimentation-gpu.md` | user |
 
 ---
 
@@ -346,3 +347,4 @@ Removal criteria, to re-check at each release (7.4, then media merge):
 | 2026-10-20 | WP2 | `just check-hw-caps orangepizero3-edge` | ✅ (the same gate on `k9rac2p5…` and `9hh732bf…`: ❌) |
 | 2026-10-20 | WP2 | `grep -c cedrus System.map` on the built kernel | 107 symbols, including `cedrus_probe`, `cedrus_hw_probe` (so `=y`, not a module) |
 | 2026-10-20 | WP4/step 1 | `FindHWConfig()` in Kodi `21.3-Omega` + master, LibreELEC ffmpeg patch, `PR xbmc#25467` | 21.3 ❌ (requires `device_type == DRM`); master ✅ (relaxed, 1 file +29/−25); LibreELEC builds Kodi master |
+| 2026-10-23 | GPU / PPU | boot on Orange Pi Zero 3, `linux-7.0.14`, `CONFIG_SUN50I_H6_PRCM_PPU=m` | `panfrost 1800000.gpu: probe with driver panfrost failed with error -110`; `/dev/dri` = `card0` only; manual `echo 1800000.gpu > …/panfrost/bind` → `mali-g31 id 0x7093` + `renderD128` (so GPU and driver are fine, only the ordering is wrong); module loaded from the initrd → no `-110` |
