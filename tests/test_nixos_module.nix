@@ -24,6 +24,11 @@ let
         # Test case: Enable security hardening
         hardware.nixbian.security.harden = true;
 
+        # Test case: extraConfig merging (P1.2/P1.3). Two same-priority
+        # definitions must merge, the `mkAfter` one landing last: with
+        # `types.str` this is a conflicting-definition error.
+        hardware.nixbian.extraConfig = "CONFIG_TEST_A=y";
+
         # Test case: Declarative GPIO, I2C, SPI
         hardware.nixbian.i2c.buses = [
           0
@@ -52,6 +57,8 @@ let
         };
         boot.loader.grub.enable = false;
       }
+      # Second definition of the same option, ordered last (P1.3).
+      { hardware.nixbian.extraConfig = pkgs.lib.mkAfter "CONFIG_TEST_B=y"; }
     ];
   };
 
@@ -89,6 +96,14 @@ let
   fullModulesTree = pkgs.aggregateModules [ nixos.config.boot.kernelPackages.kernel.modules ];
   hasFilteredModulesTree = modulesTree.drvPath != fullModulesTree.drvPath;
 
+  # 9. P1.2 — extraConfig is a merge type: a `mkDefault` line must not be
+  # dropped by a normal-priority definition, and the normal one comes last.
+  extraConfig = nixos.config.hardware.nixbian.extraConfig;
+  hasBothExtraConfig =
+    pkgs.lib.hasInfix "CONFIG_TEST_A=y" extraConfig
+    && pkgs.lib.hasInfix "CONFIG_TEST_B=y" extraConfig;
+  extraConfigBLast = pkgs.lib.hasSuffix "CONFIG_TEST_B=y" extraConfig;
+
 in
 if !hasTestPatch then
   throw "Integration Test Failed: missing test.patch!"
@@ -108,5 +123,9 @@ else if !hasPA10Service || !hasPC4Service then
   throw "Integration Test Failed: missing GPIO systemd services!"
 else if !hasFilteredModulesTree then
   throw "Integration Test Failed: L5 system.modulesTree does not point to the filtered tree!"
+else if !hasBothExtraConfig then
+  throw "Integration Test Failed: extraConfig dropped one of two definitions (types.str, not a merge type)!"
+else if !extraConfigBLast then
+  throw "Integration Test Failed: extraConfig does not end with the normal-priority definition!"
 else
-  "Integration Test Passed: all patch, DTB overlay, wear mitigation, hardening, filesystem, bus, and GPIO engines are fully functional!\n"
+  "Integration Test Passed: all patch, DTB overlay, wear mitigation, hardening, filesystem, bus, GPIO and extraConfig merge engines are fully functional!\n"

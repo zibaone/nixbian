@@ -164,12 +164,12 @@ in
     enable = lib.mkEnableOption "Nixbian Hardware Engine";
 
     board = lib.mkOption {
-      type = lib.types.str;
+      type = lib.types.lines;
       description = "Armbian board identifier (e.g., 'orangepizero3')";
     };
 
     family = lib.mkOption {
-      type = lib.types.str;
+      type = lib.types.lines;
       default = "generic";
       description = "Auto-detected Linux family (can be overridden)";
     };
@@ -191,11 +191,13 @@ in
     };
 
     extraConfig = lib.mkOption {
-      type = lib.types.str;
+      type = lib.types.lines;
       default = "";
       description = ''
         Additional `.config` fragment (syntax `CONFIG_X=y`), concatenated after the
-        selected mode's config, regardless of `configMode`.
+        selected mode's config, regardless of `configMode`. `types.lines` so that
+        several definitions merge instead of one silently overriding the others:
+        a producer can use `mkAfter` and a consumer cannot drop its lines.
       '';
     };
 
@@ -216,7 +218,7 @@ in
     };
 
     kernelVendor = lib.mkOption {
-      type = lib.types.str;
+      type = lib.types.lines;
       default = "current";
       description = "Armbian kernel series to use (default: current)";
     };
