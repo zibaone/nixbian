@@ -305,16 +305,18 @@ rec {
         # lines come first, the user override last (kconfig keeps the last
         # occurrence). Without either, the family config path is kept
         # (no derivation, hence no import-from-derivation).
-        # buildPackages: the .config is a text file, it must not drag the
-        # target stdenv in. With `pkgs.writeText` the file was an aarch64
-        # derivation, so `nix flake check` on x86_64 (and any eval of a
-        # foreign kernel) failed with "platform mismatch". Content unchanged,
-        # store path now buildable on the host.
+        # buildPackages / builtins.toFile: the .config is a text file, it must
+        # not drag a target derivation in. `pkgs.writeText` produced an
+        # aarch64 drv, so `nix flake check` on x86_64 failed with "platform
+        # mismatch" (and `kernelConfig`, used for firmware compression, pulled
+        # that drv into every consumer closure). `builtins.toFile` yields a
+        # plain store path computed at evaluation, exactly like the
+        # armbianConfigPath branch below.
         armbianConfigfile =
           if userExtraConfig == "" && familyExtraConfig == "" then
             armbianConfigPath
           else
-            pkgs.buildPackages.writeText "linux-nixbian-${kMeta.config or "family"}.config" (
+            builtins.toFile "linux-nixbian-${kMeta.config or "family"}.config" (
               (builtins.readFile armbianConfigPath) + "\n" + familyExtraConfig + userExtraConfig + "\n"
             );
 
