@@ -1,0 +1,7 @@
+{
+    "_doc": "Lignes .config ajoutées au noyau de famille, tier armbian. Clé = plateforme (famille-branche, comme dans platforms.nix). Copié tel quel dans metadata/nix/family_config.json par write_library_nix(), lu à l'évaluation par library.nix : concaténé APRÈS le .config Armbian et AVANT extraConfig utilisateur. Ce fichier est la source ; metadata/ est généré. Ces lignes vivent donc dans le noyau de famille que `Kernel cache` construit : un consommateur n'a pas besoin de son propre extraConfig et le drvPath partagé reste valable.",
+    "sunxi64-edge": [
+        "CONFIG_PSI=y",
+        "CONFIG_SUN50I_H6_PRCM_PPU=y"
+    ]
+}

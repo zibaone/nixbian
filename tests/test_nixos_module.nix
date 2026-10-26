@@ -100,8 +100,7 @@ let
   # dropped by a normal-priority definition, and the normal one comes last.
   extraConfig = nixos.config.hardware.nixbian.extraConfig;
   hasBothExtraConfig =
-    pkgs.lib.hasInfix "CONFIG_TEST_A=y" extraConfig
-    && pkgs.lib.hasInfix "CONFIG_TEST_B=y" extraConfig;
+    pkgs.lib.hasInfix "CONFIG_TEST_A=y" extraConfig && pkgs.lib.hasInfix "CONFIG_TEST_B=y" extraConfig;
   extraConfigBLast = pkgs.lib.hasSuffix "CONFIG_TEST_B=y" extraConfig;
 
 in

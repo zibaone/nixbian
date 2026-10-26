@@ -18,6 +18,12 @@ log = logging.getLogger("nixbian-generator")
 # listed here, never in Armbian's copied tree.
 PLATFORM_PATCHES_FILE = Path(__file__).parent / "platform_patches.json"
 
+# Lignes .config ajoutées au noyau de famille (tier armbian), déclaratives comme
+# platform_patches.json. Elles entrent dans le noyau de famille que `Kernel
+# cache` construit, donc un consommateur n'a pas besoin de son propre
+# extraConfig et le drvPath partagé reste valable.
+FAMILY_CONFIG_FILE = Path(__file__).parent / "family_config.json"
+
 FAMILY_CONFIG_FRAGMENTS = {
     "sunxi": "CONFIG_ARCH_SUNXI=y\nCONFIG_MMC_SUNXI=y\nCONFIG_NET_VENDOR_ALLWINNER=y",
     "sunxi64": "CONFIG_ARCH_SUNXI=y\nCONFIG_MMC_SUNXI=y\nCONFIG_PHY_SUN50I_USB3=y\nCONFIG_USB_DWC3=y\nCONFIG_SUN8I_DE2_CCU=y",
@@ -829,6 +835,12 @@ in rec {{
         fw_template = self.templates_dir / "firmware.nix"
         if fw_template.exists():
             safe_copy(fw_template, fw_file)
+
+        # Family .config lines (armbian tier), read at eval time by
+        # library.nix (`./family_config.json`). Declarative source, verbatim
+        # copy: platform_patches.json's counterpart for the kernel config.
+        if FAMILY_CONFIG_FILE.exists():
+            safe_copy(FAMILY_CONFIG_FILE, self.nix_out / "family_config.json")
 
         # L5 — library.nix's pruneKernelModules helper calls this script
         # (relative path ./prune_modules.py from metadata/nix/).

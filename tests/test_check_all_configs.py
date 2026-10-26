@@ -70,7 +70,7 @@ def test_collect_reference_configs_maps_each_platform_to_its_config(tmp_path):
     refs = gate.collect_reference_configs(metadata)
 
     assert set(refs) == {"sunxi64-edge", "sunxi64-current", "arm64-cloud"}
-    assert refs["sunxi64-edge"] == (
+    assert refs["sunxi64-edge"]["path"] == (
         metadata
         / "nix"
         / "families"
@@ -81,7 +81,7 @@ def test_collect_reference_configs_maps_each_platform_to_its_config(tmp_path):
     # The family directory must be preserved: a config named after another
     # family (arm64-cloud lives under `arm64/`) must not be looked up under
     # the wrong family.
-    assert refs["arm64-cloud"].parent.parent.name == "arm64"
+    assert refs["arm64-cloud"]["path"].parent.parent.name == "arm64"
 
 
 def test_collect_reference_configs_ignores_families_without_platforms(tmp_path):

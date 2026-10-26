@@ -920,6 +920,11 @@
         # snd-soc-dummy → audio HDMI muet.
         "patches/kernel/sunxi-7.0-hdmi-audio/0001-arm64-dts-sun50i-h616-hdmi-add-sound-dai-cells.patch"
         "patches/kernel/sunxi-7.0-hdmi-audio/0002-ASoC-sunxi-ahub-verify-the-module-clock.patch"
+        # Correctif CEC (déclaré dans src/armbian_extractor/platform_patches.json,
+        # vendoré dans metadata/nix/patches/kernel/sunxi-7.0-cec) : reprise du TX
+        # après une rafale HPD, et relecture EDID quand le sink n'est pas prêt.
+        "patches/kernel/sunxi-7.0-cec/0001-drm-bridge-dw-hdmi-cec-abort-in-flight-tx-before-gating-the-clock.patch"
+        "patches/kernel/sunxi-7.0-cec/0002-drm-bridge-dw-hdmi-reprobe-the-connector-when-the-edid-read-fails.patch"
         "patches/kernel/archive/sunxi-7.0/patches.armbian/arch-arm-patch-flush-icache-earlier.patch"
         "patches/kernel/archive/sunxi-7.0/patches.armbian/arm64-dts-add-axp313a-pmic.patch"
         "patches/kernel/archive/sunxi-7.0/patches.armbian/arm64-dts-sun50i-a64.dtsi-adjust-thermal-trip-points.patch"

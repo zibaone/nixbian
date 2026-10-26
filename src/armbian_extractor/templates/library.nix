@@ -74,6 +74,22 @@ rec {
       # Manual user override, added in ALL modes
       userExtraConfig = args.extraConfig or "";
 
+      # Family lines, armbian tier: read from ./family_config.json (verbatim
+      # copy of src/armbian_extractor/family_config.json, written by
+      # write_library_nix). Keyed by platform, like platforms.nix; the kernel
+      # meta carries `config = "linux-<platform>.config"`.
+      familyExtraConfigLines =
+        let
+          declared = builtins.fromJSON (builtins.readFile ./family_config.json);
+          platform = lib.removePrefix "linux-" (kMeta.config or "");
+        in
+        declared.${platform} or [ ];
+      familyExtraConfig =
+        if familyExtraConfigLines == [ ] then
+          ""
+        else
+          lib.concatStringsSep "\n" familyExtraConfigLines + "\n";
+
       # Raw Armbian .config ("armbian" mode). config_path_nix is emitted by the
       # generator relative to the family directory
       # (metadata/nix/families/<fam>/configs/...). It is resolved by trying the
@@ -283,16 +299,18 @@ rec {
         };
 
         # Effective config of the armbian tier. `linuxManualConfig` has no
-        # `extraConfig` hook: the user override is therefore merged INTO the .config
-        # (.config syntax, including "# CONFIG_X is not set") then applied by
-        # `make oldconfig`. Without an override, the family config path is kept
+        # `extraConfig` hook: the family lines and the user override are
+        # therefore merged INTO the .config (.config syntax, including
+        # "# CONFIG_X is not set") then applied by `make oldconfig`. The family
+        # lines come first, the user override last (kconfig keeps the last
+        # occurrence). Without either, the family config path is kept
         # (no derivation, hence no import-from-derivation).
         armbianConfigfile =
-          if userExtraConfig == "" then
+          if userExtraConfig == "" && familyExtraConfig == "" then
             armbianConfigPath
           else
             pkgs.writeText "linux-nixbian-${kMeta.config or "family"}.config" (
-              (builtins.readFile armbianConfigPath) + "\n" + userExtraConfig + "\n"
+              (builtins.readFile armbianConfigPath) + "\n" + familyExtraConfig + userExtraConfig + "\n"
             );
 
         # "armbian" tier: the config is a COMPLETE .config (Armbian
@@ -307,7 +325,7 @@ rec {
           version = exactVersion;
           modDirVersion = exactVersion;
           configfile = armbianConfigfile;
-          allowImportFromDerivation = userExtraConfig != "";
+          allowImportFromDerivation = userExtraConfig != "" || familyExtraConfig != "";
           kernelPatches = kernelPatchArgs;
           randstructSeed = "";
           extraMakeFlags = kernelMakeFlags;

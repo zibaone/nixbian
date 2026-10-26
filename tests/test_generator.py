@@ -196,3 +196,26 @@ def test_collect_platform_patches_ignores_missing_declaration(tmp_path, monkeypa
     )
     gen = NixGenerator(tmp_path / "armbian", tmp_path / "out")
     assert gen._collect_platform_patches("fam-7.0", "kernel") == []
+
+
+def test_write_library_nix_copies_family_config(tmp_path, monkeypatch):
+    """family_config.json is copied verbatim next to library.nix.
+
+    library.nix reads `./family_config.json` at evaluation time; the file is
+    the declarative source (like platform_patches.json) and metadata/ is
+    generated, so the generator must copy it on every refresh.
+    """
+    import json
+
+    from armbian_extractor import generator as generator_module
+
+    declaration = tmp_path / "family_config.json"
+    declaration.write_text(json.dumps({"sunxi64-edge": ["CONFIG_PSI=y"]}))
+    monkeypatch.setattr(generator_module, "FAMILY_CONFIG_FILE", declaration)
+
+    out = tmp_path / "out" / "nix"
+    out.mkdir(parents=True)
+    gen = NixGenerator(tmp_path / "armbian", tmp_path / "out")
+    gen.write_library_nix()
+
+    assert (out / "family_config.json").read_text() == declaration.read_text()

@@ -47,6 +47,8 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 
 # `config_path_nix = "configs/linux-uefi-arm64-cloud.config";`
 CONFIG_PATH_RE = re.compile(r'config_path_nix\s*=\s*"([^"]+)"')
+# `familyExtraConfig = "CONFIG_PSI=y\nCONFIG_...=y\n";` (armbian tier)
+FAMILY_EXTRA_RE = re.compile(r'familyExtraConfig\s*=\s*"((?:[^"\\]|\\.)*)";')
 # A platform block header: `  "<family-branch>" = {`
 PLATFORM_ATTR_RE = re.compile(r'^\s*"([^"]+)"\s*=\s*\{')
 
@@ -87,33 +89,50 @@ def eval_kernel_wiring(system: str) -> dict:
 
 
 def collect_reference_configs(metadata_dir: Path) -> dict:
-    """Return {family-branch: path of the reference .config}.
+    """Return {family-branch: {"path": reference .config, "extra": str}}.
 
     The mapping is read from the generated `platforms.nix` of each family:
     the attribute name is the `family-branch` pair and `config_path_nix`
     is the path of the Armbian config relative to the family directory.
+    `familyExtraConfig` (nixbian's own lines, armbian tier) is the suffix
+    the applied config is expected to carry after the reference.
     """
     families_dir = Path(metadata_dir) / "nix" / "families"
     if not families_dir.is_dir():
         raise GateError(f"{families_dir} not found (metadata missing?)")
 
-    refs: dict[str, Path] = {}
+    refs: dict[str, dict] = {}
     for family_dir in sorted(families_dir.iterdir()):
         platforms_file = family_dir / "platforms.nix"
         if not platforms_file.is_file():
             continue
+        text = platforms_file.read_text(encoding="utf-8")
         # Line-based scan: a platform block starts with `  "<name>" = {`
         # and its config path is the `config_path_nix` entry of that block.
         current: str | None = None
-        for line in platforms_file.read_text(encoding="utf-8").splitlines():
+        for line in text.splitlines():
             name_match = PLATFORM_ATTR_RE.match(line)
             if name_match:
                 current = name_match.group(1)
                 continue
             config_match = CONFIG_PATH_RE.search(line)
             if config_match and current:
-                refs[current] = Path(family_dir) / config_match.group(1)
+                value = {
+                    "path": Path(family_dir) / config_match.group(1),
+                    "extra": "",
+                }
+                refs[current] = value
                 current = None
+
+    # Family lines: declarative source, copied verbatim next to library.nix by
+    # write_library_nix(). Keyed by platform (family-branch), like platforms.nix.
+    lines_file = Path(metadata_dir) / "nix" / "family_config.json"
+    if lines_file.is_file():
+        declared = json.loads(lines_file.read_text(encoding="utf-8"))
+        for platform, lines in declared.items():
+            if platform.startswith("_") or platform not in refs:
+                continue
+            refs[platform]["extra"] = "\n".join(lines) + "\n"
     return refs
 
 
@@ -176,7 +195,14 @@ def audit(boards: dict, wiring: dict, refs: dict) -> dict:
             continue
 
         applied_path = Path(applied)
-        ref_path = Path(ref)
+        # `refs` carries {"path", "extra"} from collect_reference_configs();
+        # a bare Path is still accepted so the audit stays usable on its own.
+        if isinstance(ref, dict):
+            ref_path = Path(ref["path"])
+            family_extra = ref.get("extra") or ""
+        else:
+            ref_path = Path(ref)
+            family_extra = ""
         if not applied_path.is_file():
             problems.append(f"{pair}: applied config not found: {applied_path}")
             continue
@@ -185,11 +211,16 @@ def audit(boards: dict, wiring: dict, refs: dict) -> dict:
             continue
 
         verified[pair] = str(ref_path)
-        if applied_path.read_bytes() != ref_path.read_bytes():
+        # The armbian tier concatenates, in this order, the reference config,
+        # nixbian's family lines and the user override (template library.nix).
+        expected = ref_path.read_bytes()
+        if family_extra:
+            expected += b"\n" + family_extra.encode() + b"\n"
+        if applied_path.read_bytes() != expected:
             problems.append(
                 f"{pair}: applied config differs from the reference "
-                f"({len(board_keys)} board(s) affected): "
-                f"{applied_path} != {ref_path}"
+                f"(+ family lines) ({len(board_keys)} board(s) "
+                f"affected): {applied_path} != {ref_path}"
             )
 
     return {
