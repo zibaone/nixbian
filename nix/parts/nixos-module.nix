@@ -164,12 +164,12 @@ in
     enable = lib.mkEnableOption "Nixbian Hardware Engine";
 
     board = lib.mkOption {
-      type = lib.types.lines;
+      type = lib.types.str;
       description = "Armbian board identifier (e.g., 'orangepizero3')";
     };
 
     family = lib.mkOption {
-      type = lib.types.lines;
+      type = lib.types.str;
       default = "generic";
       description = "Auto-detected Linux family (can be overridden)";
     };
@@ -218,7 +218,7 @@ in
     };
 
     kernelVendor = lib.mkOption {
-      type = lib.types.lines;
+      type = lib.types.str;
       default = "current";
       description = "Armbian kernel series to use (default: current)";
     };
