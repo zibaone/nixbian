@@ -693,7 +693,7 @@
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-NjoBczMKO4jbigpfg3+pg3o06+TxCK2ZN7ccUDOwuck=";
+      sha256 = "sha256-u8xQBQ1MBHMDh2uvyvnAt1RmbKUTKUmOYxK3bb/UitY=";
     };
   };
   src-kernel-branch-linux-6-18-2 = {
