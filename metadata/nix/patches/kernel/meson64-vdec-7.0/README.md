@@ -3,6 +3,10 @@
 Sous-ensemble du jeu de patchs LibreELEC `projects/Amlogic/patches/linux`
 (`amlogic-0118` à `amlogic-0128`), destiné à un noyau **7.0** de `nixbian`.
 
+`amlogic-0129` est un correctif local : `codec_h264_stop()` ne libérait pas
+`h264->scan_copy` (une allocation de 4 Mio par session de décodage matériel,
+mesurée sur la N5 le 2026-11-02).
+
 ## Source
 
 - dépôt : `LibreELEC/LibreELEC.tv`
