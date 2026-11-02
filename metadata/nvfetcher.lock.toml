@@ -19,9 +19,9 @@ fetch.git = "https://github.com/frank-w/BPI-Router-Linux.git"
 rev = "b864732ee285e7868fb0857d69a8ff349e37003e"
 
 [kernel-generic-branch-linux-6-12-y]
-src.manual = "85d82e0d7c2dfd3e75d34f35b7ebbf41f45c9c4e"
+src.manual = "03bae623ec326c2738198739625832aab0eb120a"
 fetch.git = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git"
-rev = "85d82e0d7c2dfd3e75d34f35b7ebbf41f45c9c4e"
+rev = "03bae623ec326c2738198739625832aab0eb120a"
 
 [kernel-generic-branch-linux-6-15-y]
 src.manual = "4afb9d6bd4c4b3dad7e2c9c48b6c8a55275d8f46"
@@ -29,14 +29,14 @@ fetch.git = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git"
 rev = "4afb9d6bd4c4b3dad7e2c9c48b6c8a55275d8f46"
 
 [kernel-generic-branch-linux-6-18-y]
-src.manual = "2926d88bb7fc4608fd942453d929c39e4e5ec006"
+src.manual = "f45ed76d6791cf72ff1265ee93511175bbbc2f18"
 fetch.git = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git"
-rev = "2926d88bb7fc4608fd942453d929c39e4e5ec006"
+rev = "f45ed76d6791cf72ff1265ee93511175bbbc2f18"
 
 [kernel-generic-branch-linux-6-6-y]
-src.manual = "0aebf2870d53a8d97e02a99e2103ea0b38950c1b"
+src.manual = "b5a1dc3ad4822c6edfb53429e9a3759c9b0ac2be"
 fetch.git = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git"
-rev = "0aebf2870d53a8d97e02a99e2103ea0b38950c1b"
+rev = "b5a1dc3ad4822c6edfb53429e9a3759c9b0ac2be"
 
 [kernel-generic-branch-linux-7-0-y]
 src.manual = "458c6079fc1d41d564c37679c8ace02cd83ee817"
@@ -69,9 +69,9 @@ fetch.git = "https://github.com/beagleboard/linux"
 rev = "8fb21420a704ea36aaf66df8288ed8ee9da2762d"
 
 [kernel-k3-branch-ti-linux-6-18-y]
-src.manual = "97becb13b81c314c1d17fcf2226aac9a32086f3d"
+src.manual = "51d57671f1f51baf253b4ed9251f6190469f885d"
 fetch.git = "https://github.com/TexasInstruments/ti-linux-kernel"
-rev = "97becb13b81c314c1d17fcf2226aac9a32086f3d"
+rev = "51d57671f1f51baf253b4ed9251f6190469f885d"
 
 [kernel-loong64-branch-linux-7-0-y]
 src.manual = "458c6079fc1d41d564c37679c8ace02cd83ee817"
@@ -94,9 +94,9 @@ fetch.git = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git"
 rev = "v6.12.28"
 
 [kernel-meson64-branch-linux-6-18-y]
-src.manual = "2926d88bb7fc4608fd942453d929c39e4e5ec006"
+src.manual = "f45ed76d6791cf72ff1265ee93511175bbbc2f18"
 fetch.git = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git"
-rev = "2926d88bb7fc4608fd942453d929c39e4e5ec006"
+rev = "f45ed76d6791cf72ff1265ee93511175bbbc2f18"
 
 [kernel-meson64-branch-linux-7-0-y]
 src.manual = "458c6079fc1d41d564c37679c8ace02cd83ee817"
@@ -104,9 +104,9 @@ fetch.git = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git"
 rev = "458c6079fc1d41d564c37679c8ace02cd83ee817"
 
 [kernel-nuvoton-ma35d1-branch-master]
-src.manual = "fd283f6236c07c22e94d654859ea16568c9ef9bf"
+src.manual = "2bdf917ab405e81c16760c2afae9d28a21dd56a1"
 fetch.git = "https://github.com/OpenNuvoton/MA35D1_linux-5.10.y.git"
-rev = "fd283f6236c07c22e94d654859ea16568c9ef9bf"
+rev = "2bdf917ab405e81c16760c2afae9d28a21dd56a1"
 
 [kernel-phytium-embedded-branch-linux-6-6]
 src.manual = "46471440b5ea96f5caa7ad70ce457735070f9f8e"
@@ -134,9 +134,9 @@ fetch.git = "https://github.com/armbian/linux-rockchip.git"
 rev = "372ce582b94a3360a29727c3c49c88bb7509da22"
 
 [kernel-rockchip64-branch-linux-6-18-y]
-src.manual = "2926d88bb7fc4608fd942453d929c39e4e5ec006"
+src.manual = "f45ed76d6791cf72ff1265ee93511175bbbc2f18"
 fetch.git = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git"
-rev = "2926d88bb7fc4608fd942453d929c39e4e5ec006"
+rev = "f45ed76d6791cf72ff1265ee93511175bbbc2f18"
 
 [kernel-rockchip64-branch-linux-7-0-y]
 src.manual = "458c6079fc1d41d564c37679c8ace02cd83ee817"
@@ -144,9 +144,9 @@ fetch.git = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git"
 rev = "458c6079fc1d41d564c37679c8ace02cd83ee817"
 
 [kernel-sm8250-branch-linux-6-18-y]
-src.manual = "2926d88bb7fc4608fd942453d929c39e4e5ec006"
+src.manual = "f45ed76d6791cf72ff1265ee93511175bbbc2f18"
 fetch.git = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git"
-rev = "2926d88bb7fc4608fd942453d929c39e4e5ec006"
+rev = "f45ed76d6791cf72ff1265ee93511175bbbc2f18"
 
 [kernel-sm8250-branch-linux-6-19-y]
 src.manual = "b9dbb4576bc8c69e87b4ca4caa2fb1c0db47d722"
@@ -154,9 +154,9 @@ fetch.git = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git"
 rev = "b9dbb4576bc8c69e87b4ca4caa2fb1c0db47d722"
 
 [kernel-sm8550-branch-linux-6-18-y]
-src.manual = "2926d88bb7fc4608fd942453d929c39e4e5ec006"
+src.manual = "f45ed76d6791cf72ff1265ee93511175bbbc2f18"
 fetch.git = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git"
-rev = "2926d88bb7fc4608fd942453d929c39e4e5ec006"
+rev = "f45ed76d6791cf72ff1265ee93511175bbbc2f18"
 
 [kernel-sm8550-branch-linux-7-0-y]
 src.manual = "458c6079fc1d41d564c37679c8ace02cd83ee817"
@@ -179,14 +179,14 @@ fetch.git = "https://github.com/AvaotaSBC/linux.git"
 rev = "a464bc4feaff7b102dac6362b44ac3303ec7cae1"
 
 [kernel-sunxi-branch-linux-6-12-y]
-src.manual = "85d82e0d7c2dfd3e75d34f35b7ebbf41f45c9c4e"
+src.manual = "03bae623ec326c2738198739625832aab0eb120a"
 fetch.git = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git"
-rev = "85d82e0d7c2dfd3e75d34f35b7ebbf41f45c9c4e"
+rev = "03bae623ec326c2738198739625832aab0eb120a"
 
 [kernel-sunxi-branch-linux-6-18-y]
-src.manual = "2926d88bb7fc4608fd942453d929c39e4e5ec006"
+src.manual = "f45ed76d6791cf72ff1265ee93511175bbbc2f18"
 fetch.git = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git"
-rev = "2926d88bb7fc4608fd942453d929c39e4e5ec006"
+rev = "f45ed76d6791cf72ff1265ee93511175bbbc2f18"
 
 [kernel-sunxi-branch-linux-7-0-y]
 src.manual = "458c6079fc1d41d564c37679c8ace02cd83ee817"
@@ -194,14 +194,14 @@ fetch.git = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git"
 rev = "458c6079fc1d41d564c37679c8ace02cd83ee817"
 
 [kernel-sunxi64-branch-linux-6-12-y]
-src.manual = "85d82e0d7c2dfd3e75d34f35b7ebbf41f45c9c4e"
+src.manual = "03bae623ec326c2738198739625832aab0eb120a"
 fetch.git = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git"
-rev = "85d82e0d7c2dfd3e75d34f35b7ebbf41f45c9c4e"
+rev = "03bae623ec326c2738198739625832aab0eb120a"
 
 [kernel-sunxi64-branch-linux-6-18-y]
-src.manual = "2926d88bb7fc4608fd942453d929c39e4e5ec006"
+src.manual = "f45ed76d6791cf72ff1265ee93511175bbbc2f18"
 fetch.git = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git"
-rev = "2926d88bb7fc4608fd942453d929c39e4e5ec006"
+rev = "f45ed76d6791cf72ff1265ee93511175bbbc2f18"
 
 [kernel-sunxi64-branch-linux-7-0-y]
 src.manual = "458c6079fc1d41d564c37679c8ace02cd83ee817"
@@ -259,9 +259,9 @@ fetch.git = "https://github.com/khadas/common_drivers"
 rev = "3a11a86a02e759fc57fc79410215f7c0c3a0d8e0"
 
 [src-firmware-master]
-src.manual = "9934dbd5541bb49e2063089437a981f752c87b7f"
+src.manual = "f7fa5956ecca08af42991633a4a8f09d3b1926e5"
 fetch.git = "https://github.com/armbian/firmware"
-rev = "9934dbd5541bb49e2063089437a981f752c87b7f"
+rev = "f7fa5956ecca08af42991633a4a8f09d3b1926e5"
 
 [src-kernel-branch-linux-6-18-2]
 src.manual = "559f4f921a01e5358602153364c618fe2a3e431e"
@@ -294,9 +294,9 @@ fetch.git = "https://github.com/AvaotaSBC/linux.git"
 rev = "a464bc4feaff7b102dac6362b44ac3303ec7cae1"
 
 [src-linux-branch-linux-6-12-y]
-src.manual = "85d82e0d7c2dfd3e75d34f35b7ebbf41f45c9c4e"
+src.manual = "03bae623ec326c2738198739625832aab0eb120a"
 fetch.git = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git"
-rev = "85d82e0d7c2dfd3e75d34f35b7ebbf41f45c9c4e"
+rev = "03bae623ec326c2738198739625832aab0eb120a"
 
 [src-linux-branch-linux-6-15-y]
 src.manual = "4afb9d6bd4c4b3dad7e2c9c48b6c8a55275d8f46"
@@ -304,9 +304,9 @@ fetch.git = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git"
 rev = "4afb9d6bd4c4b3dad7e2c9c48b6c8a55275d8f46"
 
 [src-linux-branch-linux-6-18-y]
-src.manual = "2926d88bb7fc4608fd942453d929c39e4e5ec006"
+src.manual = "f45ed76d6791cf72ff1265ee93511175bbbc2f18"
 fetch.git = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git"
-rev = "2926d88bb7fc4608fd942453d929c39e4e5ec006"
+rev = "f45ed76d6791cf72ff1265ee93511175bbbc2f18"
 
 [src-linux-branch-linux-6-19-y]
 src.manual = "b9dbb4576bc8c69e87b4ca4caa2fb1c0db47d722"
@@ -314,9 +314,9 @@ fetch.git = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git"
 rev = "b9dbb4576bc8c69e87b4ca4caa2fb1c0db47d722"
 
 [src-linux-branch-linux-6-6-y]
-src.manual = "0aebf2870d53a8d97e02a99e2103ea0b38950c1b"
+src.manual = "b5a1dc3ad4822c6edfb53429e9a3759c9b0ac2be"
 fetch.git = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git"
-rev = "0aebf2870d53a8d97e02a99e2103ea0b38950c1b"
+rev = "b5a1dc3ad4822c6edfb53429e9a3759c9b0ac2be"
 
 [src-linux-branch-linux-7-0-y]
 src.manual = "458c6079fc1d41d564c37679c8ace02cd83ee817"
@@ -349,9 +349,9 @@ fetch.git = "https://gitlab.collabora.com/mediatek/aiot/linux.git"
 rev = "1b251287c9f26c428033af1106319af5e32f376b"
 
 [src-linux-firmware-master]
-src.manual = "bf992df7a95b5e19bb8f8546eb4d7c53ab2598d0"
+src.manual = "739c4fb9ef51eee12c6a6c9109433a93a713ef28"
 fetch.git = "https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git"
-rev = "bf992df7a95b5e19bb8f8546eb4d7c53ab2598d0"
+rev = "739c4fb9ef51eee12c6a6c9109433a93a713ef28"
 
 [src-linux-rockchip-branch-rk-6-1-rkr5-1]
 src.manual = "372ce582b94a3360a29727c3c49c88bb7509da22"
@@ -374,19 +374,19 @@ fetch.git = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git"
 rev = "v7.0"
 
 [src-ma35d1-arm-trusted-firmware-v2-3-branch-master]
-src.manual = "24390abf587f10f4992fac94b02065a19b6186d3"
+src.manual = "31cad0de96b1c4edf9ebfe2f5eb087ba043ba102"
 fetch.git = "https://github.com/OpenNuvoton/MA35D1_arm-trusted-firmware-v2.3.git"
-rev = "24390abf587f10f4992fac94b02065a19b6186d3"
+rev = "31cad0de96b1c4edf9ebfe2f5eb087ba043ba102"
 
 [src-ma35d1-linux-5-10-y-branch-master]
-src.manual = "fd283f6236c07c22e94d654859ea16568c9ef9bf"
+src.manual = "2bdf917ab405e81c16760c2afae9d28a21dd56a1"
 fetch.git = "https://github.com/OpenNuvoton/MA35D1_linux-5.10.y.git"
-rev = "fd283f6236c07c22e94d654859ea16568c9ef9bf"
+rev = "2bdf917ab405e81c16760c2afae9d28a21dd56a1"
 
 [src-ma35d1-u-boot-v2020-07-branch-master]
-src.manual = "3f7c5bea93f7a064ce8ad2dcbf23fe540c2427d3"
+src.manual = "9e8cbf03ab596bf666b13d57751dcaf38c4a9aa0"
 fetch.git = "https://github.com/OpenNuvoton/MA35D1_u-boot-v2020.07.git"
-rev = "3f7c5bea93f7a064ce8ad2dcbf23fe540c2427d3"
+rev = "9e8cbf03ab596bf666b13d57751dcaf38c4a9aa0"
 
 [src-phytium-linux-kernel-branch-linux-6-6]
 src.manual = "46471440b5ea96f5caa7ad70ce457735070f9f8e"
@@ -409,14 +409,14 @@ fetch.git = "https://github.com/pyavitz/spacemit-u-boot.git"
 rev = "k1-bl-v2.2.9-release"
 
 [src-ti-linux-kernel-branch-ti-linux-6-18-y]
-src.manual = "97becb13b81c314c1d17fcf2226aac9a32086f3d"
+src.manual = "51d57671f1f51baf253b4ed9251f6190469f885d"
 fetch.git = "https://github.com/TexasInstruments/ti-linux-kernel"
-rev = "97becb13b81c314c1d17fcf2226aac9a32086f3d"
+rev = "51d57671f1f51baf253b4ed9251f6190469f885d"
 
 [src-ti-u-boot-branch-ti-u-boot-2026-01]
-src.manual = "a0c21f799732ae350ebc31da24297d12f3e945f4"
+src.manual = "e8e50d58c24a0d2d0e5839fc8bf32ce87cb3c877"
 fetch.git = "https://github.com/TexasInstruments/ti-u-boot"
-rev = "a0c21f799732ae350ebc31da24297d12f3e945f4"
+rev = "e8e50d58c24a0d2d0e5839fc8bf32ce87cb3c877"
 
 [src-trusted-firmware-a-commit-decacb88cfe882cb09ddd613ecaf1323d3fe6c22]
 src.manual = "decacb88cfe882cb09ddd613ecaf1323d3fe6c22"
@@ -549,9 +549,9 @@ fetch.git = "https://github.com/CoreELEC/u-boot.git"
 rev = "4a16015168d00d08487781fc914e048944554c6e"
 
 [uboot-branch-master]
-src.manual = "3f7c5bea93f7a064ce8ad2dcbf23fe540c2427d3"
+src.manual = "9e8cbf03ab596bf666b13d57751dcaf38c4a9aa0"
 fetch.git = "https://github.com/OpenNuvoton/MA35D1_u-boot-v2020.07.git"
-rev = "3f7c5bea93f7a064ce8ad2dcbf23fe540c2427d3"
+rev = "9e8cbf03ab596bf666b13d57751dcaf38c4a9aa0"
 
 [uboot-branch-next-dev-buildroot]
 src.manual = "3c60a711e61015c1a61247837afbeaa85bd7fbf2"
@@ -574,9 +574,9 @@ fetch.git = "https://github.com/hardkernel/u-boot.git"
 rev = "42ac93dcfbbb8a08c2bdc02e19f96eb35a81891a"
 
 [uboot-branch-ti-u-boot-2026-01]
-src.manual = "a0c21f799732ae350ebc31da24297d12f3e945f4"
+src.manual = "e8e50d58c24a0d2d0e5839fc8bf32ce87cb3c877"
 fetch.git = "https://github.com/TexasInstruments/ti-u-boot"
-rev = "a0c21f799732ae350ebc31da24297d12f3e945f4"
+rev = "e8e50d58c24a0d2d0e5839fc8bf32ce87cb3c877"
 
 [uboot-branch-v2018-01-solidrun-a38x]
 src.manual = "a8004c1f1112ca2f867badccce5a76f052034853"

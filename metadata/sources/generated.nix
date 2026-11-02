@@ -61,10 +61,10 @@
   };
   kernel-generic-branch-linux-6-12-y = {
     pname = "kernel-generic-branch-linux-6-12-y";
-    version = "85d82e0d7c2dfd3e75d34f35b7ebbf41f45c9c4e";
+    version = "03bae623ec326c2738198739625832aab0eb120a";
     src = fetchgit {
       url = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git";
-      rev = "85d82e0d7c2dfd3e75d34f35b7ebbf41f45c9c4e";
+      rev = "03bae623ec326c2738198739625832aab0eb120a";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
@@ -87,10 +87,10 @@
   };
   kernel-generic-branch-linux-6-18-y = {
     pname = "kernel-generic-branch-linux-6-18-y";
-    version = "2926d88bb7fc4608fd942453d929c39e4e5ec006";
+    version = "f45ed76d6791cf72ff1265ee93511175bbbc2f18";
     src = fetchgit {
       url = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git";
-      rev = "2926d88bb7fc4608fd942453d929c39e4e5ec006";
+      rev = "f45ed76d6791cf72ff1265ee93511175bbbc2f18";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
@@ -100,15 +100,15 @@
   };
   kernel-generic-branch-linux-6-6-y = {
     pname = "kernel-generic-branch-linux-6-6-y";
-    version = "0aebf2870d53a8d97e02a99e2103ea0b38950c1b";
+    version = "b5a1dc3ad4822c6edfb53429e9a3759c9b0ac2be";
     src = fetchgit {
       url = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git";
-      rev = "0aebf2870d53a8d97e02a99e2103ea0b38950c1b";
+      rev = "b5a1dc3ad4822c6edfb53429e9a3759c9b0ac2be";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-MS9/mk8/gO+z6jR+3Y4EV2fgAKIX6gniwnhgyieVBeE=";
+      sha256 = "03hqf87vb099rgjcw621wvsyr9zjzh45h5hds350cxgsbmw9b5xc";
     };
   };
   kernel-generic-branch-linux-7-0-y = {
@@ -191,10 +191,10 @@
   };
   kernel-k3-branch-ti-linux-6-18-y = {
     pname = "kernel-k3-branch-ti-linux-6-18-y";
-    version = "97becb13b81c314c1d17fcf2226aac9a32086f3d";
+    version = "51d57671f1f51baf253b4ed9251f6190469f885d";
     src = fetchgit {
       url = "https://github.com/TexasInstruments/ti-linux-kernel";
-      rev = "97becb13b81c314c1d17fcf2226aac9a32086f3d";
+      rev = "51d57671f1f51baf253b4ed9251f6190469f885d";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
@@ -256,10 +256,10 @@
   };
   kernel-meson64-branch-linux-6-18-y = {
     pname = "kernel-meson64-branch-linux-6-18-y";
-    version = "2926d88bb7fc4608fd942453d929c39e4e5ec006";
+    version = "f45ed76d6791cf72ff1265ee93511175bbbc2f18";
     src = fetchgit {
       url = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git";
-      rev = "2926d88bb7fc4608fd942453d929c39e4e5ec006";
+      rev = "f45ed76d6791cf72ff1265ee93511175bbbc2f18";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
@@ -282,15 +282,15 @@
   };
   kernel-nuvoton-ma35d1-branch-master = {
     pname = "kernel-nuvoton-ma35d1-branch-master";
-    version = "fd283f6236c07c22e94d654859ea16568c9ef9bf";
+    version = "2bdf917ab405e81c16760c2afae9d28a21dd56a1";
     src = fetchgit {
       url = "https://github.com/OpenNuvoton/MA35D1_linux-5.10.y.git";
-      rev = "fd283f6236c07c22e94d654859ea16568c9ef9bf";
+      rev = "2bdf917ab405e81c16760c2afae9d28a21dd56a1";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-cpFplEsztuzFDEakuu6VAWp/WeWVsHORm5PdX3pnQO0=";
+      sha256 = "03dfw2mnsh77w8gsw0sy3lyrk3xdvjhdccd850njiix9ja3c290w";
     };
   };
   kernel-phytium-embedded-branch-linux-6-6 = {
@@ -360,10 +360,10 @@
   };
   kernel-rockchip64-branch-linux-6-18-y = {
     pname = "kernel-rockchip64-branch-linux-6-18-y";
-    version = "2926d88bb7fc4608fd942453d929c39e4e5ec006";
+    version = "f45ed76d6791cf72ff1265ee93511175bbbc2f18";
     src = fetchgit {
       url = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git";
-      rev = "2926d88bb7fc4608fd942453d929c39e4e5ec006";
+      rev = "f45ed76d6791cf72ff1265ee93511175bbbc2f18";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
@@ -386,10 +386,10 @@
   };
   kernel-sm8250-branch-linux-6-18-y = {
     pname = "kernel-sm8250-branch-linux-6-18-y";
-    version = "2926d88bb7fc4608fd942453d929c39e4e5ec006";
+    version = "f45ed76d6791cf72ff1265ee93511175bbbc2f18";
     src = fetchgit {
       url = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git";
-      rev = "2926d88bb7fc4608fd942453d929c39e4e5ec006";
+      rev = "f45ed76d6791cf72ff1265ee93511175bbbc2f18";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
@@ -412,15 +412,15 @@
   };
   kernel-sm8550-branch-linux-6-18-y = {
     pname = "kernel-sm8550-branch-linux-6-18-y";
-    version = "2926d88bb7fc4608fd942453d929c39e4e5ec006";
+    version = "f45ed76d6791cf72ff1265ee93511175bbbc2f18";
     src = fetchgit {
       url = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git";
-      rev = "2926d88bb7fc4608fd942453d929c39e4e5ec006";
+      rev = "f45ed76d6791cf72ff1265ee93511175bbbc2f18";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-u7P2cN0R97DfIoWvTGK7cmAu6+z0TDpKnQS9k0VDmB8=";
+      sha256 = "0npr2rihw3m0my54769vxfik0ikjpm5frfd5gsjh6vdd6hz0ai4b";
     };
   };
   kernel-sm8550-branch-linux-7-0-y = {
@@ -477,28 +477,28 @@
   };
   kernel-sunxi-branch-linux-6-12-y = {
     pname = "kernel-sunxi-branch-linux-6-12-y";
-    version = "85d82e0d7c2dfd3e75d34f35b7ebbf41f45c9c4e";
+    version = "03bae623ec326c2738198739625832aab0eb120a";
     src = fetchgit {
       url = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git";
-      rev = "85d82e0d7c2dfd3e75d34f35b7ebbf41f45c9c4e";
+      rev = "03bae623ec326c2738198739625832aab0eb120a";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-fgvY6kd8lv816/DG2gO1nEmqwQslDR9yFr5g4eItKVY=";
+      sha256 = "091z2xf5m1mrhnckn8k95dknj8wsxrdfrmrpg5h4rl2swx6dmifa";
     };
   };
   kernel-sunxi-branch-linux-6-18-y = {
     pname = "kernel-sunxi-branch-linux-6-18-y";
-    version = "2926d88bb7fc4608fd942453d929c39e4e5ec006";
+    version = "f45ed76d6791cf72ff1265ee93511175bbbc2f18";
     src = fetchgit {
       url = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git";
-      rev = "2926d88bb7fc4608fd942453d929c39e4e5ec006";
+      rev = "f45ed76d6791cf72ff1265ee93511175bbbc2f18";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-u7P2cN0R97DfIoWvTGK7cmAu6+z0TDpKnQS9k0VDmB8=";
+      sha256 = "0npr2rihw3m0my54769vxfik0ikjpm5frfd5gsjh6vdd6hz0ai4b";
     };
   };
   kernel-sunxi-branch-linux-7-0-y = {
@@ -516,28 +516,28 @@
   };
   kernel-sunxi64-branch-linux-6-12-y = {
     pname = "kernel-sunxi64-branch-linux-6-12-y";
-    version = "85d82e0d7c2dfd3e75d34f35b7ebbf41f45c9c4e";
+    version = "03bae623ec326c2738198739625832aab0eb120a";
     src = fetchgit {
       url = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git";
-      rev = "85d82e0d7c2dfd3e75d34f35b7ebbf41f45c9c4e";
+      rev = "03bae623ec326c2738198739625832aab0eb120a";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-fgvY6kd8lv816/DG2gO1nEmqwQslDR9yFr5g4eItKVY=";
+      sha256 = "091z2xf5m1mrhnckn8k95dknj8wsxrdfrmrpg5h4rl2swx6dmifa";
     };
   };
   kernel-sunxi64-branch-linux-6-18-y = {
     pname = "kernel-sunxi64-branch-linux-6-18-y";
-    version = "2926d88bb7fc4608fd942453d929c39e4e5ec006";
+    version = "f45ed76d6791cf72ff1265ee93511175bbbc2f18";
     src = fetchgit {
       url = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git";
-      rev = "2926d88bb7fc4608fd942453d929c39e4e5ec006";
+      rev = "f45ed76d6791cf72ff1265ee93511175bbbc2f18";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-u7P2cN0R97DfIoWvTGK7cmAu6+z0TDpKnQS9k0VDmB8=";
+      sha256 = "0npr2rihw3m0my54769vxfik0ikjpm5frfd5gsjh6vdd6hz0ai4b";
     };
   };
   kernel-sunxi64-branch-linux-7-0-y = {
@@ -685,15 +685,15 @@
   };
   src-firmware-master = {
     pname = "src-firmware-master";
-    version = "9934dbd5541bb49e2063089437a981f752c87b7f";
+    version = "f7fa5956ecca08af42991633a4a8f09d3b1926e5";
     src = fetchgit {
       url = "https://github.com/armbian/firmware";
-      rev = "9934dbd5541bb49e2063089437a981f752c87b7f";
+      rev = "f7fa5956ecca08af42991633a4a8f09d3b1926e5";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-u8xQBQ1MBHMDh2uvyvnAt1RmbKUTKUmOYxK3bb/UitY=";
+      sha256 = "0if653wk4b31cigdg4vfklv4j4r0b6gzsczaii4jimn49ixsnzvh";
     };
   };
   src-kernel-branch-linux-6-18-2 = {
@@ -776,15 +776,15 @@
   };
   src-linux-branch-linux-6-12-y = {
     pname = "src-linux-branch-linux-6-12-y";
-    version = "85d82e0d7c2dfd3e75d34f35b7ebbf41f45c9c4e";
+    version = "03bae623ec326c2738198739625832aab0eb120a";
     src = fetchgit {
       url = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git";
-      rev = "85d82e0d7c2dfd3e75d34f35b7ebbf41f45c9c4e";
+      rev = "03bae623ec326c2738198739625832aab0eb120a";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-fgvY6kd8lv816/DG2gO1nEmqwQslDR9yFr5g4eItKVY=";
+      sha256 = "091z2xf5m1mrhnckn8k95dknj8wsxrdfrmrpg5h4rl2swx6dmifa";
     };
   };
   src-linux-branch-linux-6-15-y = {
@@ -802,15 +802,15 @@
   };
   src-linux-branch-linux-6-18-y = {
     pname = "src-linux-branch-linux-6-18-y";
-    version = "2926d88bb7fc4608fd942453d929c39e4e5ec006";
+    version = "f45ed76d6791cf72ff1265ee93511175bbbc2f18";
     src = fetchgit {
       url = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git";
-      rev = "2926d88bb7fc4608fd942453d929c39e4e5ec006";
+      rev = "f45ed76d6791cf72ff1265ee93511175bbbc2f18";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-u7P2cN0R97DfIoWvTGK7cmAu6+z0TDpKnQS9k0VDmB8=";
+      sha256 = "0npr2rihw3m0my54769vxfik0ikjpm5frfd5gsjh6vdd6hz0ai4b";
     };
   };
   src-linux-branch-linux-6-19-y = {
@@ -828,15 +828,15 @@
   };
   src-linux-branch-linux-6-6-y = {
     pname = "src-linux-branch-linux-6-6-y";
-    version = "0aebf2870d53a8d97e02a99e2103ea0b38950c1b";
+    version = "b5a1dc3ad4822c6edfb53429e9a3759c9b0ac2be";
     src = fetchgit {
       url = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git";
-      rev = "0aebf2870d53a8d97e02a99e2103ea0b38950c1b";
+      rev = "b5a1dc3ad4822c6edfb53429e9a3759c9b0ac2be";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-MS9/mk8/gO+z6jR+3Y4EV2fgAKIX6gniwnhgyieVBeE=";
+      sha256 = "03hqf87vb099rgjcw621wvsyr9zjzh45h5hds350cxgsbmw9b5xc";
     };
   };
   src-linux-branch-linux-7-0-y = {
@@ -919,15 +919,15 @@
   };
   src-linux-firmware-master = {
     pname = "src-linux-firmware-master";
-    version = "bf992df7a95b5e19bb8f8546eb4d7c53ab2598d0";
+    version = "739c4fb9ef51eee12c6a6c9109433a93a713ef28";
     src = fetchgit {
       url = "https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git";
-      rev = "bf992df7a95b5e19bb8f8546eb4d7c53ab2598d0";
+      rev = "739c4fb9ef51eee12c6a6c9109433a93a713ef28";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-+lEHWOh/rYaBra2ea/rSYa6EZoscbbCsdAQoC4gUexM=";
+      sha256 = "19spbkbhqm2ir4mbz9kgxiv2g8cjjfyg1baphb2ig8mzl114xdgc";
     };
   };
   src-linux-rockchip-branch-rk-6-1-rkr5-1 = {
@@ -984,41 +984,41 @@
   };
   src-ma35d1-arm-trusted-firmware-v2-3-branch-master = {
     pname = "src-ma35d1-arm-trusted-firmware-v2-3-branch-master";
-    version = "24390abf587f10f4992fac94b02065a19b6186d3";
+    version = "31cad0de96b1c4edf9ebfe2f5eb087ba043ba102";
     src = fetchgit {
       url = "https://github.com/OpenNuvoton/MA35D1_arm-trusted-firmware-v2.3.git";
-      rev = "24390abf587f10f4992fac94b02065a19b6186d3";
+      rev = "31cad0de96b1c4edf9ebfe2f5eb087ba043ba102";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-lNHbkj/iyBBf1toGoazs3J5eAmwWM63WlcAHhjZWQ8k=";
+      sha256 = "031bxmy9ijnm7952gzrdwh1aav7vrac3cc7jjf2d67p46qp9hljn";
     };
   };
   src-ma35d1-linux-5-10-y-branch-master = {
     pname = "src-ma35d1-linux-5-10-y-branch-master";
-    version = "fd283f6236c07c22e94d654859ea16568c9ef9bf";
+    version = "2bdf917ab405e81c16760c2afae9d28a21dd56a1";
     src = fetchgit {
       url = "https://github.com/OpenNuvoton/MA35D1_linux-5.10.y.git";
-      rev = "fd283f6236c07c22e94d654859ea16568c9ef9bf";
+      rev = "2bdf917ab405e81c16760c2afae9d28a21dd56a1";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-cpFplEsztuzFDEakuu6VAWp/WeWVsHORm5PdX3pnQO0=";
+      sha256 = "03dfw2mnsh77w8gsw0sy3lyrk3xdvjhdccd850njiix9ja3c290w";
     };
   };
   src-ma35d1-u-boot-v2020-07-branch-master = {
     pname = "src-ma35d1-u-boot-v2020-07-branch-master";
-    version = "3f7c5bea93f7a064ce8ad2dcbf23fe540c2427d3";
+    version = "9e8cbf03ab596bf666b13d57751dcaf38c4a9aa0";
     src = fetchgit {
       url = "https://github.com/OpenNuvoton/MA35D1_u-boot-v2020.07.git";
-      rev = "3f7c5bea93f7a064ce8ad2dcbf23fe540c2427d3";
+      rev = "9e8cbf03ab596bf666b13d57751dcaf38c4a9aa0";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-Mlu9dyWHdbmmXuzQSncZ324vmZoiHIv2qRlsv5e09Ok=";
+      sha256 = "1dnq6kmhjpm6sgg55vca5gbhamn2jwpim1h5hi9747hxbn64vi1z";
     };
   };
   src-phytium-linux-kernel-branch-linux-6-6 = {
@@ -1075,28 +1075,28 @@
   };
   src-ti-linux-kernel-branch-ti-linux-6-18-y = {
     pname = "src-ti-linux-kernel-branch-ti-linux-6-18-y";
-    version = "97becb13b81c314c1d17fcf2226aac9a32086f3d";
+    version = "51d57671f1f51baf253b4ed9251f6190469f885d";
     src = fetchgit {
       url = "https://github.com/TexasInstruments/ti-linux-kernel";
-      rev = "97becb13b81c314c1d17fcf2226aac9a32086f3d";
+      rev = "51d57671f1f51baf253b4ed9251f6190469f885d";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-EL6DZvCF428/Vkw1QpKPDVyzA1oyjh9kO+yfInvH6IY=";
+      sha256 = "1awmv6n6zd9kaw6w7cri64fl2azphrinl2l495scg1n3vdq4pi9r";
     };
   };
   src-ti-u-boot-branch-ti-u-boot-2026-01 = {
     pname = "src-ti-u-boot-branch-ti-u-boot-2026-01";
-    version = "a0c21f799732ae350ebc31da24297d12f3e945f4";
+    version = "e8e50d58c24a0d2d0e5839fc8bf32ce87cb3c877";
     src = fetchgit {
       url = "https://github.com/TexasInstruments/ti-u-boot";
-      rev = "a0c21f799732ae350ebc31da24297d12f3e945f4";
+      rev = "e8e50d58c24a0d2d0e5839fc8bf32ce87cb3c877";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-7JHtmCVzBg9jL5dAUw3MjaY121aYUdKxGrFBze5XKGo=";
+      sha256 = "0dcs7kd4n0ds417756gphmynznijsyrdnwild1bhjrpg18b5kz9k";
     };
   };
   src-trusted-firmware-a-commit-decacb88cfe882cb09ddd613ecaf1323d3fe6c22 = {
@@ -1439,15 +1439,15 @@
   };
   uboot-branch-master = {
     pname = "uboot-branch-master";
-    version = "3f7c5bea93f7a064ce8ad2dcbf23fe540c2427d3";
+    version = "9e8cbf03ab596bf666b13d57751dcaf38c4a9aa0";
     src = fetchgit {
       url = "https://github.com/OpenNuvoton/MA35D1_u-boot-v2020.07.git";
-      rev = "3f7c5bea93f7a064ce8ad2dcbf23fe540c2427d3";
+      rev = "9e8cbf03ab596bf666b13d57751dcaf38c4a9aa0";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-Mlu9dyWHdbmmXuzQSncZ324vmZoiHIv2qRlsv5e09Ok=";
+      sha256 = "1dnq6kmhjpm6sgg55vca5gbhamn2jwpim1h5hi9747hxbn64vi1z";
     };
   };
   uboot-branch-next-dev-buildroot = {
@@ -1504,15 +1504,15 @@
   };
   uboot-branch-ti-u-boot-2026-01 = {
     pname = "uboot-branch-ti-u-boot-2026-01";
-    version = "a0c21f799732ae350ebc31da24297d12f3e945f4";
+    version = "e8e50d58c24a0d2d0e5839fc8bf32ce87cb3c877";
     src = fetchgit {
       url = "https://github.com/TexasInstruments/ti-u-boot";
-      rev = "a0c21f799732ae350ebc31da24297d12f3e945f4";
+      rev = "e8e50d58c24a0d2d0e5839fc8bf32ce87cb3c877";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-7JHtmCVzBg9jL5dAUw3MjaY121aYUdKxGrFBze5XKGo=";
+      sha256 = "0dcs7kd4n0ds417756gphmynznijsyrdnwild1bhjrpg18b5kz9k";
     };
   };
   uboot-branch-v2018-01-solidrun-a38x = {
