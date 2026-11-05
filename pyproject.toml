@@ -48,4 +48,4 @@ include-package-data = true
 where = ["src"]
 
 [tool.setuptools.package-data]
-armbian_extractor = ["templates/*.nix", "*.json"]
+armbian_extractor = ["templates/*.nix", "*.json", "local_boards/*.csc"]

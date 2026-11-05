@@ -43,6 +43,24 @@ refresh-metadata:
     echo "✔ Local metadata updated to $LATEST"
     just check
 
+# Add the boards declared in src/armbian_extractor/local_boards/ to metadata/
+# WITHOUT a full regeneration. Only the new board files, the family index and the
+# two JSON indexes are written; platforms.nix and package.nix are left untouched.
+# Rationale: a full regeneration rewrites every board whose dtb predates the
+# BOOT_FDT_FILE fallback (~440 boards) and would also re-read branch heads, so it
+# cannot be used to add one board. The generator emits valid but unformatted Nix:
+# `just format` must follow.
+add-local-boards:
+    #!/usr/bin/env bash
+    LATEST=$(jq -r 'keys | .[]' versions.json | sort -V | tail -n 1)
+    echo "Adding local boards to metadata ($LATEST)..."
+    nix build ".#\"armbian-source-${LATEST}\"" --out-link result-source
+    nix run . -- --armbian-src result-source --outdir metadata \
+        --armbian-version "$LATEST" --incremental
+    just format
+    rm -f result-source
+    just check
+
 # Full alignment with the latest Armbian releases (Update versions + Refresh local metadata + Fetch hashes)
 upgrade: update-versions
     REFRESH_KERNEL_VERSIONS=1 just refresh-metadata

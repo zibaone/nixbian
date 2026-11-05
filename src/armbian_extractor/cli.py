@@ -76,6 +76,26 @@ def main():
     parser.add_argument("--boards", nargs="+", help="Only process these boards")
     parser.add_argument("--families", nargs="+", help="Only process these families")
     parser.add_argument(
+        "--local-boards",
+        default=None,
+        help=(
+            "Directory of local board definitions (*.csc, Armbian board-conf "
+            "format) merged after Armbian's own boards. Default: "
+            "src/armbian_extractor/local_boards. A local file is ignored as soon "
+            "as Armbian provides the same board."
+        ),
+    )
+    parser.add_argument(
+        "--incremental",
+        action="store_true",
+        help=(
+            "Only add local boards that are missing from the existing "
+            "board_metadata.json: no full regeneration, platforms.nix and "
+            "package.nix are left untouched, assets are collected for the new "
+            "boards only. Requires an existing --outdir."
+        ),
+    )
+    parser.add_argument(
         "-v", "--verbose", action="store_true", help="Enable verbose logging"
     )
     parser.add_argument(
@@ -120,7 +140,52 @@ def main():
         args.armbian_src,
         args.outdir,
         refresh_kernel_versions=args.refresh_kernel_versions,
+        local_boards_dir=args.local_boards,
     )
+    from .generator import NixGenerator
+
+    # Incremental path: add local boards to an existing metadata/ without
+    # regenerating the 700+ Armbian boards (their pinned values must not be
+    # rewritten by a newer extractor). board_metadata.json is read *before*
+    # process_targets overwrites it; only the new board files, the family index
+    # and the two JSON indexes are written.
+    if args.incremental:
+        out_metadata = Path(args.outdir).resolve() / "board_metadata.json"
+        if not out_metadata.is_file():
+            log.error("--incremental requires an existing %s", out_metadata)
+            sys.exit(1)
+        existing = json.loads(out_metadata.read_text())
+        known = {
+            (entry.get("board"), entry.get("branch"))
+            for entry in existing
+            if isinstance(entry, dict)
+        }
+        missing = [t for t in extractor.local_board_targets() if t not in known]
+        if not missing:
+            log.info("Incremental: no new local board to add")
+            return
+
+        names = sorted({board for board, _ in missing})
+        log.info(f"Incremental: extracting {names}")
+        metadata_json = extractor.process_targets(targets_json, boards=names)
+        new_entries = json.loads(Path(metadata_json).read_text())
+        only = {f"{e['board']}-{e['branch']}" for e in new_entries}
+        if not only:
+            log.error("Incremental: extraction produced no board entry")
+            sys.exit(1)
+
+        merged = existing + [
+            e for e in new_entries if f"{e['board']}-{e['branch']}" in only
+        ]
+        Path(metadata_json).write_text(json.dumps(merged, indent=4) + "\n")
+        log.info(f"Incremental: added {sorted(only)}")
+
+        NixGenerator(
+            args.armbian_src, args.outdir, armbian_version=args.armbian_version
+        ).generate(merged, prune=False, only_boards=only)
+        log.info(f"✔ Incremental generation complete: {outdir}/nix/")
+        return
+
     metadata_json = extractor.process_targets(
         targets_json, boards=args.boards, families=args.families
     )
@@ -128,7 +193,6 @@ def main():
 
     # 3. Generate Nix expressions
     log.info("Step 3/3: Generating Nix expressions and collecting assets...")
-    from .generator import NixGenerator
 
     with open(metadata_json, "r") as f:
         metadata_list = json.load(f)

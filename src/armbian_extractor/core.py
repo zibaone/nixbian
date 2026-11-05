@@ -1,5 +1,6 @@
 import json
 import logging
+import re
 from pathlib import Path
 from .parser import NixbianConfigParser
 import os
@@ -280,11 +281,31 @@ def load_previous_metadata_cache(out_dir):
 
 
 class NixbianExtractor:
-    def __init__(self, armbian_src, out_dir, refresh_kernel_versions=False):
+    # Board config extensions, in Armbian's own lookup order.
+    BOARD_CONFIG_EXTS = (".conf", ".csc", ".tvb", ".wip", ".eos")
+    # `KERNEL_TARGET="current,edge"` — declares which branches a board supports.
+    KERNEL_TARGET_RE = re.compile(
+        r'^\s*(?:export\s+|declare\s+(?:-[a-zA-Z]+\s+)*)?KERNEL_TARGET\s*=\s*"?([^"#\n]+)"?',
+        re.MULTILINE,
+    )
+    # Branches the metadata generator never emits (same filter as process_targets).
+    IGNORED_BRANCHES = ("bleedingedge", "dev")
+
+    def __init__(
+        self, armbian_src, out_dir, refresh_kernel_versions=False, local_boards_dir=None
+    ):
         self.src = Path(armbian_src).resolve()
         self.out_dir = Path(out_dir).resolve()
         self.out_dir.mkdir(parents=True, exist_ok=True)
         self.refresh_kernel_versions = refresh_kernel_versions
+        # Local board definitions: cards that are not (yet) in Armbian. They use
+        # Armbian's board-conf format and are resolved *after* Armbian's tree, so
+        # an upstream entry always wins once it appears.
+        self.local_boards_dir = (
+            Path(local_boards_dir).resolve()
+            if local_boards_dir is not None
+            else Path(__file__).parent / "local_boards"
+        )
 
         # Load overrides
         self.overrides = {}
@@ -302,6 +323,39 @@ class NixbianExtractor:
 
         # Reuse already-resolved hashes (avoid losing them without prefetch)
         load_previous_metadata_cache(self.out_dir)
+
+    def _locate_board_conf(self, board_name):
+        """Board config path: Armbian tree, then userpatches, then local boards.
+
+        Local definitions are a *fallback*: once Armbian gains the board, its
+        file wins and the local one is reported so it can be deleted.
+        """
+        for root in (
+            self.src / "config" / "boards",
+            self.src / "userpatches" / "config" / "boards",
+        ):
+            for ext in self.BOARD_CONFIG_EXTS:
+                path = root / f"{board_name}{ext}"
+                if path.exists():
+                    local = self._local_board_path(board_name)
+                    if local is not None:
+                        log.warning(
+                            f"{board_name}: Armbian now provides a board config, "
+                            f"ignoring local {local}"
+                        )
+                    return path
+
+        local = self._local_board_path(board_name)
+        if local is not None:
+            log.info(f"Using local board config: {local.name}")
+        return local
+
+    def _local_board_path(self, board_name):
+        for ext in self.BOARD_CONFIG_EXTS:
+            path = self.local_boards_dir / f"{board_name}{ext}"
+            if path.exists():
+                return path
+        return None
 
     def extract_board_config(self, board_name, branch="current"):
         """
@@ -327,31 +381,8 @@ class NixbianExtractor:
                 log.info(f"Parsing base defaults: {base.name}")
                 self.parser.parse_file(base)
 
-        # 2. Find Board Config (trying all extensions)
-        extensions = [".conf", ".csc", ".tvb", ".wip", ".eos", ".wip", ".csc"]
-        board_conf = None
-
-        # Try core config first
-        for ext in extensions:
-            path = self.src / "config" / "boards" / f"{board_name}{ext}"
-            if path.exists():
-                board_conf = path
-                break
-
-        if not board_conf:
-            # Try userpatches
-            for ext in extensions:
-                path = (
-                    self.src
-                    / "userpatches"
-                    / "config"
-                    / "boards"
-                    / f"{board_name}{ext}"
-                )
-                if path.exists():
-                    board_conf = path
-                    break
-
+        # 2. Find Board Config (Armbian tree, then userpatches, then local boards)
+        board_conf = self._locate_board_conf(board_name)
         if not board_conf:
             log.warning(f"Board config not found for {board_name}")
             return None
@@ -429,6 +460,24 @@ class NixbianExtractor:
         # 6. Extract key data
         linux_family = self.parser.get("LINUXFAMILY")
 
+        # `sunxi64_common.inc` sources `crust_firmware.inc`, which appends
+        # `u-boot-sunxi-crust` to BOOTPATCHDIR **only when CRUSTCONFIG is set**
+        # (A64/H5 boards with an OpenRISC SCP). The parser does not evaluate
+        # bash conditionals, so the append lands on every sunxi64 board and the
+        # crust patches do not apply to U-Boot v2025.04 (rejects in
+        # sunxi-u-boot.dtsi, spl/Kconfig, armv7/sunxi/Makefile) — the board's
+        # U-Boot build fails. Model the guard here until the parser understands
+        # `if [[ -n "$VAR" ]]`.
+        uboot_patch_dir = self.parser.get("BOOTPATCHDIR")
+        if (
+            uboot_patch_dir
+            and "u-boot-sunxi-crust" in uboot_patch_dir
+            and not self.parser.get("CRUSTCONFIG")
+        ):
+            uboot_patch_dir = " ".join(
+                p for p in uboot_patch_dir.split() if p != "u-boot-sunxi-crust"
+            )
+
         # Apply Defaults (Mainline)
         kernel_source = self.parser.get("KERNELSOURCE")
         kernel_branch = self.parser.get("KERNELBRANCH")
@@ -481,7 +530,7 @@ class NixbianExtractor:
                     self.parser.get("UBOOT_TARGET_MAP"), self.src
                 ),
                 "patches": self.parser.get("BOOTPATCHES"),
-                "patch_dir": self.parser.get("BOOTPATCHDIR"),
+                "patch_dir": uboot_patch_dir,
                 "atf_source": self.parser.get("ATFSOURCE"),
                 "atf_branch": self.parser.get("ATFBRANCH"),
                 "atf_platform": self.parser.get("ATF_PLAT"),
@@ -568,6 +617,12 @@ class NixbianExtractor:
                     for ext in extensions
                 ]
             )
+        board_paths.extend(
+            [
+                self.local_boards_dir / f"{board_name}{ext}"
+                for ext in self.BOARD_CONFIG_EXTS
+            ]
+        )
 
         for path in board_paths:
             if path.exists():
@@ -593,6 +648,55 @@ class NixbianExtractor:
                 except Exception:
                     pass
         return "generic"
+
+    def local_board_targets(self):
+        """(board, branch) pairs declared by the local board files.
+
+        A local file only states the branches it supports (`KERNEL_TARGET`);
+        everything else (family, DTB, U-Boot config, patches) is resolved by the
+        normal extraction path, exactly as for an Armbian board.
+        """
+        targets = []
+        if not self.local_boards_dir.is_dir():
+            return targets
+        for path in sorted(self.local_boards_dir.iterdir()):
+            if not path.is_file() or path.suffix not in self.BOARD_CONFIG_EXTS:
+                continue
+            match = self.KERNEL_TARGET_RE.search(
+                path.read_text(encoding="utf-8", errors="ignore")
+            )
+            if not match:
+                log.warning(f"Local board {path.name} has no KERNEL_TARGET; skipped")
+                continue
+            for branch in match.group(1).split(","):
+                branch = branch.strip()
+                if not branch or branch in self.IGNORED_BRANCHES:
+                    continue
+                targets.append((path.stem, branch))
+        return targets
+
+    def _append_local_targets(self, targets):
+        """Append synthetic targets for local boards Armbian does not provide."""
+        if not isinstance(targets, list):
+            return targets
+        known = {
+            (target["vars"].get("BOARD"), target["vars"].get("BRANCH"))
+            for target in targets
+            if isinstance(target, dict) and isinstance(target.get("vars"), dict)
+        }
+        for board_name, branch in self.local_board_targets():
+            if (board_name, branch) in known:
+                continue
+            log.info(f"Adding local board target: {board_name} [{branch}]")
+            targets.append(
+                {
+                    "vars": {"BOARD": board_name, "BRANCH": branch},
+                    "inventory": {},
+                    "configs": [],
+                    "pipeline": {},
+                }
+            )
+        return targets
 
     def enrich_exact_versions(self, enriched_data):
         """Fetches exact kernel versions from remote Makefiles and caches them."""
@@ -708,6 +812,9 @@ class NixbianExtractor:
         """
         with open(targets_json_path, "r") as f:
             targets = json.load(f)
+
+        # Cards Armbian does not provide (yet) come from src/armbian_extractor/local_boards.
+        targets = self._append_local_targets(targets)
 
         enriched_data = []
 
