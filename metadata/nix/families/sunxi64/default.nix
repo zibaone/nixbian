@@ -121,4 +121,5 @@ in
   "orangepizeroplus2-h5-legacy" = import ./boards/orangepizeroplus2-h5-legacy.nix {
     inherit platforms lib;
   };
+  "transpeed-8k618-t-edge" = import ./boards/transpeed-8k618-t-edge.nix { inherit platforms lib; };
 }

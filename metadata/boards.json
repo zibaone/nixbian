@@ -4420,5 +4420,11 @@
         "board": "zeropi",
         "branch": "edge",
         "arch": "armhf"
+    },
+    "transpeed-8k618-t-edge": {
+        "family": "sunxi64",
+        "board": "transpeed-8k618-t",
+        "branch": "edge",
+        "arch": "arm64"
     }
 }
