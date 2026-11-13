@@ -39213,5 +39213,55 @@
             "source": "https://github.com/armbian/firmware",
             "branch": "master"
         }
+    },
+    {
+        "board": "h96-max-h618",
+        "branch": "edge",
+        "linux_family": "sunxi64",
+        "arch": "arm64",
+        "kernel": {
+            "source": "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git",
+            "branch": "branch:linux-7.0.y",
+            "major_minor": "7.0",
+            "config": "linux-sunxi64-edge",
+            "config_path": "config/kernel/linux-sunxi64-edge.config",
+            "patch_dir": "archive/sunxi-7.0",
+            "hash": "sha256-8ruWxZbsb5I8EByJGaCvjgA8M43CRcjxFWt1Ci7a9Y4=",
+            "exact_version": "7.0.14"
+        },
+        "uboot": {
+            "source": "https://github.com/u-boot/u-boot",
+            "branch": "tag:v2025.04",
+            "config": "transpeed-8k618-t_defconfig",
+            "target_map": "BINMAN_ALLOW_MISSING=1;;u-boot-sunxi-with-spl.bin",
+            "patches": null,
+            "patch_dir": "v2025-sunxi",
+            "atf_source": null,
+            "atf_branch": "tag:lts-v2.12.9",
+            "atf_platform": "sun50i_h616",
+            "atf_target_map": "PLAT=sun50i_h616 DEBUG=1 bl31;;build/sun50i_h616/debug/bl31.bin",
+            "source_hash": "sha256-P9y1I1STiL8rDdj2OHfmP04468hLWwZM3E2v1Y/cLAM=",
+            "atf_hash": null
+        },
+        "extra_sources": {
+            "MAINLINE_FIRMWARE_SOURCE": {
+                "url": "https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git",
+                "rev": "master"
+            },
+            "KERNELSOURCE": {
+                "url": "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git",
+                "rev": "branch:linux-7.0.y"
+            },
+            "BOOTSOURCE": {
+                "url": "https://github.com/u-boot/u-boot",
+                "rev": "tag:v2025.04"
+            }
+        },
+        "dtb": "allwinner/sun50i-h618-h96-max.dtb",
+        "kernel_params": "console=ttyS0,115200",
+        "firmware": {
+            "source": "https://github.com/armbian/firmware",
+            "branch": "master"
+        }
     }
 ]

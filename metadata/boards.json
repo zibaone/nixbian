@@ -4426,5 +4426,11 @@
         "board": "transpeed-8k618-t",
         "branch": "edge",
         "arch": "arm64"
+    },
+    "h96-max-h618-edge": {
+        "family": "sunxi64",
+        "board": "h96-max-h618",
+        "branch": "edge",
+        "arch": "arm64"
     }
 }

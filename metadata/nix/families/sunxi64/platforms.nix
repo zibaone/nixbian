@@ -925,6 +925,13 @@
         # après une rafale HPD, et relecture EDID quand le sink n'est pas prêt.
         "patches/kernel/sunxi-7.0-cec/0001-drm-bridge-dw-hdmi-cec-abort-in-flight-tx-before-gating-the-clock.patch"
         "patches/kernel/sunxi-7.0-cec/0002-drm-bridge-dw-hdmi-reprobe-the-connector-when-the-edid-read-fails.patch"
+        # DTS de la carte H96 Max H618 (déclaré dans src/armbian_extractor/
+        # platform_patches.json, vendoré dans metadata/nix/patches/kernel/
+        # sunxi-7.0-h96-max) : la carte n'a aucun DTS amont, et le DTB doit
+        # exister pour TOUTE la plateforme — `platformDtbs` assemble l'union
+        # des DTBs des cartes qui partagent famille+branche, donc le noyau de
+        # la Zero 3 et de la Transpeed le construit aussi.
+        "patches/kernel/sunxi-7.0-h96-max/0001-arm64-dts-allwinner-add-sun50i-h618-h96-max.patch"
         "patches/kernel/archive/sunxi-7.0/patches.armbian/arch-arm-patch-flush-icache-earlier.patch"
         "patches/kernel/archive/sunxi-7.0/patches.armbian/arm64-dts-add-axp313a-pmic.patch"
         "patches/kernel/archive/sunxi-7.0/patches.armbian/arm64-dts-sun50i-a64.dtsi-adjust-thermal-trip-points.patch"

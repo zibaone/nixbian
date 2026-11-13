@@ -122,4 +122,5 @@ in
     inherit platforms lib;
   };
   "transpeed-8k618-t-edge" = import ./boards/transpeed-8k618-t-edge.nix { inherit platforms lib; };
+  "h96-max-h618-edge" = import ./boards/h96-max-h618-edge.nix { inherit platforms lib; };
 }
