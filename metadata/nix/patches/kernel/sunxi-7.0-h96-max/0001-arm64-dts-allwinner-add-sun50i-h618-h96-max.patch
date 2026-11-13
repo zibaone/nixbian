@@ -30,8 +30,8 @@ this one yet.
 Signed-off-by: zibao <zibaone@proton.me>
 ---
  arch/arm64/boot/dts/allwinner/Makefile | 1 +
- arch/arm64/boot/dts/allwinner/sun50i-h618-h96-max.dts | 273 +++++++++++++++++++++++++++++++++++
- 2 files changed, 274 insertions(+)
+ arch/arm64/boot/dts/allwinner/sun50i-h618-h96-max.dts | 277 +++++++++++++++++++++++++++++++++++
+ 2 files changed, 278 insertions(+)
 
 diff --git a/arch/arm64/boot/dts/allwinner/Makefile b/arch/arm64/boot/dts/allwinner/Makefile
 --- a/arch/arm64/boot/dts/allwinner/Makefile
@@ -49,7 +49,7 @@ diff --git a/arch/arm64/boot/dts/allwinner/sun50i-h618-h96-max.dts b/arch/arm64/
 new file mode 100644
 --- /dev/null
 +++ b/arch/arm64/boot/dts/allwinner/sun50i-h618-h96-max.dts
-@@ -0,0 +1,273 @@
+@@ -0,0 +1,277 @@
 +// SPDX-License-Identifier: (GPL-2.0+ OR MIT)
 +/*
 + * H96 Max H618 — carte sans slot SD, eMMC uniquement.
@@ -258,10 +258,12 @@ new file mode 100644
 + * même chaîne que la Transpeed : compatible vendor, PHY sur un nœud MDIO
 + * séparé (le driver vendor ne crée pas de bus MDIO), horloge 24 MHz par PWM5.
 + *
-+ * Spécifique à cette carte : le PHY répond en **MDIO 0x10** (FDT vendor,
-+ * `ac300-phy@10`), pas en 0 comme sur la Transpeed. Valeurs de délai et
-+ * `syscfg-value` reprises de la Transpeed : **non mesurées ici**, à vérifier
-+ * au premier `ip link` (voir HANDOFF-h96.md).
++ * Spécifique à cette carte, **mesuré au banc le 2026-11-13** : le PHY répond en
++ * **MDIO 0** (le `ac300-phy@10` du FDT vendor ne désigne pas l'adresse du bus ;
++ * à `0x10` le driver rend `Mac reset failed, please check phy and mac clk` et
++ * aucun `eth0` n'apparaît). `syscon` et les délais en picosecondes sont repris
++ * du FDT vendor ; `syscfg-value` (`0x3fe1`, valeur de la Transpeed) est retiré :
++ * le vendor ne l'écrit pas et sa présence ne change rien à la réception.
 + */
 +&pwm {
 +	status = "okay";
@@ -285,7 +287,9 @@ new file mode 100644
 +	phy-handle = <&ac300_ephy_h96>;
 +	tx-delay = <7>;
 +	rx-delay = <31>;
-+	allwinner,syscfg-value = <0x3fe1>;
++	syscon = <&syscon>;
++	allwinner,rx-delay-ps = <0xc1c>;
++	allwinner,tx-delay-ps = <0x2bc>;
 +	allwinner,no-crc-check;
 +	status = "okay";
 +};
@@ -311,10 +315,10 @@ new file mode 100644
 +		#size-cells = <0>;
 +		status = "okay";
 +
-+		ac300_ephy_h96: ethernet-phy@10 {
++		ac300_ephy_h96: ethernet-phy@0 {
 +			compatible = "allwinner,sun50i-h618-ac300-ephy",
 +				"ethernet-phy-ieee802.3-c22";
-+			reg = <0x10>;
++			reg = <0x00>;
 +			clocks = <&ccu CLK_EMAC_25M>, <&ac300_pwm_clk>;
 +			clock-names = "ephy", "pwm";
 +			nvmem-cells = <&ephy_calib_h96>;
