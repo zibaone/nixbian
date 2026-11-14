@@ -1,0 +1,31 @@
+From: Meh <meh@localhost>
+Date: Sat, 14 Nov 2026 07:10:00 +0100
+Subject: [PATCH] net: phy: ac300: use the vendor TX optimisation value
+
+Le pilote AC300 du noyau ecrit 0x708b dans la page 6 registre 0x14
+(« Default TX optimization ») quand le bit 9 de la calibration est absent.
+Le BSP vendor ne contient cette valeur nulle part : sa fonction
+sunxi_ephy_config_old_init() ecrit 0x780b pour la meme branche, et
+sunxi_ephy_config_new_init() 0x7809.
+
+Sur la H96 Max H618 (calibration 0x0104, bit 9 a 0, donc branche « defaut »)
+le lien monte mais les trames recues perdent des blocs au milieu
+(mesure : trame de 542 o livree a 278 o, charge utile decalee de 35 o),
+ce qui est coherent avec un front-end analogique mal regle.
+
+Aligne la branche par defaut sur la valeur du BSP.
+---
+ drivers/net/phy/ac300-phy.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+--- a/drivers/net/phy/ac300-phy.c
++++ b/drivers/net/phy/ac300-phy.c
+@@ -182,7 +182,7 @@
+ 		if (ret)
+ 			return ret;
+ 	} else {
+-		ret = phy_write(phydev, 0x14, 0x708b); /* Default TX optimization */
++		ret = phy_write(phydev, 0x14, 0x780b); /* Default TX optimization */
+ 		if (ret)
+ 			return ret;
+ 		ret = phy_write(phydev, 0x13, 0xF000); /* Default RX optimization */

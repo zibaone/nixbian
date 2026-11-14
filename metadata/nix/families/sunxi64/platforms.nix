@@ -932,6 +932,14 @@
         # des DTBs des cartes qui partagent famille+branche, donc le noyau de
         # la Zero 3 et de la Transpeed le construit aussi.
         "patches/kernel/sunxi-7.0-h96-max/0001-arm64-dts-allwinner-add-sun50i-h618-h96-max.patch"
+        # Pilote PHY AC300 : la branche « défaut » du noyau écrit 0x708b dans
+        # la page 6 registre 0x14, valeur absente du BSP vendor (0x780b en
+        # « old_init », 0x7809 en « new_init »). Notre PHY (calibration
+        # 0x0104) prend cette branche et perd des blocs au milieu des trames
+        # reçues. Ajouté à la main : `just refresh-metadata` régénère aussi
+        # une dérive de 461 fichiers sans rapport (DTB renseignés), à traiter
+        # séparément.
+        "patches/kernel/sunxi-7.0-h96-max/0002-net-phy-ac300-vendor-tx-optimization.patch"
         "patches/kernel/archive/sunxi-7.0/patches.armbian/arch-arm-patch-flush-icache-earlier.patch"
         "patches/kernel/archive/sunxi-7.0/patches.armbian/arm64-dts-add-axp313a-pmic.patch"
         "patches/kernel/archive/sunxi-7.0/patches.armbian/arm64-dts-sun50i-a64.dtsi-adjust-thermal-trip-points.patch"
