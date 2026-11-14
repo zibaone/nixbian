@@ -489,12 +489,6 @@ lib.recursiveUpdate platforms."sunxi64-edge" {
       "patches/kernel/sunxi-7.0-cec/0001-drm-bridge-dw-hdmi-cec-abort-in-flight-tx-before-gating-the-clock.patch"
       "patches/kernel/sunxi-7.0-cec/0002-drm-bridge-dw-hdmi-reprobe-the-connector-when-the-edid-read-fails.patch"
       "patches/kernel/sunxi-7.0-h96-max/0001-arm64-dts-allwinner-add-sun50i-h618-h96-max.patch"
-      # Pilote PHY AC300 : la branche « défaut » écrit 0x708b en page 6
-      # registre 0x14, valeur absente du BSP vendor (0x780b / 0x7809). Notre
-      # PHY (calibration 0x0104) prend cette branche et perd des blocs au
-      # milieu des trames reçues. Au niveau de la carte : la série Armbian de
-      # la Zero 3 ne contient pas ac300-phy.c, le patch y échouerait.
-      "patches/kernel/sunxi-7.0-h96-max/0002-net-phy-ac300-vendor-tx-optimization.patch"
     ];
   };
   kernel_params = "console=ttyS0,115200";
