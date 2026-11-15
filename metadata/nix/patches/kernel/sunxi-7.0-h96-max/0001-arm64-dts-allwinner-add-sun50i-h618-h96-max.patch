@@ -122,8 +122,8 @@ new file mode 100644
 +	ac300_pwm_clk: ac300-clk {
 +		compatible = "pwm-clock";
 +		#clock-cells = <0>;
-+		clock-frequency = <24000000>;
-+		pwms = <&pwm 5 42 0>;
++		clock-frequency = <2000000>;   /* 500 ns : PWM_PERIOD_NS du BSP, correctif Armbian */
++		pwms = <&pwm 5 500 0>;         /* a 42 ns (24 MHz) la PHY etait 10x trop vite */
 +	};
 +};
 +
@@ -272,6 +272,7 @@ new file mode 100644
 +&pwm5 {
 +	pinctrl-names = "default";
 +	pinctrl-0 = <&pwm5_pin>;
++	clk_bypass_output = <1>;   /* horloge propre, pas une forme modulee */
 +};
 +
 +&emac1 {
