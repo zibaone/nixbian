@@ -3,17 +3,32 @@
 [![Nix CI](https://github.com/zibaone/nixbian/actions/workflows/nix.yml/badge.svg)](https://github.com/zibaone/nixbian/actions/workflows/nix.yml)
 [![License: GPL-3.0-only](https://img.shields.io/badge/license-GPL--3.0--only-blue.svg)](LICENSE)
 
-Nixbian is a **metadata, patch and kernel-configuration engine** built on top of
-the **Armbian** build framework, for the **Nix** ecosystem.
-
-It turns a pinned Armbian revision (`versions.json`) into a static Nix catalog:
-`metadata/boards.json`, `metadata/nix/families/*/boards/*.nix`,
-`platforms.nix`, `library.nix`, kernel configurations and vendored patches.
+Nixbian is the **vanilla Armbian export** for the Nix ecosystem: it turns a
+pinned Armbian revision (`versions.json`) into a static catalog of metadata,
+Armbian patch series, kernel configurations and source references. It does
+**not** build kernels or own vendor patches (decision B, 2026-11-16).
 
 > **Status: experimental (0.3.0).** The catalog covers **737 board-branch
 > entries**, but only **one kernel has been built** so far (Orange Pi Zero 3,
 > `edge` branch, 2026-10-19). The other targets are **evaluated**, not validated
 > on hardware. No NixOS image has been validated yet.
+
+## Kernel ownership (decision B, 2026-11-16)
+
+- `nixbian` exports the **Armbian vanilla** material: sources, per-family/board
+  patch series, configs, DTS and U-Boot/ATF metadata. No vendor patch, no kernel
+  build.
+- `nixelec-sunxi64` and `nixelec-meson64` compose the Armbian series plus their
+  own family/board patches and are the **only producers** of their family
+  kernel.
+- `nixelec-common` holds NixOS contracts and **zero kernel patches**;
+  `nix-v4l2-request` holds FFmpeg/Kodi **userspace** patches; `nixelec-kiosk`
+  holds the service.
+- The four `sunxi-7.0-*` vendor directories (`hdmi-audio`, `cec`, `h96-max`,
+  `aic8800-kbuild`) currently in `metadata/nix/patches/kernel/` are **not
+  Armbian**; they move to `nixelec-sunxi64`, and `platform_patches.json` is to be
+  emptied. `hardware.nixbian.extraPatches`/`extraConfig` and the kernel build are
+  transition (model A) and are to be retired.
 
 ## What it is / what it is not
 
