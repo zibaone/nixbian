@@ -3,7 +3,8 @@
     "sunxi64-edge": [
         "kernel/sunxi-7.0-hdmi-audio",
         "kernel/sunxi-7.0-cec",
-        "kernel/sunxi-7.0-h96-max"
+        "kernel/sunxi-7.0-h96-max",
+        "kernel/sunxi-7.0-aic8800-kbuild"
     ],
     "sunxi-edge": [
         "kernel/sunxi-7.0-hdmi-audio"

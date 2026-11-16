@@ -1076,6 +1076,11 @@
         "patches/kernel/archive/sunxi-7.0/patches.armbian/drv-video-st7796s-fb-tft-driver.patch"
         "patches/kernel/archive/sunxi-7.0/patches.armbian/include-uapi-drm_fourcc-add-ARM-tiled-format-modifier.patch"
         "patches/kernel/archive/sunxi-7.0/patches.armbian/3401-net-wireless-backport-aic8800-sdio-v2025_0926_91c9dae5-mm2.patch"
+        # Hook kbuild AIC8800 (déclaré dans platform_patches.json, vendoré dans
+        # metadata/nix/patches/kernel/sunxi-7.0-aic8800-kbuild) : 3401 ajoute
+        # les 136 fichiers du driver sans toucher Kconfig/Makefile, donc
+        # CONFIG_AIC_SDIO_WLAN_SUPPORT serait un symbole fantôme (aucun .ko).
+        "patches/kernel/sunxi-7.0-aic8800-kbuild/0001-net-wireless-wire-aic8800-sdio-into-kbuild.patch"
       ];
       source = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git";
     };
