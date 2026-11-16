@@ -1,7 +1,6 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."meson64-edge" {
+{ platforms, lib }: lib.recursiveUpdate platforms."meson64-edge" {
   board = "lafrite";
-  dtb = null;
+  dtb = "amlogic/meson-gxl-s805x-libretech-ac.dtb";
   family = "meson64";
   firmware = {
   };

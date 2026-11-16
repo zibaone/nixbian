@@ -1,7 +1,6 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."generic-current" {
+{ platforms, lib }: lib.recursiveUpdate platforms."generic-current" {
   board = "tq-smarc2-tqma8mpxs";
-  dtb = null;
+  dtb = "freescale/imx8mp-tqma8mpqs-mb-smarc-2.dtb";
   family = "generic";
   firmware = {
   };

@@ -1,5 +1,4 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."sunxi-current" {
+{ platforms, lib }: lib.recursiveUpdate platforms."sunxi-current" {
   board = "cubietruck";
   dtb = null;
   family = "sunxi";

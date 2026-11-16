@@ -17,7 +17,7 @@
       major_minor = "7.0";
       nvfetcher_key = "kernel-bcm2711-branch-rpi-7-0-y";
       patch_dir = "archive/bcm2711-7.0";
-      patches = [ ];
+      patches = [];
       source = "https://github.com/raspberrypi/linux";
     };
     linux_family = "bcm2711";
@@ -55,7 +55,7 @@
       major_minor = "7.0";
       nvfetcher_key = "kernel-bcm2711-branch-rpi-7-0-y";
       patch_dir = "archive/bcm2711-7.0";
-      patches = [ ];
+      patches = [];
       source = "https://github.com/raspberrypi/linux";
     };
     linux_family = "bcm2711";
@@ -93,7 +93,7 @@
       major_minor = "7.0";
       nvfetcher_key = "kernel-bcm2711-branch-rpi-7-0-y";
       patch_dir = "archive/bcm2711-7.0";
-      patches = [ ];
+      patches = [];
       source = "https://github.com/raspberrypi/linux";
     };
     linux_family = "bcm2711";

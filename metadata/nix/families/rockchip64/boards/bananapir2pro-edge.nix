@@ -1,7 +1,6 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."rockchip64-edge" {
+{ platforms, lib }: lib.recursiveUpdate platforms."rockchip64-edge" {
   board = "bananapir2pro";
-  dtb = null;
+  dtb = "rockchip/rk3568-bpi-r2-pro.dtb";
   family = "rockchip64";
   firmware = {
   };
@@ -15,13 +14,7 @@ lib.recursiveUpdate platforms."rockchip64-edge" {
     config = "bpi-r2-pro-rk3568_defconfig";
     nvfetcher_key = "uboot-tag-v2022-07";
     patch_dir = "v2024.01";
-    patches = [
-      "patches/uboot/v2024.01/board_lepotato/le-potato-general-vendor.patch"
-      "patches/uboot/v2024.01/board_nanopik2-s905/add-emmc-support-for-nanopi-k2.patch"
-      "patches/uboot/v2024.01/board_orangepi5/0010-Fix-SPI-Boot.patch"
-      "patches/uboot/v2024.01/general-btrfs-fix-out-of-bounds-write.patch"
-      "patches/uboot/v2024.01/general-btrfs-fix-reading-when-length-specified.patch"
-    ];
+    patches = [ "patches/uboot/v2024.01/board_lepotato/le-potato-general-vendor.patch" "patches/uboot/v2024.01/board_nanopik2-s905/add-emmc-support-for-nanopi-k2.patch" "patches/uboot/v2024.01/board_orangepi5/0010-Fix-SPI-Boot.patch" "patches/uboot/v2024.01/general-btrfs-fix-out-of-bounds-write.patch" "patches/uboot/v2024.01/general-btrfs-fix-reading-when-length-specified.patch" ];
     source = "https://github.com/u-boot/u-boot";
     source_hash = "sha256-1EONRmYLsD0uxo+kpE6mLIYkYMU09Yt0EvSbHhj5prw=";
   };

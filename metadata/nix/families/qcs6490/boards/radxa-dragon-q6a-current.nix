@@ -1,7 +1,6 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."qcs6490-current" {
+{ platforms, lib }: lib.recursiveUpdate platforms."qcs6490-current" {
   board = "radxa-dragon-q6a";
-  dtb = null;
+  dtb = "qcom/qcs6490-radxa-dragon-q6a.dtb";
   family = "qcs6490";
   firmware = {
   };

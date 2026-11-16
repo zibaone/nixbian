@@ -1,7 +1,6 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."generic-edge" {
+{ platforms, lib }: lib.recursiveUpdate platforms."generic-edge" {
   board = "mba8mpxl-ras314";
-  dtb = null;
+  dtb = "freescale/imx8mp-tqma8mpql-mba8mp-ras314.dtb";
   family = "generic";
   firmware = {
   };

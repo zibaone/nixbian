@@ -1,5 +1,4 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."generic-edge" {
+{ platforms, lib }: lib.recursiveUpdate platforms."generic-edge" {
   board = "tinkerboard";
   dtb = null;
   family = "generic";

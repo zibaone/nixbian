@@ -1,7 +1,6 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."spacemit-legacy" {
+{ platforms, lib }: lib.recursiveUpdate platforms."spacemit-legacy" {
   board = "orangepir2s";
-  dtb = null;
+  dtb = "spacemit/k1-orangepi-r2s.dtb";
   family = "spacemit";
   firmware = {
   };

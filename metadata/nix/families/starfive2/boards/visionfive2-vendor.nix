@@ -1,7 +1,6 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."starfive2-vendor" {
+{ platforms, lib }: lib.recursiveUpdate platforms."starfive2-vendor" {
   board = "visionfive2";
-  dtb = null;
+  dtb = "starfive/jh7110-starfive-visionfive-2-v1.3b.dtb";
   family = "starfive2";
   firmware = {
   };

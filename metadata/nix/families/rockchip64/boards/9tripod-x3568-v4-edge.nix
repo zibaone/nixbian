@@ -1,7 +1,6 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."rockchip64-edge" {
+{ platforms, lib }: lib.recursiveUpdate platforms."rockchip64-edge" {
   board = "9tripod-x3568-v4";
-  dtb = null;
+  dtb = "rockchip/rk3568-9tripod-x3568-v4.dtb";
   family = "rockchip64";
   firmware = {
   };

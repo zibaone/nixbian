@@ -5,9 +5,7 @@ in
 { lib }:
 {
   "beaglebone-ai64-vendor" = import ./boards/beaglebone-ai64-vendor.nix { inherit platforms lib; };
-  "beaglebone-ai64-vendor-rt" = import ./boards/beaglebone-ai64-vendor-rt.nix {
-    inherit platforms lib;
-  };
+  "beaglebone-ai64-vendor-rt" = import ./boards/beaglebone-ai64-vendor-rt.nix { inherit platforms lib; };
   "beaglebone-ai64-edge" = import ./boards/beaglebone-ai64-edge.nix { inherit platforms lib; };
   "beagleplay-vendor" = import ./boards/beagleplay-vendor.nix { inherit platforms lib; };
   "beagleplay-vendor-rt" = import ./boards/beagleplay-vendor-rt.nix { inherit platforms lib; };

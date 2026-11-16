@@ -1,7 +1,6 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."generic-vendor" {
+{ platforms, lib }: lib.recursiveUpdate platforms."generic-vendor" {
   board = "yy3568";
-  dtb = null;
+  dtb = "rockchip/rk3568-yy3568.dtb";
   family = "generic";
   firmware = {
   };

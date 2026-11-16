@@ -1,7 +1,6 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."arm64-sc8280xp" {
+{ platforms, lib }: lib.recursiveUpdate platforms."arm64-sc8280xp" {
   board = "thinkpad-x13s";
-  dtb = null;
+  dtb = "qcom/sc8280xp-lenovo-thinkpad-x13s.dtb";
   family = "arm64";
   firmware = {
   };

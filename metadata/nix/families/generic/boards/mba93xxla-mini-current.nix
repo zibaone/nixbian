@@ -1,7 +1,6 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."generic-current" {
+{ platforms, lib }: lib.recursiveUpdate platforms."generic-current" {
   board = "mba93xxla-mini";
-  dtb = null;
+  dtb = "freescale/imx93-tqma9352-mba93xxla-mini.dtb";
   family = "generic";
   firmware = {
   };

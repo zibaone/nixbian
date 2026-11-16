@@ -1,5 +1,4 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."sm8250-current" {
+{ platforms, lib }: lib.recursiveUpdate platforms."sm8250-current" {
   board = "xiaomi-elish";
   dtb = null;
   family = "sm8250";

@@ -1,7 +1,6 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."generic-vendor" {
+{ platforms, lib }: lib.recursiveUpdate platforms."generic-vendor" {
   board = "armsom-cm5-rpi-cm4-io";
-  dtb = null;
+  dtb = "rockchip/rk3576-armsom-cm5-rpi-cm4-io.dtb";
   family = "generic";
   firmware = {
   };

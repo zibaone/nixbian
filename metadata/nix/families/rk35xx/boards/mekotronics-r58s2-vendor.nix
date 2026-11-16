@@ -1,7 +1,6 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."rk35xx-vendor" {
+{ platforms, lib }: lib.recursiveUpdate platforms."rk35xx-vendor" {
   board = "mekotronics-r58s2";
-  dtb = null;
+  dtb = "rockchip/rk3588s-blueberry-rp01a-v10.dtb";
   family = "rk35xx";
   firmware = {
   };

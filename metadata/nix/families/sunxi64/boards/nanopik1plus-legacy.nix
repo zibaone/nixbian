@@ -1,5 +1,4 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."sunxi64-legacy" {
+{ platforms, lib }: lib.recursiveUpdate platforms."sunxi64-legacy" {
   board = "nanopik1plus";
   dtb = null;
   family = "sunxi64";

@@ -1,7 +1,6 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."rk35xx-vendor" {
+{ platforms, lib }: lib.recursiveUpdate platforms."rk35xx-vendor" {
   board = "firefly-itx-3588j";
-  dtb = null;
+  dtb = "rockchip/rk3588-firefly-itx-3588j.dtb";
   family = "rk35xx";
   firmware = {
   };

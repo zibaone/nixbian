@@ -1,7 +1,6 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."rk35xx-vendor" {
+{ platforms, lib }: lib.recursiveUpdate platforms."rk35xx-vendor" {
   board = "nanopi-r6s";
-  dtb = null;
+  dtb = "rockchip/rk3588s-nanopi-r6s.dtb";
   family = "rk35xx";
   firmware = {
   };

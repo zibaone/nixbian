@@ -1,7 +1,6 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."rk35xx-vendor" {
+{ platforms, lib }: lib.recursiveUpdate platforms."rk35xx-vendor" {
   board = "radxa-e24c";
-  dtb = null;
+  dtb = "rockchip/rk3528-radxa-e24c-spi.dtb";
   family = "rk35xx";
   firmware = {
   };

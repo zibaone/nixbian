@@ -1,7 +1,6 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."rockchip64-edge" {
+{ platforms, lib }: lib.recursiveUpdate platforms."rockchip64-edge" {
   board = "tinkerboard-2";
-  dtb = null;
+  dtb = "rockchip/rk3399-tinker-2.dtb";
   family = "rockchip64";
   firmware = {
   };

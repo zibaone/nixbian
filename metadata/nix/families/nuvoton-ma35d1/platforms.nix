@@ -17,7 +17,7 @@
       major_minor = "5.10";
       nvfetcher_key = "kernel-nuvoton-ma35d1-branch-master";
       patch_dir = "nuvoton-ma35d1-vendor";
-      patches = [ ];
+      patches = [];
       source = "https://github.com/OpenNuvoton/MA35D1_linux-5.10.y.git";
     };
     linux_family = "nuvoton-ma35d1";

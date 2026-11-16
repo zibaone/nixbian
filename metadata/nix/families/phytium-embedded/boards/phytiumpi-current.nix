@@ -1,7 +1,6 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."phytium-embedded-current" {
+{ platforms, lib }: lib.recursiveUpdate platforms."phytium-embedded-current" {
   board = "phytiumpi";
-  dtb = null;
+  dtb = "phytium/phytiumpi_firefly.dtb";
   family = "phytium-embedded";
   firmware = {
   };

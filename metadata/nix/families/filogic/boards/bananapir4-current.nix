@@ -1,7 +1,6 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."filogic-current" {
+{ platforms, lib }: lib.recursiveUpdate platforms."filogic-current" {
   board = "bananapir4";
-  dtb = null;
+  dtb = "mediatek/mt7988a-bananapi-bpi-r4-sd.dtb";
   family = "filogic";
   firmware = {
   };

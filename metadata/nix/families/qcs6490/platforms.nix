@@ -17,7 +17,7 @@
       major_minor = "6.18";
       nvfetcher_key = "kernel-qcs6490-branch-linux-6-18-2";
       patch_dir = "archive/qcs6490-6.18";
-      patches = [ ];
+      patches = [];
       source = "https://github.com/radxa/kernel.git";
     };
     linux_family = "qcs6490";

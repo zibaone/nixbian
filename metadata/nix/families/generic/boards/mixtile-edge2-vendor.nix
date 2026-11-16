@@ -1,7 +1,6 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."generic-vendor" {
+{ platforms, lib }: lib.recursiveUpdate platforms."generic-vendor" {
   board = "mixtile-edge2";
-  dtb = null;
+  dtb = "rockchip/rk3568-mixtile-edge2.dtb";
   family = "generic";
   firmware = {
   };

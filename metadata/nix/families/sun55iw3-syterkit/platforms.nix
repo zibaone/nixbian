@@ -17,7 +17,7 @@
       major_minor = "5.15";
       nvfetcher_key = "kernel-sun55iw3-syterkit-branch-linux-5-15";
       patch_dir = "sun55iw3-syterkit-legacy";
-      patches = [ ];
+      patches = [];
       source = "https://github.com/AvaotaSBC/linux.git";
     };
     linux_family = "sun55iw3-syterkit";

@@ -1,7 +1,6 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."spacemit-legacy" {
+{ platforms, lib }: lib.recursiveUpdate platforms."spacemit-legacy" {
   board = "musebook";
-  dtb = null;
+  dtb = "spacemit/k1-musebook.dtb";
   family = "spacemit";
   firmware = {
   };

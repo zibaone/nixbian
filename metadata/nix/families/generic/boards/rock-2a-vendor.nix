@@ -1,7 +1,6 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."generic-vendor" {
+{ platforms, lib }: lib.recursiveUpdate platforms."generic-vendor" {
   board = "rock-2a";
-  dtb = null;
+  dtb = "rockchip/rk3528-rock-2a.dtb";
   family = "generic";
   firmware = {
   };

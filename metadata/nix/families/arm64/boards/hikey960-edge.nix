@@ -1,7 +1,6 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."arm64-edge" {
+{ platforms, lib }: lib.recursiveUpdate platforms."arm64-edge" {
   board = "hikey960";
-  dtb = null;
+  dtb = "hisilicon/hi3660-hikey960.dtb";
   family = "arm64";
   firmware = {
   };

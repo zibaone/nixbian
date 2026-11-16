@@ -1,7 +1,6 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."rk35xx-vendor" {
+{ platforms, lib }: lib.recursiveUpdate platforms."rk35xx-vendor" {
   board = "cm3588-nas";
-  dtb = null;
+  dtb = "rockchip/rk3588-friendlyelec-cm3588-nas.dtb";
   family = "rk35xx";
   firmware = {
   };

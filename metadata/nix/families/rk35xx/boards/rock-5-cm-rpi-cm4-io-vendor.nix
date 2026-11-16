@@ -1,7 +1,6 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."rk35xx-vendor" {
+{ platforms, lib }: lib.recursiveUpdate platforms."rk35xx-vendor" {
   board = "rock-5-cm-rpi-cm4-io";
-  dtb = null;
+  dtb = "rockchip/rk3588s-radxa-cm5-rpi-cm4-io.dtb";
   family = "rk35xx";
   firmware = {
   };

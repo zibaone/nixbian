@@ -1,5 +1,4 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."meson-current" {
+{ platforms, lib }: lib.recursiveUpdate platforms."meson-current" {
   board = "aml-s805-mxq";
   dtb = null;
   family = "meson";

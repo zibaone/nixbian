@@ -1,7 +1,6 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."generic-current" {
+{ platforms, lib }: lib.recursiveUpdate platforms."generic-current" {
   board = "rk322x-box";
-  dtb = null;
+  dtb = "rk322x-box.dtb";
   family = "generic";
   firmware = {
   };

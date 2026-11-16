@@ -1,7 +1,6 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."generic-vendor" {
+{ platforms, lib }: lib.recursiveUpdate platforms."generic-vendor" {
   board = "nanopi-m5";
-  dtb = null;
+  dtb = "rockchip/rk3576-nanopi-m5.dtb";
   family = "generic";
   firmware = {
   };

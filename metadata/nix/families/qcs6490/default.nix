@@ -4,7 +4,5 @@ let
 in
 { lib }:
 {
-  "radxa-dragon-q6a-current" = import ./boards/radxa-dragon-q6a-current.nix {
-    inherit platforms lib;
-  };
+  "radxa-dragon-q6a-current" = import ./boards/radxa-dragon-q6a-current.nix { inherit platforms lib; };
 }

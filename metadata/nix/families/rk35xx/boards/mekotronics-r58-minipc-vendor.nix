@@ -1,7 +1,6 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."rk35xx-vendor" {
+{ platforms, lib }: lib.recursiveUpdate platforms."rk35xx-vendor" {
   board = "mekotronics-r58-minipc";
-  dtb = null;
+  dtb = "rockchip/rk3588-blueberry-minipc-linux.dtb";
   family = "rk35xx";
   firmware = {
   };

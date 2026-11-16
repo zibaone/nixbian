@@ -17,7 +17,7 @@
       major_minor = "6.12";
       nvfetcher_key = "kernel-k3-beagle-branch-v6-12-49-ti-arm64-r56";
       patch_dir = "archive/k3-beagle-6.12";
-      patches = [ ];
+      patches = [];
       source = "https://github.com/beagleboard/linux";
     };
     linux_family = "k3-beagle";
@@ -56,7 +56,7 @@
       major_minor = "6.12";
       nvfetcher_key = "kernel-k3-beagle-branch-v6-12-49-ti-arm64-r56";
       patch_dir = "archive/k3-beagle-6.12";
-      patches = [ ];
+      patches = [];
       source = "https://github.com/beagleboard/linux";
     };
     linux_family = "k3-beagle";
@@ -95,7 +95,7 @@
       major_minor = "6.12";
       nvfetcher_key = "kernel-k3-beagle-branch-v6-12-49-ti-arm64-r56";
       patch_dir = "archive/k3-beagle-6.12";
-      patches = [ ];
+      patches = [];
       source = "https://github.com/beagleboard/linux";
     };
     linux_family = "k3-beagle";

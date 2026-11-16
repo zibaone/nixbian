@@ -1,7 +1,6 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."generic-vendor" {
+{ platforms, lib }: lib.recursiveUpdate platforms."generic-vendor" {
   board = "luckfox-lyra-ultra-w";
-  dtb = null;
+  dtb = "rk3506b-luckfox-lyra-ultra-w.dtb";
   family = "generic";
   firmware = {
   };

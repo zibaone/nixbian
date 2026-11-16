@@ -1,7 +1,6 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."generic-vendor" {
+{ platforms, lib }: lib.recursiveUpdate platforms."generic-vendor" {
   board = "forlinx-ok3506-s12";
-  dtb = null;
+  dtb = "rk3506j-forlinx-OK3506-S12_nand-microsd.dtb";
   family = "generic";
   firmware = {
   };

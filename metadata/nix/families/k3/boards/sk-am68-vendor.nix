@@ -1,7 +1,6 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."k3-vendor" {
+{ platforms, lib }: lib.recursiveUpdate platforms."k3-vendor" {
   board = "sk-am68";
-  dtb = null;
+  dtb = "ti/k3-am68-sk-base-board.dts";
   family = "k3";
   firmware = {
   };

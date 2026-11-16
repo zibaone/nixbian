@@ -1,7 +1,6 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."meson64-edge" {
+{ platforms, lib }: lib.recursiveUpdate platforms."meson64-edge" {
   board = "aml-t95z-plus";
-  dtb = null;
+  dtb = "amlogic/meson-gxm-t95z-plus.dtb";
   family = "meson64";
   firmware = {
   };
@@ -14,7 +13,7 @@ lib.recursiveUpdate platforms."meson64-edge" {
     config = "meson-gxm-t95z-plus_defconfig";
     nvfetcher_key = "uboot-tag-v2024-04";
     patch_dir = "v2024.04/board_t95z";
-    patches = [ ];
+    patches = [];
     source_hash = "sha256-IlaDdjKq/Pq2orzcU959h93WXRZfvKBGDO/MFw9mZMg=";
     target_map = ";;packages/blobs/meson/u-boot-vim2-sd.bin:u-boot.bin";
   };

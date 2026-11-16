@@ -1,7 +1,6 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."rk35xx-vendor" {
+{ platforms, lib }: lib.recursiveUpdate platforms."rk35xx-vendor" {
   board = "khadas-edge2";
-  dtb = null;
+  dtb = "rockchip/rk3588s-khadas-edge2.dtb";
   family = "rk35xx";
   firmware = {
   };

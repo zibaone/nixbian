@@ -1,7 +1,6 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."meson64-edge" {
+{ platforms, lib }: lib.recursiveUpdate platforms."meson64-edge" {
   board = "aml-s9xx-box";
-  dtb = null;
+  dtb = "amlogic/meson-gxl-s905x-p212.dtb";
   family = "meson64";
   firmware = {
   };

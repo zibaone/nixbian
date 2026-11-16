@@ -5,9 +5,7 @@ in
 { lib }:
 {
   "armsom-cm5-io-vendor" = import ./boards/armsom-cm5-io-vendor.nix { inherit platforms lib; };
-  "armsom-cm5-rpi-cm4-io-vendor" = import ./boards/armsom-cm5-rpi-cm4-io-vendor.nix {
-    inherit platforms lib;
-  };
+  "armsom-cm5-rpi-cm4-io-vendor" = import ./boards/armsom-cm5-rpi-cm4-io-vendor.nix { inherit platforms lib; };
   "armsom-forge1-vendor" = import ./boards/armsom-forge1-vendor.nix { inherit platforms lib; };
   "armsom-sige1-vendor" = import ./boards/armsom-sige1-vendor.nix { inherit platforms lib; };
   "armsom-sige3-vendor" = import ./boards/armsom-sige3-vendor.nix { inherit platforms lib; };
@@ -18,26 +16,16 @@ in
   "dshanpi-r1-vendor" = import ./boards/dshanpi-r1-vendor.nix { inherit platforms lib; };
   "easepi-a2-vendor" = import ./boards/easepi-a2-vendor.nix { inherit platforms lib; };
   "ebyte-ecb41-pge-vendor" = import ./boards/ebyte-ecb41-pge-vendor.nix { inherit platforms lib; };
-  "forlinx-ok3506-s12-vendor" = import ./boards/forlinx-ok3506-s12-vendor.nix {
-    inherit platforms lib;
-  };
+  "forlinx-ok3506-s12-vendor" = import ./boards/forlinx-ok3506-s12-vendor.nix { inherit platforms lib; };
   "hinlink-h28k-vendor" = import ./boards/hinlink-h28k-vendor.nix { inherit platforms lib; };
   "hinlink-ht2-vendor" = import ./boards/hinlink-ht2-vendor.nix { inherit platforms lib; };
   "lckfb-taishanpi-vendor" = import ./boards/lckfb-taishanpi-vendor.nix { inherit platforms lib; };
   "luckfox-core3566-vendor" = import ./boards/luckfox-core3566-vendor.nix { inherit platforms lib; };
-  "luckfox-lyra-plus-vendor" = import ./boards/luckfox-lyra-plus-vendor.nix {
-    inherit platforms lib;
-  };
-  "luckfox-lyra-ultra-w-vendor" = import ./boards/luckfox-lyra-ultra-w-vendor.nix {
-    inherit platforms lib;
-  };
-  "luckfox-lyra-zero-w-vendor" = import ./boards/luckfox-lyra-zero-w-vendor.nix {
-    inherit platforms lib;
-  };
+  "luckfox-lyra-plus-vendor" = import ./boards/luckfox-lyra-plus-vendor.nix { inherit platforms lib; };
+  "luckfox-lyra-ultra-w-vendor" = import ./boards/luckfox-lyra-ultra-w-vendor.nix { inherit platforms lib; };
+  "luckfox-lyra-zero-w-vendor" = import ./boards/luckfox-lyra-zero-w-vendor.nix { inherit platforms lib; };
   "luckfox-pico-max-vendor" = import ./boards/luckfox-pico-max-vendor.nix { inherit platforms lib; };
-  "luckfox-pico-mini-vendor" = import ./boards/luckfox-pico-mini-vendor.nix {
-    inherit platforms lib;
-  };
+  "luckfox-pico-mini-vendor" = import ./boards/luckfox-pico-mini-vendor.nix { inherit platforms lib; };
   "mangopi-m28k-vendor" = import ./boards/mangopi-m28k-vendor.nix { inherit platforms lib; };
   "mba8mpxl-current" = import ./boards/mba8mpxl-current.nix { inherit platforms lib; };
   "mba8mpxl-edge" = import ./boards/mba8mpxl-edge.nix { inherit platforms lib; };
@@ -64,12 +52,8 @@ in
   "station-m2-vendor" = import ./boards/station-m2-vendor.nix { inherit platforms lib; };
   "tinkerboard-current" = import ./boards/tinkerboard-current.nix { inherit platforms lib; };
   "tinkerboard-edge" = import ./boards/tinkerboard-edge.nix { inherit platforms lib; };
-  "tq-smarc2-tqma8mpxs-current" = import ./boards/tq-smarc2-tqma8mpxs-current.nix {
-    inherit platforms lib;
-  };
-  "tq-smarc2-tqma8mpxs-edge" = import ./boards/tq-smarc2-tqma8mpxs-edge.nix {
-    inherit platforms lib;
-  };
+  "tq-smarc2-tqma8mpxs-current" = import ./boards/tq-smarc2-tqma8mpxs-current.nix { inherit platforms lib; };
+  "tq-smarc2-tqma8mpxs-edge" = import ./boards/tq-smarc2-tqma8mpxs-edge.nix { inherit platforms lib; };
   "udoo-current" = import ./boards/udoo-current.nix { inherit platforms lib; };
   "udoo-edge" = import ./boards/udoo-edge.nix { inherit platforms lib; };
   "xpressreal-t3-vendor" = import ./boards/xpressreal-t3-vendor.nix { inherit platforms lib; };

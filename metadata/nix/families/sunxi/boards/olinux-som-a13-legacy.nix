@@ -1,5 +1,4 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."sunxi-legacy" {
+{ platforms, lib }: lib.recursiveUpdate platforms."sunxi-legacy" {
   board = "olinux-som-a13";
   dtb = null;
   family = "sunxi";

@@ -1,7 +1,6 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."k3-edge" {
+{ platforms, lib }: lib.recursiveUpdate platforms."k3-edge" {
   board = "beagleplay";
-  dtb = null;
+  dtb = "ti/k3-am625-beagleplay.dts";
   family = "k3";
   firmware = {
   };

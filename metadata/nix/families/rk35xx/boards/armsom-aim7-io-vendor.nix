@@ -1,7 +1,6 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."rk35xx-vendor" {
+{ platforms, lib }: lib.recursiveUpdate platforms."rk35xx-vendor" {
   board = "armsom-aim7-io";
-  dtb = null;
+  dtb = "rockchip/rk3588-armsom-aim7-io.dtb";
   family = "rk35xx";
   firmware = {
   };

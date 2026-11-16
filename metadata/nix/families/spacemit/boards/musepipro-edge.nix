@@ -1,7 +1,6 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."spacemit-edge" {
+{ platforms, lib }: lib.recursiveUpdate platforms."spacemit-edge" {
   board = "musepipro";
-  dtb = null;
+  dtb = "spacemit/k1-musepi-pro.dtb";
   family = "spacemit";
   firmware = {
   };

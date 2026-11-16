@@ -1,5 +1,4 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."sunxi-legacy" {
+{ platforms, lib }: lib.recursiveUpdate platforms."sunxi-legacy" {
   board = "orangepi-r1";
   dtb = null;
   family = "sunxi";

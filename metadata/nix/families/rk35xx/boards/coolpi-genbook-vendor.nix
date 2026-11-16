@@ -1,7 +1,6 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."rk35xx-vendor" {
+{ platforms, lib }: lib.recursiveUpdate platforms."rk35xx-vendor" {
   board = "coolpi-genbook";
-  dtb = null;
+  dtb = "rockchip/rk3588-coolpi-cm5-genbook.dtb";
   family = "rk35xx";
   firmware = {
   };

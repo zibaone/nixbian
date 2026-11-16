@@ -1,7 +1,6 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."generic-vendor" {
+{ platforms, lib }: lib.recursiveUpdate platforms."generic-vendor" {
   board = "dshanpi-a1";
-  dtb = null;
+  dtb = "rockchip/rk3576-100ask-dshanpi-a1.dtb";
   family = "generic";
   firmware = {
   };

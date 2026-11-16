@@ -1,7 +1,6 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."generic-vendor" {
+{ platforms, lib }: lib.recursiveUpdate platforms."generic-vendor" {
   board = "bananapim5pro";
-  dtb = null;
+  dtb = "rockchip/rk3576-bananapi-m5-pro.dtb";
   family = "generic";
   firmware = {
   };

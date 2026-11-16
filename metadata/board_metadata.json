@@ -46,7 +46,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3568-9tripod-x3568-v4.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -101,7 +101,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3568-9tripod-x3568-v4.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -152,7 +152,7 @@
                 "rev": "tag:v2022.07"
             }
         },
-        "dtb": "amlogic/meson-g12b-a311d-libretech-cc.dtb",
+        "dtb": "amlogic/meson-g12b-libretech-cc.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -203,7 +203,7 @@
                 "rev": "tag:v2022.07"
             }
         },
-        "dtb": "amlogic/meson-g12b-a311d-libretech-cc.dtb",
+        "dtb": "amlogic/meson-g12b-libretech-cc.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -254,7 +254,7 @@
                 "rev": "tag:v2022.07"
             }
         },
-        "dtb": null,
+        "dtb": "amlogic/meson-gxm-c400-plus.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -305,7 +305,7 @@
                 "rev": "tag:v2022.07"
             }
         },
-        "dtb": null,
+        "dtb": "amlogic/meson-gxm-c400-plus.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -407,7 +407,7 @@
                 "rev": "tag:v2022.07"
             }
         },
-        "dtb": "amlogic/meson-sm1-s905d3-libretech-cc.dtb",
+        "dtb": "amlogic/meson-sm1-libretech-cc.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -458,7 +458,7 @@
                 "rev": "tag:v2022.07"
             }
         },
-        "dtb": "amlogic/meson-sm1-s905d3-libretech-cc.dtb",
+        "dtb": "amlogic/meson-sm1-libretech-cc.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -509,7 +509,7 @@
                 "rev": "tag:v2022.07"
             }
         },
-        "dtb": null,
+        "dtb": "amlogic/meson-gxl-s905x-p212.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -560,7 +560,7 @@
                 "rev": "tag:v2022.07"
             }
         },
-        "dtb": null,
+        "dtb": "amlogic/meson-gxl-s905x-p212.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -611,7 +611,7 @@
                 "rev": "tag:v2024.04"
             }
         },
-        "dtb": null,
+        "dtb": "amlogic/meson-gxm-t95z-plus.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -662,7 +662,7 @@
                 "rev": "tag:v2022.07"
             }
         },
-        "dtb": null,
+        "dtb": "qcom/qrb2210-arduino-imola.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -717,7 +717,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-armsom-aim7-io.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -772,7 +772,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3576-armsom-cm5-io.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -827,7 +827,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3576-armsom-cm5-rpi-cm4-io.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -878,7 +878,7 @@
                 "rev": "commit:0b8e25bd9e16e8043b600e8f49b926b95572dc47"
             }
         },
-        "dtb": null,
+        "dtb": "rk3506b-armsom-forge1.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -933,7 +933,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3528-armsom-sige1.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -988,7 +988,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3568-armsom-sige3.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -1043,7 +1043,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3576-armsom-sige5.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -1098,7 +1098,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3576-armsom-sige5.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -1153,7 +1153,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-armsom-sige7.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -1208,7 +1208,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-armsom-sige7.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -1263,7 +1263,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-armsom-sige7.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -1318,7 +1318,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-armsom-w3.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -1369,7 +1369,7 @@
                 "rev": "tag:v2022.07"
             }
         },
-        "dtb": null,
+        "dtb": "allwinner/sun55i-t527-avaota-a1.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -1420,7 +1420,7 @@
                 "rev": "tag:v2022.07"
             }
         },
-        "dtb": null,
+        "dtb": "qcom/qcs8550-${BOARD}.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -1471,7 +1471,7 @@
                 "rev": "tag:v2022.07"
             }
         },
-        "dtb": null,
+        "dtb": "qcom/qcs8550-${BOARD}.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -1522,7 +1522,7 @@
                 "rev": "tag:v2022.07"
             }
         },
-        "dtb": null,
+        "dtb": "qcom/qcs8550-${BOARD}.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -1551,7 +1551,7 @@
             "config": "Bananapi_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -1602,7 +1602,7 @@
             "config": "Bananapi_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -1653,7 +1653,7 @@
             "config": "Bananapi_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -1726,7 +1726,7 @@
                 "rev": "tag:v2026.01"
             }
         },
-        "dtb": null,
+        "dtb": "amlogic/meson-g12b-bananapi-cm4-cm4io.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -1777,7 +1777,7 @@
                 "rev": "tag:v2026.01"
             }
         },
-        "dtb": null,
+        "dtb": "amlogic/meson-g12b-bananapi-cm4-cm4io.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -1832,7 +1832,7 @@
                 "rev": "tag:k1-bl-v2.2.9-release"
             }
         },
-        "dtb": null,
+        "dtb": "spacemit/k1-bananapi-f3.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -1887,7 +1887,7 @@
                 "rev": "tag:k1-bl-v2.2.9-release"
             }
         },
-        "dtb": null,
+        "dtb": "spacemit/k1-bananapi-f3.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -1942,7 +1942,7 @@
                 "rev": "tag:k1-bl-v2.2.9-release"
             }
         },
-        "dtb": null,
+        "dtb": "spacemit/k1-bananapi-f3.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -1971,7 +1971,7 @@
             "config": "bananapi_m1_plus_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -2022,7 +2022,7 @@
             "config": "bananapi_m1_plus_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -2073,7 +2073,7 @@
             "config": "bananapi_m1_plus_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -2124,7 +2124,7 @@
             "config": "bananapi_m2_plus_h3_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -2175,7 +2175,7 @@
             "config": "bananapi_m2_plus_h3_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -2226,7 +2226,7 @@
             "config": "bananapi_m2_plus_h3_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -2299,7 +2299,7 @@
                 "rev": "tag:v2024.07"
             }
         },
-        "dtb": null,
+        "dtb": "amlogic/meson-sm1-bananapi-m2-pro.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -2350,7 +2350,7 @@
                 "rev": "tag:v2024.07"
             }
         },
-        "dtb": null,
+        "dtb": "amlogic/meson-sm1-bananapi-m2-pro.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -2401,7 +2401,7 @@
                 "rev": "tag:v2026.01"
             }
         },
-        "dtb": null,
+        "dtb": "amlogic/meson-g12b-a311d-bananapi-m2s.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -2452,7 +2452,7 @@
                 "rev": "tag:v2026.01"
             }
         },
-        "dtb": null,
+        "dtb": "amlogic/meson-g12b-a311d-bananapi-m2s.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -2481,7 +2481,7 @@
             "config": "Bananapi_M2_Ultra_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -2532,7 +2532,7 @@
             "config": "Bananapi_M2_Ultra_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -2583,7 +2583,7 @@
             "config": "Bananapi_M2_Ultra_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -2634,7 +2634,7 @@
             "config": "bananapi_m2_zero_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -2685,7 +2685,7 @@
             "config": "bananapi_m2_zero_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -2736,7 +2736,7 @@
             "config": "bananapi_m2_zero_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -2787,7 +2787,7 @@
             "config": "Sinovoip_BPI_M3_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi/board_${BOARD} u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi/board_${BOARD}",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -2838,7 +2838,7 @@
             "config": "Sinovoip_BPI_M3_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi/board_${BOARD} u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi/board_${BOARD}",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -2889,7 +2889,7 @@
             "config": "Sinovoip_BPI_M3_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi/board_${BOARD} u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi/board_${BOARD}",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -2940,7 +2940,7 @@
             "config": "bananapi_m4_berry_defconfig",
             "target_map": "BINMAN_ALLOW_MISSING=1;;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "v2025-sunxi u-boot-sunxi-crust",
+            "patch_dir": "v2025-sunxi",
             "atf_source": "https://github.com/ARM-software/arm-trusted-firmware",
             "atf_branch": "tag:lts-v2.12.9",
             "atf_platform": "sun50i_h616",
@@ -2966,7 +2966,7 @@
                 "rev": "tag:lts-v2.12.9"
             }
         },
-        "dtb": null,
+        "dtb": "sun50i-h618-bananapi-m4-berry.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -2995,7 +2995,7 @@
             "config": "bananapi_m4_berry_defconfig",
             "target_map": "BINMAN_ALLOW_MISSING=1;;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "v2025-sunxi u-boot-sunxi-crust",
+            "patch_dir": "v2025-sunxi",
             "atf_source": "https://github.com/ARM-software/arm-trusted-firmware",
             "atf_branch": "tag:lts-v2.12.9",
             "atf_platform": "sun50i_h616",
@@ -3021,7 +3021,7 @@
                 "rev": "tag:lts-v2.12.9"
             }
         },
-        "dtb": null,
+        "dtb": "sun50i-h618-bananapi-m4-berry.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -3050,7 +3050,7 @@
             "config": "bananapi_m4zero_defconfig",
             "target_map": "BINMAN_ALLOW_MISSING=1;;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "v2026.01 u-boot-sunxi-crust",
+            "patch_dir": "v2026.01",
             "atf_source": "https://github.com/ARM-software/arm-trusted-firmware",
             "atf_branch": "tag:lts-v2.12.9",
             "atf_platform": "sun50i_h616",
@@ -3076,7 +3076,7 @@
                 "rev": "tag:lts-v2.12.9"
             }
         },
-        "dtb": null,
+        "dtb": "sun50i-h618-bananapi-m4-zero.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -3105,7 +3105,7 @@
             "config": "bananapi_m4zero_defconfig",
             "target_map": "BINMAN_ALLOW_MISSING=1;;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "v2026.01 u-boot-sunxi-crust",
+            "patch_dir": "v2026.01",
             "atf_source": "https://github.com/ARM-software/arm-trusted-firmware",
             "atf_branch": "tag:lts-v2.12.9",
             "atf_platform": "sun50i_h616",
@@ -3131,7 +3131,7 @@
                 "rev": "tag:lts-v2.12.9"
             }
         },
-        "dtb": null,
+        "dtb": "sun50i-h618-bananapi-m4-zero.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -3182,7 +3182,7 @@
                 "rev": "tag:v2024.07"
             }
         },
-        "dtb": null,
+        "dtb": "amlogic/meson-sm1-bananapi-m5.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -3233,7 +3233,7 @@
                 "rev": "tag:v2024.07"
             }
         },
-        "dtb": null,
+        "dtb": "amlogic/meson-sm1-bananapi-m5.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -3288,7 +3288,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3576-bananapi-m5-pro.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -3343,7 +3343,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3576-bananapi-m5-pro.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -3551,7 +3551,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-bananapi-m7.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -3606,7 +3606,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-bananapi-m7.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -3661,7 +3661,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-bananapi-m7.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -3690,7 +3690,7 @@
             "config": "Bananapro_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -3741,7 +3741,7 @@
             "config": "Bananapro_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -3792,7 +3792,7 @@
             "config": "Bananapro_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -3865,7 +3865,7 @@
                 "rev": "tag:v2024.07"
             }
         },
-        "dtb": null,
+        "dtb": "mediatek/mt7623n-bananapi-bpi-r2",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -3920,7 +3920,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3568-bpi-r2-pro.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -3975,7 +3975,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3568-bpi-r2-pro.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -4030,7 +4030,7 @@
                 "rev": "branch:ti-tfa-2.14.y"
             }
         },
-        "dtb": null,
+        "dtb": "ti/k3-j721e-beagleboneai64.dts",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -4085,7 +4085,7 @@
                 "rev": "branch:ti-tfa-2.14.y"
             }
         },
-        "dtb": null,
+        "dtb": "ti/k3-j721e-beagleboneai64.dts",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -4140,7 +4140,7 @@
                 "rev": "branch:ti-tfa-2.14.y"
             }
         },
-        "dtb": null,
+        "dtb": "ti/k3-j721e-beagleboneai64.dts",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -4195,7 +4195,7 @@
                 "rev": "branch:ti-tfa-2.14.y"
             }
         },
-        "dtb": null,
+        "dtb": "ti/k3-am625-beagleplay.dts",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -4250,7 +4250,7 @@
                 "rev": "branch:ti-tfa-2.14.y"
             }
         },
-        "dtb": null,
+        "dtb": "ti/k3-am625-beagleplay.dts",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -4305,7 +4305,7 @@
                 "rev": "branch:ti-tfa-2.14.y"
             }
         },
-        "dtb": null,
+        "dtb": "ti/k3-am625-beagleplay.dts",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -4360,7 +4360,7 @@
                 "rev": "tag:11.00.09"
             }
         },
-        "dtb": null,
+        "dtb": "k3-am67a-beagley-ai.dts",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -4415,7 +4415,7 @@
                 "rev": "tag:11.00.09"
             }
         },
-        "dtb": null,
+        "dtb": "k3-am67a-beagley-ai.dts",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -4470,7 +4470,7 @@
                 "rev": "tag:11.00.09"
             }
         },
-        "dtb": null,
+        "dtb": "k3-am67a-beagley-ai.dts",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -4499,7 +4499,7 @@
             "config": "beelink_x2_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -4550,7 +4550,7 @@
             "config": "beelink_x2_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -4601,7 +4601,7 @@
             "config": "beelink_x2_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -4674,7 +4674,7 @@
                 "rev": "tag:v2026.01"
             }
         },
-        "dtb": null,
+        "dtb": "amlogic/meson-gxl-s905x-bestv-r3300-l.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -4725,7 +4725,7 @@
                 "rev": "tag:v2026.01"
             }
         },
-        "dtb": null,
+        "dtb": "amlogic/meson-gxl-s905x-bestv-r3300-l.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -4754,7 +4754,7 @@
             "config": "bigtreetech_cb1_defconfig",
             "target_map": "BINMAN_ALLOW_MISSING=1;;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": "tag:lts-v2.12.9",
             "atf_platform": "sun50i_h616",
@@ -4776,7 +4776,7 @@
                 "rev": "tag:v2022.07"
             }
         },
-        "dtb": null,
+        "dtb": "sun50i-h616-bigtreetech-cb1-sd.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -4805,7 +4805,7 @@
             "config": "bigtreetech_cb1_defconfig",
             "target_map": "BINMAN_ALLOW_MISSING=1;;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": "tag:lts-v2.12.9",
             "atf_platform": "sun50i_h616",
@@ -4827,7 +4827,7 @@
                 "rev": "tag:v2022.07"
             }
         },
-        "dtb": null,
+        "dtb": "sun50i-h616-bigtreetech-cb1-sd.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -4882,7 +4882,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3566-bigtreetech-pi2.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -4937,7 +4937,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3566-bigtreetech-pi2.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -4988,7 +4988,7 @@
                 "rev": "tag:v2026.01"
             }
         },
-        "dtb": null,
+        "dtb": "amlogic/meson-g12b-a311d-cainiao-cniot-core.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -5039,7 +5039,7 @@
                 "rev": "tag:v2026.01"
             }
         },
-        "dtb": null,
+        "dtb": "amlogic/meson-g12b-a311d-cainiao-cniot-core.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -5068,7 +5068,7 @@
             "config": "cherryba-m1_defconfig",
             "target_map": "BINMAN_ALLOW_MISSING=1;;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "v2025.04 u-boot-sunxi-crust",
+            "patch_dir": "v2025.04",
             "atf_source": null,
             "atf_branch": "tag:lts-v2.12.9",
             "atf_platform": "sun50i_h616",
@@ -5119,7 +5119,7 @@
             "config": "cherryba-m1_defconfig",
             "target_map": "BINMAN_ALLOW_MISSING=1;;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "v2025.04 u-boot-sunxi-crust",
+            "patch_dir": "v2025.04",
             "atf_source": null,
             "atf_branch": "tag:lts-v2.12.9",
             "atf_platform": "sun50i_h616",
@@ -5306,7 +5306,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-friendlyelec-cm3588-nas.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -5361,7 +5361,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-friendlyelec-cm3588-nas.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -5416,7 +5416,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-friendlyelec-cm3588-nas.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -5471,7 +5471,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-coolpi-cm5-evb.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -5526,7 +5526,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-coolpi-cm5-genbook.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -5581,7 +5581,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-coolpi-cm5-genbook.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -5610,7 +5610,7 @@
             "config": "Cubieboard2_config",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -5661,7 +5661,7 @@
             "config": "Cubieboard2_config",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -5712,7 +5712,7 @@
             "config": "Cubieboard2_config",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -5763,7 +5763,7 @@
             "config": "Cubietruck_config",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -5814,7 +5814,7 @@
             "config": "Cubietruck_config",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -5865,7 +5865,7 @@
             "config": "Cubietruck_config",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -5942,7 +5942,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-cyber-aib.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -5997,7 +5997,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-cyber-aib.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -6154,7 +6154,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3576-100ask-dshanpi-a1.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -6209,7 +6209,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3568-dshapi-r1.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -6264,7 +6264,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3328-dusun-dsom-010r.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -6319,7 +6319,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3328-dusun-dsom-010r.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -6374,7 +6374,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3568-easepi-a2.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -6429,7 +6429,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3568-easepi-a2.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -6484,7 +6484,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3568-easepi-a2.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -6539,7 +6539,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-easepi-r2.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -6594,7 +6594,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-easepi-r2.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -6649,7 +6649,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-easepi-r2.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -6700,7 +6700,7 @@
                 "rev": "commit:0b8e25bd9e16e8043b600e8f49b926b95572dc47"
             }
         },
-        "dtb": null,
+        "dtb": "rk3506g-ebyte-ecb41-pge.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -6755,7 +6755,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3399-fine3399.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -6810,7 +6810,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3399-fine3399.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -6865,7 +6865,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-firefly-itx-3588j.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -6920,7 +6920,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3399-firefly.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -6975,7 +6975,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3399-firefly.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -7026,7 +7026,7 @@
                 "rev": "commit:0b8e25bd9e16e8043b600e8f49b926b95572dc47"
             }
         },
-        "dtb": null,
+        "dtb": "rk3506j-forlinx-OK3506-S12_nand-microsd.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -7081,7 +7081,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-fxblox-rk1.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -7136,7 +7136,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3566-h96-tvbox.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -7191,7 +7191,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3566-h96-tvbox.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -7352,7 +7352,7 @@
                 "rev": "tag:v2025.10"
             }
         },
-        "dtb": null,
+        "dtb": "hisilicon/hi3660-hikey960.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -7403,7 +7403,7 @@
                 "rev": "tag:v2025.10"
             }
         },
-        "dtb": null,
+        "dtb": "hisilicon/hi3660-hikey960.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -7458,7 +7458,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3528-hinlink-h28k.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -7513,7 +7513,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3568-hinlink-h66k.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -7568,7 +7568,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3568-hinlink-h66k.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -7623,7 +7623,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3568-hinlink-h68k.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -7678,7 +7678,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3568-hinlink-h68k.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -7733,7 +7733,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-hinlink-h88k.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -7788,7 +7788,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-hinlink-h88k.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -7843,7 +7843,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3568-hinlink-hnas.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -7898,7 +7898,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3568-hinlink-hnas.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -7953,7 +7953,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3528-hinlink-ht2.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -8008,7 +8008,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-yx-imb3588.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -8063,7 +8063,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588s-9tripod-linux.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -8118,7 +8118,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588s-9tripod-linux.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -8173,7 +8173,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588s-9tripod-linux.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -8224,7 +8224,7 @@
                 "rev": "tag:v2022.07"
             }
         },
-        "dtb": null,
+        "dtb": "allwinner/sun50i-h6-inovato-quadra.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -8275,7 +8275,7 @@
                 "rev": "tag:v2022.07"
             }
         },
-        "dtb": null,
+        "dtb": "allwinner/sun50i-h6-inovato-quadra.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -8432,7 +8432,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3566-jp-tvbox.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -8487,7 +8487,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3566-jp-tvbox.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -8652,7 +8652,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588s-khadas-edge2.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -8707,7 +8707,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588s-khadas-edge2.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -8762,7 +8762,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588s-khadas-edge2.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -9072,7 +9072,7 @@
                 "rev": "tag:v2025.04"
             }
         },
-        "dtb": null,
+        "dtb": "amlogic/meson-g12b-a311d-khadas-vim3.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -9123,7 +9123,7 @@
                 "rev": "tag:v2025.04"
             }
         },
-        "dtb": null,
+        "dtb": "amlogic/meson-g12b-a311d-khadas-vim3.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -9174,7 +9174,7 @@
                 "rev": "tag:v2026.01"
             }
         },
-        "dtb": null,
+        "dtb": "amlogic/meson-sm1-khadas-vim3l.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -9225,7 +9225,7 @@
                 "rev": "tag:v2026.01"
             }
         },
-        "dtb": null,
+        "dtb": "amlogic/meson-sm1-khadas-vim3l.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -9309,7 +9309,7 @@
             "config": "kickpi_k2b_defconfig",
             "target_map": "BINMAN_ALLOW_MISSING=1;;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "v2026.01 u-boot-sunxi-crust",
+            "patch_dir": "v2026.01",
             "atf_source": "https://github.com/ARM-software/arm-trusted-firmware",
             "atf_branch": "tag:lts-v2.12.9",
             "atf_platform": "sun50i_h616",
@@ -9335,7 +9335,7 @@
                 "rev": "tag:lts-v2.12.9"
             }
         },
-        "dtb": null,
+        "dtb": "sun50i-h618-kickpi-k2b.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -9364,7 +9364,7 @@
             "config": "kickpi_k2b_defconfig",
             "target_map": "BINMAN_ALLOW_MISSING=1;;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "v2026.01 u-boot-sunxi-crust",
+            "patch_dir": "v2026.01",
             "atf_source": "https://github.com/ARM-software/arm-trusted-firmware",
             "atf_branch": "tag:lts-v2.12.9",
             "atf_platform": "sun50i_h616",
@@ -9390,7 +9390,7 @@
                 "rev": "tag:lts-v2.12.9"
             }
         },
-        "dtb": null,
+        "dtb": "sun50i-h618-kickpi-k2b.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -9441,7 +9441,7 @@
                 "rev": "tag:v2022.07"
             }
         },
-        "dtb": null,
+        "dtb": "amlogic/meson-gxl-s805x-libretech-ac.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -9492,7 +9492,7 @@
                 "rev": "tag:v2022.07"
             }
         },
-        "dtb": null,
+        "dtb": "amlogic/meson-gxl-s805x-libretech-ac.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -9547,7 +9547,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3566-lckfb-tspi.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -9602,7 +9602,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3566-lckfb-tspi.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -9657,7 +9657,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3566-lckfb-tspi.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -9712,7 +9712,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3399-leez-p710.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -9767,7 +9767,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3399-leez-p710.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -9898,7 +9898,7 @@
             "config": "A20-OLinuXino-Lime_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -9949,7 +9949,7 @@
             "config": "A20-OLinuXino-Lime_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -10000,7 +10000,7 @@
             "config": "A20-OLinuXino-Lime_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -10204,7 +10204,7 @@
             "config": "A20-OLinuXino-Lime2-eMMC_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -10255,7 +10255,7 @@
             "config": "A20-OLinuXino-Lime2-eMMC_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -10306,7 +10306,7 @@
             "config": "A20-OLinuXino-Lime2-eMMC_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -10357,7 +10357,7 @@
             "config": "longanpi_3h_defconfig",
             "target_map": "BINMAN_ALLOW_MISSING=1;;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "v2024.10 u-boot-sunxi-crust",
+            "patch_dir": "v2024.10",
             "atf_source": null,
             "atf_branch": "tag:lts-v2.12.9",
             "atf_platform": "sun50i_h616",
@@ -10408,7 +10408,7 @@
             "config": "longanpi_3h_defconfig",
             "target_map": "BINMAN_ALLOW_MISSING=1;;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "v2024.10 u-boot-sunxi-crust",
+            "patch_dir": "v2024.10",
             "atf_source": null,
             "atf_branch": "tag:lts-v2.12.9",
             "atf_platform": "sun50i_h616",
@@ -10481,7 +10481,7 @@
                 "rev": "tag:v2022.07"
             }
         },
-        "dtb": null,
+        "dtb": "allwinner/sun55i-t527-longanpi-4b-pcie.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -10536,7 +10536,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3568-lubancat-2.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -10591,7 +10591,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3566-luckfox-core3566.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -10642,7 +10642,7 @@
                 "rev": "commit:0b8e25bd9e16e8043b600e8f49b926b95572dc47"
             }
         },
-        "dtb": null,
+        "dtb": "rk3506g-luckfox-lyra-plus-sd.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -10693,7 +10693,7 @@
                 "rev": "commit:0b8e25bd9e16e8043b600e8f49b926b95572dc47"
             }
         },
-        "dtb": null,
+        "dtb": "rk3506b-luckfox-lyra-ultra-w.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -10744,7 +10744,7 @@
                 "rev": "commit:0b8e25bd9e16e8043b600e8f49b926b95572dc47"
             }
         },
-        "dtb": null,
+        "dtb": "rk3506b-luckfox-lyra-zero-w-sd.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -10795,7 +10795,7 @@
                 "rev": "branch:next-dev-buildroot"
             }
         },
-        "dtb": null,
+        "dtb": "rv1106g-luckfox-pico-pro-max.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -10846,7 +10846,7 @@
                 "rev": "branch:next-dev-buildroot"
             }
         },
-        "dtb": null,
+        "dtb": "rv1103g-luckfox-pico-mini.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -10901,7 +10901,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3528-mangopi-m28k.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -10952,7 +10952,7 @@
                 "rev": "tag:v2022.07"
             }
         },
-        "dtb": null,
+        "dtb": "freescale/imx8mp-tqma8mpql-mba8mpxl.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -11003,7 +11003,7 @@
                 "rev": "tag:v2022.07"
             }
         },
-        "dtb": null,
+        "dtb": "freescale/imx8mp-tqma8mpql-mba8mpxl.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -11054,7 +11054,7 @@
                 "rev": "tag:v2022.07"
             }
         },
-        "dtb": null,
+        "dtb": "freescale/imx8mp-tqma8mpql-mba8mp-ras314.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -11105,7 +11105,7 @@
                 "rev": "tag:v2022.07"
             }
         },
-        "dtb": null,
+        "dtb": "freescale/imx8mp-tqma8mpql-mba8mp-ras314.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -11156,7 +11156,7 @@
                 "rev": "tag:v2022.07"
             }
         },
-        "dtb": null,
+        "dtb": "freescale/imx93-tqma9352-mba93xxla-mini.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -11207,7 +11207,7 @@
                 "rev": "tag:v2022.07"
             }
         },
-        "dtb": null,
+        "dtb": "freescale/imx93-tqma9352-mba93xxla-mini.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -11262,7 +11262,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-blueberry-r58-4x4.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -11317,7 +11317,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-blueberry-r58-4x4.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -11372,7 +11372,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-blueberry-minipc-linux.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -11427,7 +11427,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-blueberry-r58-hd3-linux.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -11482,7 +11482,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588s-blueberry-rp01a-v10.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -11537,7 +11537,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-blueberry-edge-v10-linux.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -11592,7 +11592,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-blueberry-edge-v12-linux.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -11647,7 +11647,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-blueberry-edge-v12-linux.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -11702,7 +11702,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-blueberry-edge-v12-maizhuo-linux.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -11757,7 +11757,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-blueberry-edge-v12-maizhuo-linux.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -11812,7 +11812,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-mixtile-blade3.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -11867,7 +11867,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-mixtile-core3588e.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -11922,7 +11922,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-mixtile-core3588e.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -11977,7 +11977,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3568-mixtile-edge2.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -12032,7 +12032,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3568-mixtile-edge2.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -12087,7 +12087,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3568-mixtile-edge2.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -12142,7 +12142,7 @@
                 "rev": "tag:k1-bl-v2.2.9-release"
             }
         },
-        "dtb": null,
+        "dtb": "spacemit/k1-musebook.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -12197,7 +12197,7 @@
                 "rev": "tag:k1-bl-v2.2.9-release"
             }
         },
-        "dtb": null,
+        "dtb": "spacemit/k1-musepi-pro.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -12252,7 +12252,7 @@
                 "rev": "tag:k1-bl-v2.2.9-release"
             }
         },
-        "dtb": null,
+        "dtb": "spacemit/k1-musepi-pro.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -12307,7 +12307,7 @@
                 "rev": "tag:k1-bl-v2.2.9-release"
             }
         },
-        "dtb": null,
+        "dtb": "spacemit/k1-musepi-pro.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -12362,7 +12362,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3399-nanopc-t4.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -12417,7 +12417,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3399-nanopc-t4.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -12472,7 +12472,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-nanopc-t6.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -12527,7 +12527,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-nanopc-t6.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -12582,7 +12582,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-nanopc-t6.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -12637,7 +12637,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-nanopc-t6-lts.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -12692,7 +12692,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-nanopc-t6-lts.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -12747,7 +12747,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-nanopc-t6-lts.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -12802,7 +12802,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3576-nanopi-m5.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -12857,7 +12857,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3576-nanopi-m5.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -12912,7 +12912,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3576-nanopi-m5.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -12967,7 +12967,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588s-nanopi-m6.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -13022,7 +13022,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588s-nanopi-m6.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -13077,7 +13077,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588s-nanopi-m6.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -13132,7 +13132,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3566-nanopi-r3s-lts.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -13187,7 +13187,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3566-nanopi-r3s-lts.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -13242,7 +13242,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3568-nanopi-r5c.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -13297,7 +13297,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3568-nanopi-r5c.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -13352,7 +13352,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3568-nanopi-r5s.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -13407,7 +13407,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3568-nanopi-r5s.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -13462,7 +13462,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588s-nanopi-r6c.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -13517,7 +13517,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588s-nanopi-r6c.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -13572,7 +13572,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588s-nanopi-r6c.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -13627,7 +13627,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588s-nanopi-r6s.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -13682,7 +13682,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588s-nanopi-r6s.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -13737,7 +13737,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588s-nanopi-r6s.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -13792,7 +13792,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3576-nanopi-r76s.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -13847,7 +13847,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3576-nanopi-r76s.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -14640,7 +14640,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3399-emb-3531.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -14695,7 +14695,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3399-emb-3531.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -14750,7 +14750,7 @@
                 "rev": "branch:master"
             }
         },
-        "dtb": null,
+        "dtb": "nuvoton/ma35d1-iot-512m.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -15056,7 +15056,7 @@
                 "rev": "tag:v2026.04"
             }
         },
-        "dtb": null,
+        "dtb": "amlogic/meson-sm1-odroid-hc4.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -15107,7 +15107,7 @@
                 "rev": "tag:v2026.04"
             }
         },
-        "dtb": null,
+        "dtb": "amlogic/meson-sm1-odroid-hc4.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -15162,7 +15162,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3568-odroid-m1.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -15217,7 +15217,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3568-odroid-m1.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -15272,7 +15272,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3566-odroid-m1s.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -15327,7 +15327,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3566-odroid-m1s.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -15382,7 +15382,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588s-odroid-m2.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -15437,7 +15437,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588s-odroid-m2.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -15590,7 +15590,7 @@
                 "rev": "tag:v2023.10"
             }
         },
-        "dtb": null,
+        "dtb": "amlogic/meson-g12b-odroid-n2l.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -15641,7 +15641,7 @@
                 "rev": "tag:v2023.10"
             }
         },
-        "dtb": null,
+        "dtb": "amlogic/meson-g12b-odroid-n2l.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -15772,7 +15772,7 @@
             "config": "A20-OLinuXino_MICRO-eMMC_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -15823,7 +15823,7 @@
             "config": "A20-OLinuXino_MICRO-eMMC_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -15874,7 +15874,7 @@
             "config": "A20-OLinuXino_MICRO-eMMC_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -16206,7 +16206,7 @@
                 "rev": "branch:a523-v4"
             }
         },
-        "dtb": null,
+        "dtb": "sun55i-t527-orangepi-4a.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -16345,7 +16345,7 @@
             "config": "orangepi_2_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -16396,7 +16396,7 @@
             "config": "orangepi_2_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -16447,7 +16447,7 @@
             "config": "orangepi_2_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -16673,7 +16673,7 @@
                 "rev": "tag:v2026.01"
             }
         },
-        "dtb": null,
+        "dtb": "allwinner/sun50i-h6-orangepi-3-lts.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -16724,7 +16724,7 @@
                 "rev": "tag:v2026.01"
             }
         },
-        "dtb": null,
+        "dtb": "allwinner/sun50i-h6-orangepi-3-lts.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -16775,7 +16775,7 @@
                 "rev": "tag:v2026.01"
             }
         },
-        "dtb": null,
+        "dtb": "allwinner/sun50i-h6-orangepi-3-lts.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -17105,7 +17105,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3399-orangepi-4-lts.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -17160,7 +17160,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3399-orangepi-4-lts.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -17215,7 +17215,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588s-orangepi-5.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -17270,7 +17270,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588s-orangepi-5.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -17325,7 +17325,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588s-orangepi-5.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -17380,7 +17380,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-orangepi-5-max.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -17435,7 +17435,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-orangepi-5-max.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -17490,7 +17490,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-orangepi-5-max.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -17545,7 +17545,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-orangepi-5-plus.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -17600,7 +17600,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-orangepi-5-plus.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -17655,7 +17655,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-orangepi-5-plus.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -17710,7 +17710,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-orangepi-5-ultra.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -17765,7 +17765,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-orangepi-5-ultra.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -17820,7 +17820,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-orangepi-5-ultra.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -17875,7 +17875,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588s-orangepi-5b.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -17930,7 +17930,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588s-orangepi-5b.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -17985,7 +17985,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588s-orangepi-5-pro.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -18040,7 +18040,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588s-orangepi-5-pro.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -18095,7 +18095,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588s-orangepi-5-pro.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -18124,7 +18124,7 @@
             "config": "orangepi_lite_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -18175,7 +18175,7 @@
             "config": "orangepi_lite_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -18226,7 +18226,7 @@
             "config": "orangepi_lite_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -18430,7 +18430,7 @@
             "config": "orangepi_one_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -18481,7 +18481,7 @@
             "config": "orangepi_one_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -18532,7 +18532,7 @@
             "config": "orangepi_one_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -18736,7 +18736,7 @@
             "config": "orangepi_pc_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -18787,7 +18787,7 @@
             "config": "orangepi_pc_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -18838,7 +18838,7 @@
             "config": "orangepi_pc_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -19042,7 +19042,7 @@
             "config": "orangepi_pc_plus_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -19093,7 +19093,7 @@
             "config": "orangepi_pc_plus_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -19144,7 +19144,7 @@
             "config": "orangepi_pc_plus_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -19195,7 +19195,7 @@
             "config": "orangepi_plus_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -19246,7 +19246,7 @@
             "config": "orangepi_plus_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -19297,7 +19297,7 @@
             "config": "orangepi_plus_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -19348,7 +19348,7 @@
             "config": "orangepi_plus2e_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -19399,7 +19399,7 @@
             "config": "orangepi_plus2e_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -19450,7 +19450,7 @@
             "config": "orangepi_plus2e_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -19680,7 +19680,7 @@
                 "rev": "tag:k1-bl-v2.2.9-release"
             }
         },
-        "dtb": null,
+        "dtb": "spacemit/k1-orangepi-r2s.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -19735,7 +19735,7 @@
                 "rev": "tag:k1-bl-v2.2.9-release"
             }
         },
-        "dtb": null,
+        "dtb": "spacemit/k1-orangepi-r2s.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -19790,7 +19790,7 @@
                 "rev": "tag:k1-bl-v2.2.9-release"
             }
         },
-        "dtb": null,
+        "dtb": "spacemit/k1-orangepi-rv2.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -19845,7 +19845,7 @@
                 "rev": "tag:k1-bl-v2.2.9-release"
             }
         },
-        "dtb": null,
+        "dtb": "spacemit/k1-orangepi-rv2.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -20027,7 +20027,7 @@
             "config": "orangepi_zero_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -20078,7 +20078,7 @@
             "config": "orangepi_zero_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -20129,7 +20129,7 @@
             "config": "orangepi_zero_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -20180,7 +20180,7 @@
             "config": "orangepi_zero2_defconfig",
             "target_map": "BINMAN_ALLOW_MISSING=1;;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": "tag:lts-v2.12.9",
             "atf_platform": "sun50i_h616",
@@ -20231,7 +20231,7 @@
             "config": "orangepi_zero2_defconfig",
             "target_map": "BINMAN_ALLOW_MISSING=1;;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": "tag:lts-v2.12.9",
             "atf_platform": "sun50i_h616",
@@ -20282,7 +20282,7 @@
             "config": "orangepi_zero2w_defconfig",
             "target_map": "BINMAN_ALLOW_MISSING=1;;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "v2025-sunxi u-boot-sunxi-crust",
+            "patch_dir": "v2025-sunxi",
             "atf_source": null,
             "atf_branch": "tag:lts-v2.12.9",
             "atf_platform": "sun50i_h616",
@@ -20333,7 +20333,7 @@
             "config": "orangepi_zero2w_defconfig",
             "target_map": "BINMAN_ALLOW_MISSING=1;;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "v2025-sunxi u-boot-sunxi-crust",
+            "patch_dir": "v2025-sunxi",
             "atf_source": null,
             "atf_branch": "tag:lts-v2.12.9",
             "atf_platform": "sun50i_h616",
@@ -20496,7 +20496,7 @@
             "config": "orangepi_zero_plus2_h3_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -20547,7 +20547,7 @@
             "config": "orangepi_zero_plus2_h3_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -20598,7 +20598,7 @@
             "config": "orangepi_zero_plus2_h3_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -20649,7 +20649,7 @@
             "config": "Linksprite_pcDuino3_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -20700,7 +20700,7 @@
             "config": "Linksprite_pcDuino3_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -20751,7 +20751,7 @@
             "config": "Linksprite_pcDuino3_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -20828,7 +20828,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3576-photonicat2.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -20879,7 +20879,7 @@
                 "rev": "tag:v2022.07"
             }
         },
-        "dtb": null,
+        "dtb": "phytium/phytiumpi_firefly.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -20930,7 +20930,7 @@
                 "rev": "tag:v2022.07"
             }
         },
-        "dtb": null,
+        "dtb": "phytium/phytiumpi_firefly.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -21444,7 +21444,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3399-pinebook-pro.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -21499,7 +21499,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3399-pinebook-pro.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -21703,7 +21703,7 @@
                 "rev": "tag:v2022.07"
             }
         },
-        "dtb": null,
+        "dtb": "sun50i-h6-pine-h64-model-b.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -21754,7 +21754,7 @@
                 "rev": "tag:v2022.07"
             }
         },
-        "dtb": null,
+        "dtb": "sun50i-h6-pine-h64-model-b.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -21805,7 +21805,7 @@
                 "rev": "tag:v2022.07"
             }
         },
-        "dtb": null,
+        "dtb": "sun50i-h6-pine-h64-model-b.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -21860,7 +21860,7 @@
                 "rev": "tag:11.00.09"
             }
         },
-        "dtb": null,
+        "dtb": "ti/k3-am6232-pocketbeagle2.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -21915,7 +21915,7 @@
                 "rev": "tag:11.00.09"
             }
         },
-        "dtb": null,
+        "dtb": "ti/k3-am6232-pocketbeagle2.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -21944,7 +21944,7 @@
             "config": "CHIP_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -22398,7 +22398,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3566-quartz64-a.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -22453,7 +22453,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3566-quartz64-a.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -22508,7 +22508,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3566-quartz64-b.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -22563,7 +22563,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3566-quartz64-b.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -22618,7 +22618,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3576-radxa-cm4-io.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -22673,7 +22673,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588s-radxa-cm5-io.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -22728,7 +22728,7 @@
                 "rev": "branch:a523-v4"
             }
         },
-        "dtb": null,
+        "dtb": "sun55i-a527-cubie-a5e.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -22783,7 +22783,7 @@
                 "rev": "branch:a523-v4"
             }
         },
-        "dtb": null,
+        "dtb": "sun55i-a527-cubie-a5e.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -22834,7 +22834,7 @@
                 "rev": "tag:v2022.07"
             }
         },
-        "dtb": null,
+        "dtb": "qcom/qcs6490-radxa-dragon-q6a.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -22889,7 +22889,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3528-radxa-e20c.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -22944,7 +22944,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3528-radxa-e24c-spi.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -22999,7 +22999,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3528-radxa-e24c-spi.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -23054,7 +23054,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3568-radxa-e25.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -23109,7 +23109,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3568-radxa-e25.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -23164,7 +23164,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3568-radxa-e25.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -23219,7 +23219,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588s-radxa-e54c.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -23274,7 +23274,7 @@
                 "rev": "commit:decacb88cfe882cb09ddd613ecaf1323d3fe6c22"
             }
         },
-        "dtb": null,
+        "dtb": "mediatek/mt8395-radxa-nio-12l.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -23329,7 +23329,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3576-rock-4d-spi.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -23384,7 +23384,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3576-rock-4d-spi.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -23435,7 +23435,7 @@
                 "rev": "tag:v2023.07.02"
             }
         },
-        "dtb": null,
+        "dtb": "amlogic/meson-g12a-radxa-zero.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -23486,7 +23486,7 @@
                 "rev": "tag:v2023.07.02"
             }
         },
-        "dtb": null,
+        "dtb": "amlogic/meson-g12a-radxa-zero.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -23537,7 +23537,7 @@
                 "rev": "tag:v2026.01"
             }
         },
-        "dtb": null,
+        "dtb": "amlogic/meson-g12b-radxa-zero2.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -23588,7 +23588,7 @@
                 "rev": "tag:v2026.01"
             }
         },
-        "dtb": null,
+        "dtb": "amlogic/meson-g12b-radxa-zero2.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -23643,7 +23643,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3566-radxa-zero3.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -23698,7 +23698,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3566-radxa-zero3.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -23753,7 +23753,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3566-radxa-zero3.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -23782,7 +23782,7 @@
             "config": "recore_defconfig",
             "target_map": "SCP=/dev/null;;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": "tag:lts-v2.12.9",
             "atf_platform": "sun50i_a64",
@@ -23833,7 +23833,7 @@
             "config": "recore_defconfig",
             "target_map": "SCP=/dev/null;;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": "tag:lts-v2.12.9",
             "atf_platform": "sun50i_a64",
@@ -23884,7 +23884,7 @@
             "config": "recore_defconfig",
             "target_map": "SCP=/dev/null;;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": "tag:lts-v2.12.9",
             "atf_platform": "sun50i_a64",
@@ -24071,7 +24071,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588s-retro-lite-cm5.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -24122,7 +24122,7 @@
                 "rev": "tag:v2022.07"
             }
         },
-        "dtb": null,
+        "dtb": "qcom/sm8250-retroidpocket-rp5.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -24173,7 +24173,7 @@
                 "rev": "tag:v2022.07"
             }
         },
-        "dtb": null,
+        "dtb": "qcom/sm8250-retroidpocket-rp5.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -24224,7 +24224,7 @@
                 "rev": "tag:v2022.07"
             }
         },
-        "dtb": null,
+        "dtb": "qcom/sm8250-retroidpocket-rpmini.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -24275,7 +24275,7 @@
                 "rev": "tag:v2022.07"
             }
         },
-        "dtb": null,
+        "dtb": "qcom/sm8250-retroidpocket-rpmini.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -24326,7 +24326,7 @@
                 "rev": "commit:0b8e25bd9e16e8043b600e8f49b926b95572dc47"
             }
         },
-        "dtb": null,
+        "dtb": "rk322x-box.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -24377,7 +24377,7 @@
                 "rev": "commit:0b8e25bd9e16e8043b600e8f49b926b95572dc47"
             }
         },
-        "dtb": null,
+        "dtb": "rk322x-box.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -24432,7 +24432,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3318-box.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -24487,7 +24487,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3318-box.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -24542,7 +24542,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3328-heltec.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -24597,7 +24597,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3328-heltec.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -24652,7 +24652,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3566-box-demo.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -24707,7 +24707,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3566-box-demo.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -24762,7 +24762,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3399-roc-pc-mezzanine.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -24817,7 +24817,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3399-roc-pc-mezzanine.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -24872,7 +24872,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3528-rock-2a.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -24927,7 +24927,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3528-rock-2f.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -24982,7 +24982,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3568-rock-3a.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -25037,7 +25037,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3568-rock-3a.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -25092,7 +25092,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3568-rock-3a.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -25147,7 +25147,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3566-rock-3c.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -25202,7 +25202,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3566-rock-3c.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -25257,7 +25257,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3399-rock-4se.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -25312,7 +25312,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3399-rock-4se.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -25367,7 +25367,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588s-radxa-cm5-rpi-cm4-io.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -25422,7 +25422,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588s-radxa-cm5-io.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -25477,7 +25477,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-rock-5-itx.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -25532,7 +25532,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-rock-5-itx.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -25587,7 +25587,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-rock-5-itx.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -25642,7 +25642,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588s-rock-5a.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -25697,7 +25697,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588s-rock-5a.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -25752,7 +25752,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588s-rock-5a.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -25807,7 +25807,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-rock-5b.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -25862,7 +25862,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-rock-5b.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -25917,7 +25917,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-rock-5b.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -25972,7 +25972,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-rock-5b-plus.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -26027,7 +26027,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-rock-5b-plus.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -26082,7 +26082,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-rock-5b-plus.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -26137,7 +26137,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588s-rock-5c.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -26192,7 +26192,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588s-rock-5c.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -26247,7 +26247,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588s-rock-5c.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -26302,7 +26302,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-rock-5t.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -26357,7 +26357,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-rock-5t.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -26522,7 +26522,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3399-rock-pi-4a.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -26577,7 +26577,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3399-rock-pi-4a.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -26632,7 +26632,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3399-rock-pi-4b.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -26687,7 +26687,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3399-rock-pi-4b.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -26742,7 +26742,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3399-rock-pi-4b-plus.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -26797,7 +26797,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3399-rock-pi-4b-plus.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -26852,7 +26852,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3399-rock-pi-4c.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -26907,7 +26907,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3399-rock-pi-4c.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -27072,7 +27072,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3399pro-rock-pi-n10.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -27127,7 +27127,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3399pro-rock-pi-n10.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -27445,7 +27445,7 @@
                 "rev": "branch:ti-tfa-2.14.y"
             }
         },
-        "dtb": null,
+        "dtb": "ti/k3-am62-lp-sk.dts",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -27500,7 +27500,7 @@
                 "rev": "branch:ti-tfa-2.14.y"
             }
         },
-        "dtb": null,
+        "dtb": "ti/k3-am62-lp-sk.dts",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -27555,7 +27555,7 @@
                 "rev": "branch:ti-tfa-2.14.y"
             }
         },
-        "dtb": null,
+        "dtb": "ti/k3-am62-lp-sk.dts",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -27610,7 +27610,7 @@
                 "rev": "branch:ti-tfa-2.14.y"
             }
         },
-        "dtb": null,
+        "dtb": "ti/k3-am62-lp-sk.dts",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -27665,7 +27665,7 @@
                 "rev": "branch:ti-tfa-2.14.y"
             }
         },
-        "dtb": null,
+        "dtb": "ti/k3-am6254atl-sk.dts",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -27720,7 +27720,7 @@
                 "rev": "branch:ti-tfa-2.14.y"
             }
         },
-        "dtb": null,
+        "dtb": "ti/k3-am6254atl-sk.dts",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -27775,7 +27775,7 @@
                 "rev": "branch:ti-tfa-2.14.y"
             }
         },
-        "dtb": null,
+        "dtb": "ti/k3-am6254atl-sk.dts",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -27830,7 +27830,7 @@
                 "rev": "branch:ti-tfa-2.14.y"
             }
         },
-        "dtb": null,
+        "dtb": "ti/k3-am6254atl-sk.dts",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -27885,7 +27885,7 @@
                 "rev": "branch:ti-tfa-2.14.y"
             }
         },
-        "dtb": null,
+        "dtb": "ti/k3-am625-sk.dts",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -27940,7 +27940,7 @@
                 "rev": "branch:ti-tfa-2.14.y"
             }
         },
-        "dtb": null,
+        "dtb": "ti/k3-am625-sk.dts",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -27995,7 +27995,7 @@
                 "rev": "branch:ti-tfa-2.14.y"
             }
         },
-        "dtb": null,
+        "dtb": "ti/k3-am625-sk.dts",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -28050,7 +28050,7 @@
                 "rev": "branch:ti-tfa-2.14.y"
             }
         },
-        "dtb": null,
+        "dtb": "ti/k3-am625-sk.dts",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -28105,7 +28105,7 @@
                 "rev": "branch:ti-tfa-2.14.y"
             }
         },
-        "dtb": null,
+        "dtb": "ti/k3-am62p5-sk.dts",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -28160,7 +28160,7 @@
                 "rev": "branch:ti-tfa-2.14.y"
             }
         },
-        "dtb": null,
+        "dtb": "ti/k3-am62p5-sk.dts",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -28215,7 +28215,7 @@
                 "rev": "branch:ti-tfa-2.14.y"
             }
         },
-        "dtb": null,
+        "dtb": "ti/k3-am62p5-sk.dts",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -28270,7 +28270,7 @@
                 "rev": "branch:ti-tfa-2.14.y"
             }
         },
-        "dtb": null,
+        "dtb": "ti/k3-am62p5-sk.dts",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -28325,7 +28325,7 @@
                 "rev": "branch:ti-tfa-2.14.y"
             }
         },
-        "dtb": null,
+        "dtb": "ti/k3-am68-sk-base-board.dts",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -28380,7 +28380,7 @@
                 "rev": "branch:ti-tfa-2.14.y"
             }
         },
-        "dtb": null,
+        "dtb": "ti/k3-am68-sk-base-board.dts",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -28435,7 +28435,7 @@
                 "rev": "branch:ti-tfa-2.14.y"
             }
         },
-        "dtb": null,
+        "dtb": "ti/k3-am68-sk-base-board.dts",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -28490,7 +28490,7 @@
                 "rev": "branch:ti-tfa-2.14.y"
             }
         },
-        "dtb": null,
+        "dtb": "ti/k3-am68-sk-base-board.dts",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -28545,7 +28545,7 @@
                 "rev": "branch:ti-tfa-2.14.y"
             }
         },
-        "dtb": null,
+        "dtb": "ti/k3-am69-sk.dts",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -28600,7 +28600,7 @@
                 "rev": "branch:ti-tfa-2.14.y"
             }
         },
-        "dtb": null,
+        "dtb": "ti/k3-am69-sk.dts",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -28655,7 +28655,7 @@
                 "rev": "branch:ti-tfa-2.14.y"
             }
         },
-        "dtb": null,
+        "dtb": "ti/k3-am69-sk.dts",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -28710,7 +28710,7 @@
                 "rev": "branch:ti-tfa-2.14.y"
             }
         },
-        "dtb": null,
+        "dtb": "ti/k3-am69-sk.dts",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -28765,7 +28765,7 @@
                 "rev": "branch:ti-tfa-2.14.y"
             }
         },
-        "dtb": null,
+        "dtb": "ti/k3-j721e-sk.dts",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -28820,7 +28820,7 @@
                 "rev": "branch:ti-tfa-2.14.y"
             }
         },
-        "dtb": null,
+        "dtb": "ti/k3-j721e-sk.dts",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -28875,7 +28875,7 @@
                 "rev": "branch:ti-tfa-2.14.y"
             }
         },
-        "dtb": null,
+        "dtb": "ti/k3-j721e-sk.dts",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -28930,7 +28930,7 @@
                 "rev": "branch:ti-tfa-2.14.y"
             }
         },
-        "dtb": null,
+        "dtb": "ti/k3-j721e-sk.dts",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -28985,7 +28985,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3399-am40.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -29040,7 +29040,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3399-am40.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -29095,7 +29095,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3328-roc-pc.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -29150,7 +29150,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3328-roc-pc.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -29205,7 +29205,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3566-roc-pc.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -29260,7 +29260,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3566-roc-pc.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -29315,7 +29315,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3566-roc-pc.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -29370,7 +29370,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588s-roc-pc.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -29425,7 +29425,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588s-roc-pc.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -29480,7 +29480,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3399-roc-pc-plus.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -29535,7 +29535,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3399-roc-pc-plus.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -29590,7 +29590,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3568-roc-pc.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -29645,7 +29645,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3568-roc-pc.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -29674,7 +29674,7 @@
             "config": "sunvell_r69_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -29725,7 +29725,7 @@
             "config": "sunvell_r69_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -29776,7 +29776,7 @@
             "config": "sunvell_r69_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -29849,7 +29849,7 @@
                 "rev": "tag:v2022.07"
             }
         },
-        "dtb": null,
+        "dtb": "amlogic/meson-gxl-s905x-libretech-cc-v2.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -29900,7 +29900,7 @@
                 "rev": "tag:v2022.07"
             }
         },
-        "dtb": null,
+        "dtb": "amlogic/meson-gxl-s905x-libretech-cc-v2.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -30104,7 +30104,7 @@
                 "rev": "tag:v2025.10"
             }
         },
-        "dtb": null,
+        "dtb": "qcom/sc8280xp-lenovo-thinkpad-x13s.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -30159,7 +30159,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3399pro-tinker-edge-r.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -30214,7 +30214,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3399pro-tinker-edge-r.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -30371,7 +30371,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3399-tinker-2.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -30426,7 +30426,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3399-tinker-2.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -30481,7 +30481,7 @@
                 "rev": "branch:ti-tfa-2.14.y"
             }
         },
-        "dtb": null,
+        "dtb": "ti/k3-am62l3-evm.dts",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -30536,7 +30536,7 @@
                 "rev": "branch:ti-tfa-2.14.y"
             }
         },
-        "dtb": null,
+        "dtb": "ti/k3-am62l3-evm.dts",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -30591,7 +30591,7 @@
                 "rev": "branch:ti-tfa-2.14.y"
             }
         },
-        "dtb": null,
+        "dtb": "ti/k3-am62l3-evm.dts",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -30642,7 +30642,7 @@
                 "rev": "tag:v2022.07"
             }
         },
-        "dtb": null,
+        "dtb": "freescale/imx8mp-tqma8mpqs-mb-smarc-2.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -30693,7 +30693,7 @@
                 "rev": "tag:v2022.07"
             }
         },
-        "dtb": null,
+        "dtb": "freescale/imx8mp-tqma8mpqs-mb-smarc-2.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -30722,7 +30722,7 @@
             "config": "libretech_all_h3_cc_h3_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -30773,7 +30773,7 @@
             "config": "libretech_all_h3_cc_h3_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -30824,7 +30824,7 @@
             "config": "libretech_all_h3_cc_h3_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -31054,7 +31054,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-turing-rk1.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -31109,7 +31109,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-turing-rk1.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -31164,7 +31164,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-turing-rk1.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -31996,7 +31996,7 @@
                 "rev": "tag:v2022.07"
             }
         },
-        "dtb": null,
+        "dtb": "starfive/jh7110-starfive-visionfive-2-v1.3b.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -32025,7 +32025,7 @@
             "config": "x96_mate_defconfig",
             "target_map": "BINMAN_ALLOW_MISSING=1;;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": "tag:lts-v2.12.9",
             "atf_platform": "sun50i_h616",
@@ -32076,7 +32076,7 @@
             "config": "x96_mate_defconfig",
             "target_map": "BINMAN_ALLOW_MISSING=1;;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": "tag:lts-v2.12.9",
             "atf_platform": "sun50i_h616",
@@ -32127,7 +32127,7 @@
             "config": "x96q_lpddr3_defconfig",
             "target_map": "BINMAN_ALLOW_MISSING=1;;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": "tag:lts-v2.12.9",
             "atf_platform": "sun50i_h616",
@@ -32204,7 +32204,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3399-xiaobao-nas.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -32259,7 +32259,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3399-xiaobao-nas.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -32412,7 +32412,7 @@
                 "rev": "branch:v2024.01-xpressreal"
             }
         },
-        "dtb": null,
+        "dtb": "realtek/rtd1619b-bleedingedge-4gb.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -32463,7 +32463,7 @@
                 "rev": "commit:0b8e25bd9e16e8043b600e8f49b926b95572dc47"
             }
         },
-        "dtb": null,
+        "dtb": "rk3288-xt-q8l-v10.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -32514,7 +32514,7 @@
                 "rev": "commit:0b8e25bd9e16e8043b600e8f49b926b95572dc47"
             }
         },
-        "dtb": null,
+        "dtb": "rk3288-xt-q8l-v10.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -32569,7 +32569,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588s-youyeetoo-r1.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -32624,7 +32624,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588s-youyeetoo-r1.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -32679,7 +32679,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588s-youyeetoo-r1.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -32734,7 +32734,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-youyeetoo-yy3588.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -32789,7 +32789,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-youyeetoo-yy3588.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -32844,7 +32844,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3588-youyeetoo-yy3588.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -32899,7 +32899,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3568-yy3568.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -32954,7 +32954,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3568-yy3568.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -33009,7 +33009,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3568-yy3568.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -33064,7 +33064,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3328-z28pro.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -33119,7 +33119,7 @@
                 "rev": "branch:mtksoc-20250212"
             }
         },
-        "dtb": null,
+        "dtb": "mediatek/mt7988a-bananapi-bpi-r4-sd.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -33352,7 +33352,7 @@
             "config": "Cubieboard_config",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -33403,7 +33403,7 @@
             "config": "Cubieboard_config",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -33454,7 +33454,7 @@
             "config": "Cubieboard_config",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -33637,7 +33637,7 @@
                 "rev": "master"
             }
         },
-        "dtb": null,
+        "dtb": "freescale/mono-gateway-dk.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -33688,7 +33688,7 @@
                 "rev": "tag:v2024.10"
             }
         },
-        "dtb": null,
+        "dtb": "amlogic/meson-axg-amper-gateway-am-gz80x.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -33739,7 +33739,7 @@
                 "rev": "tag:v2024.10"
             }
         },
-        "dtb": null,
+        "dtb": "amlogic/meson-axg-amper-gateway-am-gz80x.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -34074,7 +34074,7 @@
             "config": "A33-OLinuXino_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -34125,7 +34125,7 @@
             "config": "A33-OLinuXino_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -34176,7 +34176,7 @@
             "config": "A33-OLinuXino_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -34227,7 +34227,7 @@
             "config": "Mele_A1000_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -34278,7 +34278,7 @@
             "config": "Mele_A1000_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -34329,7 +34329,7 @@
             "config": "Mele_A1000_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -34380,7 +34380,7 @@
             "config": "MK808C_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -34431,7 +34431,7 @@
             "config": "MK808C_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -34482,7 +34482,7 @@
             "config": "MK808C_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -34753,7 +34753,7 @@
             "config": "nanopi_r1_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -34775,7 +34775,7 @@
                 "rev": "tag:v2022.07"
             }
         },
-        "dtb": null,
+        "dtb": "sun8i-h3-nanopi-r1.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -34804,7 +34804,7 @@
             "config": "nanopi_r1_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -34826,7 +34826,7 @@
                 "rev": "tag:v2022.07"
             }
         },
-        "dtb": null,
+        "dtb": "sun8i-h3-nanopi-r1.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -34855,7 +34855,7 @@
             "config": "nanopi_r1_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -34877,7 +34877,7 @@
                 "rev": "tag:v2022.07"
             }
         },
-        "dtb": null,
+        "dtb": "sun8i-h3-nanopi-r1.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -35085,7 +35085,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3328-nanopi-r2-rev06.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -35140,7 +35140,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3328-nanopi-r2-rev06.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -35195,7 +35195,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3328-nanopi-r2-rev00.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -35250,7 +35250,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3328-nanopi-r2-rev00.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -35305,7 +35305,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3328-nanopi-r2s-plus-rev00.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -35360,7 +35360,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3328-nanopi-r2s-plus-rev00.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -35415,7 +35415,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3566-nanopi-r3s.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -35470,7 +35470,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3566-nanopi-r3s.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -35745,7 +35745,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3528-nanopi-zero2.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -35800,7 +35800,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3528-nanopi-zero2.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -35855,7 +35855,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3528-nanopi-zero2.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -35884,7 +35884,7 @@
             "config": "nanopi_neo_air_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -35935,7 +35935,7 @@
             "config": "nanopi_neo_air_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -35986,7 +35986,7 @@
             "config": "nanopi_neo_air_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -36037,7 +36037,7 @@
             "config": "nanopi_duo_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -36088,7 +36088,7 @@
             "config": "nanopi_duo_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -36139,7 +36139,7 @@
             "config": "nanopi_duo_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -36212,7 +36212,7 @@
                 "rev": "tag:v2022.07"
             }
         },
-        "dtb": null,
+        "dtb": "sun8i-h3-nanopi-duo2.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -36263,7 +36263,7 @@
                 "rev": "tag:v2022.07"
             }
         },
-        "dtb": null,
+        "dtb": "sun8i-h3-nanopi-duo2.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -36314,7 +36314,7 @@
                 "rev": "tag:v2022.07"
             }
         },
-        "dtb": null,
+        "dtb": "sun8i-h3-nanopi-duo2.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -36343,7 +36343,7 @@
             "config": "nanopi_neo_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -36394,7 +36394,7 @@
             "config": "nanopi_neo_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -36445,7 +36445,7 @@
             "config": "nanopi_neo_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -36828,7 +36828,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3328-nanopi-neo3-rev02.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -36883,7 +36883,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3328-nanopi-neo3-rev02.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -37218,7 +37218,7 @@
             "config": "A13-OLinuXino_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -37269,7 +37269,7 @@
             "config": "A13-OLinuXino_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -37320,7 +37320,7 @@
             "config": "A13-OLinuXino_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -37371,7 +37371,7 @@
             "config": "orangepi_r1_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -37422,7 +37422,7 @@
             "config": "orangepi_r1_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -37473,7 +37473,7 @@
             "config": "orangepi_r1_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -37550,7 +37550,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3328-orangepi-r1-plus.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -37605,7 +37605,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3328-orangepi-r1-plus.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -37660,7 +37660,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3328-orangepi-r1-plus-lts.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -37715,7 +37715,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3328-orangepi-r1-plus-lts.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -38050,7 +38050,7 @@
             "config": "pinecube_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -38101,7 +38101,7 @@
             "config": "pinecube_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -38152,7 +38152,7 @@
             "config": "pinecube_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -38339,7 +38339,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3582-radxa-e52c.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -38394,7 +38394,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3582-radxa-e52c.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -38449,7 +38449,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3582-radxa-e52c.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -38504,7 +38504,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3308-rock-s0.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -38559,7 +38559,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3308-rock-s0.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -38724,7 +38724,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3308-rock-pi-s.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -38779,7 +38779,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3308-rock-pi-s.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -38834,7 +38834,7 @@
                 "rev": "tag:v2.13.0"
             }
         },
-        "dtb": null,
+        "dtb": "rockchip/rk3308-sakurapi-rk3308b.dtb",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -38889,7 +38889,7 @@
                 "rev": "branch:ti-tfa-2.14.y"
             }
         },
-        "dtb": null,
+        "dtb": "ti/k3-am642-sk.dts",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -38944,7 +38944,7 @@
                 "rev": "branch:ti-tfa-2.14.y"
             }
         },
-        "dtb": null,
+        "dtb": "ti/k3-am642-sk.dts",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -38999,7 +38999,7 @@
                 "rev": "branch:ti-tfa-2.14.y"
             }
         },
-        "dtb": null,
+        "dtb": "ti/k3-am642-sk.dts",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -39054,7 +39054,7 @@
                 "rev": "branch:ti-tfa-2.14.y"
             }
         },
-        "dtb": null,
+        "dtb": "ti/k3-am642-sk.dts",
         "kernel_params": null,
         "firmware": {
             "source": "https://github.com/armbian/firmware",
@@ -39083,7 +39083,7 @@
             "config": "zeropi_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -39134,7 +39134,7 @@
             "config": "zeropi_defconfig",
             "target_map": ";;u-boot-sunxi-with-spl.bin",
             "patches": null,
-            "patch_dir": "u-boot-sunxi u-boot-sunxi-crust",
+            "patch_dir": "u-boot-sunxi",
             "atf_source": null,
             "atf_branch": null,
             "atf_platform": null,
@@ -39158,6 +39158,57 @@
         },
         "dtb": null,
         "kernel_params": null,
+        "firmware": {
+            "source": "https://github.com/armbian/firmware",
+            "branch": "master"
+        },
+        "armbian_version": "v26.5.1"
+    },
+    {
+        "board": "h96-max-h618",
+        "branch": "edge",
+        "linux_family": "sunxi64",
+        "arch": "arm64",
+        "kernel": {
+            "source": "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git",
+            "branch": "branch:linux-7.0.y",
+            "major_minor": "7.0",
+            "config": "linux-sunxi64-edge",
+            "config_path": "config/kernel/linux-sunxi64-edge.config",
+            "patch_dir": "archive/sunxi-7.0",
+            "hash": "sha256-8ruWxZbsb5I8EByJGaCvjgA8M43CRcjxFWt1Ci7a9Y4=",
+            "exact_version": "7.0.14"
+        },
+        "uboot": {
+            "source": "https://github.com/u-boot/u-boot",
+            "branch": "tag:v2025.04",
+            "config": "transpeed-8k618-t_defconfig",
+            "target_map": "BINMAN_ALLOW_MISSING=1;;u-boot-sunxi-with-spl.bin",
+            "patches": null,
+            "patch_dir": "v2025-sunxi",
+            "atf_source": null,
+            "atf_branch": "tag:lts-v2.12.9",
+            "atf_platform": "sun50i_h616",
+            "atf_target_map": "PLAT=sun50i_h616 DEBUG=1 bl31;;build/sun50i_h616/debug/bl31.bin",
+            "source_hash": "sha256-P9y1I1STiL8rDdj2OHfmP04468hLWwZM3E2v1Y/cLAM=",
+            "atf_hash": null
+        },
+        "extra_sources": {
+            "MAINLINE_FIRMWARE_SOURCE": {
+                "url": "https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git",
+                "rev": "master"
+            },
+            "KERNELSOURCE": {
+                "url": "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git",
+                "rev": "branch:linux-7.0.y"
+            },
+            "BOOTSOURCE": {
+                "url": "https://github.com/u-boot/u-boot",
+                "rev": "tag:v2025.04"
+            }
+        },
+        "dtb": "allwinner/sun50i-h618-h96-max.dtb",
+        "kernel_params": "console=ttyS0,115200",
         "firmware": {
             "source": "https://github.com/armbian/firmware",
             "branch": "master"
@@ -39212,56 +39263,7 @@
         "firmware": {
             "source": "https://github.com/armbian/firmware",
             "branch": "master"
-        }
-    },
-    {
-        "board": "h96-max-h618",
-        "branch": "edge",
-        "linux_family": "sunxi64",
-        "arch": "arm64",
-        "kernel": {
-            "source": "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git",
-            "branch": "branch:linux-7.0.y",
-            "major_minor": "7.0",
-            "config": "linux-sunxi64-edge",
-            "config_path": "config/kernel/linux-sunxi64-edge.config",
-            "patch_dir": "archive/sunxi-7.0",
-            "hash": "sha256-8ruWxZbsb5I8EByJGaCvjgA8M43CRcjxFWt1Ci7a9Y4=",
-            "exact_version": "7.0.14"
         },
-        "uboot": {
-            "source": "https://github.com/u-boot/u-boot",
-            "branch": "tag:v2025.04",
-            "config": "transpeed-8k618-t_defconfig",
-            "target_map": "BINMAN_ALLOW_MISSING=1;;u-boot-sunxi-with-spl.bin",
-            "patches": null,
-            "patch_dir": "v2025-sunxi",
-            "atf_source": null,
-            "atf_branch": "tag:lts-v2.12.9",
-            "atf_platform": "sun50i_h616",
-            "atf_target_map": "PLAT=sun50i_h616 DEBUG=1 bl31;;build/sun50i_h616/debug/bl31.bin",
-            "source_hash": "sha256-P9y1I1STiL8rDdj2OHfmP04468hLWwZM3E2v1Y/cLAM=",
-            "atf_hash": null
-        },
-        "extra_sources": {
-            "MAINLINE_FIRMWARE_SOURCE": {
-                "url": "https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git",
-                "rev": "master"
-            },
-            "KERNELSOURCE": {
-                "url": "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git",
-                "rev": "branch:linux-7.0.y"
-            },
-            "BOOTSOURCE": {
-                "url": "https://github.com/u-boot/u-boot",
-                "rev": "tag:v2025.04"
-            }
-        },
-        "dtb": "allwinner/sun50i-h618-h96-max.dtb",
-        "kernel_params": "console=ttyS0,115200",
-        "firmware": {
-            "source": "https://github.com/armbian/firmware",
-            "branch": "master"
-        }
+        "armbian_version": "v26.5.1"
     }
 ]

@@ -1,7 +1,6 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."sm8250-current" {
+{ platforms, lib }: lib.recursiveUpdate platforms."sm8250-current" {
   board = "retroidpocket-rpmini";
-  dtb = null;
+  dtb = "qcom/sm8250-retroidpocket-rpmini.dtb";
   family = "sm8250";
   firmware = {
   };

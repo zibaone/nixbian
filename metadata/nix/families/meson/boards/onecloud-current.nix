@@ -1,5 +1,4 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."meson-current" {
+{ platforms, lib }: lib.recursiveUpdate platforms."meson-current" {
   board = "onecloud";
   dtb = null;
   family = "meson";

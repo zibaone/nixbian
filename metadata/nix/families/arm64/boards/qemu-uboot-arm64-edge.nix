@@ -1,5 +1,4 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."arm64-edge" {
+{ platforms, lib }: lib.recursiveUpdate platforms."arm64-edge" {
   board = "qemu-uboot-arm64";
   dtb = null;
   family = "arm64";

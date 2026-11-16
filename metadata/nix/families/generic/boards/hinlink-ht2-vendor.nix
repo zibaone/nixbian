@@ -1,7 +1,6 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."generic-vendor" {
+{ platforms, lib }: lib.recursiveUpdate platforms."generic-vendor" {
   board = "hinlink-ht2";
-  dtb = null;
+  dtb = "rockchip/rk3528-hinlink-ht2.dtb";
   family = "generic";
   firmware = {
   };

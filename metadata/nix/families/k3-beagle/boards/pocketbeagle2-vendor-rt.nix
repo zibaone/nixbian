@@ -1,7 +1,6 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."k3-beagle-vendor-rt" {
+{ platforms, lib }: lib.recursiveUpdate platforms."k3-beagle-vendor-rt" {
   board = "pocketbeagle2";
-  dtb = null;
+  dtb = "ti/k3-am6232-pocketbeagle2.dtb";
   family = "k3-beagle";
   firmware = {
   };

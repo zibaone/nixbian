@@ -1,7 +1,6 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."rk35xx-vendor" {
+{ platforms, lib }: lib.recursiveUpdate platforms."rk35xx-vendor" {
   board = "rock-5t";
-  dtb = null;
+  dtb = "rockchip/rk3588-rock-5t.dtb";
   family = "rk35xx";
   firmware = {
   };

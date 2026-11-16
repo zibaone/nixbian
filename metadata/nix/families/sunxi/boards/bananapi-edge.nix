@@ -1,5 +1,4 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."sunxi-edge" {
+{ platforms, lib }: lib.recursiveUpdate platforms."sunxi-edge" {
   board = "bananapi";
   dtb = null;
   family = "sunxi";

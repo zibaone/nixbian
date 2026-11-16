@@ -1,5 +1,4 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."meson64-edge" {
+{ platforms, lib }: lib.recursiveUpdate platforms."meson64-edge" {
   board = "odroidc4";
   dtb = null;
   family = "meson64";

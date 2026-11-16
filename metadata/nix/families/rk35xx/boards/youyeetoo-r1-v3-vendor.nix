@@ -1,7 +1,6 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."rk35xx-vendor" {
+{ platforms, lib }: lib.recursiveUpdate platforms."rk35xx-vendor" {
   board = "youyeetoo-r1-v3";
-  dtb = null;
+  dtb = "rockchip/rk3588s-youyeetoo-r1.dtb";
   family = "rk35xx";
   firmware = {
   };

@@ -1,7 +1,6 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."spacemit-legacy" {
+{ platforms, lib }: lib.recursiveUpdate platforms."spacemit-legacy" {
   board = "bananapif3";
-  dtb = null;
+  dtb = "spacemit/k1-bananapi-f3.dtb";
   family = "spacemit";
   firmware = {
   };

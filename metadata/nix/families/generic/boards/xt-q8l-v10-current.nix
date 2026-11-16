@@ -1,7 +1,6 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."generic-current" {
+{ platforms, lib }: lib.recursiveUpdate platforms."generic-current" {
   board = "xt-q8l-v10";
-  dtb = null;
+  dtb = "rk3288-xt-q8l-v10.dtb";
   family = "generic";
   firmware = {
   };

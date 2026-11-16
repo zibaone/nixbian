@@ -17,14 +17,7 @@
       major_minor = "7.0";
       nvfetcher_key = "kernel-arm64-branch-linux-7-0-y";
       patch_dir = "archive/uefi-arm64-7.0";
-      patches = [
-        "patches/kernel/archive/uefi-arm64-7.0/1000-net-stmicro-stmmac-Phytium-onboard-ethernet-drivers-and-ACPI-glue-for-6.x.patch"
-        "patches/kernel/archive/uefi-arm64-7.0/1001-net-stmicro-stmmac-Phytium-adapt-to-net-stmmac-remove-axi_blen-array.patch"
-        "patches/kernel/archive/uefi-arm64-7.0/1002-net-stmicro-stmmac-Phytium-adapt-to-net-stmmac-replace-has_xxxx-with-core_type.patch"
-        "patches/kernel/archive/uefi-arm64-7.0/1003-net-stmicro-stmmac-Phytium-adapt-to-net-stmmac-pass-struct-device-to-init-exit-methods.patch"
-        "patches/kernel/archive/uefi-arm64-7.0/1004-fix-stmmac-compilation-warnings.patch"
-        "patches/kernel/archive/uefi-arm64-7.0/board-hikey960-usb.patch"
-      ];
+      patches = [ "patches/kernel/archive/uefi-arm64-7.0/1000-net-stmicro-stmmac-Phytium-onboard-ethernet-drivers-and-ACPI-glue-for-6.x.patch" "patches/kernel/archive/uefi-arm64-7.0/1001-net-stmicro-stmmac-Phytium-adapt-to-net-stmmac-remove-axi_blen-array.patch" "patches/kernel/archive/uefi-arm64-7.0/1002-net-stmicro-stmmac-Phytium-adapt-to-net-stmmac-replace-has_xxxx-with-core_type.patch" "patches/kernel/archive/uefi-arm64-7.0/1003-net-stmicro-stmmac-Phytium-adapt-to-net-stmmac-pass-struct-device-to-init-exit-methods.patch" "patches/kernel/archive/uefi-arm64-7.0/1004-fix-stmmac-compilation-warnings.patch" "patches/kernel/archive/uefi-arm64-7.0/board-hikey960-usb.patch" ];
       source = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git";
     };
     linux_family = "arm64";
@@ -38,7 +31,7 @@
       config = "\${QEMU_UBOOT_BOOTCONFIG}";
       nvfetcher_key = "uboot-tag-v2025-10";
       patch_dir = "u-boot-qemu-arm64";
-      patches = [ ];
+      patches = [];
       source = "https://github.com/u-boot/u-boot";
       source_hash = "sha256-gaD4bZS58LIe+zYmdFxY5Q7nqovINfnebY9JQ5TkN+Q=";
       target_map = null;
@@ -62,14 +55,7 @@
       major_minor = "7.0";
       nvfetcher_key = "kernel-arm64-branch-linux-7-0-y";
       patch_dir = "archive/uefi-arm64-7.0";
-      patches = [
-        "patches/kernel/archive/uefi-arm64-7.0/1000-net-stmicro-stmmac-Phytium-onboard-ethernet-drivers-and-ACPI-glue-for-6.x.patch"
-        "patches/kernel/archive/uefi-arm64-7.0/1001-net-stmicro-stmmac-Phytium-adapt-to-net-stmmac-remove-axi_blen-array.patch"
-        "patches/kernel/archive/uefi-arm64-7.0/1002-net-stmicro-stmmac-Phytium-adapt-to-net-stmmac-replace-has_xxxx-with-core_type.patch"
-        "patches/kernel/archive/uefi-arm64-7.0/1003-net-stmicro-stmmac-Phytium-adapt-to-net-stmmac-pass-struct-device-to-init-exit-methods.patch"
-        "patches/kernel/archive/uefi-arm64-7.0/1004-fix-stmmac-compilation-warnings.patch"
-        "patches/kernel/archive/uefi-arm64-7.0/board-hikey960-usb.patch"
-      ];
+      patches = [ "patches/kernel/archive/uefi-arm64-7.0/1000-net-stmicro-stmmac-Phytium-onboard-ethernet-drivers-and-ACPI-glue-for-6.x.patch" "patches/kernel/archive/uefi-arm64-7.0/1001-net-stmicro-stmmac-Phytium-adapt-to-net-stmmac-remove-axi_blen-array.patch" "patches/kernel/archive/uefi-arm64-7.0/1002-net-stmicro-stmmac-Phytium-adapt-to-net-stmmac-replace-has_xxxx-with-core_type.patch" "patches/kernel/archive/uefi-arm64-7.0/1003-net-stmicro-stmmac-Phytium-adapt-to-net-stmmac-pass-struct-device-to-init-exit-methods.patch" "patches/kernel/archive/uefi-arm64-7.0/1004-fix-stmmac-compilation-warnings.patch" "patches/kernel/archive/uefi-arm64-7.0/board-hikey960-usb.patch" ];
       source = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git";
     };
     linux_family = "arm64";
@@ -83,7 +69,7 @@
       config = "\${QEMU_UBOOT_BOOTCONFIG}";
       nvfetcher_key = "uboot-tag-v2025-10";
       patch_dir = "u-boot-qemu-arm64";
-      patches = [ ];
+      patches = [];
       source = "https://github.com/u-boot/u-boot";
       source_hash = "sha256-gaD4bZS58LIe+zYmdFxY5Q7nqovINfnebY9JQ5TkN+Q=";
       target_map = null;
@@ -107,14 +93,7 @@
       major_minor = "7.0";
       nvfetcher_key = "kernel-arm64-branch-linux-7-0-y";
       patch_dir = "archive/uefi-arm64-7.0";
-      patches = [
-        "patches/kernel/archive/uefi-arm64-7.0/1000-net-stmicro-stmmac-Phytium-onboard-ethernet-drivers-and-ACPI-glue-for-6.x.patch"
-        "patches/kernel/archive/uefi-arm64-7.0/1001-net-stmicro-stmmac-Phytium-adapt-to-net-stmmac-remove-axi_blen-array.patch"
-        "patches/kernel/archive/uefi-arm64-7.0/1002-net-stmicro-stmmac-Phytium-adapt-to-net-stmmac-replace-has_xxxx-with-core_type.patch"
-        "patches/kernel/archive/uefi-arm64-7.0/1003-net-stmicro-stmmac-Phytium-adapt-to-net-stmmac-pass-struct-device-to-init-exit-methods.patch"
-        "patches/kernel/archive/uefi-arm64-7.0/1004-fix-stmmac-compilation-warnings.patch"
-        "patches/kernel/archive/uefi-arm64-7.0/board-hikey960-usb.patch"
-      ];
+      patches = [ "patches/kernel/archive/uefi-arm64-7.0/1000-net-stmicro-stmmac-Phytium-onboard-ethernet-drivers-and-ACPI-glue-for-6.x.patch" "patches/kernel/archive/uefi-arm64-7.0/1001-net-stmicro-stmmac-Phytium-adapt-to-net-stmmac-remove-axi_blen-array.patch" "patches/kernel/archive/uefi-arm64-7.0/1002-net-stmicro-stmmac-Phytium-adapt-to-net-stmmac-replace-has_xxxx-with-core_type.patch" "patches/kernel/archive/uefi-arm64-7.0/1003-net-stmicro-stmmac-Phytium-adapt-to-net-stmmac-pass-struct-device-to-init-exit-methods.patch" "patches/kernel/archive/uefi-arm64-7.0/1004-fix-stmmac-compilation-warnings.patch" "patches/kernel/archive/uefi-arm64-7.0/board-hikey960-usb.patch" ];
       source = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git";
     };
     linux_family = "arm64";
@@ -128,7 +107,7 @@
       config = "\${QEMU_UBOOT_BOOTCONFIG}";
       nvfetcher_key = "uboot-tag-v2025-10";
       patch_dir = "u-boot-qemu-arm64";
-      patches = [ ];
+      patches = [];
       source = "https://github.com/u-boot/u-boot";
       source_hash = "sha256-gaD4bZS58LIe+zYmdFxY5Q7nqovINfnebY9JQ5TkN+Q=";
       target_map = null;
@@ -152,14 +131,7 @@
       major_minor = "7.0";
       nvfetcher_key = "kernel-arm64-branch-linux-7-0-y";
       patch_dir = "archive/uefi-arm64-7.0";
-      patches = [
-        "patches/kernel/archive/uefi-arm64-7.0/1000-net-stmicro-stmmac-Phytium-onboard-ethernet-drivers-and-ACPI-glue-for-6.x.patch"
-        "patches/kernel/archive/uefi-arm64-7.0/1001-net-stmicro-stmmac-Phytium-adapt-to-net-stmmac-remove-axi_blen-array.patch"
-        "patches/kernel/archive/uefi-arm64-7.0/1002-net-stmicro-stmmac-Phytium-adapt-to-net-stmmac-replace-has_xxxx-with-core_type.patch"
-        "patches/kernel/archive/uefi-arm64-7.0/1003-net-stmicro-stmmac-Phytium-adapt-to-net-stmmac-pass-struct-device-to-init-exit-methods.patch"
-        "patches/kernel/archive/uefi-arm64-7.0/1004-fix-stmmac-compilation-warnings.patch"
-        "patches/kernel/archive/uefi-arm64-7.0/board-hikey960-usb.patch"
-      ];
+      patches = [ "patches/kernel/archive/uefi-arm64-7.0/1000-net-stmicro-stmmac-Phytium-onboard-ethernet-drivers-and-ACPI-glue-for-6.x.patch" "patches/kernel/archive/uefi-arm64-7.0/1001-net-stmicro-stmmac-Phytium-adapt-to-net-stmmac-remove-axi_blen-array.patch" "patches/kernel/archive/uefi-arm64-7.0/1002-net-stmicro-stmmac-Phytium-adapt-to-net-stmmac-replace-has_xxxx-with-core_type.patch" "patches/kernel/archive/uefi-arm64-7.0/1003-net-stmicro-stmmac-Phytium-adapt-to-net-stmmac-pass-struct-device-to-init-exit-methods.patch" "patches/kernel/archive/uefi-arm64-7.0/1004-fix-stmmac-compilation-warnings.patch" "patches/kernel/archive/uefi-arm64-7.0/board-hikey960-usb.patch" ];
       source = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git";
     };
     linux_family = "arm64";
@@ -173,7 +145,7 @@
       config = "\${QEMU_UBOOT_BOOTCONFIG}";
       nvfetcher_key = "uboot-tag-v2025-10";
       patch_dir = "u-boot-qemu-arm64";
-      patches = [ ];
+      patches = [];
       source = "https://github.com/u-boot/u-boot";
       source_hash = "sha256-gaD4bZS58LIe+zYmdFxY5Q7nqovINfnebY9JQ5TkN+Q=";
       target_map = null;
@@ -196,14 +168,7 @@
       major_minor = "7.0";
       nvfetcher_key = "kernel-arm64-branch-lenovo-x13s-linux-7-0-y";
       patch_dir = "archive/uefi-arm64-7.0";
-      patches = [
-        "patches/kernel/archive/uefi-arm64-7.0/1000-net-stmicro-stmmac-Phytium-onboard-ethernet-drivers-and-ACPI-glue-for-6.x.patch"
-        "patches/kernel/archive/uefi-arm64-7.0/1001-net-stmicro-stmmac-Phytium-adapt-to-net-stmmac-remove-axi_blen-array.patch"
-        "patches/kernel/archive/uefi-arm64-7.0/1002-net-stmicro-stmmac-Phytium-adapt-to-net-stmmac-replace-has_xxxx-with-core_type.patch"
-        "patches/kernel/archive/uefi-arm64-7.0/1003-net-stmicro-stmmac-Phytium-adapt-to-net-stmmac-pass-struct-device-to-init-exit-methods.patch"
-        "patches/kernel/archive/uefi-arm64-7.0/1004-fix-stmmac-compilation-warnings.patch"
-        "patches/kernel/archive/uefi-arm64-7.0/board-hikey960-usb.patch"
-      ];
+      patches = [ "patches/kernel/archive/uefi-arm64-7.0/1000-net-stmicro-stmmac-Phytium-onboard-ethernet-drivers-and-ACPI-glue-for-6.x.patch" "patches/kernel/archive/uefi-arm64-7.0/1001-net-stmicro-stmmac-Phytium-adapt-to-net-stmmac-remove-axi_blen-array.patch" "patches/kernel/archive/uefi-arm64-7.0/1002-net-stmicro-stmmac-Phytium-adapt-to-net-stmmac-replace-has_xxxx-with-core_type.patch" "patches/kernel/archive/uefi-arm64-7.0/1003-net-stmicro-stmmac-Phytium-adapt-to-net-stmmac-pass-struct-device-to-init-exit-methods.patch" "patches/kernel/archive/uefi-arm64-7.0/1004-fix-stmmac-compilation-warnings.patch" "patches/kernel/archive/uefi-arm64-7.0/board-hikey960-usb.patch" ];
       source = "https://github.com/steev/linux.git";
     };
     linux_family = "arm64";
@@ -217,7 +182,7 @@
       config = "\${QEMU_UBOOT_BOOTCONFIG}";
       nvfetcher_key = "uboot-tag-v2025-10";
       patch_dir = "u-boot-qemu-arm64";
-      patches = [ ];
+      patches = [];
       source = "https://github.com/u-boot/u-boot";
       source_hash = "sha256-gaD4bZS58LIe+zYmdFxY5Q7nqovINfnebY9JQ5TkN+Q=";
       target_map = null;

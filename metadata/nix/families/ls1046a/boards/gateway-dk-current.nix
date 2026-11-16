@@ -1,7 +1,6 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."ls1046a-current" {
+{ platforms, lib }: lib.recursiveUpdate platforms."ls1046a-current" {
   board = "gateway-dk";
-  dtb = null;
+  dtb = "freescale/mono-gateway-dk.dtb";
   family = "ls1046a";
   firmware = {
   };

@@ -1,7 +1,6 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."qrb2210-edge" {
+{ platforms, lib }: lib.recursiveUpdate platforms."qrb2210-edge" {
   board = "arduino-uno-q";
-  dtb = null;
+  dtb = "qcom/qrb2210-arduino-imola.dtb";
   family = "qrb2210";
   firmware = {
   };

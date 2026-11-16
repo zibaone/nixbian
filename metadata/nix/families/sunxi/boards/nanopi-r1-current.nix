@@ -1,7 +1,6 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."sunxi-current" {
+{ platforms, lib }: lib.recursiveUpdate platforms."sunxi-current" {
   board = "nanopi-r1";
-  dtb = null;
+  dtb = "sun8i-h3-nanopi-r1.dtb";
   family = "sunxi";
   firmware = {
   };

@@ -1,7 +1,6 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."generic-current" {
+{ platforms, lib }: lib.recursiveUpdate platforms."generic-current" {
   board = "bananapir2";
-  dtb = null;
+  dtb = "mediatek/mt7623n-bananapi-bpi-r2";
   family = "generic";
   firmware = {
   };

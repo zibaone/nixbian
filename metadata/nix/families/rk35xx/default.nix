@@ -12,37 +12,21 @@ in
   "coolpi-genbook-vendor" = import ./boards/coolpi-genbook-vendor.nix { inherit platforms lib; };
   "cyber-aib-rk3588-vendor" = import ./boards/cyber-aib-rk3588-vendor.nix { inherit platforms lib; };
   "easepi-r2-vendor" = import ./boards/easepi-r2-vendor.nix { inherit platforms lib; };
-  "firefly-itx-3588j-vendor" = import ./boards/firefly-itx-3588j-vendor.nix {
-    inherit platforms lib;
-  };
+  "firefly-itx-3588j-vendor" = import ./boards/firefly-itx-3588j-vendor.nix { inherit platforms lib; };
   "fxblox-rk1-vendor" = import ./boards/fxblox-rk1-vendor.nix { inherit platforms lib; };
   "hinlink-h88k-vendor" = import ./boards/hinlink-h88k-vendor.nix { inherit platforms lib; };
   "imb3588-vendor" = import ./boards/imb3588-vendor.nix { inherit platforms lib; };
   "indiedroid-nova-vendor" = import ./boards/indiedroid-nova-vendor.nix { inherit platforms lib; };
   "khadas-edge2-vendor" = import ./boards/khadas-edge2-vendor.nix { inherit platforms lib; };
-  "mekotronics-r58-4x4-vendor" = import ./boards/mekotronics-r58-4x4-vendor.nix {
-    inherit platforms lib;
-  };
-  "mekotronics-r58-minipc-vendor" = import ./boards/mekotronics-r58-minipc-vendor.nix {
-    inherit platforms lib;
-  };
-  "mekotronics-r58hd-vendor" = import ./boards/mekotronics-r58hd-vendor.nix {
-    inherit platforms lib;
-  };
-  "mekotronics-r58s2-vendor" = import ./boards/mekotronics-r58s2-vendor.nix {
-    inherit platforms lib;
-  };
+  "mekotronics-r58-4x4-vendor" = import ./boards/mekotronics-r58-4x4-vendor.nix { inherit platforms lib; };
+  "mekotronics-r58-minipc-vendor" = import ./boards/mekotronics-r58-minipc-vendor.nix { inherit platforms lib; };
+  "mekotronics-r58hd-vendor" = import ./boards/mekotronics-r58hd-vendor.nix { inherit platforms lib; };
+  "mekotronics-r58s2-vendor" = import ./boards/mekotronics-r58s2-vendor.nix { inherit platforms lib; };
   "mekotronics-r58x-vendor" = import ./boards/mekotronics-r58x-vendor.nix { inherit platforms lib; };
-  "mekotronics-r58x-4g-vendor" = import ./boards/mekotronics-r58x-4g-vendor.nix {
-    inherit platforms lib;
-  };
-  "mekotronics-r58x-pro-vendor" = import ./boards/mekotronics-r58x-pro-vendor.nix {
-    inherit platforms lib;
-  };
+  "mekotronics-r58x-4g-vendor" = import ./boards/mekotronics-r58x-4g-vendor.nix { inherit platforms lib; };
+  "mekotronics-r58x-pro-vendor" = import ./boards/mekotronics-r58x-pro-vendor.nix { inherit platforms lib; };
   "mixtile-blade3-vendor" = import ./boards/mixtile-blade3-vendor.nix { inherit platforms lib; };
-  "mixtile-core3588e-vendor" = import ./boards/mixtile-core3588e-vendor.nix {
-    inherit platforms lib;
-  };
+  "mixtile-core3588e-vendor" = import ./boards/mixtile-core3588e-vendor.nix { inherit platforms lib; };
   "nanopct6-vendor" = import ./boards/nanopct6-vendor.nix { inherit platforms lib; };
   "nanopct6-lts-vendor" = import ./boards/nanopct6-lts-vendor.nix { inherit platforms lib; };
   "nanopi-m6-vendor" = import ./boards/nanopi-m6-vendor.nix { inherit platforms lib; };
@@ -58,9 +42,7 @@ in
   "radxa-e24c-vendor" = import ./boards/radxa-e24c-vendor.nix { inherit platforms lib; };
   "radxa-e54c-vendor" = import ./boards/radxa-e54c-vendor.nix { inherit platforms lib; };
   "retro-lite-cm5-vendor" = import ./boards/retro-lite-cm5-vendor.nix { inherit platforms lib; };
-  "rock-5-cm-rpi-cm4-io-vendor" = import ./boards/rock-5-cm-rpi-cm4-io-vendor.nix {
-    inherit platforms lib;
-  };
+  "rock-5-cm-rpi-cm4-io-vendor" = import ./boards/rock-5-cm-rpi-cm4-io-vendor.nix { inherit platforms lib; };
   "rock-5-cmio-vendor" = import ./boards/rock-5-cmio-vendor.nix { inherit platforms lib; };
   "rock-5-itx-vendor" = import ./boards/rock-5-itx-vendor.nix { inherit platforms lib; };
   "rock-5a-vendor" = import ./boards/rock-5a-vendor.nix { inherit platforms lib; };

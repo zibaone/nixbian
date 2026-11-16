@@ -1,7 +1,6 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."rk35xx-vendor" {
+{ platforms, lib }: lib.recursiveUpdate platforms."rk35xx-vendor" {
   board = "fxblox-rk1";
-  dtb = null;
+  dtb = "rockchip/rk3588-fxblox-rk1.dtb";
   family = "rk35xx";
   firmware = {
   };

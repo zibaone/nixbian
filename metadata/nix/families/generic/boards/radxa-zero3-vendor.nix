@@ -1,7 +1,6 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."generic-vendor" {
+{ platforms, lib }: lib.recursiveUpdate platforms."generic-vendor" {
   board = "radxa-zero3";
-  dtb = null;
+  dtb = "rockchip/rk3566-radxa-zero3.dtb";
   family = "generic";
   firmware = {
   };

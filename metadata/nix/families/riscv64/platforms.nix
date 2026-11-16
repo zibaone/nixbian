@@ -17,7 +17,7 @@
       major_minor = "7.0";
       nvfetcher_key = "kernel-riscv64-branch-linux-7-0-y";
       patch_dir = "archive/uefi-riscv64-7.0";
-      patches = [ ];
+      patches = [];
       source = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git";
     };
     linux_family = "riscv64";
@@ -31,7 +31,7 @@
       config = "\${QEMU_UBOOT_BOOTCONFIG}";
       nvfetcher_key = "uboot-tag-v2025-10";
       patch_dir = "u-boot-qemu-riscv64";
-      patches = [ ];
+      patches = [];
       source = "https://github.com/u-boot/u-boot";
       source_hash = "sha256-gaD4bZS58LIe+zYmdFxY5Q7nqovINfnebY9JQ5TkN+Q=";
       target_map = null;
@@ -55,7 +55,7 @@
       major_minor = "7.0";
       nvfetcher_key = "kernel-riscv64-branch-linux-7-0-y";
       patch_dir = "archive/uefi-riscv64-7.0";
-      patches = [ ];
+      patches = [];
       source = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git";
     };
     linux_family = "riscv64";
@@ -69,7 +69,7 @@
       config = "\${QEMU_UBOOT_BOOTCONFIG}";
       nvfetcher_key = "uboot-tag-v2025-10";
       patch_dir = "u-boot-qemu-riscv64";
-      patches = [ ];
+      patches = [];
       source = "https://github.com/u-boot/u-boot";
       source_hash = "sha256-gaD4bZS58LIe+zYmdFxY5Q7nqovINfnebY9JQ5TkN+Q=";
       target_map = null;
@@ -93,7 +93,7 @@
       major_minor = "7.0";
       nvfetcher_key = "kernel-riscv64-branch-linux-7-0-y";
       patch_dir = "archive/uefi-riscv64-7.0";
-      patches = [ ];
+      patches = [];
       source = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git";
     };
     linux_family = "riscv64";
@@ -107,7 +107,7 @@
       config = "\${QEMU_UBOOT_BOOTCONFIG}";
       nvfetcher_key = "uboot-tag-v2025-10";
       patch_dir = "u-boot-qemu-riscv64";
-      patches = [ ];
+      patches = [];
       source = "https://github.com/u-boot/u-boot";
       source_hash = "sha256-gaD4bZS58LIe+zYmdFxY5Q7nqovINfnebY9JQ5TkN+Q=";
       target_map = null;

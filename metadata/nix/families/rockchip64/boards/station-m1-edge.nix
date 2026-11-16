@@ -1,7 +1,6 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."rockchip64-edge" {
+{ platforms, lib }: lib.recursiveUpdate platforms."rockchip64-edge" {
   board = "station-m1";
-  dtb = null;
+  dtb = "rockchip/rk3328-roc-pc.dtb";
   family = "rockchip64";
   firmware = {
   };

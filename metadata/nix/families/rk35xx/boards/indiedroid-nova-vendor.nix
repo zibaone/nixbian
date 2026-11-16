@@ -1,7 +1,6 @@
-{ platforms, lib }:
-lib.recursiveUpdate platforms."rk35xx-vendor" {
+{ platforms, lib }: lib.recursiveUpdate platforms."rk35xx-vendor" {
   board = "indiedroid-nova";
-  dtb = null;
+  dtb = "rockchip/rk3588s-9tripod-linux.dtb";
   family = "rk35xx";
   firmware = {
   };
