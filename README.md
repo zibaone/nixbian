@@ -8,7 +8,7 @@ pinned Armbian revision (`versions.json`) into a static catalog of metadata,
 Armbian patch series, kernel configurations and source references. It does
 **not** build kernels or own vendor patches (decision B, 2026-11-16).
 
-> **Status: experimental (0.3.0).** The catalog covers **737 board-branch
+> **Status: experimental (0.3.0).** The catalog covers **739 board-branch
 > entries**, but only **one kernel has been built** so far (Orange Pi Zero 3,
 > `edge` branch, 2026-10-19). The other targets are **evaluated**, not validated
 > on hardware. No NixOS image has been validated yet.
@@ -25,10 +25,9 @@ Armbian patch series, kernel configurations and source references. It does
   `nix-v4l2-request` holds FFmpeg/Kodi **userspace** patches; `nixelec-kiosk`
   holds the service.
 - The four `sunxi-7.0-*` vendor directories (`hdmi-audio`, `cec`, `h96-max`,
-  `aic8800-kbuild`) currently in `metadata/nix/patches/kernel/` are **not
-  Armbian**; they move to `nixelec-sunxi64`, and `platform_patches.json` is to be
-  emptied. `hardware.nixbian.extraPatches`/`extraConfig` and the kernel build are
-  transition (model A) and are to be retired.
+  `aic8800-kbuild`) moved to `nixelec-sunxi64/patches/kernel/` on 2026-11-16;
+  `platform_patches.json` is now empty. `hardware.nixbian.extraPatches`/
+  `extraConfig` remain nixbian options, consumed by the family layer.
 
 ## What it is / what it is not
 
