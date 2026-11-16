@@ -182,7 +182,7 @@ fix the generator and regenerate.
 - `metadata/board_metadata.json`: full catalog, consumable by external tools;
 - `metadata/nix/families/<family>/`: `platforms.nix`, `boards/*.nix`, kernel configs;
 - `metadata/nix/library.nix`: `getPatches`, `applyPatches`, `buildKernel`, `buildUBoot`, `buildATF`;
-- `metadata/nix/patches/`: vendored Armbian patches (3508 files, ~48 MiB);
+- `metadata/nix/patches/`: vendored Armbian patches (3505 files, ~48 MiB);
 - `metadata/nvfetcher.sources.toml` / `nvfetcher.lock.toml`: source definitions;
 - `metadata/sources/generated.nix`: nvfetcher hashes;
 - `metadata/kernel-versions.json`: exact kernel version cache;
