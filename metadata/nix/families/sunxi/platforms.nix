@@ -1115,8 +1115,6 @@
         "patches/kernel/archive/sunxi-7.0/patches.armbian/drv-video-st7796s-fb-tft-driver.patch"
         "patches/kernel/archive/sunxi-7.0/patches.armbian/include-uapi-drm_fourcc-add-ARM-tiled-format-modifier.patch"
         "patches/kernel/archive/sunxi-7.0/patches.armbian/3401-net-wireless-backport-aic8800-sdio-v2025_0926_91c9dae5-mm2.patch"
-        "patches/kernel/sunxi-7.0-hdmi-audio/0001-arm64-dts-sun50i-h616-hdmi-add-sound-dai-cells.patch"
-        "patches/kernel/sunxi-7.0-hdmi-audio/0002-ASoC-sunxi-ahub-verify-the-module-clock.patch"
       ];
       source = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git";
     };
