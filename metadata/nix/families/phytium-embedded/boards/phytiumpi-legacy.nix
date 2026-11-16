@@ -1,4 +1,5 @@
-{ platforms, lib }: lib.recursiveUpdate platforms."phytium-embedded-legacy" {
+{ platforms, lib }:
+lib.recursiveUpdate platforms."phytium-embedded-legacy" {
   board = "phytiumpi";
   dtb = "phytium/phytiumpi_firefly.dtb";
   family = "phytium-embedded";

@@ -1,4 +1,5 @@
-{ platforms, lib }: lib.recursiveUpdate platforms."rk35xx-vendor" {
+{ platforms, lib }:
+lib.recursiveUpdate platforms."rk35xx-vendor" {
   board = "mekotronics-r58-4x4";
   dtb = "rockchip/rk3588-blueberry-r58-4x4.dtb";
   family = "rk35xx";

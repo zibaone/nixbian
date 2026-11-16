@@ -1,4 +1,5 @@
-{ platforms, lib }: lib.recursiveUpdate platforms."meson-s4t7-legacy" {
+{ platforms, lib }:
+lib.recursiveUpdate platforms."meson-s4t7-legacy" {
   board = "khadas-vim4";
   dtb = null;
   family = "meson-s4t7";

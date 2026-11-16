@@ -1,4 +1,5 @@
-{ platforms, lib }: lib.recursiveUpdate platforms."sm8550-edge" {
+{ platforms, lib }:
+lib.recursiveUpdate platforms."sm8550-edge" {
   board = "ayn-odin2";
   dtb = "qcom/qcs8550-\${BOARD}.dtb";
   family = "sm8550";

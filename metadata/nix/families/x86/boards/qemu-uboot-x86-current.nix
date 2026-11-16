@@ -1,4 +1,5 @@
-{ platforms, lib }: lib.recursiveUpdate platforms."x86-current" {
+{ platforms, lib }:
+lib.recursiveUpdate platforms."x86-current" {
   board = "qemu-uboot-x86";
   dtb = null;
   family = "x86";

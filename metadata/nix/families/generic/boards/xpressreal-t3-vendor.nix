@@ -1,4 +1,5 @@
-{ platforms, lib }: lib.recursiveUpdate platforms."generic-vendor" {
+{ platforms, lib }:
+lib.recursiveUpdate platforms."generic-vendor" {
   board = "xpressreal-t3";
   dtb = "realtek/rtd1619b-bleedingedge-4gb.dtb";
   family = "generic";
@@ -15,7 +16,7 @@
     major_minor = "6.6";
     nvfetcher_key = "kernel-generic-branch-v6-6-54-xpressreal-t3";
     patch_dir = "archive/\${LINUXFAMILY}-6.6";
-    patches = [];
+    patches = [ ];
     source = "https://github.com/XpressReal/linux.git";
   };
   kernel_params = null;
@@ -24,7 +25,10 @@
     config = "rtd1619b_bleedingedge_defconfig";
     nvfetcher_key = "uboot-branch-v2024-01-xpressreal";
     patch_dir = "u-boot-xpressreal";
-    patches = [ "patches/uboot/u-boot-xpressreal/0001-Update-dev-signing-key.patch" "patches/uboot/u-boot-xpressreal/0002-update-fw-path.patch" ];
+    patches = [
+      "patches/uboot/u-boot-xpressreal/0001-Update-dev-signing-key.patch"
+      "patches/uboot/u-boot-xpressreal/0002-update-fw-path.patch"
+    ];
     source = "https://github.com/XpressReal/u-boot.git";
     source_hash = "sha256-Jwzsd1hU6HDVeV5SIeLHNVSxDUIB7JpJ0tAfujtnNyQ=";
     target_map = ";;u-boot.bin-rtd1619b_emmc rtd1619b_emmc_bind_4gb.bin";

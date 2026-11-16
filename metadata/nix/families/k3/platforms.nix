@@ -17,7 +17,7 @@
       major_minor = "6.18";
       nvfetcher_key = "kernel-k3-branch-ti-linux-6-18-y";
       patch_dir = "archive/k3-6.18";
-      patches = [];
+      patches = [ ];
       source = "https://github.com/TexasInstruments/ti-linux-kernel";
     };
     linux_family = "k3";
@@ -56,7 +56,7 @@
       major_minor = "6.18";
       nvfetcher_key = "kernel-k3-branch-ti-linux-6-18-y";
       patch_dir = "archive/k3-6.18";
-      patches = [];
+      patches = [ ];
       source = "https://github.com/TexasInstruments/ti-linux-kernel";
     };
     linux_family = "k3";
@@ -95,7 +95,7 @@
       major_minor = "6.18";
       nvfetcher_key = "kernel-k3-branch-ti-linux-6-18-y";
       patch_dir = "archive/k3-6.18";
-      patches = [];
+      patches = [ ];
       source = "https://github.com/TexasInstruments/ti-linux-kernel";
     };
     linux_family = "k3";
@@ -134,7 +134,7 @@
       major_minor = "6.18";
       nvfetcher_key = "kernel-k3-branch-ti-linux-6-18-y";
       patch_dir = "archive/k3-6.18";
-      patches = [];
+      patches = [ ];
       source = "https://github.com/TexasInstruments/ti-linux-kernel";
     };
     linux_family = "k3";

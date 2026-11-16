@@ -1,4 +1,5 @@
-{ platforms, lib }: lib.recursiveUpdate platforms."rockchip64-edge" {
+{ platforms, lib }:
+lib.recursiveUpdate platforms."rockchip64-edge" {
   board = "quartz64b";
   dtb = "rockchip/rk3566-quartz64-b.dtb";
   family = "rockchip64";

@@ -1,4 +1,5 @@
-{ platforms, lib }: lib.recursiveUpdate platforms."sunxi-edge" {
+{ platforms, lib }:
+lib.recursiveUpdate platforms."sunxi-edge" {
   board = "pcduino3";
   dtb = null;
   family = "sunxi";

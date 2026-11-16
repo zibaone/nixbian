@@ -1,4 +1,5 @@
-{ platforms, lib }: lib.recursiveUpdate platforms."sunxi-current" {
+{ platforms, lib }:
+lib.recursiveUpdate platforms."sunxi-current" {
   board = "olimex-a20-olinuxino-micro";
   dtb = null;
   family = "sunxi";

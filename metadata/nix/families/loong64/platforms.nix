@@ -17,7 +17,12 @@
       major_minor = "7.0";
       nvfetcher_key = "kernel-loong64-branch-linux-7-0-y";
       patch_dir = "archive/uefi-loong64-7.0";
-      patches = [ "patches/kernel/archive/uefi-loong64-7.0/0001-drm-xe-bo-fix-alignment-with-non-4KiB-kernel-page-si.patch" "patches/kernel/archive/uefi-loong64-7.0/0003-drm-xe-regs-fix-RING_CTL_SIZE-size-calculation.patch" "patches/kernel/archive/uefi-loong64-7.0/0004-drm-xe-use-4KiB-alignment-for-cursor-jumps.patch" "patches/kernel/archive/uefi-loong64-7.0/0006-enable-xe-on-16K-pagesize.patch" ];
+      patches = [
+        "patches/kernel/archive/uefi-loong64-7.0/0001-drm-xe-bo-fix-alignment-with-non-4KiB-kernel-page-si.patch"
+        "patches/kernel/archive/uefi-loong64-7.0/0003-drm-xe-regs-fix-RING_CTL_SIZE-size-calculation.patch"
+        "patches/kernel/archive/uefi-loong64-7.0/0004-drm-xe-use-4KiB-alignment-for-cursor-jumps.patch"
+        "patches/kernel/archive/uefi-loong64-7.0/0006-enable-xe-on-16K-pagesize.patch"
+      ];
       source = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git";
     };
     linux_family = "loong64";
@@ -31,7 +36,7 @@
       config = "\${QEMU_UBOOT_BOOTCONFIG}";
       nvfetcher_key = "uboot-tag-v2025-10";
       patch_dir = "u-boot-qemu-loong64";
-      patches = [];
+      patches = [ ];
       source = "https://github.com/u-boot/u-boot";
       source_hash = "sha256-gaD4bZS58LIe+zYmdFxY5Q7nqovINfnebY9JQ5TkN+Q=";
       target_map = null;
@@ -55,7 +60,12 @@
       major_minor = "7.0";
       nvfetcher_key = "kernel-loong64-branch-linux-7-0-y";
       patch_dir = "archive/uefi-loong64-7.0";
-      patches = [ "patches/kernel/archive/uefi-loong64-7.0/0001-drm-xe-bo-fix-alignment-with-non-4KiB-kernel-page-si.patch" "patches/kernel/archive/uefi-loong64-7.0/0003-drm-xe-regs-fix-RING_CTL_SIZE-size-calculation.patch" "patches/kernel/archive/uefi-loong64-7.0/0004-drm-xe-use-4KiB-alignment-for-cursor-jumps.patch" "patches/kernel/archive/uefi-loong64-7.0/0006-enable-xe-on-16K-pagesize.patch" ];
+      patches = [
+        "patches/kernel/archive/uefi-loong64-7.0/0001-drm-xe-bo-fix-alignment-with-non-4KiB-kernel-page-si.patch"
+        "patches/kernel/archive/uefi-loong64-7.0/0003-drm-xe-regs-fix-RING_CTL_SIZE-size-calculation.patch"
+        "patches/kernel/archive/uefi-loong64-7.0/0004-drm-xe-use-4KiB-alignment-for-cursor-jumps.patch"
+        "patches/kernel/archive/uefi-loong64-7.0/0006-enable-xe-on-16K-pagesize.patch"
+      ];
       source = "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git";
     };
     linux_family = "loong64";
@@ -69,7 +79,7 @@
       config = "\${QEMU_UBOOT_BOOTCONFIG}";
       nvfetcher_key = "uboot-tag-v2025-10";
       patch_dir = "u-boot-qemu-loong64";
-      patches = [];
+      patches = [ ];
       source = "https://github.com/u-boot/u-boot";
       source_hash = "sha256-gaD4bZS58LIe+zYmdFxY5Q7nqovINfnebY9JQ5TkN+Q=";
       target_map = null;

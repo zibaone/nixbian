@@ -1,4 +1,5 @@
-{ platforms, lib }: lib.recursiveUpdate platforms."spacemit-current" {
+{ platforms, lib }:
+lib.recursiveUpdate platforms."spacemit-current" {
   board = "bananapif3";
   dtb = "spacemit/k1-bananapi-f3.dtb";
   family = "spacemit";

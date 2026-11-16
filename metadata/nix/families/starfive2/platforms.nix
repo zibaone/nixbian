@@ -17,7 +17,7 @@
       major_minor = "6.6";
       nvfetcher_key = "kernel-starfive2-branch-jh7110-visionfive2-6-6-y-devel";
       patch_dir = "starfive2-vendor";
-      patches = [];
+      patches = [ ];
       source = "https://github.com/starfive-tech/linux";
     };
     linux_family = "starfive2";

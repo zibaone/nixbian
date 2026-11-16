@@ -1,4 +1,5 @@
-{ platforms, lib }: lib.recursiveUpdate platforms."sunxi-current" {
+{ platforms, lib }:
+lib.recursiveUpdate platforms."sunxi-current" {
   board = "tritium-h3";
   dtb = null;
   family = "sunxi";

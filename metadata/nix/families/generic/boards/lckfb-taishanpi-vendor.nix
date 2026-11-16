@@ -1,4 +1,5 @@
-{ platforms, lib }: lib.recursiveUpdate platforms."generic-vendor" {
+{ platforms, lib }:
+lib.recursiveUpdate platforms."generic-vendor" {
   board = "lckfb-taishanpi";
   dtb = "rockchip/rk3566-lckfb-tspi.dtb";
   family = "generic";

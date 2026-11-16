@@ -1,4 +1,5 @@
-{ platforms, lib }: lib.recursiveUpdate platforms."generic-vendor" {
+{ platforms, lib }:
+lib.recursiveUpdate platforms."generic-vendor" {
   board = "nanopi-zero2";
   dtb = "rockchip/rk3528-nanopi-zero2.dtb";
   family = "generic";

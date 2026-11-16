@@ -1,4 +1,5 @@
-{ platforms, lib }: lib.recursiveUpdate platforms."sm8250-edge" {
+{ platforms, lib }:
+lib.recursiveUpdate platforms."sm8250-edge" {
   board = "retroidpocket-rpmini";
   dtb = "qcom/sm8250-retroidpocket-rpmini.dtb";
   family = "sm8250";

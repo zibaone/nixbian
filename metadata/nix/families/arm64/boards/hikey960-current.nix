@@ -1,4 +1,5 @@
-{ platforms, lib }: lib.recursiveUpdate platforms."arm64-current" {
+{ platforms, lib }:
+lib.recursiveUpdate platforms."arm64-current" {
   board = "hikey960";
   dtb = "hisilicon/hi3660-hikey960.dtb";
   family = "arm64";

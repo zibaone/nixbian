@@ -1,4 +1,5 @@
-{ platforms, lib }: lib.recursiveUpdate platforms."k3-beagle-edge" {
+{ platforms, lib }:
+lib.recursiveUpdate platforms."k3-beagle-edge" {
   board = "beagley-ai";
   dtb = "k3-am67a-beagley-ai.dts";
   family = "k3-beagle";

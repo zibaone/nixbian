@@ -1,4 +1,5 @@
-{ platforms, lib }: lib.recursiveUpdate platforms."arm64-cloud" {
+{ platforms, lib }:
+lib.recursiveUpdate platforms."arm64-cloud" {
   board = "uefi-arm64";
   dtb = null;
   family = "arm64";

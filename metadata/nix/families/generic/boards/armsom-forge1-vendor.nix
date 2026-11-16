@@ -1,4 +1,5 @@
-{ platforms, lib }: lib.recursiveUpdate platforms."generic-vendor" {
+{ platforms, lib }:
+lib.recursiveUpdate platforms."generic-vendor" {
   board = "armsom-forge1";
   dtb = "rk3506b-armsom-forge1.dtb";
   family = "generic";

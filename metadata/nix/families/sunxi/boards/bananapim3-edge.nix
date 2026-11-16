@@ -1,4 +1,5 @@
-{ platforms, lib }: lib.recursiveUpdate platforms."sunxi-edge" {
+{ platforms, lib }:
+lib.recursiveUpdate platforms."sunxi-edge" {
   board = "bananapim3";
   dtb = null;
   family = "sunxi";
@@ -13,7 +14,7 @@
     config = "Sinovoip_BPI_M3_defconfig";
     nvfetcher_key = "uboot-tag-v2024-01";
     patch_dir = "u-boot-sunxi/board_\${BOARD}";
-    patches = [];
+    patches = [ ];
     source_hash = "sha256-0Da7Czy9cpQ+D5EICc3/QSZhAdCBsmeMvBgykYhAQFw=";
   };
 }

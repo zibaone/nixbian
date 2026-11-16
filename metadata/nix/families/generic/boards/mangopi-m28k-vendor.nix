@@ -1,4 +1,5 @@
-{ platforms, lib }: lib.recursiveUpdate platforms."generic-vendor" {
+{ platforms, lib }:
+lib.recursiveUpdate platforms."generic-vendor" {
   board = "mangopi-m28k";
   dtb = "rockchip/rk3528-mangopi-m28k.dtb";
   family = "generic";

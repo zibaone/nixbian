@@ -1,4 +1,5 @@
-{ platforms, lib }: lib.recursiveUpdate platforms."rockchip64-edge" {
+{ platforms, lib }:
+lib.recursiveUpdate platforms."rockchip64-edge" {
   board = "h96-tvbox-3566";
   dtb = "rockchip/rk3566-h96-tvbox.dtb";
   family = "rockchip64";

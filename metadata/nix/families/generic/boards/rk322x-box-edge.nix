@@ -1,4 +1,5 @@
-{ platforms, lib }: lib.recursiveUpdate platforms."generic-edge" {
+{ platforms, lib }:
+lib.recursiveUpdate platforms."generic-edge" {
   board = "rk322x-box";
   dtb = "rk322x-box.dtb";
   family = "generic";

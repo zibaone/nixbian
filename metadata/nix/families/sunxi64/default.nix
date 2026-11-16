@@ -30,7 +30,9 @@ in
   "nanopik1plus-current" = import ./boards/nanopik1plus-current.nix { inherit platforms lib; };
   "nanopik1plus-edge" = import ./boards/nanopik1plus-edge.nix { inherit platforms lib; };
   "nanopik1plus-legacy" = import ./boards/nanopik1plus-legacy.nix { inherit platforms lib; };
-  "olimex-teres-a64-current" = import ./boards/olimex-teres-a64-current.nix { inherit platforms lib; };
+  "olimex-teres-a64-current" = import ./boards/olimex-teres-a64-current.nix {
+    inherit platforms lib;
+  };
   "olimex-teres-a64-edge" = import ./boards/olimex-teres-a64-edge.nix { inherit platforms lib; };
   "olimex-teres-a64-legacy" = import ./boards/olimex-teres-a64-legacy.nix { inherit platforms lib; };
   "orangepi-4a-edge" = import ./boards/orangepi-4a-edge.nix { inherit platforms lib; };
@@ -105,12 +107,20 @@ in
   "nanopineoplus2-current" = import ./boards/nanopineoplus2-current.nix { inherit platforms lib; };
   "nanopineoplus2-edge" = import ./boards/nanopineoplus2-edge.nix { inherit platforms lib; };
   "nanopineoplus2-legacy" = import ./boards/nanopineoplus2-legacy.nix { inherit platforms lib; };
-  "orangepizeroplus-current" = import ./boards/orangepizeroplus-current.nix { inherit platforms lib; };
+  "orangepizeroplus-current" = import ./boards/orangepizeroplus-current.nix {
+    inherit platforms lib;
+  };
   "orangepizeroplus-edge" = import ./boards/orangepizeroplus-edge.nix { inherit platforms lib; };
   "orangepizeroplus-legacy" = import ./boards/orangepizeroplus-legacy.nix { inherit platforms lib; };
-  "orangepizeroplus2-h5-current" = import ./boards/orangepizeroplus2-h5-current.nix { inherit platforms lib; };
-  "orangepizeroplus2-h5-edge" = import ./boards/orangepizeroplus2-h5-edge.nix { inherit platforms lib; };
-  "orangepizeroplus2-h5-legacy" = import ./boards/orangepizeroplus2-h5-legacy.nix { inherit platforms lib; };
+  "orangepizeroplus2-h5-current" = import ./boards/orangepizeroplus2-h5-current.nix {
+    inherit platforms lib;
+  };
+  "orangepizeroplus2-h5-edge" = import ./boards/orangepizeroplus2-h5-edge.nix {
+    inherit platforms lib;
+  };
+  "orangepizeroplus2-h5-legacy" = import ./boards/orangepizeroplus2-h5-legacy.nix {
+    inherit platforms lib;
+  };
   "h96-max-h618-edge" = import ./boards/h96-max-h618-edge.nix { inherit platforms lib; };
   "transpeed-8k618-t-edge" = import ./boards/transpeed-8k618-t-edge.nix { inherit platforms lib; };
 }

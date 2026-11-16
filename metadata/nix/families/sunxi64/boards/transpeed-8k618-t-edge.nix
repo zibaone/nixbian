@@ -1,4 +1,5 @@
-{ platforms, lib }: lib.recursiveUpdate platforms."sunxi64-edge" {
+{ platforms, lib }:
+lib.recursiveUpdate platforms."sunxi64-edge" {
   board = "transpeed-8k618-t";
   dtb = "allwinner/sun50i-h618-transpeed-8k618-t.dtb";
   family = "sunxi64";

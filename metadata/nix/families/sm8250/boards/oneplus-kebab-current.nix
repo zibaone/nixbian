@@ -1,4 +1,5 @@
-{ platforms, lib }: lib.recursiveUpdate platforms."sm8250-current" {
+{ platforms, lib }:
+lib.recursiveUpdate platforms."sm8250-current" {
   board = "oneplus-kebab";
   dtb = null;
   family = "sm8250";

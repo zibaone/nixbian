@@ -1,4 +1,5 @@
-{ platforms, lib }: lib.recursiveUpdate platforms."sunxi64-edge" {
+{ platforms, lib }:
+lib.recursiveUpdate platforms."sunxi64-edge" {
   board = "orangepizero2w";
   dtb = null;
   family = "sunxi64";

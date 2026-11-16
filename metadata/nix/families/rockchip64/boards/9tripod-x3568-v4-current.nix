@@ -1,4 +1,5 @@
-{ platforms, lib }: lib.recursiveUpdate platforms."rockchip64-current" {
+{ platforms, lib }:
+lib.recursiveUpdate platforms."rockchip64-current" {
   board = "9tripod-x3568-v4";
   dtb = "rockchip/rk3568-9tripod-x3568-v4.dtb";
   family = "rockchip64";

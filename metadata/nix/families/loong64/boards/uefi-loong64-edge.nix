@@ -1,4 +1,5 @@
-{ platforms, lib }: lib.recursiveUpdate platforms."loong64-edge" {
+{ platforms, lib }:
+lib.recursiveUpdate platforms."loong64-edge" {
   board = "uefi-loong64";
   dtb = null;
   family = "loong64";

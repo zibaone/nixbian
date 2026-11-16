@@ -4,7 +4,9 @@ let
 in
 { lib }:
 {
-  "9tripod-x3568-v4-current" = import ./boards/9tripod-x3568-v4-current.nix { inherit platforms lib; };
+  "9tripod-x3568-v4-current" = import ./boards/9tripod-x3568-v4-current.nix {
+    inherit platforms lib;
+  };
   "9tripod-x3568-v4-edge" = import ./boards/9tripod-x3568-v4-edge.nix { inherit platforms lib; };
   "armsom-sige5-edge" = import ./boards/armsom-sige5-edge.nix { inherit platforms lib; };
   "armsom-sige7-current" = import ./boards/armsom-sige7-current.nix { inherit platforms lib; };
@@ -57,9 +59,15 @@ in
   "leez-p710-current" = import ./boards/leez-p710-current.nix { inherit platforms lib; };
   "leez-p710-edge" = import ./boards/leez-p710-edge.nix { inherit platforms lib; };
   "lubancat2-edge" = import ./boards/lubancat2-edge.nix { inherit platforms lib; };
-  "mekotronics-r58-4x4-edge" = import ./boards/mekotronics-r58-4x4-edge.nix { inherit platforms lib; };
-  "mekotronics-r58x-4g-edge" = import ./boards/mekotronics-r58x-4g-edge.nix { inherit platforms lib; };
-  "mekotronics-r58x-pro-edge" = import ./boards/mekotronics-r58x-pro-edge.nix { inherit platforms lib; };
+  "mekotronics-r58-4x4-edge" = import ./boards/mekotronics-r58-4x4-edge.nix {
+    inherit platforms lib;
+  };
+  "mekotronics-r58x-4g-edge" = import ./boards/mekotronics-r58x-4g-edge.nix {
+    inherit platforms lib;
+  };
+  "mekotronics-r58x-pro-edge" = import ./boards/mekotronics-r58x-pro-edge.nix {
+    inherit platforms lib;
+  };
   "mixtile-core3588e-edge" = import ./boards/mixtile-core3588e-edge.nix { inherit platforms lib; };
   "mixtile-edge2-current" = import ./boards/mixtile-edge2-current.nix { inherit platforms lib; };
   "mixtile-edge2-edge" = import ./boards/mixtile-edge2-edge.nix { inherit platforms lib; };
@@ -194,7 +202,9 @@ in
   "xiaobao-nas-edge" = import ./boards/xiaobao-nas-edge.nix { inherit platforms lib; };
   "youyeetoo-r1-v3-current" = import ./boards/youyeetoo-r1-v3-current.nix { inherit platforms lib; };
   "youyeetoo-r1-v3-edge" = import ./boards/youyeetoo-r1-v3-edge.nix { inherit platforms lib; };
-  "youyeetoo-yy3588-current" = import ./boards/youyeetoo-yy3588-current.nix { inherit platforms lib; };
+  "youyeetoo-yy3588-current" = import ./boards/youyeetoo-yy3588-current.nix {
+    inherit platforms lib;
+  };
   "youyeetoo-yy3588-edge" = import ./boards/youyeetoo-yy3588-edge.nix { inherit platforms lib; };
   "yy3568-current" = import ./boards/yy3568-current.nix { inherit platforms lib; };
   "yy3568-edge" = import ./boards/yy3568-edge.nix { inherit platforms lib; };
@@ -221,8 +231,12 @@ in
   "nanopineo3-edge" = import ./boards/nanopineo3-edge.nix { inherit platforms lib; };
   "orangepi-r1plus-current" = import ./boards/orangepi-r1plus-current.nix { inherit platforms lib; };
   "orangepi-r1plus-edge" = import ./boards/orangepi-r1plus-edge.nix { inherit platforms lib; };
-  "orangepi-r1plus-lts-current" = import ./boards/orangepi-r1plus-lts-current.nix { inherit platforms lib; };
-  "orangepi-r1plus-lts-edge" = import ./boards/orangepi-r1plus-lts-edge.nix { inherit platforms lib; };
+  "orangepi-r1plus-lts-current" = import ./boards/orangepi-r1plus-lts-current.nix {
+    inherit platforms lib;
+  };
+  "orangepi-r1plus-lts-edge" = import ./boards/orangepi-r1plus-lts-edge.nix {
+    inherit platforms lib;
+  };
   "qidi-x6-current" = import ./boards/qidi-x6-current.nix { inherit platforms lib; };
   "qidi-x6-edge" = import ./boards/qidi-x6-edge.nix { inherit platforms lib; };
   "radxa-e52c-current" = import ./boards/radxa-e52c-current.nix { inherit platforms lib; };
@@ -233,5 +247,7 @@ in
   "rockpi-e-edge" = import ./boards/rockpi-e-edge.nix { inherit platforms lib; };
   "rockpi-s-current" = import ./boards/rockpi-s-current.nix { inherit platforms lib; };
   "rockpi-s-edge" = import ./boards/rockpi-s-edge.nix { inherit platforms lib; };
-  "sakurapi-rk3308b-current" = import ./boards/sakurapi-rk3308b-current.nix { inherit platforms lib; };
+  "sakurapi-rk3308b-current" = import ./boards/sakurapi-rk3308b-current.nix {
+    inherit platforms lib;
+  };
 }

@@ -1,4 +1,5 @@
-{ platforms, lib }: lib.recursiveUpdate platforms."generic-vendor" {
+{ platforms, lib }:
+lib.recursiveUpdate platforms."generic-vendor" {
   board = "ebyte-ecb41-pge";
   dtb = "rk3506g-ebyte-ecb41-pge.dtb";
   family = "generic";

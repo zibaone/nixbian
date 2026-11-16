@@ -1,4 +1,5 @@
-{ platforms, lib }: lib.recursiveUpdate platforms."k3-vendor-rt" {
+{ platforms, lib }:
+lib.recursiveUpdate platforms."k3-vendor-rt" {
   board = "sk-am62-lp";
   dtb = "ti/k3-am62-lp-sk.dts";
   family = "k3";

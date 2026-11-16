@@ -1,4 +1,5 @@
-{ platforms, lib }: lib.recursiveUpdate platforms."spacemit-current" {
+{ platforms, lib }:
+lib.recursiveUpdate platforms."spacemit-current" {
   board = "orangepirv2";
   dtb = "spacemit/k1-orangepi-rv2.dtb";
   family = "spacemit";

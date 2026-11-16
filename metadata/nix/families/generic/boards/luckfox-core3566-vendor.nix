@@ -1,4 +1,5 @@
-{ platforms, lib }: lib.recursiveUpdate platforms."generic-vendor" {
+{ platforms, lib }:
+lib.recursiveUpdate platforms."generic-vendor" {
   board = "luckfox-core3566";
   dtb = "rockchip/rk3566-luckfox-core3566.dtb";
   family = "generic";

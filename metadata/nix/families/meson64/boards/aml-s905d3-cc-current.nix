@@ -1,4 +1,5 @@
-{ platforms, lib }: lib.recursiveUpdate platforms."meson64-current" {
+{ platforms, lib }:
+lib.recursiveUpdate platforms."meson64-current" {
   board = "aml-s905d3-cc";
   dtb = "amlogic/meson-sm1-libretech-cc.dtb";
   family = "meson64";

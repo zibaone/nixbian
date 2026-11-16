@@ -1,4 +1,5 @@
-{ platforms, lib }: lib.recursiveUpdate platforms."sunxi64-legacy" {
+{ platforms, lib }:
+lib.recursiveUpdate platforms."sunxi64-legacy" {
   board = "olimex-teres-a64";
   dtb = null;
   family = "sunxi64";

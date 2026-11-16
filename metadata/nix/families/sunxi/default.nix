@@ -40,9 +40,15 @@ in
   "lime2-current" = import ./boards/lime2-current.nix { inherit platforms lib; };
   "lime2-edge" = import ./boards/lime2-edge.nix { inherit platforms lib; };
   "lime2-legacy" = import ./boards/lime2-legacy.nix { inherit platforms lib; };
-  "olimex-a20-olinuxino-micro-current" = import ./boards/olimex-a20-olinuxino-micro-current.nix { inherit platforms lib; };
-  "olimex-a20-olinuxino-micro-edge" = import ./boards/olimex-a20-olinuxino-micro-edge.nix { inherit platforms lib; };
-  "olimex-a20-olinuxino-micro-legacy" = import ./boards/olimex-a20-olinuxino-micro-legacy.nix { inherit platforms lib; };
+  "olimex-a20-olinuxino-micro-current" = import ./boards/olimex-a20-olinuxino-micro-current.nix {
+    inherit platforms lib;
+  };
+  "olimex-a20-olinuxino-micro-edge" = import ./boards/olimex-a20-olinuxino-micro-edge.nix {
+    inherit platforms lib;
+  };
+  "olimex-a20-olinuxino-micro-legacy" = import ./boards/olimex-a20-olinuxino-micro-legacy.nix {
+    inherit platforms lib;
+  };
   "orangepi2-current" = import ./boards/orangepi2-current.nix { inherit platforms lib; };
   "orangepi2-edge" = import ./boards/orangepi2-edge.nix { inherit platforms lib; };
   "orangepi2-legacy" = import ./boards/orangepi2-legacy.nix { inherit platforms lib; };
@@ -67,9 +73,15 @@ in
   "orangepizero-current" = import ./boards/orangepizero-current.nix { inherit platforms lib; };
   "orangepizero-edge" = import ./boards/orangepizero-edge.nix { inherit platforms lib; };
   "orangepizero-legacy" = import ./boards/orangepizero-legacy.nix { inherit platforms lib; };
-  "orangepizeroplus2-h3-current" = import ./boards/orangepizeroplus2-h3-current.nix { inherit platforms lib; };
-  "orangepizeroplus2-h3-edge" = import ./boards/orangepizeroplus2-h3-edge.nix { inherit platforms lib; };
-  "orangepizeroplus2-h3-legacy" = import ./boards/orangepizeroplus2-h3-legacy.nix { inherit platforms lib; };
+  "orangepizeroplus2-h3-current" = import ./boards/orangepizeroplus2-h3-current.nix {
+    inherit platforms lib;
+  };
+  "orangepizeroplus2-h3-edge" = import ./boards/orangepizeroplus2-h3-edge.nix {
+    inherit platforms lib;
+  };
+  "orangepizeroplus2-h3-legacy" = import ./boards/orangepizeroplus2-h3-legacy.nix {
+    inherit platforms lib;
+  };
   "pcduino3-current" = import ./boards/pcduino3-current.nix { inherit platforms lib; };
   "pcduino3-edge" = import ./boards/pcduino3-edge.nix { inherit platforms lib; };
   "pcduino3-legacy" = import ./boards/pcduino3-legacy.nix { inherit platforms lib; };

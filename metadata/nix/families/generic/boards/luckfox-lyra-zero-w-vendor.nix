@@ -1,4 +1,5 @@
-{ platforms, lib }: lib.recursiveUpdate platforms."generic-vendor" {
+{ platforms, lib }:
+lib.recursiveUpdate platforms."generic-vendor" {
   board = "luckfox-lyra-zero-w";
   dtb = "rk3506b-luckfox-lyra-zero-w-sd.dtb";
   family = "generic";

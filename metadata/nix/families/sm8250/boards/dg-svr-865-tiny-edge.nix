@@ -1,4 +1,5 @@
-{ platforms, lib }: lib.recursiveUpdate platforms."sm8250-edge" {
+{ platforms, lib }:
+lib.recursiveUpdate platforms."sm8250-edge" {
   board = "dg-svr-865-tiny";
   dtb = null;
   family = "sm8250";

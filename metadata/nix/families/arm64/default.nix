@@ -6,7 +6,9 @@ in
 {
   "hikey960-current" = import ./boards/hikey960-current.nix { inherit platforms lib; };
   "hikey960-edge" = import ./boards/hikey960-edge.nix { inherit platforms lib; };
-  "qemu-uboot-arm64-current" = import ./boards/qemu-uboot-arm64-current.nix { inherit platforms lib; };
+  "qemu-uboot-arm64-current" = import ./boards/qemu-uboot-arm64-current.nix {
+    inherit platforms lib;
+  };
   "qemu-uboot-arm64-edge" = import ./boards/qemu-uboot-arm64-edge.nix { inherit platforms lib; };
   "thinkpad-x13s-sc8280xp" = import ./boards/thinkpad-x13s-sc8280xp.nix { inherit platforms lib; };
   "uefi-arm64-current" = import ./boards/uefi-arm64-current.nix { inherit platforms lib; };

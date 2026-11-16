@@ -4,5 +4,7 @@ let
 in
 { lib }:
 {
-  "numaker-iot-ma35d16f90-vendor" = import ./boards/numaker-iot-ma35d16f90-vendor.nix { inherit platforms lib; };
+  "numaker-iot-ma35d16f90-vendor" = import ./boards/numaker-iot-ma35d16f90-vendor.nix {
+    inherit platforms lib;
+  };
 }

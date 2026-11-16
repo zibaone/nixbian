@@ -1,4 +1,5 @@
-{ platforms, lib }: lib.recursiveUpdate platforms."rockchip64-current" {
+{ platforms, lib }:
+lib.recursiveUpdate platforms."rockchip64-current" {
   board = "station-m1";
   dtb = "rockchip/rk3328-roc-pc.dtb";
   family = "rockchip64";

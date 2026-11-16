@@ -1,4 +1,5 @@
-{ platforms, lib }: lib.recursiveUpdate platforms."bcm2711-current" {
+{ platforms, lib }:
+lib.recursiveUpdate platforms."bcm2711-current" {
   board = "rpi4b";
   dtb = null;
   family = "bcm2711";

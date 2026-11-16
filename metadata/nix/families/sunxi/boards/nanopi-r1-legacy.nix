@@ -1,4 +1,5 @@
-{ platforms, lib }: lib.recursiveUpdate platforms."sunxi-legacy" {
+{ platforms, lib }:
+lib.recursiveUpdate platforms."sunxi-legacy" {
   board = "nanopi-r1";
   dtb = "sun8i-h3-nanopi-r1.dtb";
   family = "sunxi";

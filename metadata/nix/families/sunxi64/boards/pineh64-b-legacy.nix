@@ -1,4 +1,5 @@
-{ platforms, lib }: lib.recursiveUpdate platforms."sunxi64-legacy" {
+{ platforms, lib }:
+lib.recursiveUpdate platforms."sunxi64-legacy" {
   board = "pineh64-b";
   dtb = "sun50i-h6-pine-h64-model-b.dtb";
   family = "sunxi64";

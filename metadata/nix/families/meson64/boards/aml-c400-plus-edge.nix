@@ -1,4 +1,5 @@
-{ platforms, lib }: lib.recursiveUpdate platforms."meson64-edge" {
+{ platforms, lib }:
+lib.recursiveUpdate platforms."meson64-edge" {
   board = "aml-c400-plus";
   dtb = "amlogic/meson-gxm-c400-plus.dtb";
   family = "meson64";

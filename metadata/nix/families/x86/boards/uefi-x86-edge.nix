@@ -1,4 +1,5 @@
-{ platforms, lib }: lib.recursiveUpdate platforms."x86-edge" {
+{ platforms, lib }:
+lib.recursiveUpdate platforms."x86-edge" {
   board = "uefi-x86";
   dtb = null;
   family = "x86";

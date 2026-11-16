@@ -1,4 +1,5 @@
-{ platforms, lib }: lib.recursiveUpdate platforms."spacemit-current" {
+{ platforms, lib }:
+lib.recursiveUpdate platforms."spacemit-current" {
   board = "musepipro";
   dtb = "spacemit/k1-musepi-pro.dtb";
   family = "spacemit";

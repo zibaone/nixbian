@@ -1,4 +1,5 @@
-{ platforms, lib }: lib.recursiveUpdate platforms."generic-vendor" {
+{ platforms, lib }:
+lib.recursiveUpdate platforms."generic-vendor" {
   board = "radxa-cm4-io";
   dtb = "rockchip/rk3576-radxa-cm4-io.dtb";
   family = "generic";

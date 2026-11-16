@@ -23,7 +23,9 @@ in
   "bananapim5-edge" = import ./boards/bananapim5-edge.nix { inherit platforms lib; };
   "bestv-r3300-l-current" = import ./boards/bestv-r3300-l-current.nix { inherit platforms lib; };
   "bestv-r3300-l-edge" = import ./boards/bestv-r3300-l-edge.nix { inherit platforms lib; };
-  "cainiao-cniot-core-current" = import ./boards/cainiao-cniot-core-current.nix { inherit platforms lib; };
+  "cainiao-cniot-core-current" = import ./boards/cainiao-cniot-core-current.nix {
+    inherit platforms lib;
+  };
   "cainiao-cniot-core-edge" = import ./boards/cainiao-cniot-core-edge.nix { inherit platforms lib; };
   "jethubj200-current" = import ./boards/jethubj200-current.nix { inherit platforms lib; };
   "jethubj200-edge" = import ./boards/jethubj200-edge.nix { inherit platforms lib; };

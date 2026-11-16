@@ -1,4 +1,5 @@
-{ platforms, lib }: lib.recursiveUpdate platforms."sunxi64-edge" {
+{ platforms, lib }:
+lib.recursiveUpdate platforms."sunxi64-edge" {
   board = "h96-max-h618";
   dtb = "allwinner/sun50i-h618-h96-max.dtb";
   family = "sunxi64";

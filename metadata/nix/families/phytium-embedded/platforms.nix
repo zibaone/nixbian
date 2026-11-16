@@ -17,7 +17,7 @@
       major_minor = "6.6";
       nvfetcher_key = "kernel-phytium-embedded-branch-linux-6-6";
       patch_dir = "phytium-embedded-current";
-      patches = [];
+      patches = [ ];
       source = "https://github.com/chainsx/phytium-linux-kernel";
     };
     linux_family = "phytium-embedded";
@@ -55,7 +55,7 @@
       major_minor = "6.6";
       nvfetcher_key = "kernel-phytium-embedded-branch-linux-6-6";
       patch_dir = "phytium-embedded-legacy";
-      patches = [];
+      patches = [ ];
       source = "https://github.com/chainsx/phytium-linux-kernel";
     };
     linux_family = "phytium-embedded";

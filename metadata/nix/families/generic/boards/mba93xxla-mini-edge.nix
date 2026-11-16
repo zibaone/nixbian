@@ -1,4 +1,5 @@
-{ platforms, lib }: lib.recursiveUpdate platforms."generic-edge" {
+{ platforms, lib }:
+lib.recursiveUpdate platforms."generic-edge" {
   board = "mba93xxla-mini";
   dtb = "freescale/imx93-tqma9352-mba93xxla-mini.dtb";
   family = "generic";

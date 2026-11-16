@@ -1,4 +1,5 @@
-{ platforms, lib }: lib.recursiveUpdate platforms."rk35xx-vendor" {
+{ platforms, lib }:
+lib.recursiveUpdate platforms."rk35xx-vendor" {
   board = "hinlink-h88k";
   dtb = "rockchip/rk3588-hinlink-h88k.dtb";
   family = "rk35xx";
